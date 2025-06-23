@@ -1,0 +1,1072 @@
+[DEBUG] 25-04-24 12:32:33 [selectList:135] - ==>  Preparing: SELECT id, name, user_id, position, sal, hiredate, comm, email, phone, photo_url, status, department_id FROM professors WHERE id LIKE CONCAT('%', ?, '%')
+[DEBUG] 25-04-24 12:32:33 [selectList:135] - ==> Parameters: 9901(String)
+[INFO ] 25-04-24 12:32:33 [sqlonly:228] - SELECT id, name, user_id, position, sal, hiredate, comm, email, phone, photo_url, status, department_id FROM professors WHERE id LIKE CONCAT('%', '9901', '%')
+
+[INFO ] 25-04-24 12:32:33 [resultsettable:610] - 
+|-----|-----|------------|---------|----|----------------------|-------|------------------|-------------|---------------------------------------------|-------|--------------|
+|id   |name |user_id     |position |sal |hiredate              |comm   |email             |phone        |photo_url                                    |status |department_id |
+|-----|-----|------------|---------|----|----------------------|-------|------------------|-------------|---------------------------------------------|-------|--------------|
+|9901 |차미경  |seoyunseong |전임강사     |390 |2023-07-14 23:24:53.0 |[null] |gangjiyeon@yu.net |053-902-0850 |http://myschool.ac.kr/photos/seoyunseong.jpg |퇴직     |101           |
+|-----|-----|------------|---------|----|----------------------|-------|------------------|-------------|---------------------------------------------|-------|--------------|
+
+[ERROR] 25-04-24 12:32:33 [App_Select01:37] - 데이터 처리 실패 >> SQL문을 확인하세요
+org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.apache.ibatis.reflection.ReflectionException: Could not set property 'position' of 'class kr.yjh.models.Professors' with value '전임강사' Cause: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named 'position' in 'class kr.yjh.models.Professors'
+### The error may exist in kr/yjh/mappers/ProfessorsMapper.java (best guess)
+### The error may involve kr.yjh.mappers.ProfessorsMapper.selectList
+### The error occurred while handling results
+### SQL: SELECT id, name, user_id, position, sal, hiredate, comm, email, phone, photo_url, status, department_id FROM professors WHERE id LIKE CONCAT('%', ?, '%')
+### Cause: org.apache.ibatis.reflection.ReflectionException: Could not set property 'position' of 'class kr.yjh.models.Professors' with value '전임강사' Cause: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named 'position' in 'class kr.yjh.models.Professors'
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:156)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:142)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:147)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:80)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at jdk.proxy2/jdk.proxy2.$Proxy17.selectList(Unknown Source)
+	at kr.yjh.services.impl.ProfessorsServiceImpl.getList(ProfessorsServiceImpl.java:68)
+	at kr.yjh.mybatis.App_Select01.main(App_Select01.java:32)
+Caused by: org.apache.ibatis.reflection.ReflectionException: Could not set property 'position' of 'class kr.yjh.models.Professors' with value '전임강사' Cause: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named 'position' in 'class kr.yjh.models.Professors'
+	at org.apache.ibatis.reflection.wrapper.BeanWrapper.setBeanProperty(BeanWrapper.java:181)
+	at org.apache.ibatis.reflection.wrapper.BeanWrapper.set(BeanWrapper.java:61)
+	at org.apache.ibatis.reflection.MetaObject.setValue(MetaObject.java:119)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.applyPropertyMappings(DefaultResultSetHandler.java:512)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.getRowValue(DefaultResultSetHandler.java:418)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleRowValuesForSimpleResultMap(DefaultResultSetHandler.java:366)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleRowValues(DefaultResultSetHandler.java:337)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleResultSet(DefaultResultSetHandler.java:310)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleResultSets(DefaultResultSetHandler.java:202)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:66)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:80)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:65)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:336)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:158)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:110)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:90)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:154)
+	... 9 common frames omitted
+Caused by: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named 'position' in 'class kr.yjh.models.Professors'
+	at org.apache.ibatis.reflection.Reflector.getSetInvoker(Reflector.java:377)
+	at org.apache.ibatis.reflection.MetaClass.getSetInvoker(MetaClass.java:164)
+	at org.apache.ibatis.reflection.wrapper.BeanWrapper.setBeanProperty(BeanWrapper.java:172)
+	... 25 common frames omitted
+[DEBUG] 25-04-24 12:32:48 [selectList:135] - ==>  Preparing: SELECT id, name, user_id, position, sal, hiredate, comm, email, phone, photo_url, status, department_id FROM professors WHERE id LIKE CONCAT('%', ?, '%')
+[DEBUG] 25-04-24 12:32:48 [selectList:135] - ==> Parameters: 전임강사(String)
+[INFO ] 25-04-24 12:32:48 [sqlonly:228] - SELECT id, name, user_id, position, sal, hiredate, comm, email, phone, photo_url, status, department_id FROM professors WHERE id LIKE CONCAT('%', '전임강사', '%')
+
+[INFO ] 25-04-24 12:32:48 [resultsettable:610] - 
+|---|-----|--------|---------|----|---------|-----|------|------|----------|-------|--------------|
+|id |name |user_id |position |sal |hiredate |comm |email |phone |photo_url |status |department_id |
+|---|-----|--------|---------|----|---------|-----|------|------|----------|-------|--------------|
+|---|-----|--------|---------|----|---------|-----|------|------|----------|-------|--------------|
+
+[DEBUG] 25-04-24 12:32:48 [selectList:135] - <==      Total: 0
+[DEBUG] 25-04-24 12:32:48 [selectCount:135] - ==>  Preparing: SELECT COUNT(*) FROM professors WHERE id LIKE CONCAT('%', ?, '%')
+[DEBUG] 25-04-24 12:32:48 [selectCount:135] - ==> Parameters: 0(Integer)
+[INFO ] 25-04-24 12:32:48 [sqlonly:228] - SELECT COUNT(*) FROM professors WHERE id LIKE CONCAT('%', 0, '%')
+
+[INFO ] 25-04-24 12:32:48 [resultsettable:610] - 
+|---------|
+|count(*) |
+|---------|
+|7        |
+|---------|
+
+[DEBUG] 25-04-24 12:32:48 [selectCount:135] - <==      Total: 1
+[ERROR] 25-04-24 12:32:48 [App_Select01:41] - 조회결과 --->> 
+[ERROR] 25-04-24 12:32:48 [App_Select01:42] - 조회된 데이터 수 --->> 
+[DEBUG] 25-04-24 12:33:32 [selectList:135] - ==>  Preparing: SELECT id, name, user_id, position, sal, hiredate, comm, email, phone, photo_url, status, department_id FROM professors WHERE id LIKE CONCAT('%', ?, '%')
+[DEBUG] 25-04-24 12:33:32 [selectList:135] - ==> Parameters: 전임강사(String)
+[INFO ] 25-04-24 12:33:32 [sqlonly:228] - SELECT id, name, user_id, position, sal, hiredate, comm, email, phone, photo_url, status, department_id FROM professors WHERE id LIKE CONCAT('%', '전임강사', '%')
+
+[INFO ] 25-04-24 12:33:32 [resultsettable:610] - 
+|---|-----|--------|---------|----|---------|-----|------|------|----------|-------|--------------|
+|id |name |user_id |position |sal |hiredate |comm |email |phone |photo_url |status |department_id |
+|---|-----|--------|---------|----|---------|-----|------|------|----------|-------|--------------|
+|---|-----|--------|---------|----|---------|-----|------|------|----------|-------|--------------|
+
+[DEBUG] 25-04-24 12:33:32 [selectList:135] - <==      Total: 0
+[DEBUG] 25-04-24 12:33:32 [selectCount:135] - ==>  Preparing: SELECT COUNT(*) FROM professors WHERE id LIKE CONCAT('%', ?, '%')
+[DEBUG] 25-04-24 12:33:32 [selectCount:135] - ==> Parameters: 0(Integer)
+[INFO ] 25-04-24 12:33:32 [sqlonly:228] - SELECT COUNT(*) FROM professors WHERE id LIKE CONCAT('%', 0, '%')
+
+[INFO ] 25-04-24 12:33:32 [resultsettable:610] - 
+|---------|
+|count(*) |
+|---------|
+|7        |
+|---------|
+
+[DEBUG] 25-04-24 12:33:32 [selectCount:135] - <==      Total: 1
+[ERROR] 25-04-24 12:33:32 [App_Select01:41] - 조회결과 --->> 
+[ERROR] 25-04-24 12:33:32 [App_Select01:42] - 조회된 데이터 수 --->> 
+[DEBUG] 25-04-24 12:33:44 [selectList:135] - ==>  Preparing: SELECT id, name, user_id, position, sal, hiredate, comm, email, phone, photo_url, status, department_id FROM professors WHERE id LIKE CONCAT('%', ?, '%')
+[DEBUG] 25-04-24 12:33:44 [selectList:135] - ==> Parameters: 교수(String)
+[INFO ] 25-04-24 12:33:44 [sqlonly:228] - SELECT id, name, user_id, position, sal, hiredate, comm, email, phone, photo_url, status, department_id FROM professors WHERE id LIKE CONCAT('%', '교수', '%')
+
+[INFO ] 25-04-24 12:33:44 [resultsettable:610] - 
+|---|-----|--------|---------|----|---------|-----|------|------|----------|-------|--------------|
+|id |name |user_id |position |sal |hiredate |comm |email |phone |photo_url |status |department_id |
+|---|-----|--------|---------|----|---------|-----|------|------|----------|-------|--------------|
+|---|-----|--------|---------|----|---------|-----|------|------|----------|-------|--------------|
+
+[DEBUG] 25-04-24 12:33:44 [selectList:135] - <==      Total: 0
+[DEBUG] 25-04-24 12:33:44 [selectCount:135] - ==>  Preparing: SELECT COUNT(*) FROM professors WHERE id LIKE CONCAT('%', ?, '%')
+[DEBUG] 25-04-24 12:33:44 [selectCount:135] - ==> Parameters: 0(Integer)
+[INFO ] 25-04-24 12:33:44 [sqlonly:228] - SELECT COUNT(*) FROM professors WHERE id LIKE CONCAT('%', 0, '%')
+
+[INFO ] 25-04-24 12:33:44 [resultsettable:610] - 
+|---------|
+|count(*) |
+|---------|
+|7        |
+|---------|
+
+[DEBUG] 25-04-24 12:33:44 [selectCount:135] - <==      Total: 1
+[ERROR] 25-04-24 12:33:44 [App_Select01:41] - 조회결과 --->> 
+[ERROR] 25-04-24 12:33:44 [App_Select01:42] - 조회된 데이터 수 --->> 
+[DEBUG] 25-04-24 12:34:13 [selectList:135] - ==>  Preparing: SELECT id, name, user_id, position, sal, hiredate, comm, email, phone, photo_url, status, department_id FROM professors WHERE id LIKE CONCAT('%', ?, '%')
+[DEBUG] 25-04-24 12:34:13 [selectList:135] - ==> Parameters: 9901(String)
+[INFO ] 25-04-24 12:34:13 [sqlonly:228] - SELECT id, name, user_id, position, sal, hiredate, comm, email, phone, photo_url, status, department_id FROM professors WHERE id LIKE CONCAT('%', '9901', '%')
+
+[INFO ] 25-04-24 12:34:13 [resultsettable:610] - 
+|-----|-----|------------|---------|----|----------------------|-------|------------------|-------------|---------------------------------------------|-------|--------------|
+|id   |name |user_id     |position |sal |hiredate              |comm   |email             |phone        |photo_url                                    |status |department_id |
+|-----|-----|------------|---------|----|----------------------|-------|------------------|-------------|---------------------------------------------|-------|--------------|
+|9901 |차미경  |seoyunseong |전임강사     |390 |2023-07-14 23:24:53.0 |[null] |gangjiyeon@yu.net |053-902-0850 |http://myschool.ac.kr/photos/seoyunseong.jpg |퇴직     |101           |
+|-----|-----|------------|---------|----|----------------------|-------|------------------|-------------|---------------------------------------------|-------|--------------|
+
+[ERROR] 25-04-24 12:34:13 [App_Select01:37] - 데이터 처리 실패 >> SQL문을 확인하세요
+org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.apache.ibatis.reflection.ReflectionException: Could not set property 'position' of 'class kr.yjh.models.Professors' with value '전임강사' Cause: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named 'position' in 'class kr.yjh.models.Professors'
+### The error may exist in kr/yjh/mappers/ProfessorsMapper.java (best guess)
+### The error may involve kr.yjh.mappers.ProfessorsMapper.selectList
+### The error occurred while handling results
+### SQL: SELECT id, name, user_id, position, sal, hiredate, comm, email, phone, photo_url, status, department_id FROM professors WHERE id LIKE CONCAT('%', ?, '%')
+### Cause: org.apache.ibatis.reflection.ReflectionException: Could not set property 'position' of 'class kr.yjh.models.Professors' with value '전임강사' Cause: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named 'position' in 'class kr.yjh.models.Professors'
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:156)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:142)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:147)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:80)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at jdk.proxy2/jdk.proxy2.$Proxy17.selectList(Unknown Source)
+	at kr.yjh.services.impl.ProfessorsServiceImpl.getList(ProfessorsServiceImpl.java:68)
+	at kr.yjh.mybatis.App_Select01.main(App_Select01.java:32)
+Caused by: org.apache.ibatis.reflection.ReflectionException: Could not set property 'position' of 'class kr.yjh.models.Professors' with value '전임강사' Cause: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named 'position' in 'class kr.yjh.models.Professors'
+	at org.apache.ibatis.reflection.wrapper.BeanWrapper.setBeanProperty(BeanWrapper.java:181)
+	at org.apache.ibatis.reflection.wrapper.BeanWrapper.set(BeanWrapper.java:61)
+	at org.apache.ibatis.reflection.MetaObject.setValue(MetaObject.java:119)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.applyPropertyMappings(DefaultResultSetHandler.java:512)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.getRowValue(DefaultResultSetHandler.java:418)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleRowValuesForSimpleResultMap(DefaultResultSetHandler.java:366)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleRowValues(DefaultResultSetHandler.java:337)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleResultSet(DefaultResultSetHandler.java:310)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleResultSets(DefaultResultSetHandler.java:202)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:66)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:80)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:65)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:336)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:158)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:110)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:90)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:154)
+	... 9 common frames omitted
+Caused by: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named 'position' in 'class kr.yjh.models.Professors'
+	at org.apache.ibatis.reflection.Reflector.getSetInvoker(Reflector.java:377)
+	at org.apache.ibatis.reflection.MetaClass.getSetInvoker(MetaClass.java:164)
+	at org.apache.ibatis.reflection.wrapper.BeanWrapper.setBeanProperty(BeanWrapper.java:172)
+	... 25 common frames omitted
+[DEBUG] 25-04-24 12:35:19 [selectList:135] - ==>  Preparing: SELECT id, name, user_id, position, sal, hiredate, comm, email, phone, photo_url, status, department_id FROM professors WHERE id LIKE CONCAT('%', ?, '%')
+[DEBUG] 25-04-24 12:35:19 [selectList:135] - ==> Parameters: 교수(String)
+[INFO ] 25-04-24 12:35:19 [sqlonly:228] - SELECT id, name, user_id, position, sal, hiredate, comm, email, phone, photo_url, status, department_id FROM professors WHERE id LIKE CONCAT('%', '교수', '%')
+
+[INFO ] 25-04-24 12:35:19 [resultsettable:610] - 
+|---|-----|--------|---------|----|---------|-----|------|------|----------|-------|--------------|
+|id |name |user_id |position |sal |hiredate |comm |email |phone |photo_url |status |department_id |
+|---|-----|--------|---------|----|---------|-----|------|------|----------|-------|--------------|
+|---|-----|--------|---------|----|---------|-----|------|------|----------|-------|--------------|
+
+[DEBUG] 25-04-24 12:35:19 [selectList:135] - <==      Total: 0
+[DEBUG] 25-04-24 12:35:19 [selectCount:135] - ==>  Preparing: SELECT COUNT(*) FROM professors WHERE id LIKE CONCAT('%', ?, '%')
+[DEBUG] 25-04-24 12:35:19 [selectCount:135] - ==> Parameters: 0(Integer)
+[INFO ] 25-04-24 12:35:19 [sqlonly:228] - SELECT COUNT(*) FROM professors WHERE id LIKE CONCAT('%', 0, '%')
+
+[INFO ] 25-04-24 12:35:19 [resultsettable:610] - 
+|---------|
+|count(*) |
+|---------|
+|7        |
+|---------|
+
+[DEBUG] 25-04-24 12:35:19 [selectCount:135] - <==      Total: 1
+[ERROR] 25-04-24 12:35:19 [App_Select01:41] - 조회결과 --->> 
+[ERROR] 25-04-24 12:35:19 [App_Select01:42] - 조회된 데이터 수 --->> 
+[DEBUG] 25-04-24 12:36:40 [selectList:135] - ==>  Preparing: SELECT id, name, user_id, position, sal, hiredate, comm, email, phone, photo_url, status, department_id FROM professors
+[DEBUG] 25-04-24 12:36:40 [selectList:135] - ==> Parameters: 
+[INFO ] 25-04-24 12:36:40 [sqlonly:228] - SELECT id, name, user_id, position, sal, hiredate, comm, email, phone, photo_url, status, department_id FROM professors
+
+[INFO ] 25-04-24 12:36:40 [resultsettable:610] - 
+|-----|-----|------------|---------|----|----------------------|-------|------------------|-------------|---------------------------------------------|-------|--------------|
+|id   |name |user_id     |position |sal |hiredate              |comm   |email             |phone        |photo_url                                    |status |department_id |
+|-----|-----|------------|---------|----|----------------------|-------|------------------|-------------|---------------------------------------------|-------|--------------|
+|9901 |차미경  |seoyunseong |전임강사     |390 |2023-07-14 23:24:53.0 |[null] |gangjiyeon@yu.net |053-902-0850 |http://myschool.ac.kr/photos/seoyunseong.jpg |퇴직     |101           |
+|-----|-----|------------|---------|----|----------------------|-------|------------------|-------------|---------------------------------------------|-------|--------------|
+
+[ERROR] 25-04-24 12:36:40 [App_Select01:37] - 데이터 처리 실패 >> SQL문을 확인하세요
+org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.apache.ibatis.reflection.ReflectionException: Could not set property 'position' of 'class kr.yjh.models.Professors' with value '전임강사' Cause: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named 'position' in 'class kr.yjh.models.Professors'
+### The error may exist in kr/yjh/mappers/ProfessorsMapper.java (best guess)
+### The error may involve kr.yjh.mappers.ProfessorsMapper.selectList
+### The error occurred while handling results
+### SQL: SELECT id, name, user_id, position, sal, hiredate, comm, email, phone, photo_url, status, department_id FROM professors
+### Cause: org.apache.ibatis.reflection.ReflectionException: Could not set property 'position' of 'class kr.yjh.models.Professors' with value '전임강사' Cause: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named 'position' in 'class kr.yjh.models.Professors'
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:156)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:142)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:147)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:80)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at jdk.proxy2/jdk.proxy2.$Proxy17.selectList(Unknown Source)
+	at kr.yjh.services.impl.ProfessorsServiceImpl.getList(ProfessorsServiceImpl.java:68)
+	at kr.yjh.mybatis.App_Select01.main(App_Select01.java:32)
+Caused by: org.apache.ibatis.reflection.ReflectionException: Could not set property 'position' of 'class kr.yjh.models.Professors' with value '전임강사' Cause: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named 'position' in 'class kr.yjh.models.Professors'
+	at org.apache.ibatis.reflection.wrapper.BeanWrapper.setBeanProperty(BeanWrapper.java:181)
+	at org.apache.ibatis.reflection.wrapper.BeanWrapper.set(BeanWrapper.java:61)
+	at org.apache.ibatis.reflection.MetaObject.setValue(MetaObject.java:119)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.applyPropertyMappings(DefaultResultSetHandler.java:512)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.getRowValue(DefaultResultSetHandler.java:418)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleRowValuesForSimpleResultMap(DefaultResultSetHandler.java:366)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleRowValues(DefaultResultSetHandler.java:337)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleResultSet(DefaultResultSetHandler.java:310)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleResultSets(DefaultResultSetHandler.java:202)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:66)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:80)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:65)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:336)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:158)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:110)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:90)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:154)
+	... 9 common frames omitted
+Caused by: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named 'position' in 'class kr.yjh.models.Professors'
+	at org.apache.ibatis.reflection.Reflector.getSetInvoker(Reflector.java:377)
+	at org.apache.ibatis.reflection.MetaClass.getSetInvoker(MetaClass.java:164)
+	at org.apache.ibatis.reflection.wrapper.BeanWrapper.setBeanProperty(BeanWrapper.java:172)
+	... 25 common frames omitted
+[DEBUG] 25-04-24 12:36:48 [selectList:135] - ==>  Preparing: SELECT id, name, user_id, position, sal, hiredate, comm, email, phone, photo_url, status, department_id FROM professors
+[DEBUG] 25-04-24 12:36:48 [selectList:135] - ==> Parameters: 
+[INFO ] 25-04-24 12:36:48 [sqlonly:228] - SELECT id, name, user_id, position, sal, hiredate, comm, email, phone, photo_url, status, department_id FROM professors
+
+[INFO ] 25-04-24 12:36:48 [resultsettable:610] - 
+|-----|-----|------------|---------|----|----------------------|-------|------------------|-------------|---------------------------------------------|-------|--------------|
+|id   |name |user_id     |position |sal |hiredate              |comm   |email             |phone        |photo_url                                    |status |department_id |
+|-----|-----|------------|---------|----|----------------------|-------|------------------|-------------|---------------------------------------------|-------|--------------|
+|9901 |차미경  |seoyunseong |전임강사     |390 |2023-07-14 23:24:53.0 |[null] |gangjiyeon@yu.net |053-902-0850 |http://myschool.ac.kr/photos/seoyunseong.jpg |퇴직     |101           |
+|-----|-----|------------|---------|----|----------------------|-------|------------------|-------------|---------------------------------------------|-------|--------------|
+
+[ERROR] 25-04-24 12:36:48 [App_Select01:37] - 데이터 처리 실패 >> SQL문을 확인하세요
+org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.apache.ibatis.reflection.ReflectionException: Could not set property 'position' of 'class kr.yjh.models.Professors' with value '전임강사' Cause: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named 'position' in 'class kr.yjh.models.Professors'
+### The error may exist in kr/yjh/mappers/ProfessorsMapper.java (best guess)
+### The error may involve kr.yjh.mappers.ProfessorsMapper.selectList
+### The error occurred while handling results
+### SQL: SELECT id, name, user_id, position, sal, hiredate, comm, email, phone, photo_url, status, department_id FROM professors
+### Cause: org.apache.ibatis.reflection.ReflectionException: Could not set property 'position' of 'class kr.yjh.models.Professors' with value '전임강사' Cause: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named 'position' in 'class kr.yjh.models.Professors'
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:156)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:142)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:147)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:80)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at jdk.proxy2/jdk.proxy2.$Proxy17.selectList(Unknown Source)
+	at kr.yjh.services.impl.ProfessorsServiceImpl.getList(ProfessorsServiceImpl.java:68)
+	at kr.yjh.mybatis.App_Select01.main(App_Select01.java:32)
+Caused by: org.apache.ibatis.reflection.ReflectionException: Could not set property 'position' of 'class kr.yjh.models.Professors' with value '전임강사' Cause: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named 'position' in 'class kr.yjh.models.Professors'
+	at org.apache.ibatis.reflection.wrapper.BeanWrapper.setBeanProperty(BeanWrapper.java:181)
+	at org.apache.ibatis.reflection.wrapper.BeanWrapper.set(BeanWrapper.java:61)
+	at org.apache.ibatis.reflection.MetaObject.setValue(MetaObject.java:119)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.applyPropertyMappings(DefaultResultSetHandler.java:512)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.getRowValue(DefaultResultSetHandler.java:418)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleRowValuesForSimpleResultMap(DefaultResultSetHandler.java:366)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleRowValues(DefaultResultSetHandler.java:337)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleResultSet(DefaultResultSetHandler.java:310)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleResultSets(DefaultResultSetHandler.java:202)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:66)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:80)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:65)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:336)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:158)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:110)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:90)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:154)
+	... 9 common frames omitted
+Caused by: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named 'position' in 'class kr.yjh.models.Professors'
+	at org.apache.ibatis.reflection.Reflector.getSetInvoker(Reflector.java:377)
+	at org.apache.ibatis.reflection.MetaClass.getSetInvoker(MetaClass.java:164)
+	at org.apache.ibatis.reflection.wrapper.BeanWrapper.setBeanProperty(BeanWrapper.java:172)
+	... 25 common frames omitted
+[DEBUG] 25-04-24 12:37:32 [selectList:135] - ==>  Preparing: SELECT id, name, user_id, position, sal, hiredate, comm, email, phone, photo_url, status, department_id FROM professors
+[DEBUG] 25-04-24 12:37:32 [selectList:135] - ==> Parameters: 
+[INFO ] 25-04-24 12:37:32 [sqlonly:228] - SELECT id, name, user_id, position, sal, hiredate, comm, email, phone, photo_url, status, department_id FROM professors
+
+[INFO ] 25-04-24 12:37:32 [resultsettable:610] - 
+|-----|-----|------------|---------|----|----------------------|-------|------------------|-------------|---------------------------------------------|-------|--------------|
+|id   |name |user_id     |position |sal |hiredate              |comm   |email             |phone        |photo_url                                    |status |department_id |
+|-----|-----|------------|---------|----|----------------------|-------|------------------|-------------|---------------------------------------------|-------|--------------|
+|9901 |차미경  |seoyunseong |전임강사     |390 |2023-07-14 23:24:53.0 |[null] |gangjiyeon@yu.net |053-902-0850 |http://myschool.ac.kr/photos/seoyunseong.jpg |퇴직     |101           |
+|-----|-----|------------|---------|----|----------------------|-------|------------------|-------------|---------------------------------------------|-------|--------------|
+
+[ERROR] 25-04-24 12:37:32 [App_Select01:37] - 데이터 처리 실패 >> SQL문을 확인하세요
+org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.apache.ibatis.reflection.ReflectionException: Could not set property 'position' of 'class kr.yjh.models.Professors' with value '전임강사' Cause: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named 'position' in 'class kr.yjh.models.Professors'
+### The error may exist in kr/yjh/mappers/ProfessorsMapper.java (best guess)
+### The error may involve kr.yjh.mappers.ProfessorsMapper.selectList
+### The error occurred while handling results
+### SQL: SELECT id, name, user_id, position, sal, hiredate, comm, email, phone, photo_url, status, department_id FROM professors
+### Cause: org.apache.ibatis.reflection.ReflectionException: Could not set property 'position' of 'class kr.yjh.models.Professors' with value '전임강사' Cause: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named 'position' in 'class kr.yjh.models.Professors'
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:156)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:142)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:147)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:80)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at jdk.proxy2/jdk.proxy2.$Proxy17.selectList(Unknown Source)
+	at kr.yjh.services.impl.ProfessorsServiceImpl.getList(ProfessorsServiceImpl.java:68)
+	at kr.yjh.mybatis.App_Select01.main(App_Select01.java:32)
+Caused by: org.apache.ibatis.reflection.ReflectionException: Could not set property 'position' of 'class kr.yjh.models.Professors' with value '전임강사' Cause: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named 'position' in 'class kr.yjh.models.Professors'
+	at org.apache.ibatis.reflection.wrapper.BeanWrapper.setBeanProperty(BeanWrapper.java:181)
+	at org.apache.ibatis.reflection.wrapper.BeanWrapper.set(BeanWrapper.java:61)
+	at org.apache.ibatis.reflection.MetaObject.setValue(MetaObject.java:119)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.applyPropertyMappings(DefaultResultSetHandler.java:512)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.getRowValue(DefaultResultSetHandler.java:418)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleRowValuesForSimpleResultMap(DefaultResultSetHandler.java:366)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleRowValues(DefaultResultSetHandler.java:337)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleResultSet(DefaultResultSetHandler.java:310)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleResultSets(DefaultResultSetHandler.java:202)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:66)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:80)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:65)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:336)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:158)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:110)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:90)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:154)
+	... 9 common frames omitted
+Caused by: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named 'position' in 'class kr.yjh.models.Professors'
+	at org.apache.ibatis.reflection.Reflector.getSetInvoker(Reflector.java:377)
+	at org.apache.ibatis.reflection.MetaClass.getSetInvoker(MetaClass.java:164)
+	at org.apache.ibatis.reflection.wrapper.BeanWrapper.setBeanProperty(BeanWrapper.java:172)
+	... 25 common frames omitted
+[DEBUG] 25-04-24 12:43:15 [selectList:135] - ==>  Preparing: SELECT id, name, user_id, position, sal, hiredate, comm, email, phone, photo_url, status, department_id FROM professors
+[DEBUG] 25-04-24 12:43:15 [selectList:135] - ==> Parameters: 
+[INFO ] 25-04-24 12:43:15 [sqlonly:228] - SELECT id, name, user_id, position, sal, hiredate, comm, email, phone, photo_url, status, department_id FROM professors
+
+[INFO ] 25-04-24 12:43:15 [resultsettable:610] - 
+|-----|-----|------------|---------|----|----------------------|-------|------------------|-------------|---------------------------------------------|-------|--------------|
+|id   |name |user_id     |position |sal |hiredate              |comm   |email             |phone        |photo_url                                    |status |department_id |
+|-----|-----|------------|---------|----|----------------------|-------|------------------|-------------|---------------------------------------------|-------|--------------|
+|9901 |차미경  |seoyunseong |전임강사     |390 |2023-07-14 23:24:53.0 |[null] |gangjiyeon@yu.net |053-902-0850 |http://myschool.ac.kr/photos/seoyunseong.jpg |퇴직     |101           |
+|-----|-----|------------|---------|----|----------------------|-------|------------------|-------------|---------------------------------------------|-------|--------------|
+
+[ERROR] 25-04-24 12:43:15 [App_Select01:37] - 데이터 처리 실패 >> SQL문을 확인하세요
+org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.apache.ibatis.reflection.ReflectionException: Could not set property 'position' of 'class kr.yjh.models.Professors' with value '전임강사' Cause: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named 'position' in 'class kr.yjh.models.Professors'
+### The error may exist in kr/yjh/mappers/ProfessorsMapper.java (best guess)
+### The error may involve kr.yjh.mappers.ProfessorsMapper.selectList
+### The error occurred while handling results
+### SQL: SELECT id, name, user_id, position, sal, hiredate, comm, email, phone, photo_url, status, department_id FROM professors
+### Cause: org.apache.ibatis.reflection.ReflectionException: Could not set property 'position' of 'class kr.yjh.models.Professors' with value '전임강사' Cause: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named 'position' in 'class kr.yjh.models.Professors'
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:156)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:142)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:147)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:80)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at jdk.proxy2/jdk.proxy2.$Proxy17.selectList(Unknown Source)
+	at kr.yjh.services.impl.ProfessorsServiceImpl.getList(ProfessorsServiceImpl.java:68)
+	at kr.yjh.mybatis.App_Select01.main(App_Select01.java:32)
+Caused by: org.apache.ibatis.reflection.ReflectionException: Could not set property 'position' of 'class kr.yjh.models.Professors' with value '전임강사' Cause: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named 'position' in 'class kr.yjh.models.Professors'
+	at org.apache.ibatis.reflection.wrapper.BeanWrapper.setBeanProperty(BeanWrapper.java:181)
+	at org.apache.ibatis.reflection.wrapper.BeanWrapper.set(BeanWrapper.java:61)
+	at org.apache.ibatis.reflection.MetaObject.setValue(MetaObject.java:119)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.applyPropertyMappings(DefaultResultSetHandler.java:512)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.getRowValue(DefaultResultSetHandler.java:418)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleRowValuesForSimpleResultMap(DefaultResultSetHandler.java:366)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleRowValues(DefaultResultSetHandler.java:337)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleResultSet(DefaultResultSetHandler.java:310)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleResultSets(DefaultResultSetHandler.java:202)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:66)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:80)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:65)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:336)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:158)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:110)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:90)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:154)
+	... 9 common frames omitted
+Caused by: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named 'position' in 'class kr.yjh.models.Professors'
+	at org.apache.ibatis.reflection.Reflector.getSetInvoker(Reflector.java:377)
+	at org.apache.ibatis.reflection.MetaClass.getSetInvoker(MetaClass.java:164)
+	at org.apache.ibatis.reflection.wrapper.BeanWrapper.setBeanProperty(BeanWrapper.java:172)
+	... 25 common frames omitted
+[DEBUG] 25-04-24 12:44:51 [selectList:135] - ==>  Preparing: SELECT id, name, user_id, position, sal, hiredate, comm, email, phone, photo_url, status, department_id FROM professors
+[DEBUG] 25-04-24 12:44:51 [selectList:135] - ==> Parameters: 
+[INFO ] 25-04-24 12:44:51 [sqlonly:228] - SELECT id, name, user_id, position, sal, hiredate, comm, email, phone, photo_url, status, department_id FROM professors
+
+[INFO ] 25-04-24 12:44:51 [resultsettable:610] - 
+|-----|-----|------------|---------|----|----------------------|-------|------------------|-------------|---------------------------------------------|-------|--------------|
+|id   |name |user_id     |position |sal |hiredate              |comm   |email             |phone        |photo_url                                    |status |department_id |
+|-----|-----|------------|---------|----|----------------------|-------|------------------|-------------|---------------------------------------------|-------|--------------|
+|9901 |차미경  |seoyunseong |전임강사     |390 |2023-07-14 23:24:53.0 |[null] |gangjiyeon@yu.net |053-902-0850 |http://myschool.ac.kr/photos/seoyunseong.jpg |퇴직     |101           |
+|-----|-----|------------|---------|----|----------------------|-------|------------------|-------------|---------------------------------------------|-------|--------------|
+
+[ERROR] 25-04-24 12:44:51 [App_Select01:37] - 데이터 처리 실패 >> SQL문을 확인하세요
+org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.apache.ibatis.reflection.ReflectionException: Could not set property 'position' of 'class kr.yjh.models.Professors' with value '전임강사' Cause: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named 'position' in 'class kr.yjh.models.Professors'
+### The error may exist in kr/yjh/mappers/ProfessorsMapper.java (best guess)
+### The error may involve kr.yjh.mappers.ProfessorsMapper.selectList
+### The error occurred while handling results
+### SQL: SELECT id, name, user_id, position, sal, hiredate, comm, email, phone, photo_url, status, department_id FROM professors
+### Cause: org.apache.ibatis.reflection.ReflectionException: Could not set property 'position' of 'class kr.yjh.models.Professors' with value '전임강사' Cause: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named 'position' in 'class kr.yjh.models.Professors'
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:156)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:142)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:147)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:80)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at jdk.proxy2/jdk.proxy2.$Proxy17.selectList(Unknown Source)
+	at kr.yjh.services.impl.ProfessorsServiceImpl.getList(ProfessorsServiceImpl.java:68)
+	at kr.yjh.mybatis.App_Select01.main(App_Select01.java:32)
+Caused by: org.apache.ibatis.reflection.ReflectionException: Could not set property 'position' of 'class kr.yjh.models.Professors' with value '전임강사' Cause: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named 'position' in 'class kr.yjh.models.Professors'
+	at org.apache.ibatis.reflection.wrapper.BeanWrapper.setBeanProperty(BeanWrapper.java:181)
+	at org.apache.ibatis.reflection.wrapper.BeanWrapper.set(BeanWrapper.java:61)
+	at org.apache.ibatis.reflection.MetaObject.setValue(MetaObject.java:119)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.applyPropertyMappings(DefaultResultSetHandler.java:512)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.getRowValue(DefaultResultSetHandler.java:418)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleRowValuesForSimpleResultMap(DefaultResultSetHandler.java:366)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleRowValues(DefaultResultSetHandler.java:337)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleResultSet(DefaultResultSetHandler.java:310)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleResultSets(DefaultResultSetHandler.java:202)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:66)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:80)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:65)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:336)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:158)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:110)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:90)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:154)
+	... 9 common frames omitted
+Caused by: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named 'position' in 'class kr.yjh.models.Professors'
+	at org.apache.ibatis.reflection.Reflector.getSetInvoker(Reflector.java:377)
+	at org.apache.ibatis.reflection.MetaClass.getSetInvoker(MetaClass.java:164)
+	at org.apache.ibatis.reflection.wrapper.BeanWrapper.setBeanProperty(BeanWrapper.java:172)
+	... 25 common frames omitted
+[DEBUG] 25-04-24 12:54:37 [selectOne:135] - ==>  Preparing: SELECT id, name, user_id, position, sal, hiredate, comm, email, phone, photo_url, status, department_id FROM professors WHERE id=?
+[DEBUG] 25-04-24 12:54:37 [selectOne:135] - ==> Parameters: 9901(Integer)
+[INFO ] 25-04-24 12:54:37 [sqlonly:228] - SELECT id, name, user_id, position, sal, hiredate, comm, email, phone, photo_url, status, department_id FROM professors WHERE id=9901
+
+[INFO ] 25-04-24 12:54:37 [resultsettable:610] - 
+|-----|-----|------------|---------|----|----------------------|-------|------------------|-------------|---------------------------------------------|-------|--------------|
+|id   |name |user_id     |position |sal |hiredate              |comm   |email             |phone        |photo_url                                    |status |department_id |
+|-----|-----|------------|---------|----|----------------------|-------|------------------|-------------|---------------------------------------------|-------|--------------|
+|9901 |차미경  |seoyunseong |전임강사     |390 |2023-07-14 23:24:53.0 |[null] |gangjiyeon@yu.net |053-902-0850 |http://myschool.ac.kr/photos/seoyunseong.jpg |퇴직     |101           |
+|-----|-----|------------|---------|----|----------------------|-------|------------------|-------------|---------------------------------------------|-------|--------------|
+
+[ERROR] 25-04-24 12:54:37 [App_Select01:35] - 데이터 처리 실패 >> SQL문을 확인하세요
+org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.apache.ibatis.reflection.ReflectionException: Could not set property 'position' of 'class kr.yjh.models.Professors' with value '전임강사' Cause: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named 'position' in 'class kr.yjh.models.Professors'
+### The error may exist in kr/yjh/mappers/ProfessorsMapper.java (best guess)
+### The error may involve kr.yjh.mappers.ProfessorsMapper.selectOne
+### The error occurred while handling results
+### SQL: SELECT id, name, user_id, position, sal, hiredate, comm, email, phone, photo_url, status, department_id FROM professors WHERE id=?
+### Cause: org.apache.ibatis.reflection.ReflectionException: Could not set property 'position' of 'class kr.yjh.models.Professors' with value '전임강사' Cause: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named 'position' in 'class kr.yjh.models.Professors'
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:156)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:142)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:75)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:87)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at jdk.proxy2/jdk.proxy2.$Proxy17.selectOne(Unknown Source)
+	at kr.yjh.services.impl.ProfessorsServiceImpl.getItem(ProfessorsServiceImpl.java:57)
+	at kr.yjh.mybatis.App_Select01.main(App_Select01.java:30)
+Caused by: org.apache.ibatis.reflection.ReflectionException: Could not set property 'position' of 'class kr.yjh.models.Professors' with value '전임강사' Cause: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named 'position' in 'class kr.yjh.models.Professors'
+	at org.apache.ibatis.reflection.wrapper.BeanWrapper.setBeanProperty(BeanWrapper.java:181)
+	at org.apache.ibatis.reflection.wrapper.BeanWrapper.set(BeanWrapper.java:61)
+	at org.apache.ibatis.reflection.MetaObject.setValue(MetaObject.java:119)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.applyPropertyMappings(DefaultResultSetHandler.java:512)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.getRowValue(DefaultResultSetHandler.java:418)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleRowValuesForSimpleResultMap(DefaultResultSetHandler.java:366)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleRowValues(DefaultResultSetHandler.java:337)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleResultSet(DefaultResultSetHandler.java:310)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleResultSets(DefaultResultSetHandler.java:202)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:66)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:80)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:65)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:336)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:158)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:110)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:90)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:154)
+	... 9 common frames omitted
+Caused by: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named 'position' in 'class kr.yjh.models.Professors'
+	at org.apache.ibatis.reflection.Reflector.getSetInvoker(Reflector.java:377)
+	at org.apache.ibatis.reflection.MetaClass.getSetInvoker(MetaClass.java:164)
+	at org.apache.ibatis.reflection.wrapper.BeanWrapper.setBeanProperty(BeanWrapper.java:172)
+	... 25 common frames omitted
+[DEBUG] 25-04-24 13:01:31 [selectOne:135] - ==>  Preparing: SELECT id, name, user_id, position, sal, hiredate, comm, email, phone, photo_url, status, department_id FROM professors WHERE id=?
+[DEBUG] 25-04-24 13:01:31 [selectOne:135] - ==> Parameters: 9901(Integer)
+[INFO ] 25-04-24 13:01:31 [sqlonly:228] - SELECT id, name, user_id, position, sal, hiredate, comm, email, phone, photo_url, status, department_id FROM professors WHERE id=9901
+
+[INFO ] 25-04-24 13:01:31 [resultsettable:610] - 
+|-----|-----|------------|---------|----|----------------------|-------|------------------|-------------|---------------------------------------------|-------|--------------|
+|id   |name |user_id     |position |sal |hiredate              |comm   |email             |phone        |photo_url                                    |status |department_id |
+|-----|-----|------------|---------|----|----------------------|-------|------------------|-------------|---------------------------------------------|-------|--------------|
+|9901 |차미경  |seoyunseong |전임강사     |390 |2023-07-14 23:24:53.0 |[null] |gangjiyeon@yu.net |053-902-0850 |http://myschool.ac.kr/photos/seoyunseong.jpg |퇴직     |101           |
+|-----|-----|------------|---------|----|----------------------|-------|------------------|-------------|---------------------------------------------|-------|--------------|
+
+[ERROR] 25-04-24 13:01:31 [App_Select01:35] - 데이터 처리 실패 >> SQL문을 확인하세요
+org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.apache.ibatis.reflection.ReflectionException: Could not set property 'position' of 'class kr.yjh.models.Professors' with value '전임강사' Cause: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named 'position' in 'class kr.yjh.models.Professors'
+### The error may exist in kr/yjh/mappers/ProfessorsMapper.java (best guess)
+### The error may involve kr.yjh.mappers.ProfessorsMapper.selectOne
+### The error occurred while handling results
+### SQL: SELECT id, name, user_id, position, sal, hiredate, comm, email, phone, photo_url, status, department_id FROM professors WHERE id=?
+### Cause: org.apache.ibatis.reflection.ReflectionException: Could not set property 'position' of 'class kr.yjh.models.Professors' with value '전임강사' Cause: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named 'position' in 'class kr.yjh.models.Professors'
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:156)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:142)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:75)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:87)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at jdk.proxy2/jdk.proxy2.$Proxy17.selectOne(Unknown Source)
+	at kr.yjh.services.impl.ProfessorsServiceImpl.getItem(ProfessorsServiceImpl.java:57)
+	at kr.yjh.mybatis.App_Select01.main(App_Select01.java:30)
+Caused by: org.apache.ibatis.reflection.ReflectionException: Could not set property 'position' of 'class kr.yjh.models.Professors' with value '전임강사' Cause: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named 'position' in 'class kr.yjh.models.Professors'
+	at org.apache.ibatis.reflection.wrapper.BeanWrapper.setBeanProperty(BeanWrapper.java:181)
+	at org.apache.ibatis.reflection.wrapper.BeanWrapper.set(BeanWrapper.java:61)
+	at org.apache.ibatis.reflection.MetaObject.setValue(MetaObject.java:119)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.applyPropertyMappings(DefaultResultSetHandler.java:512)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.getRowValue(DefaultResultSetHandler.java:418)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleRowValuesForSimpleResultMap(DefaultResultSetHandler.java:366)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleRowValues(DefaultResultSetHandler.java:337)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleResultSet(DefaultResultSetHandler.java:310)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleResultSets(DefaultResultSetHandler.java:202)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:66)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:80)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:65)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:336)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:158)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:110)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:90)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:154)
+	... 9 common frames omitted
+Caused by: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named 'position' in 'class kr.yjh.models.Professors'
+	at org.apache.ibatis.reflection.Reflector.getSetInvoker(Reflector.java:377)
+	at org.apache.ibatis.reflection.MetaClass.getSetInvoker(MetaClass.java:164)
+	at org.apache.ibatis.reflection.wrapper.BeanWrapper.setBeanProperty(BeanWrapper.java:172)
+	... 25 common frames omitted
+[DEBUG] 25-04-24 13:03:43 [selectOne:135] - ==>  Preparing: SELECT id, name, user_id, position, sal, hiredate, comm, email, phone, photo_url, status, department_id FROM professors WHERE id=?
+[DEBUG] 25-04-24 13:03:43 [selectOne:135] - ==> Parameters: 9901(Integer)
+[INFO ] 25-04-24 13:03:43 [sqlonly:228] - SELECT id, name, user_id, position, sal, hiredate, comm, email, phone, photo_url, status, department_id FROM professors WHERE id=9901
+
+[INFO ] 25-04-24 13:03:43 [resultsettable:610] - 
+|-----|-----|------------|---------|----|--------------------|-------|------------------|-------------|---------------------------------------------|-------|--------------|
+|id   |name |user_id     |position |sal |hiredate            |comm   |email             |phone        |photo_url                                    |status |department_id |
+|-----|-----|------------|---------|----|--------------------|-------|------------------|-------------|---------------------------------------------|-------|--------------|
+|9901 |차미경  |seoyunseong |전임강사     |390 |2023-07-14 23:24:53 |[null] |gangjiyeon@yu.net |053-902-0850 |http://myschool.ac.kr/photos/seoyunseong.jpg |퇴직     |101           |
+|-----|-----|------------|---------|----|--------------------|-------|------------------|-------------|---------------------------------------------|-------|--------------|
+
+[DEBUG] 25-04-24 13:03:43 [selectOne:135] - <==      Total: 1
+[ERROR] 25-04-24 13:03:43 [App_Select01:39] - 조회결과 --->> 
+[DEBUG] 25-04-24 13:03:54 [selectOne:135] - ==>  Preparing: SELECT id, name, user_id, position, sal, hiredate, comm, email, phone, photo_url, status, department_id FROM professors WHERE id=?
+[DEBUG] 25-04-24 13:03:54 [selectOne:135] - ==> Parameters: 9903(Integer)
+[INFO ] 25-04-24 13:03:54 [sqlonly:228] - SELECT id, name, user_id, position, sal, hiredate, comm, email, phone, photo_url, status, department_id FROM professors WHERE id=9903
+
+[INFO ] 25-04-24 13:03:54 [resultsettable:610] - 
+|---|-----|--------|---------|----|---------|-----|------|------|----------|-------|--------------|
+|id |name |user_id |position |sal |hiredate |comm |email |phone |photo_url |status |department_id |
+|---|-----|--------|---------|----|---------|-----|------|------|----------|-------|--------------|
+|---|-----|--------|---------|----|---------|-----|------|------|----------|-------|--------------|
+
+[DEBUG] 25-04-24 13:03:54 [selectOne:135] - <==      Total: 0
+[ERROR] 25-04-24 13:03:54 [App_Select01:35] - 데이터 처리 실패 >> SQL문을 확인하세요
+java.lang.Exception: Professors 조회된 데이터가 없습니다.
+	at kr.yjh.services.impl.ProfessorsServiceImpl.getItem(ProfessorsServiceImpl.java:60)
+	at kr.yjh.mybatis.App_Select01.main(App_Select01.java:30)
+[DEBUG] 25-04-24 13:04:05 [selectOne:135] - ==>  Preparing: SELECT id, name, user_id, position, sal, hiredate, comm, email, phone, photo_url, status, department_id FROM professors WHERE id=?
+[DEBUG] 25-04-24 13:04:05 [selectOne:135] - ==> Parameters: 9907(Integer)
+[INFO ] 25-04-24 13:04:05 [sqlonly:228] - SELECT id, name, user_id, position, sal, hiredate, comm, email, phone, photo_url, status, department_id FROM professors WHERE id=9907
+
+[INFO ] 25-04-24 13:04:05 [resultsettable:610] - 
+|-----|-----|----------|---------|----|--------------------|-----|------------------|-------------|-------------------------------------------|-------|--------------|
+|id   |name |user_id   |position |sal |hiredate            |comm |email             |phone        |photo_url                                  |status |department_id |
+|-----|-----|----------|---------|----|--------------------|-----|------------------|-------------|-------------------------------------------|-------|--------------|
+|9907 |이은영  |yeongho81 |전임강사     |443 |1999-01-04 15:55:04 |12   |chan@dreamwiz.com |018-443-4597 |http://myschool.ac.kr/photos/yeongho81.jpg |퇴직     |201           |
+|-----|-----|----------|---------|----|--------------------|-----|------------------|-------------|-------------------------------------------|-------|--------------|
+
+[DEBUG] 25-04-24 13:04:05 [selectOne:135] - <==      Total: 1
+[ERROR] 25-04-24 13:04:05 [App_Select01:39] - 조회결과 --->> 
+[DEBUG] 25-04-24 13:06:58 [selectOne:135] - ==>  Preparing: SELECT id, name, user_id, position, sal, hiredate, comm, email, phone, photo_url, status, department_id FROM professors WHERE id=?
+[DEBUG] 25-04-24 13:06:58 [selectOne:135] - ==> Parameters: 9907(Integer)
+[INFO ] 25-04-24 13:06:58 [sqlonly:228] - SELECT id, name, user_id, position, sal, hiredate, comm, email, phone, photo_url, status, department_id FROM professors WHERE id=9907
+
+[INFO ] 25-04-24 13:06:58 [resultsettable:610] - 
+|-----|-----|----------|---------|----|--------------------|-----|------------------|-------------|-------------------------------------------|-------|--------------|
+|id   |name |user_id   |position |sal |hiredate            |comm |email             |phone        |photo_url                                  |status |department_id |
+|-----|-----|----------|---------|----|--------------------|-----|------------------|-------------|-------------------------------------------|-------|--------------|
+|9907 |이은영  |yeongho81 |전임강사     |443 |1999-01-04 15:55:04 |12   |chan@dreamwiz.com |018-443-4597 |http://myschool.ac.kr/photos/yeongho81.jpg |퇴직     |201           |
+|-----|-----|----------|---------|----|--------------------|-----|------------------|-------------|-------------------------------------------|-------|--------------|
+
+[DEBUG] 25-04-24 13:06:58 [selectOne:135] - <==      Total: 1
+[ERROR] 25-04-24 13:06:58 [App_Select01:39] - 조회결과 --->> 
+[DEBUG] 25-04-24 13:07:08 [selectOne:135] - ==>  Preparing: SELECT id, name, user_id, position, sal, hiredate, comm, email, phone, photo_url, status, department_id FROM professors WHERE id=?
+[DEBUG] 25-04-24 13:07:08 [selectOne:135] - ==> Parameters: 402(Integer)
+[INFO ] 25-04-24 13:07:08 [sqlonly:228] - SELECT id, name, user_id, position, sal, hiredate, comm, email, phone, photo_url, status, department_id FROM professors WHERE id=402
+
+[INFO ] 25-04-24 13:07:08 [resultsettable:610] - 
+|---|-----|--------|---------|----|---------|-----|------|------|----------|-------|--------------|
+|id |name |user_id |position |sal |hiredate |comm |email |phone |photo_url |status |department_id |
+|---|-----|--------|---------|----|---------|-----|------|------|----------|-------|--------------|
+|---|-----|--------|---------|----|---------|-----|------|------|----------|-------|--------------|
+
+[DEBUG] 25-04-24 13:07:08 [selectOne:135] - <==      Total: 0
+[ERROR] 25-04-24 13:07:08 [App_Select01:35] - 데이터 처리 실패 >> SQL문을 확인하세요
+java.lang.Exception: Professors 조회된 데이터가 없습니다.
+	at kr.yjh.services.impl.ProfessorsServiceImpl.getItem(ProfessorsServiceImpl.java:60)
+	at kr.yjh.mybatis.App_Select01.main(App_Select01.java:30)
+[DEBUG] 25-04-24 13:07:19 [selectOne:135] - ==>  Preparing: SELECT id, name, user_id, position, sal, hiredate, comm, email, phone, photo_url, status, department_id FROM professors WHERE id=?
+[DEBUG] 25-04-24 13:07:19 [selectOne:135] - ==> Parameters: 0(Integer)
+[INFO ] 25-04-24 13:07:19 [sqlonly:228] - SELECT id, name, user_id, position, sal, hiredate, comm, email, phone, photo_url, status, department_id FROM professors WHERE id=0
+
+[INFO ] 25-04-24 13:07:19 [resultsettable:610] - 
+|---|-----|--------|---------|----|---------|-----|------|------|----------|-------|--------------|
+|id |name |user_id |position |sal |hiredate |comm |email |phone |photo_url |status |department_id |
+|---|-----|--------|---------|----|---------|-----|------|------|----------|-------|--------------|
+|---|-----|--------|---------|----|---------|-----|------|------|----------|-------|--------------|
+
+[DEBUG] 25-04-24 13:07:19 [selectOne:135] - <==      Total: 0
+[ERROR] 25-04-24 13:07:19 [App_Select01:35] - 데이터 처리 실패 >> SQL문을 확인하세요
+java.lang.Exception: Professors 조회된 데이터가 없습니다.
+	at kr.yjh.services.impl.ProfessorsServiceImpl.getItem(ProfessorsServiceImpl.java:60)
+	at kr.yjh.mybatis.App_Select01.main(App_Select01.java:30)
+[DEBUG] 25-04-24 13:08:57 [selectOne:135] - ==>  Preparing: SELECT id, name, user_id, position, sal, hiredate, comm, email, phone, photo_url, status, department_id FROM professors WHERE id=?
+[DEBUG] 25-04-24 13:08:57 [selectOne:135] - ==> Parameters: 0(Integer)
+[INFO ] 25-04-24 13:08:57 [sqlonly:228] - SELECT id, name, user_id, position, sal, hiredate, comm, email, phone, photo_url, status, department_id FROM professors WHERE id=0
+
+[INFO ] 25-04-24 13:08:57 [resultsettable:610] - 
+|---|-----|--------|---------|----|---------|-----|------|------|----------|-------|--------------|
+|id |name |user_id |position |sal |hiredate |comm |email |phone |photo_url |status |department_id |
+|---|-----|--------|---------|----|---------|-----|------|------|----------|-------|--------------|
+|---|-----|--------|---------|----|---------|-----|------|------|----------|-------|--------------|
+
+[DEBUG] 25-04-24 13:08:57 [selectOne:135] - <==      Total: 0
+[ERROR] 25-04-24 13:08:57 [App_Select01:35] - 데이터 처리 실패 >> SQL문을 확인하세요
+java.lang.Exception: Professors 조회된 데이터가 없습니다.
+	at kr.yjh.services.impl.ProfessorsServiceImpl.getItem(ProfessorsServiceImpl.java:60)
+	at kr.yjh.mybatis.App_Select01.main(App_Select01.java:30)
+[DEBUG] 25-04-24 13:11:44 [selectList:135] - ==>  Preparing: SELECT id, name, user_id, position, sal, hiredate, comm, email, phone, photo_url, status, department_id FROM professors
+[DEBUG] 25-04-24 13:11:44 [selectList:135] - ==> Parameters: 
+[INFO ] 25-04-24 13:11:44 [sqlonly:228] - SELECT id, name, user_id, position, sal, hiredate, comm, email, phone, photo_url, status, department_id FROM professors
+
+[INFO ] 25-04-24 13:11:44 [resultsettable:610] - 
+|-----|-----|-------------|---------|----|--------------------|-------|----------------------------|--------------|----------------------------------------------|-------|--------------|
+|id   |name |user_id      |position |sal |hiredate            |comm   |email                       |phone         |photo_url                                     |status |department_id |
+|-----|-----|-------------|---------|----|--------------------|-------|----------------------------|--------------|----------------------------------------------|-------|--------------|
+|9901 |차미경  |seoyunseong  |전임강사     |390 |2023-07-14 23:24:53 |[null] |gangjiyeon@yu.net           |053-902-0850  |http://myschool.ac.kr/photos/seoyunseong.jpg  |퇴직     |101           |
+|9907 |이은영  |yeongho81    |전임강사     |443 |1999-01-04 15:55:04 |12     |chan@dreamwiz.com           |018-443-4597  |http://myschool.ac.kr/photos/yeongho81.jpg    |퇴직     |201           |
+|9908 |박서영  |mijeong31    |전임강사     |273 |2011-07-22 02:10:41 |17     |jeonghungim@onam.org        |070-4379-4764 |http://myschool.ac.kr/photos/mijeong31.jpg    |재직     |201           |
+|9909 |김정훈  |doyun73      |교수       |392 |2001-09-09 07:36:05 |24     |yeongja93@naver.com         |041-625-8390  |http://myschool.ac.kr/photos/doyun73.jpg      |휴직     |201           |
+|9910 |강영호  |seonghyeon92 |조교수      |593 |2011-04-03 07:37:22 |[null] |uyun@jusighoesa.kr          |064-736-1077  |http://myschool.ac.kr/photos/seonghyeon92.jpg |퇴직     |201           |
+|9911 |박영미  |yeongsui     |조교수      |486 |2015-11-29 01:07:18 |22     |bagjeonghyi@baggweonseo.net |061-977-7396  |http://myschool.ac.kr/photos/yeongsui.jpg     |재직     |201           |
+|9912 |윤서현  |doyungu      |조교수      |266 |2011-07-22 09:22:36 |20     |ki@daum.net                 |055-602-0551  |http://myschool.ac.kr/photos/doyungu.jpg      |재직     |202           |
+|9913 |장정자  |jgim         |부교수      |358 |2020-06-29 11:14:45 |30     |seoyeoncoe@gweongim.kr      |041-587-2280  |http://myschool.ac.kr/photos/jgim.jpg         |퇴직     |203           |
+|9914 |김지아  |jcoe         |조교수      |385 |2002-08-06 23:35:57 |[null] |ngim@live.com               |051-018-9642  |http://myschool.ac.kr/photos/jcoe.jpg         |퇴직     |203           |
+|9915 |이옥순  |seonghoseo   |교수       |548 |2023-11-15 15:17:27 |22     |agim@gimgim.kr              |044-234-3359  |http://myschool.ac.kr/photos/seonghoseo.jpg   |재직     |203           |
+|9916 |이정식  |gimjia       |전임강사     |274 |2002-08-13 12:19:42 |[null] |doyun27@nate.com            |02-1070-2228  |http://myschool.ac.kr/photos/gimjia.jpg       |퇴직     |203           |
+|9917 |박경수  |igim         |전임강사     |447 |2020-11-09 06:32:30 |22     |isangceol@yu.com            |052-537-9720  |http://myschool.ac.kr/photos/igim.jpg         |휴직     |203           |
+|9918 |오미영  |jongsu93     |부교수      |578 |2010-06-17 07:32:06 |[null] |byeongceolcoe@gmail.com     |032-087-7731  |http://myschool.ac.kr/photos/jongsu93.jpg     |휴직     |204           |
+|9919 |이명숙  |minseog87    |전임강사     |384 |2002-12-03 07:22:12 |[null] |jiyeong54@ogim.com          |032-840-6857  |http://myschool.ac.kr/photos/minseog87.jpg    |재직     |301           |
+|9920 |장지후  |isujin       |조교수      |328 |2005-01-30 18:03:04 |[null] |handonghyeon@live.com       |042-757-1873  |http://myschool.ac.kr/photos/isujin.jpg       |퇴직     |301           |
+|9921 |박현숙  |dohyeongim   |부교수      |500 |2001-03-19 05:40:14 |[null] |ojongsu@namgim.org          |031-257-4301  |http://myschool.ac.kr/photos/dohyeongim.jpg   |휴직     |301           |
+|9922 |최정자  |jihungim     |전임강사     |373 |2007-07-05 05:28:22 |[null] |kcoe@dreamwiz.com           |033-713-4372  |http://myschool.ac.kr/photos/jihungim.jpg     |퇴직     |301           |
+|9923 |박경희  |sineunyeong  |조교수      |315 |2001-06-13 22:19:25 |[null] |yeongsunnam@igang.net       |051-199-9499  |http://myschool.ac.kr/photos/sineunyeong.jpg  |퇴직     |302           |
+|9924 |허예진  |ghong        |조교수      |409 |2016-08-11 02:49:21 |22     |boramsong@nate.com          |016-149-5850  |http://myschool.ac.kr/photos/ghong.jpg        |퇴직     |401           |
+|9925 |박영일  |subinsong    |전임강사     |376 |2019-06-10 05:26:28 |[null] |doyunbaeg@jusighoesa.com    |070-2273-7433 |http://myschool.ac.kr/photos/subinsong.jpg    |재직     |401           |
+|9926 |김정웅  |seoyeon95    |조교수      |253 |2012-07-24 21:27:58 |[null] |sanghun41@yuhanhoesa.net    |018-039-4876  |http://myschool.ac.kr/photos/seoyeon95.jpg    |재직     |402           |
+|9927 |진주원  |yeonghwan49  |부교수      |300 |2020-09-21 02:49:53 |[null] |jinminsu@yungweon.net       |054-082-9702  |http://myschool.ac.kr/photos/yeonghwan49.jpg  |퇴직     |402           |
+|9928 |이영길  |rgim         |조교수      |526 |2016-12-22 19:59:30 |14     |gimminjae@jusighoesa.kr     |052-314-9662  |http://myschool.ac.kr/photos/rgim.jpg         |휴직     |402           |
+|9929 |최영식  |gi           |조교수      |300 |2009-01-29 06:54:03 |13     |gimjihye@hanmail.net        |017-497-2511  |http://myschool.ac.kr/photos/gi.jpg           |휴직     |402           |
+|9930 |박유진  |jeongsu38    |교수       |277 |2011-05-25 13:10:56 |[null] |jihungim@gimim.net          |055-284-0371  |http://myschool.ac.kr/photos/jeongsu38.jpg    |휴직     |402           |
+|-----|-----|-------------|---------|----|--------------------|-------|----------------------------|--------------|----------------------------------------------|-------|--------------|
+
+[DEBUG] 25-04-24 13:11:44 [selectList:135] - <==      Total: 25
+[ERROR] 25-04-24 13:11:44 [App_Select01:45] - 조회결과 --->> 
+[DEBUG] 25-04-24 13:12:53 [selectOne:135] - ==>  Preparing: SELECT id, name, user_id, position, sal, hiredate, comm, email, phone, photo_url, status, department_id FROM professors WHERE id=?
+[DEBUG] 25-04-24 13:12:53 [selectOne:135] - ==> Parameters: 9901(Integer)
+[INFO ] 25-04-24 13:12:53 [sqlonly:228] - SELECT id, name, user_id, position, sal, hiredate, comm, email, phone, photo_url, status, department_id FROM professors WHERE id=9901
+
+[INFO ] 25-04-24 13:12:53 [resultsettable:610] - 
+|-----|-----|------------|---------|----|--------------------|-------|------------------|-------------|---------------------------------------------|-------|--------------|
+|id   |name |user_id     |position |sal |hiredate            |comm   |email             |phone        |photo_url                                    |status |department_id |
+|-----|-----|------------|---------|----|--------------------|-------|------------------|-------------|---------------------------------------------|-------|--------------|
+|9901 |차미경  |seoyunseong |전임강사     |390 |2023-07-14 23:24:53 |[null] |gangjiyeon@yu.net |053-902-0850 |http://myschool.ac.kr/photos/seoyunseong.jpg |퇴직     |101           |
+|-----|-----|------------|---------|----|--------------------|-------|------------------|-------------|---------------------------------------------|-------|--------------|
+
+[DEBUG] 25-04-24 13:12:53 [selectOne:135] - <==      Total: 1
+[ERROR] 25-04-24 13:12:53 [App_Select02:40] - 조회결과 --->> 
+[DEBUG] 25-04-24 13:13:42 [selectList:135] - ==>  Preparing: SELECT id, name, user_id, position, sal, hiredate, comm, email, phone, photo_url, status, department_id FROM professors
+[DEBUG] 25-04-24 13:13:42 [selectList:135] - ==> Parameters: 
+[INFO ] 25-04-24 13:13:42 [sqlonly:228] - SELECT id, name, user_id, position, sal, hiredate, comm, email, phone, photo_url, status, department_id FROM professors
+
+[INFO ] 25-04-24 13:13:42 [resultsettable:610] - 
+|-----|-----|-------------|---------|----|--------------------|-------|----------------------------|--------------|----------------------------------------------|-------|--------------|
+|id   |name |user_id      |position |sal |hiredate            |comm   |email                       |phone         |photo_url                                     |status |department_id |
+|-----|-----|-------------|---------|----|--------------------|-------|----------------------------|--------------|----------------------------------------------|-------|--------------|
+|9901 |차미경  |seoyunseong  |전임강사     |390 |2023-07-14 23:24:53 |[null] |gangjiyeon@yu.net           |053-902-0850  |http://myschool.ac.kr/photos/seoyunseong.jpg  |퇴직     |101           |
+|9907 |이은영  |yeongho81    |전임강사     |443 |1999-01-04 15:55:04 |12     |chan@dreamwiz.com           |018-443-4597  |http://myschool.ac.kr/photos/yeongho81.jpg    |퇴직     |201           |
+|9908 |박서영  |mijeong31    |전임강사     |273 |2011-07-22 02:10:41 |17     |jeonghungim@onam.org        |070-4379-4764 |http://myschool.ac.kr/photos/mijeong31.jpg    |재직     |201           |
+|9909 |김정훈  |doyun73      |교수       |392 |2001-09-09 07:36:05 |24     |yeongja93@naver.com         |041-625-8390  |http://myschool.ac.kr/photos/doyun73.jpg      |휴직     |201           |
+|9910 |강영호  |seonghyeon92 |조교수      |593 |2011-04-03 07:37:22 |[null] |uyun@jusighoesa.kr          |064-736-1077  |http://myschool.ac.kr/photos/seonghyeon92.jpg |퇴직     |201           |
+|9911 |박영미  |yeongsui     |조교수      |486 |2015-11-29 01:07:18 |22     |bagjeonghyi@baggweonseo.net |061-977-7396  |http://myschool.ac.kr/photos/yeongsui.jpg     |재직     |201           |
+|9912 |윤서현  |doyungu      |조교수      |266 |2011-07-22 09:22:36 |20     |ki@daum.net                 |055-602-0551  |http://myschool.ac.kr/photos/doyungu.jpg      |재직     |202           |
+|9913 |장정자  |jgim         |부교수      |358 |2020-06-29 11:14:45 |30     |seoyeoncoe@gweongim.kr      |041-587-2280  |http://myschool.ac.kr/photos/jgim.jpg         |퇴직     |203           |
+|9914 |김지아  |jcoe         |조교수      |385 |2002-08-06 23:35:57 |[null] |ngim@live.com               |051-018-9642  |http://myschool.ac.kr/photos/jcoe.jpg         |퇴직     |203           |
+|9915 |이옥순  |seonghoseo   |교수       |548 |2023-11-15 15:17:27 |22     |agim@gimgim.kr              |044-234-3359  |http://myschool.ac.kr/photos/seonghoseo.jpg   |재직     |203           |
+|9916 |이정식  |gimjia       |전임강사     |274 |2002-08-13 12:19:42 |[null] |doyun27@nate.com            |02-1070-2228  |http://myschool.ac.kr/photos/gimjia.jpg       |퇴직     |203           |
+|9917 |박경수  |igim         |전임강사     |447 |2020-11-09 06:32:30 |22     |isangceol@yu.com            |052-537-9720  |http://myschool.ac.kr/photos/igim.jpg         |휴직     |203           |
+|9918 |오미영  |jongsu93     |부교수      |578 |2010-06-17 07:32:06 |[null] |byeongceolcoe@gmail.com     |032-087-7731  |http://myschool.ac.kr/photos/jongsu93.jpg     |휴직     |204           |
+|9919 |이명숙  |minseog87    |전임강사     |384 |2002-12-03 07:22:12 |[null] |jiyeong54@ogim.com          |032-840-6857  |http://myschool.ac.kr/photos/minseog87.jpg    |재직     |301           |
+|9920 |장지후  |isujin       |조교수      |328 |2005-01-30 18:03:04 |[null] |handonghyeon@live.com       |042-757-1873  |http://myschool.ac.kr/photos/isujin.jpg       |퇴직     |301           |
+|9921 |박현숙  |dohyeongim   |부교수      |500 |2001-03-19 05:40:14 |[null] |ojongsu@namgim.org          |031-257-4301  |http://myschool.ac.kr/photos/dohyeongim.jpg   |휴직     |301           |
+|9922 |최정자  |jihungim     |전임강사     |373 |2007-07-05 05:28:22 |[null] |kcoe@dreamwiz.com           |033-713-4372  |http://myschool.ac.kr/photos/jihungim.jpg     |퇴직     |301           |
+|9923 |박경희  |sineunyeong  |조교수      |315 |2001-06-13 22:19:25 |[null] |yeongsunnam@igang.net       |051-199-9499  |http://myschool.ac.kr/photos/sineunyeong.jpg  |퇴직     |302           |
+|9924 |허예진  |ghong        |조교수      |409 |2016-08-11 02:49:21 |22     |boramsong@nate.com          |016-149-5850  |http://myschool.ac.kr/photos/ghong.jpg        |퇴직     |401           |
+|9925 |박영일  |subinsong    |전임강사     |376 |2019-06-10 05:26:28 |[null] |doyunbaeg@jusighoesa.com    |070-2273-7433 |http://myschool.ac.kr/photos/subinsong.jpg    |재직     |401           |
+|9926 |김정웅  |seoyeon95    |조교수      |253 |2012-07-24 21:27:58 |[null] |sanghun41@yuhanhoesa.net    |018-039-4876  |http://myschool.ac.kr/photos/seoyeon95.jpg    |재직     |402           |
+|9927 |진주원  |yeonghwan49  |부교수      |300 |2020-09-21 02:49:53 |[null] |jinminsu@yungweon.net       |054-082-9702  |http://myschool.ac.kr/photos/yeonghwan49.jpg  |퇴직     |402           |
+|9928 |이영길  |rgim         |조교수      |526 |2016-12-22 19:59:30 |14     |gimminjae@jusighoesa.kr     |052-314-9662  |http://myschool.ac.kr/photos/rgim.jpg         |휴직     |402           |
+|9929 |최영식  |gi           |조교수      |300 |2009-01-29 06:54:03 |13     |gimjihye@hanmail.net        |017-497-2511  |http://myschool.ac.kr/photos/gi.jpg           |휴직     |402           |
+|9930 |박유진  |jeongsu38    |교수       |277 |2011-05-25 13:10:56 |[null] |jihungim@gimim.net          |055-284-0371  |http://myschool.ac.kr/photos/jeongsu38.jpg    |휴직     |402           |
+|-----|-----|-------------|---------|----|--------------------|-------|----------------------------|--------------|----------------------------------------------|-------|--------------|
+
+[DEBUG] 25-04-24 13:13:42 [selectList:135] - <==      Total: 25
+[ERROR] 25-04-24 13:13:42 [App_Select01:41] - 조회결과 --->> 
+[DEBUG] 25-04-24 13:16:35 [selectList:135] - ==>  Preparing: SELECT id, name, user_id, position, sal, hiredate, comm, email, phone, photo_url, status, department_id FROM professors WHERE id LIKE CONCAT('%', ?, '%')
+[DEBUG] 25-04-24 13:16:35 [selectList:135] - ==> Parameters: 9901(Integer)
+[INFO ] 25-04-24 13:16:35 [sqlonly:228] - SELECT id, name, user_id, position, sal, hiredate, comm, email, phone, photo_url, status, department_id FROM professors WHERE id LIKE CONCAT('%', 9901, '%')
+
+[INFO ] 25-04-24 13:16:35 [resultsettable:610] - 
+|-----|-----|------------|---------|----|--------------------|-------|------------------|-------------|---------------------------------------------|-------|--------------|
+|id   |name |user_id     |position |sal |hiredate            |comm   |email             |phone        |photo_url                                    |status |department_id |
+|-----|-----|------------|---------|----|--------------------|-------|------------------|-------------|---------------------------------------------|-------|--------------|
+|9901 |차미경  |seoyunseong |전임강사     |390 |2023-07-14 23:24:53 |[null] |gangjiyeon@yu.net |053-902-0850 |http://myschool.ac.kr/photos/seoyunseong.jpg |퇴직     |101           |
+|-----|-----|------------|---------|----|--------------------|-------|------------------|-------------|---------------------------------------------|-------|--------------|
+
+[DEBUG] 25-04-24 13:16:35 [selectList:135] - <==      Total: 1
+[DEBUG] 25-04-24 13:16:35 [selectCount:135] - ==>  Preparing: SELECT COUNT(*) FROM professors WHERE id LIKE CONCAT('%', ?, '%')
+[DEBUG] 25-04-24 13:16:35 [selectCount:135] - ==> Parameters: 9901(Integer)
+[INFO ] 25-04-24 13:16:35 [sqlonly:228] - SELECT COUNT(*) FROM professors WHERE id LIKE CONCAT('%', 9901, '%')
+
+[INFO ] 25-04-24 13:16:35 [resultsettable:610] - 
+|---------|
+|count(*) |
+|---------|
+|1        |
+|---------|
+
+[DEBUG] 25-04-24 13:16:35 [selectCount:135] - <==      Total: 1
+[ERROR] 25-04-24 13:16:35 [App_Select03:41] - 조회결과 --->> 
+[ERROR] 25-04-24 13:16:35 [App_Select03:42] - 조회된 데이터 수 --->> 
+[DEBUG] 25-04-24 13:17:08 [selectList:135] - ==>  Preparing: SELECT id, name, user_id, position, sal, hiredate, comm, email, phone, photo_url, status, department_id FROM professors WHERE id LIKE CONCAT('%', ?, '%')
+[DEBUG] 25-04-24 13:17:08 [selectList:135] - ==> Parameters: 99(Integer)
+[INFO ] 25-04-24 13:17:08 [sqlonly:228] - SELECT id, name, user_id, position, sal, hiredate, comm, email, phone, photo_url, status, department_id FROM professors WHERE id LIKE CONCAT('%', 99, '%')
+
+[INFO ] 25-04-24 13:17:08 [resultsettable:610] - 
+|-----|-----|-------------|---------|----|--------------------|-------|----------------------------|--------------|----------------------------------------------|-------|--------------|
+|id   |name |user_id      |position |sal |hiredate            |comm   |email                       |phone         |photo_url                                     |status |department_id |
+|-----|-----|-------------|---------|----|--------------------|-------|----------------------------|--------------|----------------------------------------------|-------|--------------|
+|9901 |차미경  |seoyunseong  |전임강사     |390 |2023-07-14 23:24:53 |[null] |gangjiyeon@yu.net           |053-902-0850  |http://myschool.ac.kr/photos/seoyunseong.jpg  |퇴직     |101           |
+|9907 |이은영  |yeongho81    |전임강사     |443 |1999-01-04 15:55:04 |12     |chan@dreamwiz.com           |018-443-4597  |http://myschool.ac.kr/photos/yeongho81.jpg    |퇴직     |201           |
+|9908 |박서영  |mijeong31    |전임강사     |273 |2011-07-22 02:10:41 |17     |jeonghungim@onam.org        |070-4379-4764 |http://myschool.ac.kr/photos/mijeong31.jpg    |재직     |201           |
+|9909 |김정훈  |doyun73      |교수       |392 |2001-09-09 07:36:05 |24     |yeongja93@naver.com         |041-625-8390  |http://myschool.ac.kr/photos/doyun73.jpg      |휴직     |201           |
+|9910 |강영호  |seonghyeon92 |조교수      |593 |2011-04-03 07:37:22 |[null] |uyun@jusighoesa.kr          |064-736-1077  |http://myschool.ac.kr/photos/seonghyeon92.jpg |퇴직     |201           |
+|9911 |박영미  |yeongsui     |조교수      |486 |2015-11-29 01:07:18 |22     |bagjeonghyi@baggweonseo.net |061-977-7396  |http://myschool.ac.kr/photos/yeongsui.jpg     |재직     |201           |
+|9912 |윤서현  |doyungu      |조교수      |266 |2011-07-22 09:22:36 |20     |ki@daum.net                 |055-602-0551  |http://myschool.ac.kr/photos/doyungu.jpg      |재직     |202           |
+|9913 |장정자  |jgim         |부교수      |358 |2020-06-29 11:14:45 |30     |seoyeoncoe@gweongim.kr      |041-587-2280  |http://myschool.ac.kr/photos/jgim.jpg         |퇴직     |203           |
+|9914 |김지아  |jcoe         |조교수      |385 |2002-08-06 23:35:57 |[null] |ngim@live.com               |051-018-9642  |http://myschool.ac.kr/photos/jcoe.jpg         |퇴직     |203           |
+|9915 |이옥순  |seonghoseo   |교수       |548 |2023-11-15 15:17:27 |22     |agim@gimgim.kr              |044-234-3359  |http://myschool.ac.kr/photos/seonghoseo.jpg   |재직     |203           |
+|9916 |이정식  |gimjia       |전임강사     |274 |2002-08-13 12:19:42 |[null] |doyun27@nate.com            |02-1070-2228  |http://myschool.ac.kr/photos/gimjia.jpg       |퇴직     |203           |
+|9917 |박경수  |igim         |전임강사     |447 |2020-11-09 06:32:30 |22     |isangceol@yu.com            |052-537-9720  |http://myschool.ac.kr/photos/igim.jpg         |휴직     |203           |
+|9918 |오미영  |jongsu93     |부교수      |578 |2010-06-17 07:32:06 |[null] |byeongceolcoe@gmail.com     |032-087-7731  |http://myschool.ac.kr/photos/jongsu93.jpg     |휴직     |204           |
+|9919 |이명숙  |minseog87    |전임강사     |384 |2002-12-03 07:22:12 |[null] |jiyeong54@ogim.com          |032-840-6857  |http://myschool.ac.kr/photos/minseog87.jpg    |재직     |301           |
+|9920 |장지후  |isujin       |조교수      |328 |2005-01-30 18:03:04 |[null] |handonghyeon@live.com       |042-757-1873  |http://myschool.ac.kr/photos/isujin.jpg       |퇴직     |301           |
+|9921 |박현숙  |dohyeongim   |부교수      |500 |2001-03-19 05:40:14 |[null] |ojongsu@namgim.org          |031-257-4301  |http://myschool.ac.kr/photos/dohyeongim.jpg   |휴직     |301           |
+|9922 |최정자  |jihungim     |전임강사     |373 |2007-07-05 05:28:22 |[null] |kcoe@dreamwiz.com           |033-713-4372  |http://myschool.ac.kr/photos/jihungim.jpg     |퇴직     |301           |
+|9923 |박경희  |sineunyeong  |조교수      |315 |2001-06-13 22:19:25 |[null] |yeongsunnam@igang.net       |051-199-9499  |http://myschool.ac.kr/photos/sineunyeong.jpg  |퇴직     |302           |
+|9924 |허예진  |ghong        |조교수      |409 |2016-08-11 02:49:21 |22     |boramsong@nate.com          |016-149-5850  |http://myschool.ac.kr/photos/ghong.jpg        |퇴직     |401           |
+|9925 |박영일  |subinsong    |전임강사     |376 |2019-06-10 05:26:28 |[null] |doyunbaeg@jusighoesa.com    |070-2273-7433 |http://myschool.ac.kr/photos/subinsong.jpg    |재직     |401           |
+|9926 |김정웅  |seoyeon95    |조교수      |253 |2012-07-24 21:27:58 |[null] |sanghun41@yuhanhoesa.net    |018-039-4876  |http://myschool.ac.kr/photos/seoyeon95.jpg    |재직     |402           |
+|9927 |진주원  |yeonghwan49  |부교수      |300 |2020-09-21 02:49:53 |[null] |jinminsu@yungweon.net       |054-082-9702  |http://myschool.ac.kr/photos/yeonghwan49.jpg  |퇴직     |402           |
+|9928 |이영길  |rgim         |조교수      |526 |2016-12-22 19:59:30 |14     |gimminjae@jusighoesa.kr     |052-314-9662  |http://myschool.ac.kr/photos/rgim.jpg         |휴직     |402           |
+|9929 |최영식  |gi           |조교수      |300 |2009-01-29 06:54:03 |13     |gimjihye@hanmail.net        |017-497-2511  |http://myschool.ac.kr/photos/gi.jpg           |휴직     |402           |
+|9930 |박유진  |jeongsu38    |교수       |277 |2011-05-25 13:10:56 |[null] |jihungim@gimim.net          |055-284-0371  |http://myschool.ac.kr/photos/jeongsu38.jpg    |휴직     |402           |
+|-----|-----|-------------|---------|----|--------------------|-------|----------------------------|--------------|----------------------------------------------|-------|--------------|
+
+[DEBUG] 25-04-24 13:17:08 [selectList:135] - <==      Total: 25
+[DEBUG] 25-04-24 13:17:08 [selectCount:135] - ==>  Preparing: SELECT COUNT(*) FROM professors WHERE id LIKE CONCAT('%', ?, '%')
+[DEBUG] 25-04-24 13:17:08 [selectCount:135] - ==> Parameters: 99(Integer)
+[INFO ] 25-04-24 13:17:08 [sqlonly:228] - SELECT COUNT(*) FROM professors WHERE id LIKE CONCAT('%', 99, '%')
+
+[INFO ] 25-04-24 13:17:08 [resultsettable:610] - 
+|---------|
+|count(*) |
+|---------|
+|25       |
+|---------|
+
+[DEBUG] 25-04-24 13:17:08 [selectCount:135] - <==      Total: 1
+[ERROR] 25-04-24 13:17:08 [App_Select03:41] - 조회결과 --->> 
+[ERROR] 25-04-24 13:17:08 [App_Select03:42] - 조회된 데이터 수 --->> 
+[DEBUG] 25-04-24 13:17:14 [selectList:135] - ==>  Preparing: SELECT id, name, user_id, position, sal, hiredate, comm, email, phone, photo_url, status, department_id FROM professors WHERE id LIKE CONCAT('%', ?, '%')
+[DEBUG] 25-04-24 13:17:15 [selectList:135] - ==> Parameters: 9901(Integer)
+[INFO ] 25-04-24 13:17:15 [sqlonly:228] - SELECT id, name, user_id, position, sal, hiredate, comm, email, phone, photo_url, status, department_id FROM professors WHERE id LIKE CONCAT('%', 9901, '%')
+
+[INFO ] 25-04-24 13:17:15 [resultsettable:610] - 
+|-----|-----|------------|---------|----|--------------------|-------|------------------|-------------|---------------------------------------------|-------|--------------|
+|id   |name |user_id     |position |sal |hiredate            |comm   |email             |phone        |photo_url                                    |status |department_id |
+|-----|-----|------------|---------|----|--------------------|-------|------------------|-------------|---------------------------------------------|-------|--------------|
+|9901 |차미경  |seoyunseong |전임강사     |390 |2023-07-14 23:24:53 |[null] |gangjiyeon@yu.net |053-902-0850 |http://myschool.ac.kr/photos/seoyunseong.jpg |퇴직     |101           |
+|-----|-----|------------|---------|----|--------------------|-------|------------------|-------------|---------------------------------------------|-------|--------------|
+
+[DEBUG] 25-04-24 13:17:15 [selectList:135] - <==      Total: 1
+[DEBUG] 25-04-24 13:17:15 [selectCount:135] - ==>  Preparing: SELECT COUNT(*) FROM professors WHERE id LIKE CONCAT('%', ?, '%')
+[DEBUG] 25-04-24 13:17:15 [selectCount:135] - ==> Parameters: 9901(Integer)
+[INFO ] 25-04-24 13:17:15 [sqlonly:228] - SELECT COUNT(*) FROM professors WHERE id LIKE CONCAT('%', 9901, '%')
+
+[INFO ] 25-04-24 13:17:15 [resultsettable:610] - 
+|---------|
+|count(*) |
+|---------|
+|1        |
+|---------|
+
+[DEBUG] 25-04-24 13:17:15 [selectCount:135] - <==      Total: 1
+[ERROR] 25-04-24 13:17:15 [App_Select03:41] - 조회결과 --->> 
+[ERROR] 25-04-24 13:17:15 [App_Select03:42] - 조회된 데이터 수 --->> 
+[DEBUG] 25-04-24 15:20:24 [insert:135] - ==>  Preparing: INSERT INTO professors (id, name, user_id, position, sal, hiredate, comm, email, phone, photo_url, status, department_id ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+[DEBUG] 25-04-24 15:20:25 [insert:135] - ==> Parameters: 9832(Integer), 곽춘배(String), 435(String), 교수(String), 999(Integer), 2000-02-02(String), 20000(Integer), eeee@mmmm.ail(String), http://myschoolbomb.ac.kr(String), 재직(String), 101(Integer)
+[INFO ] 25-04-24 15:20:25 [sqlonly:228] - INSERT INTO professors (id, name, user_id, position, sal, hiredate, comm, email, phone, photo_url, status, department_id ) VALUES ( 9832, '곽춘배', '435', '교수', 999, '2000-02-02', 20000, 'eeee@mmmm.ail', 'http://myschoolbomb.ac.kr', '재직', 101)
+
+[WARN ] 25-04-24 15:20:25 [ErrorPacket:99] - Error: 1136-21S01: Column count doesn't match value count at row 1
+[ERROR] 25-04-24 15:20:25 [sqlonly:144] - 1. PreparedStatement.execute() INSERT INTO professors (id, name, user_id, position, sal, hiredate, comm, email, phone, photo_url, status, department_id ) VALUES ( 9832, '곽춘배', '435', '교수', 999, '2000-02-02', 20000, 'eeee@mmmm.ail', 'http://myschoolbomb.ac.kr', '재직', 101)
+
+java.sql.SQLIntegrityConstraintViolationException: (conn=157) Column count doesn't match value count at row 1
+	at org.mariadb.jdbc.export.ExceptionFactory.createException(ExceptionFactory.java:297)
+	at org.mariadb.jdbc.export.ExceptionFactory.create(ExceptionFactory.java:378)
+	at org.mariadb.jdbc.message.ClientMessage.readPacket(ClientMessage.java:187)
+	at org.mariadb.jdbc.client.impl.StandardClient.readPacket(StandardClient.java:1364)
+	at org.mariadb.jdbc.client.impl.StandardClient.readResults(StandardClient.java:1303)
+	at org.mariadb.jdbc.client.impl.StandardClient.readResponse(StandardClient.java:1222)
+	at org.mariadb.jdbc.client.impl.StandardClient.execute(StandardClient.java:1146)
+	at org.mariadb.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:87)
+	at org.mariadb.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:232)
+	at net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy.execute(PreparedStatementSpy.java:443)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:58)
+	at jdk.proxy3/jdk.proxy3.$Proxy19.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:48)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:75)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:184)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:62)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at jdk.proxy2/jdk.proxy2.$Proxy17.insert(Unknown Source)
+	at kr.yjh.services.impl.ProfessorsServiceImpl.addItem(ProfessorsServiceImpl.java:24)
+	at kr.yjh.mybatis.App_Insert01.main(App_Insert01.java:39)
+[ERROR] 25-04-24 15:20:25 [App_Insert01:44] - 데이터 처리 실패 >> SQL문을 확인하세요
+org.apache.ibatis.exceptions.PersistenceException: 
+### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: (conn=157) Column count doesn't match value count at row 1
+### The error may exist in kr/yjh/mappers/ProfessorsMapper.java (best guess)
+### The error may involve kr.yjh.mappers.ProfessorsMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO professors (id, name, user_id, position, sal, hiredate, comm, email, phone, photo_url, status, department_id ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+### Cause: java.sql.SQLIntegrityConstraintViolationException: (conn=157) Column count doesn't match value count at row 1
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:199)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:184)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:62)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at jdk.proxy2/jdk.proxy2.$Proxy17.insert(Unknown Source)
+	at kr.yjh.services.impl.ProfessorsServiceImpl.addItem(ProfessorsServiceImpl.java:24)
+	at kr.yjh.mybatis.App_Insert01.main(App_Insert01.java:39)
+Caused by: java.sql.SQLIntegrityConstraintViolationException: (conn=157) Column count doesn't match value count at row 1
+	at org.mariadb.jdbc.export.ExceptionFactory.createException(ExceptionFactory.java:297)
+	at org.mariadb.jdbc.export.ExceptionFactory.create(ExceptionFactory.java:378)
+	at org.mariadb.jdbc.message.ClientMessage.readPacket(ClientMessage.java:187)
+	at org.mariadb.jdbc.client.impl.StandardClient.readPacket(StandardClient.java:1364)
+	at org.mariadb.jdbc.client.impl.StandardClient.readResults(StandardClient.java:1303)
+	at org.mariadb.jdbc.client.impl.StandardClient.readResponse(StandardClient.java:1222)
+	at org.mariadb.jdbc.client.impl.StandardClient.execute(StandardClient.java:1146)
+	at org.mariadb.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:87)
+	at org.mariadb.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:232)
+	at net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy.execute(PreparedStatementSpy.java:443)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:58)
+	at jdk.proxy3/jdk.proxy3.$Proxy19.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:48)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:75)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	... 7 common frames omitted
+[DEBUG] 25-04-24 15:24:03 [insert:135] - ==>  Preparing: INSERT INTO professors (id, name, user_id, position, sal, hiredate, comm, email, phone, photo_url, status, department_id ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+[DEBUG] 25-04-24 15:24:03 [insert:135] - ==> Parameters: 9832(Integer), 곽춘배(String), 435(String), 교수(String), 999(Integer), 2000-02-02(String), 20000(Integer), eeee@mmmm.ail(String), 019-1919-1919(String), http://myschoolbomb.ac.kr(String), 재직(String), 101(Integer)
+[INFO ] 25-04-24 15:24:03 [sqlonly:228] - INSERT INTO professors (id, name, user_id, position, sal, hiredate, comm, email, phone, photo_url, status, department_id ) VALUES ( 9832, '곽춘배', '435', '교수', 999, '2000-02-02', 20000, 'eeee@mmmm.ail', '019-1919-1919', 'http://myschoolbomb.ac.kr', '재직', 101)
+
+[DEBUG] 25-04-24 15:24:03 [insert:135] - <==    Updates: 1
+[INFO ] 25-04-24 15:24:03 [resultsettable:610] - 
+|----------|
+|insert_id |
+|----------|
+|9832      |
+|----------|
+
+[DEBUG] 25-04-24 15:24:03 [selectOne:135] - ==>  Preparing: SELECT id, name, user_id, position, sal, hiredate, comm, email, phone, photo_url, status, department_id FROM professors WHERE id=?
+[DEBUG] 25-04-24 15:24:03 [selectOne:135] - ==> Parameters: 9832(Integer)
+[INFO ] 25-04-24 15:24:03 [sqlonly:228] - SELECT id, name, user_id, position, sal, hiredate, comm, email, phone, photo_url, status, department_id FROM professors WHERE id=9832
+
+[INFO ] 25-04-24 15:24:03 [resultsettable:610] - 
+|-----|-----|--------|---------|----|--------------------|------|--------------|--------------|--------------------------|-------|--------------|
+|id   |name |user_id |position |sal |hiredate            |comm  |email         |phone         |photo_url                 |status |department_id |
+|-----|-----|--------|---------|----|--------------------|------|--------------|--------------|--------------------------|-------|--------------|
+|9832 |곽춘배  |435     |교수       |999 |2000-02-02 00:00:00 |20000 |eeee@mmmm.ail |019-1919-1919 |http://myschoolbomb.ac.kr |재직     |101           |
+|-----|-----|--------|---------|----|--------------------|------|--------------|--------------|--------------------------|-------|--------------|
+
+[DEBUG] 25-04-24 15:24:03 [selectOne:135] - <==      Total: 1
+[ERROR] 25-04-24 15:24:03 [App_Insert01:49] - 조회결과 --->> 
+[DEBUG] 25-04-24 15:28:16 [selectList:135] - ==>  Preparing: SELECT id, name, user_id, position, sal, hiredate, comm, email, phone, photo_url, status, department_id FROM professors
+[DEBUG] 25-04-24 15:28:16 [selectList:135] - ==> Parameters: 
+[INFO ] 25-04-24 15:28:16 [sqlonly:228] - SELECT id, name, user_id, position, sal, hiredate, comm, email, phone, photo_url, status, department_id FROM professors
+
+[INFO ] 25-04-24 15:28:16 [resultsettable:610] - 
+|-----|-----|-------------|---------|----|--------------------|-------|----------------------------|--------------|----------------------------------------------|-------|--------------|
+|id   |name |user_id      |position |sal |hiredate            |comm   |email                       |phone         |photo_url                                     |status |department_id |
+|-----|-----|-------------|---------|----|--------------------|-------|----------------------------|--------------|----------------------------------------------|-------|--------------|
+|9832 |곽춘배  |435          |교수       |999 |2000-02-02 00:00:00 |20000  |eeee@mmmm.ail               |019-1919-1919 |http://myschoolbomb.ac.kr                     |재직     |101           |
+|9901 |차미경  |seoyunseong  |전임강사     |390 |2023-07-14 23:24:53 |[null] |gangjiyeon@yu.net           |053-902-0850  |http://myschool.ac.kr/photos/seoyunseong.jpg  |퇴직     |101           |
+|9907 |이은영  |yeongho81    |전임강사     |443 |1999-01-04 15:55:04 |12     |chan@dreamwiz.com           |018-443-4597  |http://myschool.ac.kr/photos/yeongho81.jpg    |퇴직     |201           |
+|9908 |박서영  |mijeong31    |전임강사     |273 |2011-07-22 02:10:41 |17     |jeonghungim@onam.org        |070-4379-4764 |http://myschool.ac.kr/photos/mijeong31.jpg    |재직     |201           |
+|9909 |김정훈  |doyun73      |교수       |392 |2001-09-09 07:36:05 |24     |yeongja93@naver.com         |041-625-8390  |http://myschool.ac.kr/photos/doyun73.jpg      |휴직     |201           |
+|9910 |강영호  |seonghyeon92 |조교수      |593 |2011-04-03 07:37:22 |[null] |uyun@jusighoesa.kr          |064-736-1077  |http://myschool.ac.kr/photos/seonghyeon92.jpg |퇴직     |201           |
+|9911 |박영미  |yeongsui     |조교수      |486 |2015-11-29 01:07:18 |22     |bagjeonghyi@baggweonseo.net |061-977-7396  |http://myschool.ac.kr/photos/yeongsui.jpg     |재직     |201           |
+|9912 |윤서현  |doyungu      |조교수      |266 |2011-07-22 09:22:36 |20     |ki@daum.net                 |055-602-0551  |http://myschool.ac.kr/photos/doyungu.jpg      |재직     |202           |
+|9913 |장정자  |jgim         |부교수      |358 |2020-06-29 11:14:45 |30     |seoyeoncoe@gweongim.kr      |041-587-2280  |http://myschool.ac.kr/photos/jgim.jpg         |퇴직     |203           |
+|9914 |김지아  |jcoe         |조교수      |385 |2002-08-06 23:35:57 |[null] |ngim@live.com               |051-018-9642  |http://myschool.ac.kr/photos/jcoe.jpg         |퇴직     |203           |
+|9915 |이옥순  |seonghoseo   |교수       |548 |2023-11-15 15:17:27 |22     |agim@gimgim.kr              |044-234-3359  |http://myschool.ac.kr/photos/seonghoseo.jpg   |재직     |203           |
+|9916 |이정식  |gimjia       |전임강사     |274 |2002-08-13 12:19:42 |[null] |doyun27@nate.com            |02-1070-2228  |http://myschool.ac.kr/photos/gimjia.jpg       |퇴직     |203           |
+|9917 |박경수  |igim         |전임강사     |447 |2020-11-09 06:32:30 |22     |isangceol@yu.com            |052-537-9720  |http://myschool.ac.kr/photos/igim.jpg         |휴직     |203           |
+|9918 |오미영  |jongsu93     |부교수      |578 |2010-06-17 07:32:06 |[null] |byeongceolcoe@gmail.com     |032-087-7731  |http://myschool.ac.kr/photos/jongsu93.jpg     |휴직     |204           |
+|9919 |이명숙  |minseog87    |전임강사     |384 |2002-12-03 07:22:12 |[null] |jiyeong54@ogim.com          |032-840-6857  |http://myschool.ac.kr/photos/minseog87.jpg    |재직     |301           |
+|9920 |장지후  |isujin       |조교수      |328 |2005-01-30 18:03:04 |[null] |handonghyeon@live.com       |042-757-1873  |http://myschool.ac.kr/photos/isujin.jpg       |퇴직     |301           |
+|9921 |박현숙  |dohyeongim   |부교수      |500 |2001-03-19 05:40:14 |[null] |ojongsu@namgim.org          |031-257-4301  |http://myschool.ac.kr/photos/dohyeongim.jpg   |휴직     |301           |
+|9922 |최정자  |jihungim     |전임강사     |373 |2007-07-05 05:28:22 |[null] |kcoe@dreamwiz.com           |033-713-4372  |http://myschool.ac.kr/photos/jihungim.jpg     |퇴직     |301           |
+|9923 |박경희  |sineunyeong  |조교수      |315 |2001-06-13 22:19:25 |[null] |yeongsunnam@igang.net       |051-199-9499  |http://myschool.ac.kr/photos/sineunyeong.jpg  |퇴직     |302           |
+|9924 |허예진  |ghong        |조교수      |409 |2016-08-11 02:49:21 |22     |boramsong@nate.com          |016-149-5850  |http://myschool.ac.kr/photos/ghong.jpg        |퇴직     |401           |
+|9925 |박영일  |subinsong    |전임강사     |376 |2019-06-10 05:26:28 |[null] |doyunbaeg@jusighoesa.com    |070-2273-7433 |http://myschool.ac.kr/photos/subinsong.jpg    |재직     |401           |
+|9926 |김정웅  |seoyeon95    |조교수      |253 |2012-07-24 21:27:58 |[null] |sanghun41@yuhanhoesa.net    |018-039-4876  |http://myschool.ac.kr/photos/seoyeon95.jpg    |재직     |402           |
+|9927 |진주원  |yeonghwan49  |부교수      |300 |2020-09-21 02:49:53 |[null] |jinminsu@yungweon.net       |054-082-9702  |http://myschool.ac.kr/photos/yeonghwan49.jpg  |퇴직     |402           |
+|9928 |이영길  |rgim         |조교수      |526 |2016-12-22 19:59:30 |14     |gimminjae@jusighoesa.kr     |052-314-9662  |http://myschool.ac.kr/photos/rgim.jpg         |휴직     |402           |
+|9929 |최영식  |gi           |조교수      |300 |2009-01-29 06:54:03 |13     |gimjihye@hanmail.net        |017-497-2511  |http://myschool.ac.kr/photos/gi.jpg           |휴직     |402           |
+|9930 |박유진  |jeongsu38    |교수       |277 |2011-05-25 13:10:56 |[null] |jihungim@gimim.net          |055-284-0371  |http://myschool.ac.kr/photos/jeongsu38.jpg    |휴직     |402           |
+|-----|-----|-------------|---------|----|--------------------|-------|----------------------------|--------------|----------------------------------------------|-------|--------------|
+
+[DEBUG] 25-04-24 15:28:16 [selectList:135] - <==      Total: 26
+[ERROR] 25-04-24 15:28:16 [App_Select01:41] - 조회결과 --->> 
+[DEBUG] 25-04-24 15:29:23 [selectOne:135] - ==>  Preparing: SELECT id, name, user_id, position, sal, hiredate, comm, email, phone, photo_url, status, department_id FROM professors WHERE id=?
+[DEBUG] 25-04-24 15:29:23 [selectOne:135] - ==> Parameters: 9901(Integer)
+[INFO ] 25-04-24 15:29:23 [sqlonly:228] - SELECT id, name, user_id, position, sal, hiredate, comm, email, phone, photo_url, status, department_id FROM professors WHERE id=9901
+
+[INFO ] 25-04-24 15:29:23 [resultsettable:610] - 
+|-----|-----|------------|---------|----|--------------------|-------|------------------|-------------|---------------------------------------------|-------|--------------|
+|id   |name |user_id     |position |sal |hiredate            |comm   |email             |phone        |photo_url                                    |status |department_id |
+|-----|-----|------------|---------|----|--------------------|-------|------------------|-------------|---------------------------------------------|-------|--------------|
+|9901 |차미경  |seoyunseong |전임강사     |390 |2023-07-14 23:24:53 |[null] |gangjiyeon@yu.net |053-902-0850 |http://myschool.ac.kr/photos/seoyunseong.jpg |퇴직     |101           |
+|-----|-----|------------|---------|----|--------------------|-------|------------------|-------------|---------------------------------------------|-------|--------------|
+
+[DEBUG] 25-04-24 15:29:23 [selectOne:135] - <==      Total: 1
+[ERROR] 25-04-24 15:29:23 [App_Select02:38] - 조회결과 --->> 
+[DEBUG] 25-04-24 15:30:04 [selectList:135] - ==>  Preparing: SELECT id, name, user_id, position, sal, hiredate, comm, email, phone, photo_url, status, department_id FROM professors WHERE id LIKE CONCAT('%', ?, '%')
+[DEBUG] 25-04-24 15:30:04 [selectList:135] - ==> Parameters: 9901(Integer)
+[INFO ] 25-04-24 15:30:04 [sqlonly:228] - SELECT id, name, user_id, position, sal, hiredate, comm, email, phone, photo_url, status, department_id FROM professors WHERE id LIKE CONCAT('%', 9901, '%')
+
+[INFO ] 25-04-24 15:30:04 [resultsettable:610] - 
+|-----|-----|------------|---------|----|--------------------|-------|------------------|-------------|---------------------------------------------|-------|--------------|
+|id   |name |user_id     |position |sal |hiredate            |comm   |email             |phone        |photo_url                                    |status |department_id |
+|-----|-----|------------|---------|----|--------------------|-------|------------------|-------------|---------------------------------------------|-------|--------------|
+|9901 |차미경  |seoyunseong |전임강사     |390 |2023-07-14 23:24:53 |[null] |gangjiyeon@yu.net |053-902-0850 |http://myschool.ac.kr/photos/seoyunseong.jpg |퇴직     |101           |
+|-----|-----|------------|---------|----|--------------------|-------|------------------|-------------|---------------------------------------------|-------|--------------|
+
+[DEBUG] 25-04-24 15:30:04 [selectList:135] - <==      Total: 1
+[DEBUG] 25-04-24 15:30:04 [selectCount:135] - ==>  Preparing: SELECT COUNT(*) FROM professors WHERE id LIKE CONCAT('%', ?, '%')
+[DEBUG] 25-04-24 15:30:04 [selectCount:135] - ==> Parameters: 9901(Integer)
+[INFO ] 25-04-24 15:30:04 [sqlonly:228] - SELECT COUNT(*) FROM professors WHERE id LIKE CONCAT('%', 9901, '%')
+
+[INFO ] 25-04-24 15:30:04 [resultsettable:610] - 
+|---------|
+|count(*) |
+|---------|
+|1        |
+|---------|
+
+[DEBUG] 25-04-24 15:30:04 [selectCount:135] - <==      Total: 1
+[ERROR] 25-04-24 15:30:04 [App_Select03:41] - 조회결과 --->> 
+[ERROR] 25-04-24 15:30:04 [App_Select03:42] - 조회된 데이터 수 --->> 
+[DEBUG] 25-04-24 15:34:12 [update:135] - ==>  Preparing: UPDATE professors SET id=?, name=?, user_id=?, position=?, sal=?, hiredate=?, comm=?, email=?, phone=?, photo_url=?, status=?, department_id=? WHERE id=?
+[DEBUG] 25-04-24 15:34:12 [update:135] - ==> Parameters: 9832(Integer), 수정한 곽춘배(String), 435(String), 교수(String), 999(Integer), 2000-02-02(String), 20000(Integer), eeee@mmmm.ail(String), 020-2020-2020(String), http://myschoolbomb.ac.kr(String), 퇴직(String), 101(Integer), 9832(Integer)
+[INFO ] 25-04-24 15:34:12 [sqlonly:228] - UPDATE professors SET  id=9832, name='수정한 곽춘배', user_id='435', position='교수', sal=999, hiredate='2000-02-02', comm=20000, email='eeee@mmmm.ail', phone='020-2020-2020', photo_url='http://myschoolbomb.ac.kr', status='퇴직', department_id=101 WHERE id=9832
+
+[DEBUG] 25-04-24 15:34:12 [update:135] - <==    Updates: 1
+[DEBUG] 25-04-24 15:34:12 [selectOne:135] - ==>  Preparing: SELECT id, name, user_id, position, sal, hiredate, comm, email, phone, photo_url, status, department_id FROM professors WHERE id=?
+[DEBUG] 25-04-24 15:34:12 [selectOne:135] - ==> Parameters: 9832(Integer)
+[INFO ] 25-04-24 15:34:12 [sqlonly:228] - SELECT id, name, user_id, position, sal, hiredate, comm, email, phone, photo_url, status, department_id FROM professors WHERE id=9832
+
+[INFO ] 25-04-24 15:34:12 [resultsettable:610] - 
+|-----|--------|--------|---------|----|--------------------|------|--------------|--------------|--------------------------|-------|--------------|
+|id   |name    |user_id |position |sal |hiredate            |comm  |email         |phone         |photo_url                 |status |department_id |
+|-----|--------|--------|---------|----|--------------------|------|--------------|--------------|--------------------------|-------|--------------|
+|9832 |수정한 곽춘배 |435     |교수       |999 |2000-02-02 00:00:00 |20000 |eeee@mmmm.ail |020-2020-2020 |http://myschoolbomb.ac.kr |퇴직     |101           |
+|-----|--------|--------|---------|----|--------------------|------|--------------|--------------|--------------------------|-------|--------------|
+
+[DEBUG] 25-04-24 15:34:12 [selectOne:135] - <==      Total: 1
+[ERROR] 25-04-24 15:34:12 [App_Update01:50] - 조회결과 --->> 

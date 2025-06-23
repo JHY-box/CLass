@@ -1,0 +1,936 @@
+[INFO ] 25-06-13 21:43:58 [DatabaseApplication:53] - Starting DatabaseApplication using Java 17.0.2 with PID 11744 (D:\#web3\06-SpringBoot\08-DataBase(2)\bin\main started by yjh in D:\#web3\06-SpringBoot\08-DataBase(2))
+[DEBUG] 25-06-13 21:43:58 [DatabaseApplication:54] - Running with Spring Boot v3.4.6, Spring v6.2.7
+[INFO ] 25-06-13 21:43:58 [DatabaseApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 25-06-13 21:43:59 [DatabaseApplication:59] - Started DatabaseApplication in 0.683 seconds (process running for 76.585)
+[INFO ] 25-06-13 21:44:00 [DatabaseApplication:53] - Starting DatabaseApplication using Java 17.0.2 with PID 11744 (D:\#web3\06-SpringBoot\08-DataBase(2)\bin\main started by yjh in D:\#web3\06-SpringBoot\08-DataBase(2))
+[DEBUG] 25-06-13 21:44:00 [DatabaseApplication:54] - Running with Spring Boot v3.4.6, Spring v6.2.7
+[INFO ] 25-06-13 21:44:00 [DatabaseApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 25-06-13 21:44:01 [DatabaseApplication:59] - Started DatabaseApplication in 0.47 seconds (process running for 78.514)
+[INFO ] 25-06-13 21:44:11 [DatabaseApplication:53] - Starting DatabaseApplication using Java 17.0.2 with PID 11744 (D:\#web3\06-SpringBoot\08-DataBase(2)\bin\main started by yjh in D:\#web3\06-SpringBoot\08-DataBase(2))
+[DEBUG] 25-06-13 21:44:11 [DatabaseApplication:54] - Running with Spring Boot v3.4.6, Spring v6.2.7
+[INFO ] 25-06-13 21:44:11 [DatabaseApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 25-06-13 21:44:12 [DatabaseApplication:59] - Started DatabaseApplication in 0.444 seconds (process running for 89.59)
+[INFO ] 25-06-13 21:44:20 [DatabaseApplication:53] - Starting DatabaseApplication using Java 17.0.2 with PID 11744 (D:\#web3\06-SpringBoot\08-DataBase(2)\bin\main started by yjh in D:\#web3\06-SpringBoot\08-DataBase(2))
+[DEBUG] 25-06-13 21:44:20 [DatabaseApplication:54] - Running with Spring Boot v3.4.6, Spring v6.2.7
+[INFO ] 25-06-13 21:44:20 [DatabaseApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 25-06-13 21:44:20 [DatabaseApplication:59] - Started DatabaseApplication in 0.425 seconds (process running for 98.031)
+[INFO ] 25-06-13 21:44:22 [DatabaseApplication:53] - Starting DatabaseApplication using Java 17.0.2 with PID 11744 (D:\#web3\06-SpringBoot\08-DataBase(2)\bin\main started by yjh in D:\#web3\06-SpringBoot\08-DataBase(2))
+[DEBUG] 25-06-13 21:44:22 [DatabaseApplication:54] - Running with Spring Boot v3.4.6, Spring v6.2.7
+[INFO ] 25-06-13 21:44:22 [DatabaseApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 25-06-13 21:44:22 [DatabaseApplication:59] - Started DatabaseApplication in 0.384 seconds (process running for 99.907)
+[INFO ] 25-06-13 21:44:24 [DatabaseApplication:53] - Starting DatabaseApplication using Java 17.0.2 with PID 11744 (D:\#web3\06-SpringBoot\08-DataBase(2)\bin\main started by yjh in D:\#web3\06-SpringBoot\08-DataBase(2))
+[DEBUG] 25-06-13 21:44:24 [DatabaseApplication:54] - Running with Spring Boot v3.4.6, Spring v6.2.7
+[INFO ] 25-06-13 21:44:24 [DatabaseApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 25-06-13 21:44:24 [DatabaseApplication:59] - Started DatabaseApplication in 0.374 seconds (process running for 101.774)
+[INFO ] 25-06-13 21:44:27 [DatabaseApplication:53] - Starting DatabaseApplication using Java 17.0.2 with PID 11744 (D:\#web3\06-SpringBoot\08-DataBase(2)\bin\main started by yjh in D:\#web3\06-SpringBoot\08-DataBase(2))
+[DEBUG] 25-06-13 21:44:27 [DatabaseApplication:54] - Running with Spring Boot v3.4.6, Spring v6.2.7
+[INFO ] 25-06-13 21:44:27 [DatabaseApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 25-06-13 21:44:28 [DatabaseApplication:59] - Started DatabaseApplication in 0.38 seconds (process running for 105.678)
+[INFO ] 25-06-13 21:44:30 [DatabaseApplication:53] - Starting DatabaseApplication using Java 17.0.2 with PID 11744 (D:\#web3\06-SpringBoot\08-DataBase(2)\bin\main started by yjh in D:\#web3\06-SpringBoot\08-DataBase(2))
+[DEBUG] 25-06-13 21:44:30 [DatabaseApplication:54] - Running with Spring Boot v3.4.6, Spring v6.2.7
+[INFO ] 25-06-13 21:44:30 [DatabaseApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 25-06-13 21:44:31 [DatabaseApplication:59] - Started DatabaseApplication in 0.336 seconds (process running for 108.501)
+[INFO ] 25-06-13 21:44:44 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-13 21:44:44 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-13 21:44:44 [MyInterceptor:85] - [GET] http://localhost:8080/student?keyword=&department_id=&grade=2
+[INFO ] 25-06-13 21:44:44 [MyInterceptor:92] - (param) <-- keyword = 
+[INFO ] 25-06-13 21:44:44 [MyInterceptor:92] - (param) <-- department_id = 
+[INFO ] 25-06-13 21:44:44 [MyInterceptor:92] - (param) <-- grade = 2
+[DEBUG] 25-06-13 21:44:44 [selectCount:135] - ==>  Preparing: SELECT COUNT(*) FROM students
+[DEBUG] 25-06-13 21:44:44 [selectCount:135] - ==> Parameters: 
+[INFO ] 25-06-13 21:44:44 [sqlonly:228] - SELECT COUNT(*) FROM students
+
+[INFO ] 25-06-13 21:44:44 [resultsettable:610] - 
+|---------|
+|count(*) |
+|---------|
+|77       |
+|---------|
+
+[DEBUG] 25-06-13 21:44:44 [selectCount:135] - <==      Total: 1
+[DEBUG] 25-06-13 21:44:44 [PageHelper:78] - PageHelper(nowPage=1, totalCount=77, listCount=10, groupCount=5, totalPage=8, startPage=1, endPage=5, prevPage=0, nextPage=6, offset=0)
+[DEBUG] 25-06-13 21:44:44 [selectList:135] - ==>  Preparing: SELECT s.id, s.name, s.user_id, s.grade, s.idnum, s.birthdate, s.phone, s.height, s.weight, s.email, s.gender, s.status, s.photo_url, s.admission_date, s.graduation_date, s.department_id, p.name AS pname, d.dname FROM students AS s INNER JOIN departments AS d ON s.department_id = d.id INNER JOIN professors AS p ON s.professor_id = p.id WHERE s.id=? ORDER BY p.id DESC LIMIT ?, ?
+[DEBUG] 25-06-13 21:44:44 [selectList:135] - ==> Parameters: 0(Integer), 0(Integer), 10(Integer)
+[INFO ] 25-06-13 21:44:44 [sqlonly:228] - SELECT s.id, s.name, s.user_id, s.grade, s.idnum, s.birthdate, s.phone, s.height, s.weight, s.email, s.gender, s.status, s.photo_url, s.admission_date, s.graduation_date, s.department_id, p.name AS pname, d.dname FROM students AS s INNER JOIN departments AS d ON s.department_id = d.id INNER JOIN professors AS p ON s.professor_id = p.id WHERE s.id=0    ORDER BY p.id DESC  LIMIT 0, 10
+
+[INFO ] 25-06-13 21:44:44 [resultsettable:610] - 
+|---|-----|--------|------|------|----------|------|-------|-------|------|-------|-------|----------|---------------|----------------|--------------|-----|------|
+|id |name |user_id |grade |idnum |birthdate |phone |height |weight |email |gender |status |photo_url |admission_date |graduation_date |department_id |name |dname |
+|---|-----|--------|------|------|----------|------|-------|-------|------|-------|-------|----------|---------------|----------------|--------------|-----|------|
+|---|-----|--------|------|------|----------|------|-------|-------|------|-------|-------|----------|---------------|----------------|--------------|-----|------|
+
+[DEBUG] 25-06-13 21:44:44 [selectList:135] - <==      Total: 0
+[DEBUG] 25-06-13 21:44:44 [selectList:135] - ==>  Preparing: SELECT s.id, s.name, s.user_id, s.grade, s.idnum, s.birthdate, s.phone, s.height, s.weight, s.email, s.gender, s.status, s.photo_url, s.admission_date, s.graduation_date, s.department_id, p.name AS pname, d.dname FROM students AS s INNER JOIN departments AS d ON s.department_id = d.id INNER JOIN professors AS p ON s.professor_id = p.id WHERE s.id=? ORDER BY p.id DESC
+[DEBUG] 25-06-13 21:44:44 [selectList:135] - ==> Parameters: null
+[INFO ] 25-06-13 21:44:44 [sqlonly:228] - SELECT s.id, s.name, s.user_id, s.grade, s.idnum, s.birthdate, s.phone, s.height, s.weight, s.email, s.gender, s.status, s.photo_url, s.admission_date, s.graduation_date, s.department_id, p.name AS pname, d.dname FROM students AS s INNER JOIN departments AS d ON s.department_id = d.id INNER JOIN professors AS p ON s.professor_id = p.id WHERE s.id=NULL    ORDER BY p.id DESC
+
+[INFO ] 25-06-13 21:44:44 [resultsettable:610] - 
+|---|-----|--------|------|------|----------|------|-------|-------|------|-------|-------|----------|---------------|----------------|--------------|-----|------|
+|id |name |user_id |grade |idnum |birthdate |phone |height |weight |email |gender |status |photo_url |admission_date |graduation_date |department_id |name |dname |
+|---|-----|--------|------|------|----------|------|-------|-------|------|-------|-------|----------|---------------|----------------|--------------|-----|------|
+|---|-----|--------|------|------|----------|------|-------|-------|------|-------|-------|----------|---------------|----------------|--------------|-----|------|
+
+[DEBUG] 25-06-13 21:44:44 [selectList:135] - <==      Total: 0
+[INFO ] 25-06-13 21:44:44 [MyInterceptor:123] - running time: 41(ms)
+[WARN ] 25-06-13 21:44:44 [AbstractStandardFragmentInsertionTagProcessor:385] - [THYMELEAF][http-nio-8080-exec-1][student/index] Deprecated unwrapped fragment expression "fragments/header :: my-header" found in template student/index, line 31, col 13. Please use the complete syntax of fragment expressions instead ("~{fragments/header :: my-header}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+[INFO ] 25-06-13 21:44:45 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-13 21:44:45 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-13 21:44:45 [MyInterceptor:85] - [GET] http://localhost:8080/student?keyword=&department_id=&grade=2
+[INFO ] 25-06-13 21:44:45 [MyInterceptor:92] - (param) <-- keyword = 
+[INFO ] 25-06-13 21:44:45 [MyInterceptor:92] - (param) <-- department_id = 
+[INFO ] 25-06-13 21:44:45 [MyInterceptor:92] - (param) <-- grade = 2
+[INFO ] 25-06-13 21:44:45 [MyInterceptor:101] - - REFERER : time=868, url=http://localhost:8080/student
+[DEBUG] 25-06-13 21:44:45 [selectCount:135] - ==>  Preparing: SELECT COUNT(*) FROM students
+[DEBUG] 25-06-13 21:44:45 [selectCount:135] - ==> Parameters: 
+[INFO ] 25-06-13 21:44:45 [sqlonly:228] - SELECT COUNT(*) FROM students
+
+[INFO ] 25-06-13 21:44:45 [resultsettable:610] - 
+|---------|
+|count(*) |
+|---------|
+|77       |
+|---------|
+
+[DEBUG] 25-06-13 21:44:45 [selectCount:135] - <==      Total: 1
+[DEBUG] 25-06-13 21:44:45 [PageHelper:78] - PageHelper(nowPage=1, totalCount=77, listCount=10, groupCount=5, totalPage=8, startPage=1, endPage=5, prevPage=0, nextPage=6, offset=0)
+[DEBUG] 25-06-13 21:44:45 [selectList:135] - ==>  Preparing: SELECT s.id, s.name, s.user_id, s.grade, s.idnum, s.birthdate, s.phone, s.height, s.weight, s.email, s.gender, s.status, s.photo_url, s.admission_date, s.graduation_date, s.department_id, p.name AS pname, d.dname FROM students AS s INNER JOIN departments AS d ON s.department_id = d.id INNER JOIN professors AS p ON s.professor_id = p.id WHERE s.id=? ORDER BY p.id DESC LIMIT ?, ?
+[DEBUG] 25-06-13 21:44:45 [selectList:135] - ==> Parameters: 0(Integer), 0(Integer), 10(Integer)
+[INFO ] 25-06-13 21:44:45 [sqlonly:228] - SELECT s.id, s.name, s.user_id, s.grade, s.idnum, s.birthdate, s.phone, s.height, s.weight, s.email, s.gender, s.status, s.photo_url, s.admission_date, s.graduation_date, s.department_id, p.name AS pname, d.dname FROM students AS s INNER JOIN departments AS d ON s.department_id = d.id INNER JOIN professors AS p ON s.professor_id = p.id WHERE s.id=0    ORDER BY p.id DESC  LIMIT 0, 10
+
+[INFO ] 25-06-13 21:44:45 [resultsettable:610] - 
+|---|-----|--------|------|------|----------|------|-------|-------|------|-------|-------|----------|---------------|----------------|--------------|-----|------|
+|id |name |user_id |grade |idnum |birthdate |phone |height |weight |email |gender |status |photo_url |admission_date |graduation_date |department_id |name |dname |
+|---|-----|--------|------|------|----------|------|-------|-------|------|-------|-------|----------|---------------|----------------|--------------|-----|------|
+|---|-----|--------|------|------|----------|------|-------|-------|------|-------|-------|----------|---------------|----------------|--------------|-----|------|
+
+[DEBUG] 25-06-13 21:44:45 [selectList:135] - <==      Total: 0
+[DEBUG] 25-06-13 21:44:45 [selectList:135] - ==>  Preparing: SELECT s.id, s.name, s.user_id, s.grade, s.idnum, s.birthdate, s.phone, s.height, s.weight, s.email, s.gender, s.status, s.photo_url, s.admission_date, s.graduation_date, s.department_id, p.name AS pname, d.dname FROM students AS s INNER JOIN departments AS d ON s.department_id = d.id INNER JOIN professors AS p ON s.professor_id = p.id WHERE s.id=? ORDER BY p.id DESC
+[DEBUG] 25-06-13 21:44:45 [selectList:135] - ==> Parameters: null
+[INFO ] 25-06-13 21:44:45 [sqlonly:228] - SELECT s.id, s.name, s.user_id, s.grade, s.idnum, s.birthdate, s.phone, s.height, s.weight, s.email, s.gender, s.status, s.photo_url, s.admission_date, s.graduation_date, s.department_id, p.name AS pname, d.dname FROM students AS s INNER JOIN departments AS d ON s.department_id = d.id INNER JOIN professors AS p ON s.professor_id = p.id WHERE s.id=NULL    ORDER BY p.id DESC
+
+[INFO ] 25-06-13 21:44:45 [resultsettable:610] - 
+|---|-----|--------|------|------|----------|------|-------|-------|------|-------|-------|----------|---------------|----------------|--------------|-----|------|
+|id |name |user_id |grade |idnum |birthdate |phone |height |weight |email |gender |status |photo_url |admission_date |graduation_date |department_id |name |dname |
+|---|-----|--------|------|------|----------|------|-------|-------|------|-------|-------|----------|---------------|----------------|--------------|-----|------|
+|---|-----|--------|------|------|----------|------|-------|-------|------|-------|-------|----------|---------------|----------------|--------------|-----|------|
+
+[DEBUG] 25-06-13 21:44:45 [selectList:135] - <==      Total: 0
+[INFO ] 25-06-13 21:44:45 [MyInterceptor:123] - running time: 29(ms)
+[WARN ] 25-06-13 21:44:45 [AbstractStandardFragmentInsertionTagProcessor:385] - [THYMELEAF][http-nio-8080-exec-5][student/index] Deprecated unwrapped fragment expression "fragments/header :: my-header" found in template student/index, line 31, col 13. Please use the complete syntax of fragment expressions instead ("~{fragments/header :: my-header}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+[INFO ] 25-06-13 21:44:47 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-13 21:44:47 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-13 21:44:47 [MyInterceptor:85] - [GET] http://localhost:8080/student?keyword=&department_id=&grade=2
+[INFO ] 25-06-13 21:44:47 [MyInterceptor:92] - (param) <-- keyword = 
+[INFO ] 25-06-13 21:44:47 [MyInterceptor:92] - (param) <-- department_id = 
+[INFO ] 25-06-13 21:44:47 [MyInterceptor:92] - (param) <-- grade = 2
+[INFO ] 25-06-13 21:44:47 [MyInterceptor:101] - - REFERER : time=2498, url=http://localhost:8080/student
+[DEBUG] 25-06-13 21:44:47 [selectCount:135] - ==>  Preparing: SELECT COUNT(*) FROM students
+[DEBUG] 25-06-13 21:44:47 [selectCount:135] - ==> Parameters: 
+[INFO ] 25-06-13 21:44:47 [sqlonly:228] - SELECT COUNT(*) FROM students
+
+[INFO ] 25-06-13 21:44:47 [resultsettable:610] - 
+|---------|
+|count(*) |
+|---------|
+|77       |
+|---------|
+
+[DEBUG] 25-06-13 21:44:47 [selectCount:135] - <==      Total: 1
+[DEBUG] 25-06-13 21:44:47 [PageHelper:78] - PageHelper(nowPage=1, totalCount=77, listCount=10, groupCount=5, totalPage=8, startPage=1, endPage=5, prevPage=0, nextPage=6, offset=0)
+[DEBUG] 25-06-13 21:44:47 [selectList:135] - ==>  Preparing: SELECT s.id, s.name, s.user_id, s.grade, s.idnum, s.birthdate, s.phone, s.height, s.weight, s.email, s.gender, s.status, s.photo_url, s.admission_date, s.graduation_date, s.department_id, p.name AS pname, d.dname FROM students AS s INNER JOIN departments AS d ON s.department_id = d.id INNER JOIN professors AS p ON s.professor_id = p.id WHERE s.id=? ORDER BY p.id DESC LIMIT ?, ?
+[DEBUG] 25-06-13 21:44:47 [selectList:135] - ==> Parameters: 0(Integer), 0(Integer), 10(Integer)
+[INFO ] 25-06-13 21:44:47 [sqlonly:228] - SELECT s.id, s.name, s.user_id, s.grade, s.idnum, s.birthdate, s.phone, s.height, s.weight, s.email, s.gender, s.status, s.photo_url, s.admission_date, s.graduation_date, s.department_id, p.name AS pname, d.dname FROM students AS s INNER JOIN departments AS d ON s.department_id = d.id INNER JOIN professors AS p ON s.professor_id = p.id WHERE s.id=0    ORDER BY p.id DESC  LIMIT 0, 10
+
+[INFO ] 25-06-13 21:44:47 [resultsettable:610] - 
+|---|-----|--------|------|------|----------|------|-------|-------|------|-------|-------|----------|---------------|----------------|--------------|-----|------|
+|id |name |user_id |grade |idnum |birthdate |phone |height |weight |email |gender |status |photo_url |admission_date |graduation_date |department_id |name |dname |
+|---|-----|--------|------|------|----------|------|-------|-------|------|-------|-------|----------|---------------|----------------|--------------|-----|------|
+|---|-----|--------|------|------|----------|------|-------|-------|------|-------|-------|----------|---------------|----------------|--------------|-----|------|
+
+[DEBUG] 25-06-13 21:44:47 [selectList:135] - <==      Total: 0
+[DEBUG] 25-06-13 21:44:47 [selectList:135] - ==>  Preparing: SELECT s.id, s.name, s.user_id, s.grade, s.idnum, s.birthdate, s.phone, s.height, s.weight, s.email, s.gender, s.status, s.photo_url, s.admission_date, s.graduation_date, s.department_id, p.name AS pname, d.dname FROM students AS s INNER JOIN departments AS d ON s.department_id = d.id INNER JOIN professors AS p ON s.professor_id = p.id WHERE s.id=? ORDER BY p.id DESC
+[DEBUG] 25-06-13 21:44:47 [selectList:135] - ==> Parameters: null
+[INFO ] 25-06-13 21:44:47 [sqlonly:228] - SELECT s.id, s.name, s.user_id, s.grade, s.idnum, s.birthdate, s.phone, s.height, s.weight, s.email, s.gender, s.status, s.photo_url, s.admission_date, s.graduation_date, s.department_id, p.name AS pname, d.dname FROM students AS s INNER JOIN departments AS d ON s.department_id = d.id INNER JOIN professors AS p ON s.professor_id = p.id WHERE s.id=NULL    ORDER BY p.id DESC
+
+[INFO ] 25-06-13 21:44:47 [resultsettable:610] - 
+|---|-----|--------|------|------|----------|------|-------|-------|------|-------|-------|----------|---------------|----------------|--------------|-----|------|
+|id |name |user_id |grade |idnum |birthdate |phone |height |weight |email |gender |status |photo_url |admission_date |graduation_date |department_id |name |dname |
+|---|-----|--------|------|------|----------|------|-------|-------|------|-------|-------|----------|---------------|----------------|--------------|-----|------|
+|---|-----|--------|------|------|----------|------|-------|-------|------|-------|-------|----------|---------------|----------------|--------------|-----|------|
+
+[DEBUG] 25-06-13 21:44:47 [selectList:135] - <==      Total: 0
+[INFO ] 25-06-13 21:44:47 [MyInterceptor:123] - running time: 27(ms)
+[WARN ] 25-06-13 21:44:47 [AbstractStandardFragmentInsertionTagProcessor:385] - [THYMELEAF][http-nio-8080-exec-9][student/index] Deprecated unwrapped fragment expression "fragments/header :: my-header" found in template student/index, line 31, col 13. Please use the complete syntax of fragment expressions instead ("~{fragments/header :: my-header}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+[INFO ] 25-06-13 21:45:48 [DatabaseApplication:53] - Starting DatabaseApplication using Java 17.0.2 with PID 11744 (D:\#web3\06-SpringBoot\08-DataBase(2)\bin\main started by yjh in D:\#web3\06-SpringBoot\08-DataBase(2))
+[DEBUG] 25-06-13 21:45:48 [DatabaseApplication:54] - Running with Spring Boot v3.4.6, Spring v6.2.7
+[INFO ] 25-06-13 21:45:48 [DatabaseApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[WARN ] 25-06-13 21:45:49 [AnnotationConfigServletWebServerApplicationContext:635] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'studentController': Unsatisfied dependency expressed through field 'studentService': Error creating bean with name 'studentServiceImpl' defined in file [D:\#web3\06-SpringBoot\08-DataBase(2)\bin\main\kr\yjh\database\services\impl\StudentServiceImpl.class]: Failed to instantiate [kr.yjh.database.services.impl.StudentServiceImpl]: Constructor threw exception
+[ERROR] 25-06-13 21:45:49 [SpringApplication:858] - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'studentController': Unsatisfied dependency expressed through field 'studentService': Error creating bean with name 'studentServiceImpl' defined in file [D:\#web3\06-SpringBoot\08-DataBase(2)\bin\main\kr\yjh\database\services\impl\StudentServiceImpl.class]: Failed to instantiate [kr.yjh.database.services.impl.StudentServiceImpl]: Constructor threw exception
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:788)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:768)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:146)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:509)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1459)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:606)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1222)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1188)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1123)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1362)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1351)
+	at kr.yjh.database.DatabaseApplication.main(DatabaseApplication.java:10)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'studentServiceImpl' defined in file [D:\#web3\06-SpringBoot\08-DataBase(2)\bin\main\kr\yjh\database\services\impl\StudentServiceImpl.class]: Failed to instantiate [kr.yjh.database.services.impl.StudentServiceImpl]: Constructor threw exception
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1357)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1242)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1740)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1628)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:785)
+	... 27 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [kr.yjh.database.services.impl.StudentServiceImpl]: Constructor threw exception
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:222)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:122)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1351)
+	... 38 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problem: 
+	Syntax error on token ".", delete this token
+
+	at kr.yjh.database.services.impl.StudentServiceImpl.<init>(StudentServiceImpl.java:61)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:196)
+	... 40 common frames omitted
+[INFO ] 25-06-13 21:45:51 [DatabaseApplication:53] - Starting DatabaseApplication using Java 17.0.2 with PID 11744 (D:\#web3\06-SpringBoot\08-DataBase(2)\bin\main started by yjh in D:\#web3\06-SpringBoot\08-DataBase(2))
+[DEBUG] 25-06-13 21:45:51 [DatabaseApplication:54] - Running with Spring Boot v3.4.6, Spring v6.2.7
+[INFO ] 25-06-13 21:45:51 [DatabaseApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[WARN ] 25-06-13 21:45:51 [AnnotationConfigServletWebServerApplicationContext:635] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'studentController': Unsatisfied dependency expressed through field 'studentService': Error creating bean with name 'studentServiceImpl' defined in file [D:\#web3\06-SpringBoot\08-DataBase(2)\bin\main\kr\yjh\database\services\impl\StudentServiceImpl.class]: Failed to instantiate [kr.yjh.database.services.impl.StudentServiceImpl]: Constructor threw exception
+[ERROR] 25-06-13 21:45:51 [SpringApplication:858] - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'studentController': Unsatisfied dependency expressed through field 'studentService': Error creating bean with name 'studentServiceImpl' defined in file [D:\#web3\06-SpringBoot\08-DataBase(2)\bin\main\kr\yjh\database\services\impl\StudentServiceImpl.class]: Failed to instantiate [kr.yjh.database.services.impl.StudentServiceImpl]: Constructor threw exception
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:788)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:768)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:146)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:509)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1459)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:606)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1222)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1188)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1123)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1362)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1351)
+	at kr.yjh.database.DatabaseApplication.main(DatabaseApplication.java:10)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'studentServiceImpl' defined in file [D:\#web3\06-SpringBoot\08-DataBase(2)\bin\main\kr\yjh\database\services\impl\StudentServiceImpl.class]: Failed to instantiate [kr.yjh.database.services.impl.StudentServiceImpl]: Constructor threw exception
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1357)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1242)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1740)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1628)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:785)
+	... 27 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [kr.yjh.database.services.impl.StudentServiceImpl]: Constructor threw exception
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:222)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:122)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1351)
+	... 38 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	Duplicate annotation of non-repeatable type @Autowired. Only annotation types marked @Repeatable can be used multiple times at one target.
+	Syntax error, insert ";" to complete FieldDeclaration
+	Duplicate annotation of non-repeatable type @Autowired. Only annotation types marked @Repeatable can be used multiple times at one target.
+
+	at kr.yjh.database.services.impl.StudentServiceImpl.<init>(StudentServiceImpl.java:27)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:196)
+	... 40 common frames omitted
+[INFO ] 25-06-13 21:45:53 [DatabaseApplication:53] - Starting DatabaseApplication using Java 17.0.2 with PID 11744 (D:\#web3\06-SpringBoot\08-DataBase(2)\bin\main started by yjh in D:\#web3\06-SpringBoot\08-DataBase(2))
+[DEBUG] 25-06-13 21:45:53 [DatabaseApplication:54] - Running with Spring Boot v3.4.6, Spring v6.2.7
+[INFO ] 25-06-13 21:45:53 [DatabaseApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 25-06-13 21:45:53 [DatabaseApplication:59] - Started DatabaseApplication in 0.329 seconds (process running for 191.076)
+[INFO ] 25-06-13 21:48:25 [DatabaseApplication:53] - Starting DatabaseApplication using Java 17.0.2 with PID 11744 (D:\#web3\06-SpringBoot\08-DataBase(2)\bin\main started by yjh in D:\#web3\06-SpringBoot\08-DataBase(2))
+[DEBUG] 25-06-13 21:48:25 [DatabaseApplication:54] - Running with Spring Boot v3.4.6, Spring v6.2.7
+[INFO ] 25-06-13 21:48:25 [DatabaseApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 25-06-13 21:48:26 [DatabaseApplication:59] - Started DatabaseApplication in 0.333 seconds (process running for 343.41)
+[INFO ] 25-06-13 21:49:47 [DatabaseApplication:53] - Starting DatabaseApplication using Java 17.0.2 with PID 11744 (D:\#web3\06-SpringBoot\08-DataBase(2)\bin\main started by yjh in D:\#web3\06-SpringBoot\08-DataBase(2))
+[DEBUG] 25-06-13 21:49:47 [DatabaseApplication:54] - Running with Spring Boot v3.4.6, Spring v6.2.7
+[INFO ] 25-06-13 21:49:47 [DatabaseApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 25-06-13 21:49:48 [DatabaseApplication:59] - Started DatabaseApplication in 0.319 seconds (process running for 425.446)
+[INFO ] 25-06-13 21:50:54 [DatabaseApplication:53] - Starting DatabaseApplication using Java 17.0.2 with PID 11744 (D:\#web3\06-SpringBoot\08-DataBase(2)\bin\main started by yjh in D:\#web3\06-SpringBoot\08-DataBase(2))
+[DEBUG] 25-06-13 21:50:54 [DatabaseApplication:54] - Running with Spring Boot v3.4.6, Spring v6.2.7
+[INFO ] 25-06-13 21:50:54 [DatabaseApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 25-06-13 21:50:54 [DatabaseApplication:59] - Started DatabaseApplication in 0.331 seconds (process running for 492.345)
+[INFO ] 25-06-13 21:56:23 [DatabaseApplication:53] - Starting DatabaseApplication using Java 17.0.2 with PID 11744 (D:\#web3\06-SpringBoot\08-DataBase(2)\bin\main started by yjh in D:\#web3\06-SpringBoot\08-DataBase(2))
+[DEBUG] 25-06-13 21:56:23 [DatabaseApplication:54] - Running with Spring Boot v3.4.6, Spring v6.2.7
+[INFO ] 25-06-13 21:56:23 [DatabaseApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 25-06-13 21:56:24 [DatabaseApplication:59] - Started DatabaseApplication in 0.352 seconds (process running for 821.551)
+[INFO ] 25-06-13 21:56:27 [DatabaseApplication:53] - Starting DatabaseApplication using Java 17.0.2 with PID 11744 (D:\#web3\06-SpringBoot\08-DataBase(2)\bin\main started by yjh in D:\#web3\06-SpringBoot\08-DataBase(2))
+[DEBUG] 25-06-13 21:56:27 [DatabaseApplication:54] - Running with Spring Boot v3.4.6, Spring v6.2.7
+[INFO ] 25-06-13 21:56:27 [DatabaseApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 25-06-13 21:56:28 [DatabaseApplication:59] - Started DatabaseApplication in 0.318 seconds (process running for 825.396)
+[INFO ] 25-06-13 21:56:45 [DatabaseApplication:53] - Starting DatabaseApplication using Java 17.0.2 with PID 11744 (D:\#web3\06-SpringBoot\08-DataBase(2)\bin\main started by yjh in D:\#web3\06-SpringBoot\08-DataBase(2))
+[DEBUG] 25-06-13 21:56:45 [DatabaseApplication:54] - Running with Spring Boot v3.4.6, Spring v6.2.7
+[INFO ] 25-06-13 21:56:45 [DatabaseApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 25-06-13 21:56:46 [DatabaseApplication:59] - Started DatabaseApplication in 0.333 seconds (process running for 843.497)
+[INFO ] 25-06-13 21:57:04 [DatabaseApplication:53] - Starting DatabaseApplication using Java 17.0.2 with PID 11744 (D:\#web3\06-SpringBoot\08-DataBase(2)\bin\main started by yjh in D:\#web3\06-SpringBoot\08-DataBase(2))
+[DEBUG] 25-06-13 21:57:04 [DatabaseApplication:54] - Running with Spring Boot v3.4.6, Spring v6.2.7
+[INFO ] 25-06-13 21:57:04 [DatabaseApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 25-06-13 21:57:05 [DatabaseApplication:59] - Started DatabaseApplication in 0.35 seconds (process running for 862.625)
+[INFO ] 25-06-13 21:57:06 [DatabaseApplication:53] - Starting DatabaseApplication using Java 17.0.2 with PID 11744 (D:\#web3\06-SpringBoot\08-DataBase(2)\bin\main started by yjh in D:\#web3\06-SpringBoot\08-DataBase(2))
+[DEBUG] 25-06-13 21:57:06 [DatabaseApplication:54] - Running with Spring Boot v3.4.6, Spring v6.2.7
+[INFO ] 25-06-13 21:57:06 [DatabaseApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 25-06-13 21:57:07 [DatabaseApplication:59] - Started DatabaseApplication in 0.325 seconds (process running for 864.439)
+[INFO ] 25-06-13 21:57:24 [DatabaseApplication:53] - Starting DatabaseApplication using Java 17.0.2 with PID 6476 (D:\#web3\06-SpringBoot\08-DataBase(2)\bin\main started by yjh in D:\#web3\06-SpringBoot\08-DataBase(2))
+[DEBUG] 25-06-13 21:57:24 [DatabaseApplication:54] - Running with Spring Boot v3.4.6, Spring v6.2.7
+[INFO ] 25-06-13 21:57:24 [DatabaseApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 25-06-13 21:57:25 [LogFactory:112] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[INFO ] 25-06-13 21:57:27 [DatabaseApplication:59] - Started DatabaseApplication in 2.981 seconds (process running for 3.41)
+[INFO ] 25-06-13 21:57:29 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-13 21:57:29 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-13 21:57:29 [MyInterceptor:85] - [GET] http://localhost:8080/student
+[DEBUG] 25-06-13 21:57:29 [selectCount:135] - ==>  Preparing: SELECT COUNT(*) FROM students
+[DEBUG] 25-06-13 21:57:29 [selectCount:135] - ==> Parameters: 
+[INFO ] 25-06-13 21:57:29 [sqlonly:228] - SELECT COUNT(*) FROM students
+
+[INFO ] 25-06-13 21:57:29 [resultsettable:610] - 
+|---------|
+|count(*) |
+|---------|
+|77       |
+|---------|
+
+[DEBUG] 25-06-13 21:57:29 [selectCount:135] - <==      Total: 1
+[DEBUG] 25-06-13 21:57:29 [PageHelper:78] - PageHelper(nowPage=1, totalCount=77, listCount=10, groupCount=5, totalPage=8, startPage=1, endPage=5, prevPage=0, nextPage=6, offset=0)
+[DEBUG] 25-06-13 21:57:29 [selectList:135] - ==>  Preparing: SELECT s.id, s.name, s.user_id, s.grade, s.idnum, s.birthdate, s.phone, s.height, s.weight, s.email, s.gender, s.status, s.photo_url, s.admission_date, s.graduation_date, s.department_id, p.name AS pname, d.dname FROM students AS s INNER JOIN departments AS d ON s.department_id = d.id INNER JOIN professors AS p ON s.professor_id = p.id ORDER BY p.id DESC LIMIT ?, ?
+[DEBUG] 25-06-13 21:57:29 [selectList:135] - ==> Parameters: 0(Integer), 10(Integer)
+[INFO ] 25-06-13 21:57:29 [sqlonly:228] - SELECT s.id, s.name, s.user_id, s.grade, s.idnum, s.birthdate, s.phone, s.height, s.weight, s.email, s.gender, s.status, s.photo_url, s.admission_date, s.graduation_date, s.department_id, p.name AS pname, d.dname FROM students AS s INNER JOIN departments AS d ON s.department_id = d.id INNER JOIN professors AS p ON s.professor_id = p.id     ORDER BY p.id DESC  LIMIT 0, 10
+
+[INFO ] 25-06-13 21:57:29 [resultsettable:610] - 
+|------|-----|------------|------|-----------------------------------------------------------------|--------------------|--------------|-------|-------|--------------------------|-------|-------|---------------------------------------------|---------------|----------------|--------------|-----|-------|
+|id    |name |user_id     |grade |idnum                                                            |birthdate           |phone         |height |weight |email                     |gender |status |photo_url                                    |admission_date |graduation_date |department_id |name |dname  |
+|------|-----|------------|------|-----------------------------------------------------------------|--------------------|--------------|-------|-------|--------------------------|-------|-------|---------------------------------------------|---------------|----------------|--------------|-----|-------|
+|10174 |이지민  |geonu06     |4     |7409254bfe5c873dcef673b8fc6d6a5147d235923a1933d82796a39436a92c53 |2006-08-30 00:00:00 |070-4903-8642 |162    |49     |hanyeongceol@live.com     |남      |재학     |http://myschool.ac.kr/photos/geonu06.jpg     |2025-08-30     |null            |402           |박유진  |심리학과   |
+|10173 |안선영  |jiweongim   |3     |6e03a5f36c1ec3e3a2ce64273bcfe6e45ddc8f7287e1e3e7468ee0e0ba9eba2f |2001-03-13 00:00:00 |033-4852-7910 |156    |82     |boramo@gimgimgim.com      |남      |졸업     |http://myschool.ac.kr/photos/jiweongim.jpg   |2020-03-13     |2024-03-12      |402           |최영식  |심리학과   |
+|10170 |황동현  |yeongil91   |3     |07dfa0be849d170c15124a060d991baceb20b042f20ecdf4597c95056ff6f912 |2003-01-12 00:00:00 |018-6764-0085 |164    |86     |eunseo74@naver.com        |남      |재학     |http://myschool.ac.kr/photos/yeongil91.jpg   |2022-01-12     |null            |402           |진주원  |심리학과   |
+|10171 |배미정  |jiagim      |2     |099efdf307343b1b6891c0857c5c8bfa1927358cc0bab94266099e867364a76f |2006-12-08 00:00:00 |054-4911-0236 |151    |84     |yeongsig15@hotmail.com    |남      |재학     |http://myschool.ac.kr/photos/jiagim.jpg      |2025-12-08     |null            |402           |진주원  |심리학과   |
+|10172 |김숙자  |ugim        |4     |f72a878c6686212f0facaebb6778d0c0deed3c90af88cdc54f47ea7787f260d1 |2004-05-04 00:00:00 |051-2773-1391 |166    |68     |hyeonjunsong@dreamwiz.com |남      |재학     |http://myschool.ac.kr/photos/ugim.jpg        |2023-05-04     |null            |402           |진주원  |심리학과   |
+|10169 |강재현  |gimboram    |4     |c90ec713328b27e99be3232ab5d0f3c63d15d23be1f1ee4ad56ee2aa158db795 |2007-01-31 00:00:00 |054-7416-9188 |167    |71     |yeonggilgim@igim.kr       |여      |재학     |http://myschool.ac.kr/photos/gimboram.jpg    |2026-01-31     |null            |402           |김정웅  |심리학과   |
+|10163 |이광수  |lseo        |2     |de0fda5289c41925bd08424454fb30f734800e349c7deaa2a1455a3657be88e0 |2001-02-07 00:00:00 |032-5581-1062 |164    |69     |yeonghwan67@hotmail.com   |남      |재학     |http://myschool.ac.kr/photos/lseo.jpg        |2020-02-07     |null            |401           |박영일  |영어영문학과 |
+|10165 |박은영  |jihuyun     |4     |ab8befe22cac0c815e153655cec98696d188eb8fb8d970be0db2326690918c4b |2002-12-04 00:00:00 |055-6744-2655 |180    |45     |yejungo@baesimbag.org     |여      |재학     |http://myschool.ac.kr/photos/jihuyun.jpg     |2021-12-04     |null            |401           |박영일  |영어영문학과 |
+|10166 |이주원  |xbag        |2     |64a7a2c1703e8b07901276f593d9222a4cf91b45e89341031f850b3d4819573c |2001-05-20 00:00:00 |064-7863-5458 |181    |59     |seonyeongi@naver.com      |여      |재학     |http://myschool.ac.kr/photos/xbag.jpg        |2020-05-20     |null            |401           |박영일  |영어영문학과 |
+|10168 |오하윤  |yeongsugbag |4     |9baa0e1bce9513536c4b80b91b6e3d8842ba09fd451c64f1f14d17edb36052dd |2002-04-19 00:00:00 |016-4336-8577 |158    |74     |jaehogim@daum.net         |남      |재학     |http://myschool.ac.kr/photos/yeongsugbag.jpg |2021-04-19     |null            |401           |박영일  |영어영문학과 |
+|------|-----|------------|------|-----------------------------------------------------------------|--------------------|--------------|-------|-------|--------------------------|-------|-------|---------------------------------------------|---------------|----------------|--------------|-----|-------|
+
+[DEBUG] 25-06-13 21:57:29 [selectList:135] - <==      Total: 10
+[DEBUG] 25-06-13 21:57:29 [selectList:135] - ==>  Preparing: SELECT s.id, s.name, s.user_id, s.grade, s.idnum, s.birthdate, s.phone, s.height, s.weight, s.email, s.gender, s.status, s.photo_url, s.admission_date, s.graduation_date, s.department_id, p.name AS pname, d.dname FROM students AS s INNER JOIN departments AS d ON s.department_id = d.id INNER JOIN professors AS p ON s.professor_id = p.id ORDER BY p.id DESC
+[DEBUG] 25-06-13 21:57:29 [selectList:135] - ==> Parameters: 
+[INFO ] 25-06-13 21:57:29 [sqlonly:228] - SELECT s.id, s.name, s.user_id, s.grade, s.idnum, s.birthdate, s.phone, s.height, s.weight, s.email, s.gender, s.status, s.photo_url, s.admission_date, s.graduation_date, s.department_id, p.name AS pname, d.dname FROM students AS s INNER JOIN departments AS d ON s.department_id = d.id INNER JOIN professors AS p ON s.professor_id = p.id     ORDER BY p.id DESC
+
+[INFO ] 25-06-13 21:57:29 [resultsettable:610] - 
+|------|-----|--------------|------|-----------------------------------------------------------------|--------------------|--------------|-------|-------|----------------------------|-------|-------|-----------------------------------------------|---------------|----------------|--------------|-----|--------|
+|id    |name |user_id       |grade |idnum                                                            |birthdate           |phone         |height |weight |email                       |gender |status |photo_url                                      |admission_date |graduation_date |department_id |name |dname   |
+|------|-----|--------------|------|-----------------------------------------------------------------|--------------------|--------------|-------|-------|----------------------------|-------|-------|-----------------------------------------------|---------------|----------------|--------------|-----|--------|
+|10174 |이지민  |geonu06       |4     |7409254bfe5c873dcef673b8fc6d6a5147d235923a1933d82796a39436a92c53 |2006-08-30 00:00:00 |070-4903-8642 |162    |49     |hanyeongceol@live.com       |남      |재학     |http://myschool.ac.kr/photos/geonu06.jpg       |2025-08-30     |null            |402           |박유진  |심리학과    |
+|10173 |안선영  |jiweongim     |3     |6e03a5f36c1ec3e3a2ce64273bcfe6e45ddc8f7287e1e3e7468ee0e0ba9eba2f |2001-03-13 00:00:00 |033-4852-7910 |156    |82     |boramo@gimgimgim.com        |남      |졸업     |http://myschool.ac.kr/photos/jiweongim.jpg     |2020-03-13     |2024-03-12      |402           |최영식  |심리학과    |
+|10170 |황동현  |yeongil91     |3     |07dfa0be849d170c15124a060d991baceb20b042f20ecdf4597c95056ff6f912 |2003-01-12 00:00:00 |018-6764-0085 |164    |86     |eunseo74@naver.com          |남      |재학     |http://myschool.ac.kr/photos/yeongil91.jpg     |2022-01-12     |null            |402           |진주원  |심리학과    |
+|10171 |배미정  |jiagim        |2     |099efdf307343b1b6891c0857c5c8bfa1927358cc0bab94266099e867364a76f |2006-12-08 00:00:00 |054-4911-0236 |151    |84     |yeongsig15@hotmail.com      |남      |재학     |http://myschool.ac.kr/photos/jiagim.jpg        |2025-12-08     |null            |402           |진주원  |심리학과    |
+|10172 |김숙자  |ugim          |4     |f72a878c6686212f0facaebb6778d0c0deed3c90af88cdc54f47ea7787f260d1 |2004-05-04 00:00:00 |051-2773-1391 |166    |68     |hyeonjunsong@dreamwiz.com   |남      |재학     |http://myschool.ac.kr/photos/ugim.jpg          |2023-05-04     |null            |402           |진주원  |심리학과    |
+|10169 |강재현  |gimboram      |4     |c90ec713328b27e99be3232ab5d0f3c63d15d23be1f1ee4ad56ee2aa158db795 |2007-01-31 00:00:00 |054-7416-9188 |167    |71     |yeonggilgim@igim.kr         |여      |재학     |http://myschool.ac.kr/photos/gimboram.jpg      |2026-01-31     |null            |402           |김정웅  |심리학과    |
+|10163 |이광수  |lseo          |2     |de0fda5289c41925bd08424454fb30f734800e349c7deaa2a1455a3657be88e0 |2001-02-07 00:00:00 |032-5581-1062 |164    |69     |yeonghwan67@hotmail.com     |남      |재학     |http://myschool.ac.kr/photos/lseo.jpg          |2020-02-07     |null            |401           |박영일  |영어영문학과  |
+|10165 |박은영  |jihuyun       |4     |ab8befe22cac0c815e153655cec98696d188eb8fb8d970be0db2326690918c4b |2002-12-04 00:00:00 |055-6744-2655 |180    |45     |yejungo@baesimbag.org       |여      |재학     |http://myschool.ac.kr/photos/jihuyun.jpg       |2021-12-04     |null            |401           |박영일  |영어영문학과  |
+|10166 |이주원  |xbag          |2     |64a7a2c1703e8b07901276f593d9222a4cf91b45e89341031f850b3d4819573c |2001-05-20 00:00:00 |064-7863-5458 |181    |59     |seonyeongi@naver.com        |여      |재학     |http://myschool.ac.kr/photos/xbag.jpg          |2020-05-20     |null            |401           |박영일  |영어영문학과  |
+|10168 |오하윤  |yeongsugbag   |4     |9baa0e1bce9513536c4b80b91b6e3d8842ba09fd451c64f1f14d17edb36052dd |2002-04-19 00:00:00 |016-4336-8577 |158    |74     |jaehogim@daum.net           |남      |재학     |http://myschool.ac.kr/photos/yeongsugbag.jpg   |2021-04-19     |null            |401           |박영일  |영어영문학과  |
+|10164 |권영진  |minjaebag     |4     |4821e6a40d555e582db7a7540727f020714952901c8fc61120bcda6ec300a8b2 |1999-04-02 00:00:00 |070-1254-7258 |153    |58     |iyejin@imun.kr              |여      |재학     |http://myschool.ac.kr/photos/minjaebag.jpg     |2018-04-02     |null            |401           |허예진  |영어영문학과  |
+|10167 |이진우  |yeongceol98   |2     |5ebc188371175d6ad473d9531049bcccb26f5d23623793ebcaed0470a7f738b5 |2001-01-07 00:00:00 |011-6823-9453 |179    |53     |hyejin77@naver.com          |남      |졸업     |http://myschool.ac.kr/photos/yeongceol98.jpg   |2020-01-07     |2024-01-06      |401           |허예진  |영어영문학과  |
+|10157 |백승현  |gujiu         |2     |d6e3eaebfc3348fe36092d290520cbfbb5bcde754e80366342e80e0b17288771 |2005-10-30 00:00:00 |02-5470-7683  |180    |84     |qgim@jusighoesa.com         |남      |재학     |http://myschool.ac.kr/photos/gujiu.jpg         |2024-10-30     |null            |302           |박경희  |경제학과    |
+|10158 |박민석  |jeonseongmin  |4     |963f687af54094f1f0589613bdd691293cd68fc4ad5e601329cfec4f377f4be3 |2003-03-10 00:00:00 |051-1097-6035 |175    |60     |jyang@naver.com             |남      |재학     |http://myschool.ac.kr/photos/jeonseongmin.jpg  |2022-03-10     |null            |302           |박경희  |경제학과    |
+|10159 |구영미  |simseunghyeon |4     |27897a20cc11faebb793401464340e9e33579805fb6d87b830390b67fd96891e |2002-03-27 00:00:00 |016-1167-1565 |164    |56     |gimyeongho@naver.com        |여      |재학     |http://myschool.ac.kr/photos/simseunghyeon.jpg |2021-03-27     |null            |302           |박경희  |경제학과    |
+|10160 |김서연  |sujingim      |2     |845d9ab9aa6d2b8a8ee04c2507fba253ce20b9a412a070c3b2ce92fc8da13d0a |2006-11-24 00:00:00 |053-7802-2592 |179    |87     |myeongjayang@ii.kr          |여      |퇴학     |http://myschool.ac.kr/photos/sujingim.jpg      |2025-11-24     |null            |302           |박경희  |경제학과    |
+|10161 |이서윤  |msong         |4     |ea6752363c8fa05ad7bba1cebd99219d1c1691f7ec61878b536a00eaab1aaf19 |2004-12-31 00:00:00 |031-8020-0437 |160    |75     |gimyeeun@live.com           |여      |재학     |http://myschool.ac.kr/photos/msong.jpg         |2023-12-31     |null            |302           |박경희  |경제학과    |
+|10162 |김현지  |nojiweon      |2     |0a57c4219b00b70512a66c771dfcc9f46227a2d9528ae834ee2ed3d9a5fe5098 |2003-12-14 00:00:00 |019-4598-0988 |167    |73     |lsong@jusighoesa.com        |남      |재학     |http://myschool.ac.kr/photos/nojiweon.jpg      |2022-12-14     |null            |302           |박경희  |경제학과    |
+|10154 |오영미  |si            |3     |e9fba28cbc8cf4b7ad05af3a03175651d97198430034fa40d4de31a23258ff8b |2000-03-29 00:00:00 |055-3549-7256 |168    |58     |fgim@hanmail.net            |여      |재학     |http://myschool.ac.kr/photos/si.jpg            |2019-03-29     |null            |301           |최정자  |경영학과    |
+|10152 |민지민  |myang         |3     |4cf5bb0c44a78f4131dc1056866a70344b565513e261ef3d4fee718704d70a0f |2006-06-14 00:00:00 |011-8562-7725 |182    |64     |gimminsu@munsimseong.kr     |여      |재학     |http://myschool.ac.kr/photos/myang.jpg         |2025-06-14     |null            |301           |장지후  |경영학과    |
+|10151 |심지현  |jiweon13      |2     |44733de63a2749363f886aa84f457cb1c632f0704e9f7a8b172ad6d2cf0366eb |2006-02-03 00:00:00 |051-5788-7189 |173    |72     |gyeongsuggweon@hanmail.net  |남      |졸업     |http://myschool.ac.kr/photos/jiweon13.jpg      |2025-02-03     |2029-02-02      |301           |이명숙  |경영학과    |
+|10153 |손지후  |cyu           |4     |eee5e239549f33adf24d4d9f02a75da1ec430cab94d1368ab063e583cadc8bbb |1999-10-29 00:00:00 |051-2572-8527 |174    |88     |coeeunju@live.com           |남      |재학     |http://myschool.ac.kr/photos/cyu.jpg           |2018-10-29     |null            |301           |이명숙  |경영학과    |
+|10155 |김수민  |ogjagim       |4     |aa0d454a6fb9e7654205e16082ef69716c4d7588c60a777d8bce11f19eb7605d |1999-11-06 00:00:00 |063-6194-1106 |163    |77     |gimboram@hanmail.net        |여      |재학     |http://myschool.ac.kr/photos/ogjagim.jpg       |2018-11-06     |null            |301           |이명숙  |경영학과    |
+|10143 |윤정희  |minjae02      |2     |bfa01bf20bb3dbc6cd28fe4aa273919df46ae823956c2aea087bcc9bb66fead6 |2006-08-12 00:00:00 |053-6841-8103 |152    |64     |jeonogja@naver.com          |여      |졸업     |http://myschool.ac.kr/photos/minjae02.jpg      |2025-08-12     |2029-08-11      |204           |오미영  |산업디자인학과 |
+|10144 |권경숙  |minseo39      |2     |1c04c2b0cdf78792ad4880a0b16af83b046678fdc875a1e861930936b78b4218 |2005-03-02 00:00:00 |041-4083-8575 |165    |87     |ihyeonjun@daum.net          |남      |재학     |http://myschool.ac.kr/photos/minseo39.jpg      |2024-03-02     |null            |204           |오미영  |산업디자인학과 |
+|10145 |배혜진  |yeongho24     |2     |4dad2e0475aac7764c51374a6be12c28bc31921cd9bd4b0d08cfb7d638b746f2 |2002-06-12 00:00:00 |062-2414-0213 |160    |56     |dohyeon60@gwagjiju.com      |여      |재학     |http://myschool.ac.kr/photos/yeongho24.jpg     |2021-06-12     |null            |204           |오미영  |산업디자인학과 |
+|10146 |김은정  |misuggim      |2     |860476ec4211e35a67ebf9e4d397234afa908709fcd4df17bac9ee6edd851f37 |2003-09-05 00:00:00 |052-7656-3129 |167    |55     |gwangsui@baggwago.kr        |남      |재학     |http://myschool.ac.kr/photos/misuggim.jpg      |2022-09-05     |null            |204           |오미영  |산업디자인학과 |
+|10147 |권민준  |seoyun91      |4     |c8b23a4dad6e6cd641c4f2a5e03fda3029ddce61bf70276ce5a305f4688ea20c |2004-10-30 00:00:00 |063-7780-7911 |172    |64     |junho69@gmail.com           |남      |재학     |http://myschool.ac.kr/photos/seoyun91.jpg      |2023-10-30     |null            |204           |오미영  |산업디자인학과 |
+|10148 |김서연  |jo            |1     |7f1d7b4932102b572d9efe05934ddb87f6647e20636eff15e2dbf0293828063f |2001-07-24 00:00:00 |052-1721-4653 |167    |67     |gimjeongnam@yu.net          |여      |재학     |http://myschool.ac.kr/photos/jo.jpg            |2020-07-24     |null            |204           |오미영  |산업디자인학과 |
+|10149 |김자영  |sgim          |1     |b33a78218c3bb3e0193891a6e9dfad3a16d0f10497d28ca9b8582e004e2fbb18 |2007-01-16 00:00:00 |070-7807-6674 |166    |56     |yunyeongceol@yu.org         |여      |재학     |http://myschool.ac.kr/photos/sgim.jpg          |2026-01-16     |null            |204           |오미영  |산업디자인학과 |
+|10150 |양도윤  |yeongil06     |4     |138feb53af49816d690d40f9ad2045d15d9ee4bc10d89fb3eca72cb64d4294d2 |2006-03-28 00:00:00 |052-2241-7778 |188    |77     |dgim@munio.org              |남      |재학     |http://myschool.ac.kr/photos/yeongil06.jpg     |2025-03-28     |null            |204           |오미영  |산업디자인학과 |
+|10137 |한영자  |jiyeonghyi    |1     |cebd16f4145b935fd46a9b801d1523ea4ae4af6ff9c7d1a8d46964ef669bb1f6 |2005-08-01 00:00:00 |017-0897-3248 |165    |68     |songsangho@dreamwiz.com     |여      |재학     |http://myschool.ac.kr/photos/jiyeonghyi.jpg    |2024-08-01     |null            |203           |박경수  |건축학과    |
+|10141 |김영지  |jimingim      |3     |d0f103a3dff9fa17c27f324d32699ebfc3f476952bad20659b241ba46c94d834 |1999-12-02 00:00:00 |019-5351-5971 |158    |85     |ggim@jusighoesa.net         |여      |재학     |http://myschool.ac.kr/photos/jimingim.jpg      |2018-12-02     |null            |203           |박경수  |건축학과    |
+|10134 |이민영  |eunjui        |1     |1b331873f01b46887dd744e06609d89db2da493407adbe02b110f207992eee98 |2006-03-28 00:00:00 |053-5337-4240 |189    |50     |yujin37@dreamwiz.com        |여      |재학     |http://myschool.ac.kr/photos/eunjui.jpg        |2025-03-28     |null            |203           |이옥순  |건축학과    |
+|10135 |박가람  |coeyunseo     |2     |a6c80d3cadbe404754c4fff9d348c47fcf977c4bd3f147f863ad270a9bce9c89 |2004-10-31 00:00:00 |02-7259-4559  |170    |60     |jangseoyun@ju.com           |여      |재학     |http://myschool.ac.kr/photos/coeyunseo.jpg     |2023-10-31     |null            |203           |이옥순  |건축학과    |
+|10136 |김준혁  |gimjiyeong    |1     |bd25c0bea72d090b3c2e7efdf5cfd902b989c707f6ed8405a4f7a1d79f44b787 |2005-11-13 00:00:00 |031-1991-0779 |150    |74     |seohyeonsug@juii.com        |남      |재학     |http://myschool.ac.kr/photos/gimjiyeong.jpg    |2024-11-13     |null            |203           |이옥순  |건축학과    |
+|10139 |양영수  |jongsu22      |2     |d61558b9fc876ca6df3589381cbedcb6716330700599feacf508b8bb80d12183 |1999-08-20 00:00:00 |070-4768-5028 |167    |63     |seonghogwag@daum.net        |남      |재학     |http://myschool.ac.kr/photos/jongsu22.jpg      |2018-08-20     |null            |203           |이옥순  |건축학과    |
+|10142 |심지아  |jinubag       |1     |d9f049f9d30a2da2971906c9449e09f16d8bf42ac63ac9a4c5f9192828330948 |1999-08-28 00:00:00 |011-2997-5207 |157    |49     |rjang@jusighoesa.org        |남      |재학     |http://myschool.ac.kr/photos/jinubag.jpg       |2018-08-28     |null            |203           |김지아  |건축학과    |
+|10138 |홍지후  |gusangho      |1     |12b1736b58326f762b9761abfe91c50327e6993f79ad34cadca468fe5a720bc0 |2004-12-20 00:00:00 |019-4399-2722 |185    |64     |cunjagim@ibaeg.kr           |남      |졸업     |http://myschool.ac.kr/photos/gusangho.jpg      |2023-12-20     |2027-12-19      |203           |장정자  |건축학과    |
+|10129 |김아름  |gweonjia      |2     |2ccd444a23e2f666ef54dd3b43cdb6c0ef1fe63b759d28f3cc292a39e4bf1e7a |2000-02-18 00:00:00 |032-9023-7535 |160    |71     |hgim@yunbae.kr              |여      |재학     |http://myschool.ac.kr/photos/gweonjia.jpg      |2019-02-18     |null            |202           |윤서현  |기계공학과   |
+|10130 |문지호  |jeonyeongja   |4     |43521fc885a30e5e70bd3b2ce90d63d3e94a4da4adec46ef381e49c0a994b2a7 |2005-03-19 00:00:00 |044-1071-5331 |150    |69     |gimsugja@baghong.kr         |여      |졸업     |http://myschool.ac.kr/photos/jeonyeongja.jpg   |2024-03-19     |2028-03-18      |202           |윤서현  |기계공학과   |
+|10131 |권정수  |yeongsigi     |2     |c8830e437defaa612681a6a71cb1be41dde129ee6e88ea6e4806b8ec8f8b5f35 |2005-04-30 00:00:00 |019-5764-6275 |162    |63     |vgu@hanmail.net             |남      |퇴학     |http://myschool.ac.kr/photos/yeongsigi.jpg     |2024-04-30     |null            |202           |윤서현  |기계공학과   |
+|10132 |전미영  |jeongungjo    |1     |dc20eebc22cc0797a9fa6515e50bb70ba776423724be4b994fe9fdaeab12b058 |2002-02-28 00:00:00 |051-9510-0578 |153    |82     |icaeweon@jusighoesa.kr      |여      |재학     |http://myschool.ac.kr/photos/jeongungjo.jpg    |2021-02-28     |null            |202           |윤서현  |기계공학과   |
+|10133 |최현주  |ean           |2     |b5897e90436d8c26ee39aaf97af260b6babb47149d4e9576042201ed159202f5 |1999-06-26 00:00:00 |055-4433-2111 |154    |83     |yeongsun06@seoibaeg.com     |남      |재학     |http://myschool.ac.kr/photos/ean.jpg           |2018-06-26     |null            |202           |윤서현  |기계공학과   |
+|10120 |박서현  |hyeonji18     |2     |6e2208af2fa52cca2e2ce3616dfaaf3b78a5a27a0dd8ecc5502239667dae317d |2000-03-04 00:00:00 |010-2080-5361 |158    |87     |hcoe@ju.com                 |여      |졸업     |http://myschool.ac.kr/photos/hyeonji18.jpg     |2019-03-04     |2023-03-03      |201           |박영미  |전자공학과   |
+|10124 |최예지  |ryang         |3     |bf7a3bd1c024b9fa80126f1d0322387a4afd3167ac4009b77c834e4c7503f84a |1999-04-11 00:00:00 |043-8552-3775 |154    |77     |najeongsig@ju.org           |남      |재학     |http://myschool.ac.kr/photos/ryang.jpg         |2018-04-11     |null            |201           |박영미  |전자공학과   |
+|10125 |최정미  |eomyeongsug   |4     |8605e18d07c30888437dbe66e75673d4eb7bffba0a054d9906ec84caa3638335 |1999-09-10 00:00:00 |054-5720-0988 |165    |75     |bagmisug@hotmail.com        |여      |재학     |http://myschool.ac.kr/photos/eomyeongsug.jpg   |2018-09-10     |null            |201           |강영호  |전자공학과   |
+|10121 |한명자  |bagjeonghun   |4     |6a4a8aa77ad16ecd1667eb5d73b4121bd3feb480c7e8f3b9a0fd02b5fa1ac69f |2001-01-21 00:00:00 |061-3914-7543 |163    |79     |seonghyeongweon@hotmail.com |남      |재학     |http://myschool.ac.kr/photos/bagjeonghun.jpg   |2020-01-21     |null            |201           |김정훈  |전자공학과   |
+|10123 |김병철  |ki            |2     |b0993aca44c7454cd8d100d7d812516e14be5cc93130f73ba2f179bc96eeaeb6 |1999-11-20 00:00:00 |017-8504-9523 |187    |59     |jeongsun07@hanmail.net      |남      |재학     |http://myschool.ac.kr/photos/ki.jpg            |2018-11-20     |null            |201           |이은영  |전자공학과   |
+|10126 |송정식  |sangceol72    |4     |35da11abe25d3bf3bb57999b9c561c417a1f6ab4f0ab1db65553a2ce7004efb3 |1999-10-01 00:00:00 |062-5868-5159 |179    |48     |gimeunju@dreamwiz.com       |남      |재학     |http://myschool.ac.kr/photos/sangceol72.jpg    |2018-10-01     |null            |201           |이은영  |전자공학과   |
+|10127 |박은영  |ihan          |2     |f1a8d5c9b0dfe3ed135f8a0ac2a87ab8ef9dfac6ebe3e4fa6f03633d8840ed2e |2003-05-05 00:00:00 |054-2958-9727 |162    |57     |sunja37@yuhanhoesa.org      |여      |재학     |http://myschool.ac.kr/photos/ihan.jpg          |2022-05-05     |null            |201           |이은영  |전자공학과   |
+|10114 |김명숙  |jinu82        |4     |32e37de4f6c6794c167ec1e17c467dec35f9d566a6cff03b0cb92aac7679ff76 |1999-10-04 00:00:00 |042-194-8127  |188    |49     |eunjijang@gimjini.com       |여      |재학     |http://myschool.ac.kr/photos/jinu82.jpg        |2018-10-04     |null            |102           |김현주  |소프트웨어학과 |
+|10116 |김정훈  |yejingweon    |4     |1695db96d6058063b110d42311b04f703ac1b1fee81dbad0788b7d594d827e70 |2006-10-18 00:00:00 |055-1035-7716 |150    |61     |dgim@daum.net               |남      |재학     |http://myschool.ac.kr/photos/yejingweon.jpg    |2025-10-18     |null            |102           |김현주  |소프트웨어학과 |
+|10111 |고미영  |doyun18       |3     |26befa41e26de777d0c982a70215f143d0e8ea405c3f7a20b15471aa802c2cc3 |2006-01-04 00:00:00 |064-7936-7461 |163    |86     |eyun@gmail.com              |여      |재학     |http://myschool.ac.kr/photos/doyun18.jpg       |2025-01-04     |null            |102           |이성훈  |소프트웨어학과 |
+|10112 |장하윤  |hyeonjeong23  |2     |8171cb54dce6249575c98bd9f2941319cd889ad147621994ac0f513688f58b23 |2004-10-19 00:00:00 |011-3526-5155 |165    |80     |yejian@yuhanhoesa.com       |여      |재학     |http://myschool.ac.kr/photos/hyeonjeong23.jpg  |2023-10-19     |null            |102           |이성훈  |소프트웨어학과 |
+|10118 |강지우  |jiyejin       |3     |b916bbb616ae7b0cac9b4e6744f47668e12e5f0406962f2cf22632db15ad0093 |2003-09-02 00:00:00 |041-5207-6667 |181    |46     |ihyeonu@ju.com              |남      |졸업     |http://myschool.ac.kr/photos/jiyejin.jpg       |2022-09-02     |2026-09-01      |102           |이성훈  |소프트웨어학과 |
+|10113 |최서영  |junyeonggwag  |2     |b0ee8d9942e1f192b412a15b215867f9493de7c16cf57659603d7bedc863d95a |2005-07-09 00:00:00 |044-1601-9736 |158    |77     |jongsui@daum.net            |여      |재학     |http://myschool.ac.kr/photos/junyeonggwag.jpg  |2024-07-09     |null            |102           |전종수  |소프트웨어학과 |
+|10115 |황예지  |cayeonghyi    |1     |845356558241ab1e3e98e1bd2f53121f1e557139d32dfca18b49e44264ffda7f |2006-12-06 00:00:00 |061-2439-3584 |157    |88     |bagsujin@gmail.com          |여      |재학     |http://myschool.ac.kr/photos/cayeonghyi.jpg    |2025-12-06     |null            |102           |전종수  |소프트웨어학과 |
+|10117 |최혜진  |yujin33       |2     |593d4f9025e6d249684e0b384ab5dcc6c5858c6a3448dd1ef0959dcfe7873ad2 |2001-03-17 00:00:00 |042-2107-2047 |159    |68     |songminjun@live.com         |남      |재학     |http://myschool.ac.kr/photos/yujin33.jpg       |2020-03-17     |null            |102           |허경희  |소프트웨어학과 |
+|10101 |황진우  |hhan          |1     |7b761b8750a5560337f93d1d4748ec2817a22e5c0f17af259ca0a2aae0077ec2 |2001-10-19 00:00:00 |010-1234-5678 |151    |62     |minjae67@yu.kr              |남      |재학     |http://myschool.ac.kr/photos/hhan.jpg          |2020-10-19     |null            |101           |차미경  |컴퓨터공학과  |
+|10103 |백순옥  |gimgyeonghyi  |2     |2c2957eb732c867392b707f5a09ad86a3792f4036e1a067a6580dafa2f683fd0 |2001-04-19 00:00:00 |063-1754-8132 |184    |71     |eunju75@hotmail.com         |남      |재학     |http://myschool.ac.kr/photos/gimgyeonghyi.jpg  |2020-04-19     |null            |101           |차미경  |컴퓨터공학과  |
+|10104 |김서연  |yeonghogang   |4     |9e23f8e8e8b3bca75ceb95ece80e0bd0a31198ebcc9e215ac2436cf107d012da |2005-07-16 00:00:00 |041-1708-9682 |171    |62     |hyeonjii@gimhan.net         |남      |재학     |http://myschool.ac.kr/photos/yeonghogang.jpg   |2024-07-16     |null            |101           |차미경  |컴퓨터공학과  |
+|10105 |박미영  |ni            |1     |773710c64f0889e3c54d191b4f123d3e233283dcd2959669b063016dbba9f4ea |2004-01-10 00:00:00 |032-4691-2811 |172    |67     |jongsu11@hotmail.com        |여      |재학     |http://myschool.ac.kr/photos/ni.jpg            |2023-01-10     |null            |101           |차미경  |컴퓨터공학과  |
+|10107 |고정숙  |gyeongsug76   |2     |b878f226b928dd33ae250c1bdee2debb6e3ee8811f79f56aab675928184a73b6 |2004-08-10 00:00:00 |031-4249-8852 |168    |50     |yeji40@daum.net             |남      |졸업     |http://myschool.ac.kr/photos/gyeongsug76.jpg   |2023-08-10     |2027-08-09      |101           |차미경  |컴퓨터공학과  |
+|10108 |송영미  |mhan          |2     |3d8cd8a8b559aeea97708d206cd419f009d4a33cefe9e9cd2680fbdf975ebebd |2005-08-06 00:00:00 |032-1517-7567 |173    |67     |gju@yuhanhoesa.kr           |남      |재학     |http://myschool.ac.kr/photos/mhan.jpg          |2024-08-06     |null            |101           |차미경  |컴퓨터공학과  |
+|10109 |안서윤  |sangho09      |2     |6e4f1ce2afe62ebb5d2eff25eac0a638a296ebf86d5df39ec24ddd0c6015db0e |2005-06-11 00:00:00 |018-3440-5697 |184    |60     |subin24@nate.com            |남      |재학     |http://myschool.ac.kr/photos/sangho09.jpg      |2024-06-11     |null            |101           |차미경  |컴퓨터공학과  |
+|------|-----|--------------|------|-----------------------------------------------------------------|--------------------|--------------|-------|-------|----------------------------|-------|-------|-----------------------------------------------|---------------|----------------|--------------|-----|--------|
+
+[DEBUG] 25-06-13 21:57:29 [selectList:135] - <==      Total: 66
+[INFO ] 25-06-13 21:57:29 [MyInterceptor:123] - running time: 442(ms)
+[WARN ] 25-06-13 21:57:30 [AbstractStandardFragmentInsertionTagProcessor:385] - [THYMELEAF][http-nio-8080-exec-2][student/index] Deprecated unwrapped fragment expression "fragments/header :: my-header" found in template student/index, line 31, col 13. Please use the complete syntax of fragment expressions instead ("~{fragments/header :: my-header}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+[ERROR] 25-06-13 21:57:30 [TemplateEngine:1141] - [THYMELEAF][http-nio-8080-exec-2] Exception processing template "student/index": An error happened during template parsing (template: "class path resource [templates/student/index.html]")
+org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/student/index.html]")
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:241)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077)
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372)
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1437)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1168)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:114)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.attoparser.ParseException: Exception evaluating SpringEL expression: "student.studentId" (template: "student/index" - line 122, col 21)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:393)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	... 52 common frames omitted
+Caused by: org.thymeleaf.exceptions.TemplateProcessingException: Exception evaluating SpringEL expression: "student.studentId" (template: "student/index" - line 122, col 21)
+	at org.thymeleaf.spring6.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:292)
+	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:166)
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138)
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:144)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.Model.process(Model.java:282)
+	at org.thymeleaf.engine.Model.process(Model.java:290)
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.processIterationModel(IteratedGatheringModelProcessable.java:368)
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.process(IteratedGatheringModelProcessable.java:222)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleCloseElement(ProcessorTemplateHandler.java:1640)
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleCloseElementEnd(TemplateHandlerAdapterMarkupHandler.java:388)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:322)
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleCloseElementEnd(OutputExpressionInlinePreProcessorHandler.java:220)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:164)
+	at org.attoparser.HtmlElement.handleCloseElementEnd(HtmlElement.java:169)
+	at org.attoparser.HtmlMarkupHandler.handleCloseElementEnd(HtmlMarkupHandler.java:412)
+	at org.attoparser.MarkupEventProcessorHandler.handleCloseElementEnd(MarkupEventProcessorHandler.java:473)
+	at org.attoparser.ParsingElementMarkupUtil.parseCloseElement(ParsingElementMarkupUtil.java:201)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:725)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	... 54 common frames omitted
+Caused by: org.springframework.expression.spel.SpelEvaluationException: EL1008E: Property or field 'studentId' cannot be found on object of type 'kr.yjh.database.models.Student' - maybe not public or not valid?
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:229)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:112)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference$AccessorValueRef.getValue(PropertyOrFieldReference.java:376)
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:97)
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:116)
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:338)
+	at org.thymeleaf.spring6.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:265)
+	... 79 common frames omitted
+[ERROR] 25-06-13 21:57:30 [[dispatcherServlet]:170] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/student/index.html]")] with root cause
+org.springframework.expression.spel.SpelEvaluationException: EL1008E: Property or field 'studentId' cannot be found on object of type 'kr.yjh.database.models.Student' - maybe not public or not valid?
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:229)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:112)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference$AccessorValueRef.getValue(PropertyOrFieldReference.java:376)
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:97)
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:116)
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:338)
+	at org.thymeleaf.spring6.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:265)
+	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:166)
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138)
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:144)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.Model.process(Model.java:282)
+	at org.thymeleaf.engine.Model.process(Model.java:290)
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.processIterationModel(IteratedGatheringModelProcessable.java:368)
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.process(IteratedGatheringModelProcessable.java:222)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleCloseElement(ProcessorTemplateHandler.java:1640)
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleCloseElementEnd(TemplateHandlerAdapterMarkupHandler.java:388)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:322)
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleCloseElementEnd(OutputExpressionInlinePreProcessorHandler.java:220)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:164)
+	at org.attoparser.HtmlElement.handleCloseElementEnd(HtmlElement.java:169)
+	at org.attoparser.HtmlMarkupHandler.handleCloseElementEnd(HtmlMarkupHandler.java:412)
+	at org.attoparser.MarkupEventProcessorHandler.handleCloseElementEnd(MarkupEventProcessorHandler.java:473)
+	at org.attoparser.ParsingElementMarkupUtil.parseCloseElement(ParsingElementMarkupUtil.java:201)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:725)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077)
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372)
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1437)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1168)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:114)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[INFO ] 25-06-13 22:00:50 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-13 22:00:50 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-13 22:00:50 [MyInterceptor:85] - [GET] http://localhost:8080/student
+[DEBUG] 25-06-13 22:00:50 [selectCount:135] - ==>  Preparing: SELECT COUNT(*) FROM students
+[DEBUG] 25-06-13 22:00:50 [selectCount:135] - ==> Parameters: 
+[INFO ] 25-06-13 22:00:50 [sqlonly:228] - SELECT COUNT(*) FROM students
+
+[INFO ] 25-06-13 22:00:50 [resultsettable:610] - 
+|---------|
+|count(*) |
+|---------|
+|77       |
+|---------|
+
+[DEBUG] 25-06-13 22:00:50 [selectCount:135] - <==      Total: 1
+[DEBUG] 25-06-13 22:00:50 [PageHelper:78] - PageHelper(nowPage=1, totalCount=77, listCount=10, groupCount=5, totalPage=8, startPage=1, endPage=5, prevPage=0, nextPage=6, offset=0)
+[DEBUG] 25-06-13 22:00:50 [selectList:135] - ==>  Preparing: SELECT s.id, s.name, s.user_id, s.grade, s.idnum, s.birthdate, s.phone, s.height, s.weight, s.email, s.gender, s.status, s.photo_url, s.admission_date, s.graduation_date, s.department_id, p.name AS pname, d.dname FROM students AS s INNER JOIN departments AS d ON s.department_id = d.id INNER JOIN professors AS p ON s.professor_id = p.id ORDER BY p.id DESC LIMIT ?, ?
+[DEBUG] 25-06-13 22:00:50 [selectList:135] - ==> Parameters: 0(Integer), 10(Integer)
+[INFO ] 25-06-13 22:00:50 [sqlonly:228] - SELECT s.id, s.name, s.user_id, s.grade, s.idnum, s.birthdate, s.phone, s.height, s.weight, s.email, s.gender, s.status, s.photo_url, s.admission_date, s.graduation_date, s.department_id, p.name AS pname, d.dname FROM students AS s INNER JOIN departments AS d ON s.department_id = d.id INNER JOIN professors AS p ON s.professor_id = p.id     ORDER BY p.id DESC  LIMIT 0, 10
+
+[INFO ] 25-06-13 22:00:50 [resultsettable:610] - 
+|------|-----|------------|------|-----------------------------------------------------------------|--------------------|--------------|-------|-------|--------------------------|-------|-------|---------------------------------------------|---------------|----------------|--------------|-----|-------|
+|id    |name |user_id     |grade |idnum                                                            |birthdate           |phone         |height |weight |email                     |gender |status |photo_url                                    |admission_date |graduation_date |department_id |name |dname  |
+|------|-----|------------|------|-----------------------------------------------------------------|--------------------|--------------|-------|-------|--------------------------|-------|-------|---------------------------------------------|---------------|----------------|--------------|-----|-------|
+|10174 |이지민  |geonu06     |4     |7409254bfe5c873dcef673b8fc6d6a5147d235923a1933d82796a39436a92c53 |2006-08-30 00:00:00 |070-4903-8642 |162    |49     |hanyeongceol@live.com     |남      |재학     |http://myschool.ac.kr/photos/geonu06.jpg     |2025-08-30     |null            |402           |박유진  |심리학과   |
+|10173 |안선영  |jiweongim   |3     |6e03a5f36c1ec3e3a2ce64273bcfe6e45ddc8f7287e1e3e7468ee0e0ba9eba2f |2001-03-13 00:00:00 |033-4852-7910 |156    |82     |boramo@gimgimgim.com      |남      |졸업     |http://myschool.ac.kr/photos/jiweongim.jpg   |2020-03-13     |2024-03-12      |402           |최영식  |심리학과   |
+|10170 |황동현  |yeongil91   |3     |07dfa0be849d170c15124a060d991baceb20b042f20ecdf4597c95056ff6f912 |2003-01-12 00:00:00 |018-6764-0085 |164    |86     |eunseo74@naver.com        |남      |재학     |http://myschool.ac.kr/photos/yeongil91.jpg   |2022-01-12     |null            |402           |진주원  |심리학과   |
+|10171 |배미정  |jiagim      |2     |099efdf307343b1b6891c0857c5c8bfa1927358cc0bab94266099e867364a76f |2006-12-08 00:00:00 |054-4911-0236 |151    |84     |yeongsig15@hotmail.com    |남      |재학     |http://myschool.ac.kr/photos/jiagim.jpg      |2025-12-08     |null            |402           |진주원  |심리학과   |
+|10172 |김숙자  |ugim        |4     |f72a878c6686212f0facaebb6778d0c0deed3c90af88cdc54f47ea7787f260d1 |2004-05-04 00:00:00 |051-2773-1391 |166    |68     |hyeonjunsong@dreamwiz.com |남      |재학     |http://myschool.ac.kr/photos/ugim.jpg        |2023-05-04     |null            |402           |진주원  |심리학과   |
+|10169 |강재현  |gimboram    |4     |c90ec713328b27e99be3232ab5d0f3c63d15d23be1f1ee4ad56ee2aa158db795 |2007-01-31 00:00:00 |054-7416-9188 |167    |71     |yeonggilgim@igim.kr       |여      |재학     |http://myschool.ac.kr/photos/gimboram.jpg    |2026-01-31     |null            |402           |김정웅  |심리학과   |
+|10163 |이광수  |lseo        |2     |de0fda5289c41925bd08424454fb30f734800e349c7deaa2a1455a3657be88e0 |2001-02-07 00:00:00 |032-5581-1062 |164    |69     |yeonghwan67@hotmail.com   |남      |재학     |http://myschool.ac.kr/photos/lseo.jpg        |2020-02-07     |null            |401           |박영일  |영어영문학과 |
+|10165 |박은영  |jihuyun     |4     |ab8befe22cac0c815e153655cec98696d188eb8fb8d970be0db2326690918c4b |2002-12-04 00:00:00 |055-6744-2655 |180    |45     |yejungo@baesimbag.org     |여      |재학     |http://myschool.ac.kr/photos/jihuyun.jpg     |2021-12-04     |null            |401           |박영일  |영어영문학과 |
+|10166 |이주원  |xbag        |2     |64a7a2c1703e8b07901276f593d9222a4cf91b45e89341031f850b3d4819573c |2001-05-20 00:00:00 |064-7863-5458 |181    |59     |seonyeongi@naver.com      |여      |재학     |http://myschool.ac.kr/photos/xbag.jpg        |2020-05-20     |null            |401           |박영일  |영어영문학과 |
+|10168 |오하윤  |yeongsugbag |4     |9baa0e1bce9513536c4b80b91b6e3d8842ba09fd451c64f1f14d17edb36052dd |2002-04-19 00:00:00 |016-4336-8577 |158    |74     |jaehogim@daum.net         |남      |재학     |http://myschool.ac.kr/photos/yeongsugbag.jpg |2021-04-19     |null            |401           |박영일  |영어영문학과 |
+|------|-----|------------|------|-----------------------------------------------------------------|--------------------|--------------|-------|-------|--------------------------|-------|-------|---------------------------------------------|---------------|----------------|--------------|-----|-------|
+
+[DEBUG] 25-06-13 22:00:50 [selectList:135] - <==      Total: 10
+[DEBUG] 25-06-13 22:00:50 [selectList:135] - ==>  Preparing: SELECT s.id, s.name, s.user_id, s.grade, s.idnum, s.birthdate, s.phone, s.height, s.weight, s.email, s.gender, s.status, s.photo_url, s.admission_date, s.graduation_date, s.department_id, p.name AS pname, d.dname FROM students AS s INNER JOIN departments AS d ON s.department_id = d.id INNER JOIN professors AS p ON s.professor_id = p.id ORDER BY p.id DESC
+[DEBUG] 25-06-13 22:00:50 [selectList:135] - ==> Parameters: 
+[INFO ] 25-06-13 22:00:50 [sqlonly:228] - SELECT s.id, s.name, s.user_id, s.grade, s.idnum, s.birthdate, s.phone, s.height, s.weight, s.email, s.gender, s.status, s.photo_url, s.admission_date, s.graduation_date, s.department_id, p.name AS pname, d.dname FROM students AS s INNER JOIN departments AS d ON s.department_id = d.id INNER JOIN professors AS p ON s.professor_id = p.id     ORDER BY p.id DESC
+
+[INFO ] 25-06-13 22:00:50 [resultsettable:610] - 
+|------|-----|--------------|------|-----------------------------------------------------------------|--------------------|--------------|-------|-------|----------------------------|-------|-------|-----------------------------------------------|---------------|----------------|--------------|-----|--------|
+|id    |name |user_id       |grade |idnum                                                            |birthdate           |phone         |height |weight |email                       |gender |status |photo_url                                      |admission_date |graduation_date |department_id |name |dname   |
+|------|-----|--------------|------|-----------------------------------------------------------------|--------------------|--------------|-------|-------|----------------------------|-------|-------|-----------------------------------------------|---------------|----------------|--------------|-----|--------|
+|10174 |이지민  |geonu06       |4     |7409254bfe5c873dcef673b8fc6d6a5147d235923a1933d82796a39436a92c53 |2006-08-30 00:00:00 |070-4903-8642 |162    |49     |hanyeongceol@live.com       |남      |재학     |http://myschool.ac.kr/photos/geonu06.jpg       |2025-08-30     |null            |402           |박유진  |심리학과    |
+|10173 |안선영  |jiweongim     |3     |6e03a5f36c1ec3e3a2ce64273bcfe6e45ddc8f7287e1e3e7468ee0e0ba9eba2f |2001-03-13 00:00:00 |033-4852-7910 |156    |82     |boramo@gimgimgim.com        |남      |졸업     |http://myschool.ac.kr/photos/jiweongim.jpg     |2020-03-13     |2024-03-12      |402           |최영식  |심리학과    |
+|10170 |황동현  |yeongil91     |3     |07dfa0be849d170c15124a060d991baceb20b042f20ecdf4597c95056ff6f912 |2003-01-12 00:00:00 |018-6764-0085 |164    |86     |eunseo74@naver.com          |남      |재학     |http://myschool.ac.kr/photos/yeongil91.jpg     |2022-01-12     |null            |402           |진주원  |심리학과    |
+|10171 |배미정  |jiagim        |2     |099efdf307343b1b6891c0857c5c8bfa1927358cc0bab94266099e867364a76f |2006-12-08 00:00:00 |054-4911-0236 |151    |84     |yeongsig15@hotmail.com      |남      |재학     |http://myschool.ac.kr/photos/jiagim.jpg        |2025-12-08     |null            |402           |진주원  |심리학과    |
+|10172 |김숙자  |ugim          |4     |f72a878c6686212f0facaebb6778d0c0deed3c90af88cdc54f47ea7787f260d1 |2004-05-04 00:00:00 |051-2773-1391 |166    |68     |hyeonjunsong@dreamwiz.com   |남      |재학     |http://myschool.ac.kr/photos/ugim.jpg          |2023-05-04     |null            |402           |진주원  |심리학과    |
+|10169 |강재현  |gimboram      |4     |c90ec713328b27e99be3232ab5d0f3c63d15d23be1f1ee4ad56ee2aa158db795 |2007-01-31 00:00:00 |054-7416-9188 |167    |71     |yeonggilgim@igim.kr         |여      |재학     |http://myschool.ac.kr/photos/gimboram.jpg      |2026-01-31     |null            |402           |김정웅  |심리학과    |
+|10163 |이광수  |lseo          |2     |de0fda5289c41925bd08424454fb30f734800e349c7deaa2a1455a3657be88e0 |2001-02-07 00:00:00 |032-5581-1062 |164    |69     |yeonghwan67@hotmail.com     |남      |재학     |http://myschool.ac.kr/photos/lseo.jpg          |2020-02-07     |null            |401           |박영일  |영어영문학과  |
+|10165 |박은영  |jihuyun       |4     |ab8befe22cac0c815e153655cec98696d188eb8fb8d970be0db2326690918c4b |2002-12-04 00:00:00 |055-6744-2655 |180    |45     |yejungo@baesimbag.org       |여      |재학     |http://myschool.ac.kr/photos/jihuyun.jpg       |2021-12-04     |null            |401           |박영일  |영어영문학과  |
+|10166 |이주원  |xbag          |2     |64a7a2c1703e8b07901276f593d9222a4cf91b45e89341031f850b3d4819573c |2001-05-20 00:00:00 |064-7863-5458 |181    |59     |seonyeongi@naver.com        |여      |재학     |http://myschool.ac.kr/photos/xbag.jpg          |2020-05-20     |null            |401           |박영일  |영어영문학과  |
+|10168 |오하윤  |yeongsugbag   |4     |9baa0e1bce9513536c4b80b91b6e3d8842ba09fd451c64f1f14d17edb36052dd |2002-04-19 00:00:00 |016-4336-8577 |158    |74     |jaehogim@daum.net           |남      |재학     |http://myschool.ac.kr/photos/yeongsugbag.jpg   |2021-04-19     |null            |401           |박영일  |영어영문학과  |
+|10164 |권영진  |minjaebag     |4     |4821e6a40d555e582db7a7540727f020714952901c8fc61120bcda6ec300a8b2 |1999-04-02 00:00:00 |070-1254-7258 |153    |58     |iyejin@imun.kr              |여      |재학     |http://myschool.ac.kr/photos/minjaebag.jpg     |2018-04-02     |null            |401           |허예진  |영어영문학과  |
+|10167 |이진우  |yeongceol98   |2     |5ebc188371175d6ad473d9531049bcccb26f5d23623793ebcaed0470a7f738b5 |2001-01-07 00:00:00 |011-6823-9453 |179    |53     |hyejin77@naver.com          |남      |졸업     |http://myschool.ac.kr/photos/yeongceol98.jpg   |2020-01-07     |2024-01-06      |401           |허예진  |영어영문학과  |
+|10157 |백승현  |gujiu         |2     |d6e3eaebfc3348fe36092d290520cbfbb5bcde754e80366342e80e0b17288771 |2005-10-30 00:00:00 |02-5470-7683  |180    |84     |qgim@jusighoesa.com         |남      |재학     |http://myschool.ac.kr/photos/gujiu.jpg         |2024-10-30     |null            |302           |박경희  |경제학과    |
+|10158 |박민석  |jeonseongmin  |4     |963f687af54094f1f0589613bdd691293cd68fc4ad5e601329cfec4f377f4be3 |2003-03-10 00:00:00 |051-1097-6035 |175    |60     |jyang@naver.com             |남      |재학     |http://myschool.ac.kr/photos/jeonseongmin.jpg  |2022-03-10     |null            |302           |박경희  |경제학과    |
+|10159 |구영미  |simseunghyeon |4     |27897a20cc11faebb793401464340e9e33579805fb6d87b830390b67fd96891e |2002-03-27 00:00:00 |016-1167-1565 |164    |56     |gimyeongho@naver.com        |여      |재학     |http://myschool.ac.kr/photos/simseunghyeon.jpg |2021-03-27     |null            |302           |박경희  |경제학과    |
+|10160 |김서연  |sujingim      |2     |845d9ab9aa6d2b8a8ee04c2507fba253ce20b9a412a070c3b2ce92fc8da13d0a |2006-11-24 00:00:00 |053-7802-2592 |179    |87     |myeongjayang@ii.kr          |여      |퇴학     |http://myschool.ac.kr/photos/sujingim.jpg      |2025-11-24     |null            |302           |박경희  |경제학과    |
+|10161 |이서윤  |msong         |4     |ea6752363c8fa05ad7bba1cebd99219d1c1691f7ec61878b536a00eaab1aaf19 |2004-12-31 00:00:00 |031-8020-0437 |160    |75     |gimyeeun@live.com           |여      |재학     |http://myschool.ac.kr/photos/msong.jpg         |2023-12-31     |null            |302           |박경희  |경제학과    |
+|10162 |김현지  |nojiweon      |2     |0a57c4219b00b70512a66c771dfcc9f46227a2d9528ae834ee2ed3d9a5fe5098 |2003-12-14 00:00:00 |019-4598-0988 |167    |73     |lsong@jusighoesa.com        |남      |재학     |http://myschool.ac.kr/photos/nojiweon.jpg      |2022-12-14     |null            |302           |박경희  |경제학과    |
+|10154 |오영미  |si            |3     |e9fba28cbc8cf4b7ad05af3a03175651d97198430034fa40d4de31a23258ff8b |2000-03-29 00:00:00 |055-3549-7256 |168    |58     |fgim@hanmail.net            |여      |재학     |http://myschool.ac.kr/photos/si.jpg            |2019-03-29     |null            |301           |최정자  |경영학과    |
+|10152 |민지민  |myang         |3     |4cf5bb0c44a78f4131dc1056866a70344b565513e261ef3d4fee718704d70a0f |2006-06-14 00:00:00 |011-8562-7725 |182    |64     |gimminsu@munsimseong.kr     |여      |재학     |http://myschool.ac.kr/photos/myang.jpg         |2025-06-14     |null            |301           |장지후  |경영학과    |
+|10151 |심지현  |jiweon13      |2     |44733de63a2749363f886aa84f457cb1c632f0704e9f7a8b172ad6d2cf0366eb |2006-02-03 00:00:00 |051-5788-7189 |173    |72     |gyeongsuggweon@hanmail.net  |남      |졸업     |http://myschool.ac.kr/photos/jiweon13.jpg      |2025-02-03     |2029-02-02      |301           |이명숙  |경영학과    |
+|10153 |손지후  |cyu           |4     |eee5e239549f33adf24d4d9f02a75da1ec430cab94d1368ab063e583cadc8bbb |1999-10-29 00:00:00 |051-2572-8527 |174    |88     |coeeunju@live.com           |남      |재학     |http://myschool.ac.kr/photos/cyu.jpg           |2018-10-29     |null            |301           |이명숙  |경영학과    |
+|10155 |김수민  |ogjagim       |4     |aa0d454a6fb9e7654205e16082ef69716c4d7588c60a777d8bce11f19eb7605d |1999-11-06 00:00:00 |063-6194-1106 |163    |77     |gimboram@hanmail.net        |여      |재학     |http://myschool.ac.kr/photos/ogjagim.jpg       |2018-11-06     |null            |301           |이명숙  |경영학과    |
+|10143 |윤정희  |minjae02      |2     |bfa01bf20bb3dbc6cd28fe4aa273919df46ae823956c2aea087bcc9bb66fead6 |2006-08-12 00:00:00 |053-6841-8103 |152    |64     |jeonogja@naver.com          |여      |졸업     |http://myschool.ac.kr/photos/minjae02.jpg      |2025-08-12     |2029-08-11      |204           |오미영  |산업디자인학과 |
+|10144 |권경숙  |minseo39      |2     |1c04c2b0cdf78792ad4880a0b16af83b046678fdc875a1e861930936b78b4218 |2005-03-02 00:00:00 |041-4083-8575 |165    |87     |ihyeonjun@daum.net          |남      |재학     |http://myschool.ac.kr/photos/minseo39.jpg      |2024-03-02     |null            |204           |오미영  |산업디자인학과 |
+|10145 |배혜진  |yeongho24     |2     |4dad2e0475aac7764c51374a6be12c28bc31921cd9bd4b0d08cfb7d638b746f2 |2002-06-12 00:00:00 |062-2414-0213 |160    |56     |dohyeon60@gwagjiju.com      |여      |재학     |http://myschool.ac.kr/photos/yeongho24.jpg     |2021-06-12     |null            |204           |오미영  |산업디자인학과 |
+|10146 |김은정  |misuggim      |2     |860476ec4211e35a67ebf9e4d397234afa908709fcd4df17bac9ee6edd851f37 |2003-09-05 00:00:00 |052-7656-3129 |167    |55     |gwangsui@baggwago.kr        |남      |재학     |http://myschool.ac.kr/photos/misuggim.jpg      |2022-09-05     |null            |204           |오미영  |산업디자인학과 |
+|10147 |권민준  |seoyun91      |4     |c8b23a4dad6e6cd641c4f2a5e03fda3029ddce61bf70276ce5a305f4688ea20c |2004-10-30 00:00:00 |063-7780-7911 |172    |64     |junho69@gmail.com           |남      |재학     |http://myschool.ac.kr/photos/seoyun91.jpg      |2023-10-30     |null            |204           |오미영  |산업디자인학과 |
+|10148 |김서연  |jo            |1     |7f1d7b4932102b572d9efe05934ddb87f6647e20636eff15e2dbf0293828063f |2001-07-24 00:00:00 |052-1721-4653 |167    |67     |gimjeongnam@yu.net          |여      |재학     |http://myschool.ac.kr/photos/jo.jpg            |2020-07-24     |null            |204           |오미영  |산업디자인학과 |
+|10149 |김자영  |sgim          |1     |b33a78218c3bb3e0193891a6e9dfad3a16d0f10497d28ca9b8582e004e2fbb18 |2007-01-16 00:00:00 |070-7807-6674 |166    |56     |yunyeongceol@yu.org         |여      |재학     |http://myschool.ac.kr/photos/sgim.jpg          |2026-01-16     |null            |204           |오미영  |산업디자인학과 |
+|10150 |양도윤  |yeongil06     |4     |138feb53af49816d690d40f9ad2045d15d9ee4bc10d89fb3eca72cb64d4294d2 |2006-03-28 00:00:00 |052-2241-7778 |188    |77     |dgim@munio.org              |남      |재학     |http://myschool.ac.kr/photos/yeongil06.jpg     |2025-03-28     |null            |204           |오미영  |산업디자인학과 |
+|10137 |한영자  |jiyeonghyi    |1     |cebd16f4145b935fd46a9b801d1523ea4ae4af6ff9c7d1a8d46964ef669bb1f6 |2005-08-01 00:00:00 |017-0897-3248 |165    |68     |songsangho@dreamwiz.com     |여      |재학     |http://myschool.ac.kr/photos/jiyeonghyi.jpg    |2024-08-01     |null            |203           |박경수  |건축학과    |
+|10141 |김영지  |jimingim      |3     |d0f103a3dff9fa17c27f324d32699ebfc3f476952bad20659b241ba46c94d834 |1999-12-02 00:00:00 |019-5351-5971 |158    |85     |ggim@jusighoesa.net         |여      |재학     |http://myschool.ac.kr/photos/jimingim.jpg      |2018-12-02     |null            |203           |박경수  |건축학과    |
+|10134 |이민영  |eunjui        |1     |1b331873f01b46887dd744e06609d89db2da493407adbe02b110f207992eee98 |2006-03-28 00:00:00 |053-5337-4240 |189    |50     |yujin37@dreamwiz.com        |여      |재학     |http://myschool.ac.kr/photos/eunjui.jpg        |2025-03-28     |null            |203           |이옥순  |건축학과    |
+|10135 |박가람  |coeyunseo     |2     |a6c80d3cadbe404754c4fff9d348c47fcf977c4bd3f147f863ad270a9bce9c89 |2004-10-31 00:00:00 |02-7259-4559  |170    |60     |jangseoyun@ju.com           |여      |재학     |http://myschool.ac.kr/photos/coeyunseo.jpg     |2023-10-31     |null            |203           |이옥순  |건축학과    |
+|10136 |김준혁  |gimjiyeong    |1     |bd25c0bea72d090b3c2e7efdf5cfd902b989c707f6ed8405a4f7a1d79f44b787 |2005-11-13 00:00:00 |031-1991-0779 |150    |74     |seohyeonsug@juii.com        |남      |재학     |http://myschool.ac.kr/photos/gimjiyeong.jpg    |2024-11-13     |null            |203           |이옥순  |건축학과    |
+|10139 |양영수  |jongsu22      |2     |d61558b9fc876ca6df3589381cbedcb6716330700599feacf508b8bb80d12183 |1999-08-20 00:00:00 |070-4768-5028 |167    |63     |seonghogwag@daum.net        |남      |재학     |http://myschool.ac.kr/photos/jongsu22.jpg      |2018-08-20     |null            |203           |이옥순  |건축학과    |
+|10142 |심지아  |jinubag       |1     |d9f049f9d30a2da2971906c9449e09f16d8bf42ac63ac9a4c5f9192828330948 |1999-08-28 00:00:00 |011-2997-5207 |157    |49     |rjang@jusighoesa.org        |남      |재학     |http://myschool.ac.kr/photos/jinubag.jpg       |2018-08-28     |null            |203           |김지아  |건축학과    |
+|10138 |홍지후  |gusangho      |1     |12b1736b58326f762b9761abfe91c50327e6993f79ad34cadca468fe5a720bc0 |2004-12-20 00:00:00 |019-4399-2722 |185    |64     |cunjagim@ibaeg.kr           |남      |졸업     |http://myschool.ac.kr/photos/gusangho.jpg      |2023-12-20     |2027-12-19      |203           |장정자  |건축학과    |
+|10129 |김아름  |gweonjia      |2     |2ccd444a23e2f666ef54dd3b43cdb6c0ef1fe63b759d28f3cc292a39e4bf1e7a |2000-02-18 00:00:00 |032-9023-7535 |160    |71     |hgim@yunbae.kr              |여      |재학     |http://myschool.ac.kr/photos/gweonjia.jpg      |2019-02-18     |null            |202           |윤서현  |기계공학과   |
+|10130 |문지호  |jeonyeongja   |4     |43521fc885a30e5e70bd3b2ce90d63d3e94a4da4adec46ef381e49c0a994b2a7 |2005-03-19 00:00:00 |044-1071-5331 |150    |69     |gimsugja@baghong.kr         |여      |졸업     |http://myschool.ac.kr/photos/jeonyeongja.jpg   |2024-03-19     |2028-03-18      |202           |윤서현  |기계공학과   |
+|10131 |권정수  |yeongsigi     |2     |c8830e437defaa612681a6a71cb1be41dde129ee6e88ea6e4806b8ec8f8b5f35 |2005-04-30 00:00:00 |019-5764-6275 |162    |63     |vgu@hanmail.net             |남      |퇴학     |http://myschool.ac.kr/photos/yeongsigi.jpg     |2024-04-30     |null            |202           |윤서현  |기계공학과   |
+|10132 |전미영  |jeongungjo    |1     |dc20eebc22cc0797a9fa6515e50bb70ba776423724be4b994fe9fdaeab12b058 |2002-02-28 00:00:00 |051-9510-0578 |153    |82     |icaeweon@jusighoesa.kr      |여      |재학     |http://myschool.ac.kr/photos/jeongungjo.jpg    |2021-02-28     |null            |202           |윤서현  |기계공학과   |
+|10133 |최현주  |ean           |2     |b5897e90436d8c26ee39aaf97af260b6babb47149d4e9576042201ed159202f5 |1999-06-26 00:00:00 |055-4433-2111 |154    |83     |yeongsun06@seoibaeg.com     |남      |재학     |http://myschool.ac.kr/photos/ean.jpg           |2018-06-26     |null            |202           |윤서현  |기계공학과   |
+|10120 |박서현  |hyeonji18     |2     |6e2208af2fa52cca2e2ce3616dfaaf3b78a5a27a0dd8ecc5502239667dae317d |2000-03-04 00:00:00 |010-2080-5361 |158    |87     |hcoe@ju.com                 |여      |졸업     |http://myschool.ac.kr/photos/hyeonji18.jpg     |2019-03-04     |2023-03-03      |201           |박영미  |전자공학과   |
+|10124 |최예지  |ryang         |3     |bf7a3bd1c024b9fa80126f1d0322387a4afd3167ac4009b77c834e4c7503f84a |1999-04-11 00:00:00 |043-8552-3775 |154    |77     |najeongsig@ju.org           |남      |재학     |http://myschool.ac.kr/photos/ryang.jpg         |2018-04-11     |null            |201           |박영미  |전자공학과   |
+|10125 |최정미  |eomyeongsug   |4     |8605e18d07c30888437dbe66e75673d4eb7bffba0a054d9906ec84caa3638335 |1999-09-10 00:00:00 |054-5720-0988 |165    |75     |bagmisug@hotmail.com        |여      |재학     |http://myschool.ac.kr/photos/eomyeongsug.jpg   |2018-09-10     |null            |201           |강영호  |전자공학과   |
+|10121 |한명자  |bagjeonghun   |4     |6a4a8aa77ad16ecd1667eb5d73b4121bd3feb480c7e8f3b9a0fd02b5fa1ac69f |2001-01-21 00:00:00 |061-3914-7543 |163    |79     |seonghyeongweon@hotmail.com |남      |재학     |http://myschool.ac.kr/photos/bagjeonghun.jpg   |2020-01-21     |null            |201           |김정훈  |전자공학과   |
+|10123 |김병철  |ki            |2     |b0993aca44c7454cd8d100d7d812516e14be5cc93130f73ba2f179bc96eeaeb6 |1999-11-20 00:00:00 |017-8504-9523 |187    |59     |jeongsun07@hanmail.net      |남      |재학     |http://myschool.ac.kr/photos/ki.jpg            |2018-11-20     |null            |201           |이은영  |전자공학과   |
+|10126 |송정식  |sangceol72    |4     |35da11abe25d3bf3bb57999b9c561c417a1f6ab4f0ab1db65553a2ce7004efb3 |1999-10-01 00:00:00 |062-5868-5159 |179    |48     |gimeunju@dreamwiz.com       |남      |재학     |http://myschool.ac.kr/photos/sangceol72.jpg    |2018-10-01     |null            |201           |이은영  |전자공학과   |
+|10127 |박은영  |ihan          |2     |f1a8d5c9b0dfe3ed135f8a0ac2a87ab8ef9dfac6ebe3e4fa6f03633d8840ed2e |2003-05-05 00:00:00 |054-2958-9727 |162    |57     |sunja37@yuhanhoesa.org      |여      |재학     |http://myschool.ac.kr/photos/ihan.jpg          |2022-05-05     |null            |201           |이은영  |전자공학과   |
+|10114 |김명숙  |jinu82        |4     |32e37de4f6c6794c167ec1e17c467dec35f9d566a6cff03b0cb92aac7679ff76 |1999-10-04 00:00:00 |042-194-8127  |188    |49     |eunjijang@gimjini.com       |여      |재학     |http://myschool.ac.kr/photos/jinu82.jpg        |2018-10-04     |null            |102           |김현주  |소프트웨어학과 |
+|10116 |김정훈  |yejingweon    |4     |1695db96d6058063b110d42311b04f703ac1b1fee81dbad0788b7d594d827e70 |2006-10-18 00:00:00 |055-1035-7716 |150    |61     |dgim@daum.net               |남      |재학     |http://myschool.ac.kr/photos/yejingweon.jpg    |2025-10-18     |null            |102           |김현주  |소프트웨어학과 |
+|10111 |고미영  |doyun18       |3     |26befa41e26de777d0c982a70215f143d0e8ea405c3f7a20b15471aa802c2cc3 |2006-01-04 00:00:00 |064-7936-7461 |163    |86     |eyun@gmail.com              |여      |재학     |http://myschool.ac.kr/photos/doyun18.jpg       |2025-01-04     |null            |102           |이성훈  |소프트웨어학과 |
+|10112 |장하윤  |hyeonjeong23  |2     |8171cb54dce6249575c98bd9f2941319cd889ad147621994ac0f513688f58b23 |2004-10-19 00:00:00 |011-3526-5155 |165    |80     |yejian@yuhanhoesa.com       |여      |재학     |http://myschool.ac.kr/photos/hyeonjeong23.jpg  |2023-10-19     |null            |102           |이성훈  |소프트웨어학과 |
+|10118 |강지우  |jiyejin       |3     |b916bbb616ae7b0cac9b4e6744f47668e12e5f0406962f2cf22632db15ad0093 |2003-09-02 00:00:00 |041-5207-6667 |181    |46     |ihyeonu@ju.com              |남      |졸업     |http://myschool.ac.kr/photos/jiyejin.jpg       |2022-09-02     |2026-09-01      |102           |이성훈  |소프트웨어학과 |
+|10113 |최서영  |junyeonggwag  |2     |b0ee8d9942e1f192b412a15b215867f9493de7c16cf57659603d7bedc863d95a |2005-07-09 00:00:00 |044-1601-9736 |158    |77     |jongsui@daum.net            |여      |재학     |http://myschool.ac.kr/photos/junyeonggwag.jpg  |2024-07-09     |null            |102           |전종수  |소프트웨어학과 |
+|10115 |황예지  |cayeonghyi    |1     |845356558241ab1e3e98e1bd2f53121f1e557139d32dfca18b49e44264ffda7f |2006-12-06 00:00:00 |061-2439-3584 |157    |88     |bagsujin@gmail.com          |여      |재학     |http://myschool.ac.kr/photos/cayeonghyi.jpg    |2025-12-06     |null            |102           |전종수  |소프트웨어학과 |
+|10117 |최혜진  |yujin33       |2     |593d4f9025e6d249684e0b384ab5dcc6c5858c6a3448dd1ef0959dcfe7873ad2 |2001-03-17 00:00:00 |042-2107-2047 |159    |68     |songminjun@live.com         |남      |재학     |http://myschool.ac.kr/photos/yujin33.jpg       |2020-03-17     |null            |102           |허경희  |소프트웨어학과 |
+|10101 |황진우  |hhan          |1     |7b761b8750a5560337f93d1d4748ec2817a22e5c0f17af259ca0a2aae0077ec2 |2001-10-19 00:00:00 |010-1234-5678 |151    |62     |minjae67@yu.kr              |남      |재학     |http://myschool.ac.kr/photos/hhan.jpg          |2020-10-19     |null            |101           |차미경  |컴퓨터공학과  |
+|10103 |백순옥  |gimgyeonghyi  |2     |2c2957eb732c867392b707f5a09ad86a3792f4036e1a067a6580dafa2f683fd0 |2001-04-19 00:00:00 |063-1754-8132 |184    |71     |eunju75@hotmail.com         |남      |재학     |http://myschool.ac.kr/photos/gimgyeonghyi.jpg  |2020-04-19     |null            |101           |차미경  |컴퓨터공학과  |
+|10104 |김서연  |yeonghogang   |4     |9e23f8e8e8b3bca75ceb95ece80e0bd0a31198ebcc9e215ac2436cf107d012da |2005-07-16 00:00:00 |041-1708-9682 |171    |62     |hyeonjii@gimhan.net         |남      |재학     |http://myschool.ac.kr/photos/yeonghogang.jpg   |2024-07-16     |null            |101           |차미경  |컴퓨터공학과  |
+|10105 |박미영  |ni            |1     |773710c64f0889e3c54d191b4f123d3e233283dcd2959669b063016dbba9f4ea |2004-01-10 00:00:00 |032-4691-2811 |172    |67     |jongsu11@hotmail.com        |여      |재학     |http://myschool.ac.kr/photos/ni.jpg            |2023-01-10     |null            |101           |차미경  |컴퓨터공학과  |
+|10107 |고정숙  |gyeongsug76   |2     |b878f226b928dd33ae250c1bdee2debb6e3ee8811f79f56aab675928184a73b6 |2004-08-10 00:00:00 |031-4249-8852 |168    |50     |yeji40@daum.net             |남      |졸업     |http://myschool.ac.kr/photos/gyeongsug76.jpg   |2023-08-10     |2027-08-09      |101           |차미경  |컴퓨터공학과  |
+|10108 |송영미  |mhan          |2     |3d8cd8a8b559aeea97708d206cd419f009d4a33cefe9e9cd2680fbdf975ebebd |2005-08-06 00:00:00 |032-1517-7567 |173    |67     |gju@yuhanhoesa.kr           |남      |재학     |http://myschool.ac.kr/photos/mhan.jpg          |2024-08-06     |null            |101           |차미경  |컴퓨터공학과  |
+|10109 |안서윤  |sangho09      |2     |6e4f1ce2afe62ebb5d2eff25eac0a638a296ebf86d5df39ec24ddd0c6015db0e |2005-06-11 00:00:00 |018-3440-5697 |184    |60     |subin24@nate.com            |남      |재학     |http://myschool.ac.kr/photos/sangho09.jpg      |2024-06-11     |null            |101           |차미경  |컴퓨터공학과  |
+|------|-----|--------------|------|-----------------------------------------------------------------|--------------------|--------------|-------|-------|----------------------------|-------|-------|-----------------------------------------------|---------------|----------------|--------------|-----|--------|
+
+[DEBUG] 25-06-13 22:00:50 [selectList:135] - <==      Total: 66
+[INFO ] 25-06-13 22:00:50 [MyInterceptor:123] - running time: 99(ms)
+[WARN ] 25-06-13 22:00:50 [AbstractStandardFragmentInsertionTagProcessor:385] - [THYMELEAF][http-nio-8080-exec-3][student/index] Deprecated unwrapped fragment expression "fragments/header :: my-header" found in template student/index, line 31, col 13. Please use the complete syntax of fragment expressions instead ("~{fragments/header :: my-header}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+[ERROR] 25-06-13 22:00:50 [TemplateEngine:1141] - [THYMELEAF][http-nio-8080-exec-3] Exception processing template "student/index": An error happened during template parsing (template: "class path resource [templates/student/index.html]")
+org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/student/index.html]")
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:241)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077)
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372)
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1437)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1168)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:114)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.attoparser.ParseException: Exception evaluating SpringEL expression: "student.studentId" (template: "student/index" - line 122, col 21)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:393)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	... 52 common frames omitted
+Caused by: org.thymeleaf.exceptions.TemplateProcessingException: Exception evaluating SpringEL expression: "student.studentId" (template: "student/index" - line 122, col 21)
+	at org.thymeleaf.spring6.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:292)
+	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:166)
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138)
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:144)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.Model.process(Model.java:282)
+	at org.thymeleaf.engine.Model.process(Model.java:290)
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.processIterationModel(IteratedGatheringModelProcessable.java:368)
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.process(IteratedGatheringModelProcessable.java:222)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleCloseElement(ProcessorTemplateHandler.java:1640)
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleCloseElementEnd(TemplateHandlerAdapterMarkupHandler.java:388)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:322)
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleCloseElementEnd(OutputExpressionInlinePreProcessorHandler.java:220)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:164)
+	at org.attoparser.HtmlElement.handleCloseElementEnd(HtmlElement.java:169)
+	at org.attoparser.HtmlMarkupHandler.handleCloseElementEnd(HtmlMarkupHandler.java:412)
+	at org.attoparser.MarkupEventProcessorHandler.handleCloseElementEnd(MarkupEventProcessorHandler.java:473)
+	at org.attoparser.ParsingElementMarkupUtil.parseCloseElement(ParsingElementMarkupUtil.java:201)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:725)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	... 54 common frames omitted
+Caused by: org.springframework.expression.spel.SpelEvaluationException: EL1008E: Property or field 'studentId' cannot be found on object of type 'kr.yjh.database.models.Student' - maybe not public or not valid?
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:229)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:112)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference$AccessorValueRef.getValue(PropertyOrFieldReference.java:376)
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:97)
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:116)
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:338)
+	at org.thymeleaf.spring6.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:265)
+	... 79 common frames omitted
+[ERROR] 25-06-13 22:00:50 [[dispatcherServlet]:170] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/student/index.html]")] with root cause
+org.springframework.expression.spel.SpelEvaluationException: EL1008E: Property or field 'studentId' cannot be found on object of type 'kr.yjh.database.models.Student' - maybe not public or not valid?
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:229)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:112)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference$AccessorValueRef.getValue(PropertyOrFieldReference.java:376)
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:97)
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:116)
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:338)
+	at org.thymeleaf.spring6.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:265)
+	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:166)
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138)
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:144)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.Model.process(Model.java:282)
+	at org.thymeleaf.engine.Model.process(Model.java:290)
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.processIterationModel(IteratedGatheringModelProcessable.java:368)
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.process(IteratedGatheringModelProcessable.java:222)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleCloseElement(ProcessorTemplateHandler.java:1640)
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleCloseElementEnd(TemplateHandlerAdapterMarkupHandler.java:388)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:322)
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleCloseElementEnd(OutputExpressionInlinePreProcessorHandler.java:220)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:164)
+	at org.attoparser.HtmlElement.handleCloseElementEnd(HtmlElement.java:169)
+	at org.attoparser.HtmlMarkupHandler.handleCloseElementEnd(HtmlMarkupHandler.java:412)
+	at org.attoparser.MarkupEventProcessorHandler.handleCloseElementEnd(MarkupEventProcessorHandler.java:473)
+	at org.attoparser.ParsingElementMarkupUtil.parseCloseElement(ParsingElementMarkupUtil.java:201)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:725)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077)
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372)
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1437)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1168)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:114)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:833)

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko" translate="no" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="google" content="notranslate">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+        <title>view</title>
+        <link rel="stylesheet" th:href="@{/assets/css/style.css}"/>
+    </head>
+    <body>
+        <header th:replace="~{fragments/header :: my-header}"></header>
+        <h1>학과상세</h1>
+        <table class="my-table">
+            <tbody>
+                <tr>
+                    <th>학과명</th>
+                    <td th:text="${department.dname}"></td>
+                </tr>
+                <tr>
+                    <th>위치</th>
+                    <td th:text="${department.loc}"></td>
+                </tr>
+                <tr>
+                    <th>전화번호</th>
+                    <td>
+                        <a th:href="'tel:' + ${department.phone}" th:text="${department.phone}"/>
+                    </td>
+                </tr>
+                <tr>
+                    <th>이메일</th>
+                    <td>
+                        <a th:href="'mailto:' + ${department.email}" th:text="${department.email}"/>
+                    </td>
+                </tr>
+                <tr>
+                    <th>설립년도</th>
+                    <td th:text="${department.established}"></td>
+                </tr>
+                <tr>
+                    <th>홈페이지</th>
+                    <td>
+                        <a th:href="${department.homepage}" th:text="${department.homepage}" target="_blank"></a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="buttons">
+            <a th:href="@{/department}" class="mybutton green">목록보기</a>
+            <a th:href="@{/department/add}" class="mybutton blue">신규등록</a>
+            <a th:href="@{${'/department/edit/' + department.id}}" class="mybutton red">수정하기</a>
+            <a th:href="@{${'/department/delete/' + department.id}}" class="mybutton black" id="btn-delete"
+                th:attr="data-dname=${department.dname}, data-id=${department.id}">삭제하기</a>
+        </div>
+
+        <script th:src="@{/assets/js/script.js}"></script>
+        <script>
+            document.querySelector("#btn-delete").addEventListener("click", deleteDepartment);
+        </script>
+    </body>
+</html>

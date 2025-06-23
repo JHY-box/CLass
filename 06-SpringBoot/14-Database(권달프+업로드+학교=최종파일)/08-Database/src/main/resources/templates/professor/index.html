@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ko" translate="no" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="google" content="notranslate">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+        <title>학사관리</title>
+        <link rel="stylesheet" th:href="@{/assets/css/style.css}">
+        <style>
+            .photo {
+                width: 40px;
+                height: 40px;
+                object-fit: cover;
+            }
+
+            .my-table {
+                tbody {
+                    td, th {
+                        padding: 5px;
+                    }
+
+                    td:frist-child {
+                        padding: 0;
+                    }
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header th:replace="~{fragments/header :: my-header}"></header>
+        <h1>교수목록</h1>
+        <div class="search-controller">
+            <!-- 검색폼 -->
+            <!-- 1) 검색어는 GET방식으로 전송 -->
+            <!-- 2) 검색 결과 페이지가 별도로 없는 경우 action은 자기 스스로(컨트롤러)를 지정 -->
+            <!-- 3) submit은 컨트롤러에게 검색어를 전송한다. -->
+            <form id="my-form" th:action="@{/professor}" method="get">
+                <input type="search" name="keyword" id="my-search" placeholder="교수이름 or 아이디 검색" th:value="${keyword}"/>
+                <select name="department_id">
+                    <option value="" th:selected="${departmentId == 0}">전체학과</option>
+                    <option th:each="d:${departmentList}" th:value="${d.id}" th:text="${d.dname}" th:selected="${d.id == departmentId}"/>
+                </select>
+                <label>
+                    <input type="checkbox" name="position" value="교수" th:checked="${#arrays.contains(position, '교수')}"/>교수
+                </label>
+                <label>
+                    <input type="checkbox" name="position" value="부교수" th:checked="${#arrays.contains(position, '부교수')}"/>부교수
+                </label>
+                <label>
+                    <input type="checkbox" name="position" value="조교수" th:checked="${#arrays.contains(position, '조교수')}"/>조교수
+                </label>
+                <label>
+                    <input type="checkbox" name="position" value="전임강사" th:checked="${#arrays.contains(position, '전임강사')}"/>전임강사
+                </label>
+                <button type="submit" class="mybutton green">검색</button>
+            </form>
+            <div class="buttons">
+                <a th:href="@{/professor/add}" class="mybutton blue">신규 교수 등록</a>
+            </div>
+        </div>
+        <table class="my-table">
+            <thead>
+                <th>-</th>
+                <th>번호</th>
+                <th>이름</th>
+                <th>아이디</th>
+                <th>직급</th>
+                <th>입사일</th>
+                <th>급여(만원)</th>
+                <th>보직수당</th>
+                <th>연락처</th>
+                <th>이메일</th>
+                <th>상태</th>
+                <th>소속학과</th>
+                <th>-</th>
+            </thead>
+            <tbody>
+                <tr th:each="professor:${professors}">
+                    <td>
+                        <img th:src="${professor.photoUrl}" alt="교수 이미지" class="photo"/>
+                        <!-- <img th:src="${@fileHelper.getFileUrl(professor.photoUrl)}" alt="교수 이미지" class="photo"/> -->
+                    </td>
+                    <td th:text="${professor.id}"></td>
+                    <td>
+                        <a th:href="@{/professor/view/{id}(id=${professor.id})}" th:text="${professor.name}"></a>
+                    </td>
+                    <td th:text="${professor.userId}"></td>
+                    <td th:text="${professor.position}"></td>
+                    <td th:text="${#strings.substring(professor.hiredate, 0, 10)}"></td>
+                    <td th:text="${professor.sal}"></td>
+                    <td th:text="${professor.comm}"></td>
+                    <td>
+                        <a th:href="'tel:' + ${professor.phone}" th:text="${professor.phone}"></a>
+                    </td>
+                    <td>
+                        <a th:href="'mailto:' + ${professor.email}" th:text="${professor.email}"></a>
+                    </td>
+                    <td th:text="${professor.status}"></td>
+                    <td th:text="${professor.dname}"></td>
+                    <td>
+                        <a class="mybutton green xs edit" th:href="@{/professor/edit/{id}(id=${professor.id})}">수정</a>
+                        <a class="mybutton black xs btn-delete"
+                           th:href="@{/professor/delete/{id}(id=${professor.id})}"
+                           th:attr="data-name=${professor.name}, data-id=${professor.id}">삭제</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <ul class="pagination">
+            <!-- 이전 페이지 그룹 이동 버튼 -->
+            <li th:if="${pageHelper.prevPage > 0}">
+                <a th:href="@{/professor(keyword=${keyword}, department_id=${departmentId}, position=${#strings.arrayJoin(position, ',')}, page=${pageHelper.prevPage})}">◀</a>
+            </li>
+            <li th:unless="${pageHelper.prevPage > 0}"><a>◀</a></li>
+            <!-- 페이지 번호 링크 -->
+            <li th:each="i:${#numbers.sequence(pageHelper.startPage, pageHelper.endPage)}">
+                <a th:if="${i == pageHelper.nowPage}" class="active" th:text="${i}"></a>
+                <a th:unless="${i == pageHelper.nowPage}" th:text="${i}" th:href="@{/professor(keyword=${keyword}, department_id=${departmentId}, position=${#strings.arrayJoin(position, ',')}, page=${i})}"></a>
+            </li>
+            <!-- 다음 페이지 그룹 이동 버튼 -->
+            <li th:if="${pageHelper.nextPage > 0}">
+                <a th:href="@{/professor(keyword=${keyword}, department_id=${departmentId}, position=${#strings.arrayJoin(position, ',')}, page=${pageHelper.nextPage})}">▶</a>
+            </li>
+            <li th:unless="${pageHelper.nextPage > 0}"><a>▶</a></li>
+        </ul>
+
+        <script th:src="@{/assets/js/script.js}"></script>
+        <script>
+            document.querySelectorAll("img").forEach((v, i) => {
+                v.addEventListener("error", e => e.currentTarget.src="/assets/img/noimg.jpg");
+            });
+
+            document.querySelectorAll(".btn-delete").forEach((v, i) => {
+                v.addEventListener("click", deleteProfessor);
+            });
+        </script>
+    </body>
+</html>

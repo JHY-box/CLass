@@ -1,0 +1,394 @@
+@import './common.scss';
+
+.line {
+    background-color: $purple;
+
+    @include xl {
+        padding-left: 20px;
+    }
+
+    .line-container {
+        max-width: 1200px;
+        margin: auto;
+        display: flex;
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+        a {
+            color: $white;
+            font-weight: 300;
+            font-size: 14px;
+        }
+
+        span {
+            color: $white;
+            font-size: 14px;
+        }
+    }
+}
+
+.banner1 {
+    text-align: center;
+
+    img {
+        width: 100%;
+
+        &:first-child {
+
+            @include sm {
+                display: none;
+            }
+        }
+    
+        &:last-child {
+            display: none;
+    
+            @include sm {
+                display: inline;
+            }
+        }
+    }
+}
+
+.intro {
+    display: none;
+
+    @include xl {
+        display: block;
+    }
+
+    p {
+        font-size: 18px;
+        max-width: 60%;
+        margin: auto;
+        line-height: 140%;
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 30px;
+
+        @include lg {
+            font-size: 16px;
+        }
+
+        @include sm {
+            font-size: 15px;
+        }
+    }
+}
+
+.content1 {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    border-bottom: 1px solid $purple;
+
+    @include xl {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    @include md {
+        padding-bottom: 50px;
+    }
+
+    .content1_item {
+        text-align: center;
+        padding: 50px 35px 60px 35px;
+        width: 25%;
+
+        @include md {
+            width: 50%;
+            padding-bottom: 10px;
+        }
+
+        @include sm {
+            width: 100%;
+        }
+
+        img {
+            
+            @include lg {
+                width: 100%;
+            }
+
+            @include md {
+                width: 80%;
+            }
+            
+        }
+
+        .txt{
+
+            h4 {
+                font-weight: 500;
+                color: $light-purple;
+                padding-top: 25px;
+                padding-bottom: 20px;
+                font-size: 16px;
+            }
+
+            p {
+                font-size: 17px;
+                line-height: 140%;
+            }
+            
+            h5 {
+                font-weight: 400;
+                color: $light-purple;
+                padding-top: 20px;
+                font-size: 14px;
+                line-height: 130%;
+
+                @include lg {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+
+    .shape1 {
+        width: 5px;
+        height: 40px;
+        background-color: $gray2;
+        border-radius: 20px;
+        position: absolute;
+        top: 25%;
+        left: 25%;
+
+        @include lg {
+            transform: scale(0.8, 0.8);
+            top: 22%;
+        }
+
+        @include md {
+            display: none;
+        }
+
+        &.shape3 {
+            left: 50%;
+        }
+
+        &.shape5 {
+            left: 75%;
+        }
+    }
+
+    .shape2 {
+        width: 40px;
+        height: 5px;
+        background-color: $gray2;
+        border-radius: 20px;
+        position: absolute;
+        top: 25%;
+        left: 25%;
+        transform: translate(-45%, 350%);
+
+        @include lg {
+            transform: scale(0.8, 0.8) translate(-55%, 430%);
+            top: 22%;
+        }
+
+        @include md {
+            display: none;
+        }
+
+        &.shape4 {
+            left: 50%;
+        }
+
+        &.shape6 {
+            left: 75%;
+        }
+    }
+}
+
+.content2 {
+    padding-top: 50px;
+    padding-bottom: 80px;
+    text-align: center;
+
+    @include lg {
+        width: 100%;
+    }
+
+    p {
+        font-size: 19px;
+        max-width: 450px;
+        margin: auto;
+        padding-bottom: 30px;
+        line-height: 160%;
+
+        @include lg {
+            font-size: 17px;
+        }
+
+        @include md {
+            font-size: 15px;
+        }
+
+        @include sm {
+            width: 70%;
+            font-size: 14px;
+        }
+    }
+
+    h2 {
+        color: $orange;
+        font-size: 32px;
+        font-weight: 400;
+        padding-bottom: 50px;
+
+        @include lg {
+            font-size: 30px;
+        }
+
+        @include md {
+            font-size: 26px;
+        }
+
+        @include sm {
+            width: 70%;
+            margin: auto;
+            font-size: 22px;
+        }
+    }
+
+    .banner2 {
+        
+        img {
+            width: 100%;
+
+            &:first-child {
+
+                @include sm {
+                    display: none;
+                }
+            }
+        
+            &:last-child {
+                display: none;
+        
+                @include sm {
+                    display: inline;
+                }
+            }
+        }
+
+    }
+}
+
+.coffee {
+    text-align: center;
+    border-top: 1px solid $light-gray;
+    max-width: 1200px;
+    margin: auto;
+    position: relative;
+
+    @include xl {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    h2 {
+        font-size: 28px;
+        font-weight: 500;
+        color: $orange;
+        background-color: $white;
+        padding-left: 30px;
+        padding-right: 30px;
+        position: absolute;
+        display: inline-block;
+        top: -17px;
+        left: 50%;
+        transform: translate(-50%, 0);
+
+        @include lg {
+            font-size: 24px;
+        }
+
+        @include md {
+            font-size: 18px;
+        }
+
+        @include sm {
+            width: 100%;
+        }
+
+        span {
+            font-size: 24px;
+            color: $light-gray;
+            font-weight: 400;
+        }
+    }
+
+    h5 {
+        padding-top: 40px;
+        padding-bottom: 30px;
+        color: $orange;
+        font-weight: 400;
+    }
+
+    p {
+        width: 800px;
+        margin: auto;
+        line-height: 160%;
+        font-size: 15px;
+
+        @include lg {
+            font-size: 14px;
+            width: 100%;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    }
+
+    .simply_box {
+        padding-top: 45px;
+        display: flex;
+        flex-wrap: wrap;
+
+        .simply_box1 {
+            padding-left: 10px;
+            padding-right: 10px;
+            width: 33.3%;
+
+            @include md {
+                width: 80%;
+                margin: auto;
+                padding-bottom: 20px;
+            }
+
+            @include sm {
+                width: 100%;
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    a {
+        display: inline-block;
+        color: $white;
+        background-color: $light-orange;
+        padding: 10px 70px;
+        margin-top: 40px;
+        margin-bottom: 110px;
+
+        @include sm {
+            margin-top: 20px;
+            margin-bottom: 70px;
+        }
+
+        &.tea {
+            margin-bottom: 150px;
+
+            @include sm {
+                margin-bottom: 60px;
+            }
+        }
+    }
+}

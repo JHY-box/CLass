@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+    <!-- MySQL 접속 정보를 지정한다. -->
+    <properties>
+        <property name="hostname" value="127.0.0.1" />
+        <property name="portnumber" value="9090" />
+        <property name="database" value="myschool-regacy" />
+        <property name="username" value="root" />
+        <property name="password" value="1234" />
+    </properties>
+
+    <environments default="development">
+        <environment id="development">
+            <transactionManager type="JDBC" />
+            <dataSource type="POOLED">
+                <property name="driver" value="com.mysql.cj.jdbc.Driver" />
+                <property name="url" value="jdbc:log4jdbc:mysql://${hostname}:${portnumber}/${database}?characterEncoding=UTF8&amp;serverTimezone=UTC" />
+                <property name="username" value="${username}" />
+                <property name="password" value="${password}" />
+            </dataSource>
+        </environment>
+    </environments>
+
+    <!-- 실행할 SQL문을 정의한 Mapper XML의 경로를 지정한다. -->
+    <mappers>
+        <!-- XML Mapper -->
+        <!-- <mapper resource="mappers/DepartmentMapper.xml" /> -->
+        <!-- Interface Mapper (Java 소스파일의 위치 지정) -->
+        <!-- <mapper class="kr.hossam.mappers.DepartmentMapper" /> -->
+        <!-- Package Mapper (특정 패키지 내의 모든 소스코드 자동 인식 )-->
+        <package name="kr.hossam.mappers"/>
+    </mappers>
+</configuration>

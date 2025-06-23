@@ -1,0 +1,502 @@
+[ERROR] 25-04-24 12:32:33 [App_Select01:37] - 데이터 처리 실패 >> SQL문을 확인하세요
+org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.apache.ibatis.reflection.ReflectionException: Could not set property 'position' of 'class kr.yjh.models.Professors' with value '전임강사' Cause: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named 'position' in 'class kr.yjh.models.Professors'
+### The error may exist in kr/yjh/mappers/ProfessorsMapper.java (best guess)
+### The error may involve kr.yjh.mappers.ProfessorsMapper.selectList
+### The error occurred while handling results
+### SQL: SELECT id, name, user_id, position, sal, hiredate, comm, email, phone, photo_url, status, department_id FROM professors WHERE id LIKE CONCAT('%', ?, '%')
+### Cause: org.apache.ibatis.reflection.ReflectionException: Could not set property 'position' of 'class kr.yjh.models.Professors' with value '전임강사' Cause: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named 'position' in 'class kr.yjh.models.Professors'
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:156)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:142)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:147)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:80)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at jdk.proxy2/jdk.proxy2.$Proxy17.selectList(Unknown Source)
+	at kr.yjh.services.impl.ProfessorsServiceImpl.getList(ProfessorsServiceImpl.java:68)
+	at kr.yjh.mybatis.App_Select01.main(App_Select01.java:32)
+Caused by: org.apache.ibatis.reflection.ReflectionException: Could not set property 'position' of 'class kr.yjh.models.Professors' with value '전임강사' Cause: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named 'position' in 'class kr.yjh.models.Professors'
+	at org.apache.ibatis.reflection.wrapper.BeanWrapper.setBeanProperty(BeanWrapper.java:181)
+	at org.apache.ibatis.reflection.wrapper.BeanWrapper.set(BeanWrapper.java:61)
+	at org.apache.ibatis.reflection.MetaObject.setValue(MetaObject.java:119)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.applyPropertyMappings(DefaultResultSetHandler.java:512)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.getRowValue(DefaultResultSetHandler.java:418)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleRowValuesForSimpleResultMap(DefaultResultSetHandler.java:366)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleRowValues(DefaultResultSetHandler.java:337)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleResultSet(DefaultResultSetHandler.java:310)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleResultSets(DefaultResultSetHandler.java:202)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:66)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:80)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:65)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:336)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:158)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:110)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:90)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:154)
+	... 9 common frames omitted
+Caused by: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named 'position' in 'class kr.yjh.models.Professors'
+	at org.apache.ibatis.reflection.Reflector.getSetInvoker(Reflector.java:377)
+	at org.apache.ibatis.reflection.MetaClass.getSetInvoker(MetaClass.java:164)
+	at org.apache.ibatis.reflection.wrapper.BeanWrapper.setBeanProperty(BeanWrapper.java:172)
+	... 25 common frames omitted
+[ERROR] 25-04-24 12:32:48 [App_Select01:41] - 조회결과 --->> 
+[ERROR] 25-04-24 12:32:48 [App_Select01:42] - 조회된 데이터 수 --->> 
+[ERROR] 25-04-24 12:33:32 [App_Select01:41] - 조회결과 --->> 
+[ERROR] 25-04-24 12:33:32 [App_Select01:42] - 조회된 데이터 수 --->> 
+[ERROR] 25-04-24 12:33:44 [App_Select01:41] - 조회결과 --->> 
+[ERROR] 25-04-24 12:33:44 [App_Select01:42] - 조회된 데이터 수 --->> 
+[ERROR] 25-04-24 12:34:13 [App_Select01:37] - 데이터 처리 실패 >> SQL문을 확인하세요
+org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.apache.ibatis.reflection.ReflectionException: Could not set property 'position' of 'class kr.yjh.models.Professors' with value '전임강사' Cause: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named 'position' in 'class kr.yjh.models.Professors'
+### The error may exist in kr/yjh/mappers/ProfessorsMapper.java (best guess)
+### The error may involve kr.yjh.mappers.ProfessorsMapper.selectList
+### The error occurred while handling results
+### SQL: SELECT id, name, user_id, position, sal, hiredate, comm, email, phone, photo_url, status, department_id FROM professors WHERE id LIKE CONCAT('%', ?, '%')
+### Cause: org.apache.ibatis.reflection.ReflectionException: Could not set property 'position' of 'class kr.yjh.models.Professors' with value '전임강사' Cause: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named 'position' in 'class kr.yjh.models.Professors'
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:156)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:142)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:147)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:80)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at jdk.proxy2/jdk.proxy2.$Proxy17.selectList(Unknown Source)
+	at kr.yjh.services.impl.ProfessorsServiceImpl.getList(ProfessorsServiceImpl.java:68)
+	at kr.yjh.mybatis.App_Select01.main(App_Select01.java:32)
+Caused by: org.apache.ibatis.reflection.ReflectionException: Could not set property 'position' of 'class kr.yjh.models.Professors' with value '전임강사' Cause: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named 'position' in 'class kr.yjh.models.Professors'
+	at org.apache.ibatis.reflection.wrapper.BeanWrapper.setBeanProperty(BeanWrapper.java:181)
+	at org.apache.ibatis.reflection.wrapper.BeanWrapper.set(BeanWrapper.java:61)
+	at org.apache.ibatis.reflection.MetaObject.setValue(MetaObject.java:119)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.applyPropertyMappings(DefaultResultSetHandler.java:512)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.getRowValue(DefaultResultSetHandler.java:418)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleRowValuesForSimpleResultMap(DefaultResultSetHandler.java:366)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleRowValues(DefaultResultSetHandler.java:337)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleResultSet(DefaultResultSetHandler.java:310)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleResultSets(DefaultResultSetHandler.java:202)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:66)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:80)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:65)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:336)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:158)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:110)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:90)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:154)
+	... 9 common frames omitted
+Caused by: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named 'position' in 'class kr.yjh.models.Professors'
+	at org.apache.ibatis.reflection.Reflector.getSetInvoker(Reflector.java:377)
+	at org.apache.ibatis.reflection.MetaClass.getSetInvoker(MetaClass.java:164)
+	at org.apache.ibatis.reflection.wrapper.BeanWrapper.setBeanProperty(BeanWrapper.java:172)
+	... 25 common frames omitted
+[ERROR] 25-04-24 12:35:19 [App_Select01:41] - 조회결과 --->> 
+[ERROR] 25-04-24 12:35:19 [App_Select01:42] - 조회된 데이터 수 --->> 
+[ERROR] 25-04-24 12:36:40 [App_Select01:37] - 데이터 처리 실패 >> SQL문을 확인하세요
+org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.apache.ibatis.reflection.ReflectionException: Could not set property 'position' of 'class kr.yjh.models.Professors' with value '전임강사' Cause: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named 'position' in 'class kr.yjh.models.Professors'
+### The error may exist in kr/yjh/mappers/ProfessorsMapper.java (best guess)
+### The error may involve kr.yjh.mappers.ProfessorsMapper.selectList
+### The error occurred while handling results
+### SQL: SELECT id, name, user_id, position, sal, hiredate, comm, email, phone, photo_url, status, department_id FROM professors
+### Cause: org.apache.ibatis.reflection.ReflectionException: Could not set property 'position' of 'class kr.yjh.models.Professors' with value '전임강사' Cause: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named 'position' in 'class kr.yjh.models.Professors'
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:156)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:142)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:147)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:80)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at jdk.proxy2/jdk.proxy2.$Proxy17.selectList(Unknown Source)
+	at kr.yjh.services.impl.ProfessorsServiceImpl.getList(ProfessorsServiceImpl.java:68)
+	at kr.yjh.mybatis.App_Select01.main(App_Select01.java:32)
+Caused by: org.apache.ibatis.reflection.ReflectionException: Could not set property 'position' of 'class kr.yjh.models.Professors' with value '전임강사' Cause: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named 'position' in 'class kr.yjh.models.Professors'
+	at org.apache.ibatis.reflection.wrapper.BeanWrapper.setBeanProperty(BeanWrapper.java:181)
+	at org.apache.ibatis.reflection.wrapper.BeanWrapper.set(BeanWrapper.java:61)
+	at org.apache.ibatis.reflection.MetaObject.setValue(MetaObject.java:119)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.applyPropertyMappings(DefaultResultSetHandler.java:512)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.getRowValue(DefaultResultSetHandler.java:418)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleRowValuesForSimpleResultMap(DefaultResultSetHandler.java:366)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleRowValues(DefaultResultSetHandler.java:337)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleResultSet(DefaultResultSetHandler.java:310)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleResultSets(DefaultResultSetHandler.java:202)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:66)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:80)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:65)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:336)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:158)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:110)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:90)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:154)
+	... 9 common frames omitted
+Caused by: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named 'position' in 'class kr.yjh.models.Professors'
+	at org.apache.ibatis.reflection.Reflector.getSetInvoker(Reflector.java:377)
+	at org.apache.ibatis.reflection.MetaClass.getSetInvoker(MetaClass.java:164)
+	at org.apache.ibatis.reflection.wrapper.BeanWrapper.setBeanProperty(BeanWrapper.java:172)
+	... 25 common frames omitted
+[ERROR] 25-04-24 12:36:48 [App_Select01:37] - 데이터 처리 실패 >> SQL문을 확인하세요
+org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.apache.ibatis.reflection.ReflectionException: Could not set property 'position' of 'class kr.yjh.models.Professors' with value '전임강사' Cause: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named 'position' in 'class kr.yjh.models.Professors'
+### The error may exist in kr/yjh/mappers/ProfessorsMapper.java (best guess)
+### The error may involve kr.yjh.mappers.ProfessorsMapper.selectList
+### The error occurred while handling results
+### SQL: SELECT id, name, user_id, position, sal, hiredate, comm, email, phone, photo_url, status, department_id FROM professors
+### Cause: org.apache.ibatis.reflection.ReflectionException: Could not set property 'position' of 'class kr.yjh.models.Professors' with value '전임강사' Cause: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named 'position' in 'class kr.yjh.models.Professors'
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:156)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:142)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:147)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:80)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at jdk.proxy2/jdk.proxy2.$Proxy17.selectList(Unknown Source)
+	at kr.yjh.services.impl.ProfessorsServiceImpl.getList(ProfessorsServiceImpl.java:68)
+	at kr.yjh.mybatis.App_Select01.main(App_Select01.java:32)
+Caused by: org.apache.ibatis.reflection.ReflectionException: Could not set property 'position' of 'class kr.yjh.models.Professors' with value '전임강사' Cause: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named 'position' in 'class kr.yjh.models.Professors'
+	at org.apache.ibatis.reflection.wrapper.BeanWrapper.setBeanProperty(BeanWrapper.java:181)
+	at org.apache.ibatis.reflection.wrapper.BeanWrapper.set(BeanWrapper.java:61)
+	at org.apache.ibatis.reflection.MetaObject.setValue(MetaObject.java:119)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.applyPropertyMappings(DefaultResultSetHandler.java:512)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.getRowValue(DefaultResultSetHandler.java:418)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleRowValuesForSimpleResultMap(DefaultResultSetHandler.java:366)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleRowValues(DefaultResultSetHandler.java:337)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleResultSet(DefaultResultSetHandler.java:310)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleResultSets(DefaultResultSetHandler.java:202)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:66)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:80)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:65)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:336)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:158)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:110)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:90)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:154)
+	... 9 common frames omitted
+Caused by: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named 'position' in 'class kr.yjh.models.Professors'
+	at org.apache.ibatis.reflection.Reflector.getSetInvoker(Reflector.java:377)
+	at org.apache.ibatis.reflection.MetaClass.getSetInvoker(MetaClass.java:164)
+	at org.apache.ibatis.reflection.wrapper.BeanWrapper.setBeanProperty(BeanWrapper.java:172)
+	... 25 common frames omitted
+[ERROR] 25-04-24 12:37:32 [App_Select01:37] - 데이터 처리 실패 >> SQL문을 확인하세요
+org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.apache.ibatis.reflection.ReflectionException: Could not set property 'position' of 'class kr.yjh.models.Professors' with value '전임강사' Cause: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named 'position' in 'class kr.yjh.models.Professors'
+### The error may exist in kr/yjh/mappers/ProfessorsMapper.java (best guess)
+### The error may involve kr.yjh.mappers.ProfessorsMapper.selectList
+### The error occurred while handling results
+### SQL: SELECT id, name, user_id, position, sal, hiredate, comm, email, phone, photo_url, status, department_id FROM professors
+### Cause: org.apache.ibatis.reflection.ReflectionException: Could not set property 'position' of 'class kr.yjh.models.Professors' with value '전임강사' Cause: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named 'position' in 'class kr.yjh.models.Professors'
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:156)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:142)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:147)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:80)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at jdk.proxy2/jdk.proxy2.$Proxy17.selectList(Unknown Source)
+	at kr.yjh.services.impl.ProfessorsServiceImpl.getList(ProfessorsServiceImpl.java:68)
+	at kr.yjh.mybatis.App_Select01.main(App_Select01.java:32)
+Caused by: org.apache.ibatis.reflection.ReflectionException: Could not set property 'position' of 'class kr.yjh.models.Professors' with value '전임강사' Cause: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named 'position' in 'class kr.yjh.models.Professors'
+	at org.apache.ibatis.reflection.wrapper.BeanWrapper.setBeanProperty(BeanWrapper.java:181)
+	at org.apache.ibatis.reflection.wrapper.BeanWrapper.set(BeanWrapper.java:61)
+	at org.apache.ibatis.reflection.MetaObject.setValue(MetaObject.java:119)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.applyPropertyMappings(DefaultResultSetHandler.java:512)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.getRowValue(DefaultResultSetHandler.java:418)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleRowValuesForSimpleResultMap(DefaultResultSetHandler.java:366)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleRowValues(DefaultResultSetHandler.java:337)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleResultSet(DefaultResultSetHandler.java:310)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleResultSets(DefaultResultSetHandler.java:202)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:66)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:80)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:65)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:336)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:158)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:110)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:90)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:154)
+	... 9 common frames omitted
+Caused by: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named 'position' in 'class kr.yjh.models.Professors'
+	at org.apache.ibatis.reflection.Reflector.getSetInvoker(Reflector.java:377)
+	at org.apache.ibatis.reflection.MetaClass.getSetInvoker(MetaClass.java:164)
+	at org.apache.ibatis.reflection.wrapper.BeanWrapper.setBeanProperty(BeanWrapper.java:172)
+	... 25 common frames omitted
+[ERROR] 25-04-24 12:43:15 [App_Select01:37] - 데이터 처리 실패 >> SQL문을 확인하세요
+org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.apache.ibatis.reflection.ReflectionException: Could not set property 'position' of 'class kr.yjh.models.Professors' with value '전임강사' Cause: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named 'position' in 'class kr.yjh.models.Professors'
+### The error may exist in kr/yjh/mappers/ProfessorsMapper.java (best guess)
+### The error may involve kr.yjh.mappers.ProfessorsMapper.selectList
+### The error occurred while handling results
+### SQL: SELECT id, name, user_id, position, sal, hiredate, comm, email, phone, photo_url, status, department_id FROM professors
+### Cause: org.apache.ibatis.reflection.ReflectionException: Could not set property 'position' of 'class kr.yjh.models.Professors' with value '전임강사' Cause: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named 'position' in 'class kr.yjh.models.Professors'
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:156)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:142)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:147)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:80)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at jdk.proxy2/jdk.proxy2.$Proxy17.selectList(Unknown Source)
+	at kr.yjh.services.impl.ProfessorsServiceImpl.getList(ProfessorsServiceImpl.java:68)
+	at kr.yjh.mybatis.App_Select01.main(App_Select01.java:32)
+Caused by: org.apache.ibatis.reflection.ReflectionException: Could not set property 'position' of 'class kr.yjh.models.Professors' with value '전임강사' Cause: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named 'position' in 'class kr.yjh.models.Professors'
+	at org.apache.ibatis.reflection.wrapper.BeanWrapper.setBeanProperty(BeanWrapper.java:181)
+	at org.apache.ibatis.reflection.wrapper.BeanWrapper.set(BeanWrapper.java:61)
+	at org.apache.ibatis.reflection.MetaObject.setValue(MetaObject.java:119)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.applyPropertyMappings(DefaultResultSetHandler.java:512)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.getRowValue(DefaultResultSetHandler.java:418)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleRowValuesForSimpleResultMap(DefaultResultSetHandler.java:366)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleRowValues(DefaultResultSetHandler.java:337)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleResultSet(DefaultResultSetHandler.java:310)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleResultSets(DefaultResultSetHandler.java:202)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:66)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:80)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:65)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:336)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:158)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:110)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:90)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:154)
+	... 9 common frames omitted
+Caused by: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named 'position' in 'class kr.yjh.models.Professors'
+	at org.apache.ibatis.reflection.Reflector.getSetInvoker(Reflector.java:377)
+	at org.apache.ibatis.reflection.MetaClass.getSetInvoker(MetaClass.java:164)
+	at org.apache.ibatis.reflection.wrapper.BeanWrapper.setBeanProperty(BeanWrapper.java:172)
+	... 25 common frames omitted
+[ERROR] 25-04-24 12:44:51 [App_Select01:37] - 데이터 처리 실패 >> SQL문을 확인하세요
+org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.apache.ibatis.reflection.ReflectionException: Could not set property 'position' of 'class kr.yjh.models.Professors' with value '전임강사' Cause: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named 'position' in 'class kr.yjh.models.Professors'
+### The error may exist in kr/yjh/mappers/ProfessorsMapper.java (best guess)
+### The error may involve kr.yjh.mappers.ProfessorsMapper.selectList
+### The error occurred while handling results
+### SQL: SELECT id, name, user_id, position, sal, hiredate, comm, email, phone, photo_url, status, department_id FROM professors
+### Cause: org.apache.ibatis.reflection.ReflectionException: Could not set property 'position' of 'class kr.yjh.models.Professors' with value '전임강사' Cause: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named 'position' in 'class kr.yjh.models.Professors'
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:156)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:142)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:147)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:80)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at jdk.proxy2/jdk.proxy2.$Proxy17.selectList(Unknown Source)
+	at kr.yjh.services.impl.ProfessorsServiceImpl.getList(ProfessorsServiceImpl.java:68)
+	at kr.yjh.mybatis.App_Select01.main(App_Select01.java:32)
+Caused by: org.apache.ibatis.reflection.ReflectionException: Could not set property 'position' of 'class kr.yjh.models.Professors' with value '전임강사' Cause: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named 'position' in 'class kr.yjh.models.Professors'
+	at org.apache.ibatis.reflection.wrapper.BeanWrapper.setBeanProperty(BeanWrapper.java:181)
+	at org.apache.ibatis.reflection.wrapper.BeanWrapper.set(BeanWrapper.java:61)
+	at org.apache.ibatis.reflection.MetaObject.setValue(MetaObject.java:119)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.applyPropertyMappings(DefaultResultSetHandler.java:512)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.getRowValue(DefaultResultSetHandler.java:418)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleRowValuesForSimpleResultMap(DefaultResultSetHandler.java:366)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleRowValues(DefaultResultSetHandler.java:337)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleResultSet(DefaultResultSetHandler.java:310)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleResultSets(DefaultResultSetHandler.java:202)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:66)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:80)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:65)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:336)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:158)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:110)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:90)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:154)
+	... 9 common frames omitted
+Caused by: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named 'position' in 'class kr.yjh.models.Professors'
+	at org.apache.ibatis.reflection.Reflector.getSetInvoker(Reflector.java:377)
+	at org.apache.ibatis.reflection.MetaClass.getSetInvoker(MetaClass.java:164)
+	at org.apache.ibatis.reflection.wrapper.BeanWrapper.setBeanProperty(BeanWrapper.java:172)
+	... 25 common frames omitted
+[ERROR] 25-04-24 12:54:37 [App_Select01:35] - 데이터 처리 실패 >> SQL문을 확인하세요
+org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.apache.ibatis.reflection.ReflectionException: Could not set property 'position' of 'class kr.yjh.models.Professors' with value '전임강사' Cause: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named 'position' in 'class kr.yjh.models.Professors'
+### The error may exist in kr/yjh/mappers/ProfessorsMapper.java (best guess)
+### The error may involve kr.yjh.mappers.ProfessorsMapper.selectOne
+### The error occurred while handling results
+### SQL: SELECT id, name, user_id, position, sal, hiredate, comm, email, phone, photo_url, status, department_id FROM professors WHERE id=?
+### Cause: org.apache.ibatis.reflection.ReflectionException: Could not set property 'position' of 'class kr.yjh.models.Professors' with value '전임강사' Cause: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named 'position' in 'class kr.yjh.models.Professors'
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:156)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:142)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:75)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:87)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at jdk.proxy2/jdk.proxy2.$Proxy17.selectOne(Unknown Source)
+	at kr.yjh.services.impl.ProfessorsServiceImpl.getItem(ProfessorsServiceImpl.java:57)
+	at kr.yjh.mybatis.App_Select01.main(App_Select01.java:30)
+Caused by: org.apache.ibatis.reflection.ReflectionException: Could not set property 'position' of 'class kr.yjh.models.Professors' with value '전임강사' Cause: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named 'position' in 'class kr.yjh.models.Professors'
+	at org.apache.ibatis.reflection.wrapper.BeanWrapper.setBeanProperty(BeanWrapper.java:181)
+	at org.apache.ibatis.reflection.wrapper.BeanWrapper.set(BeanWrapper.java:61)
+	at org.apache.ibatis.reflection.MetaObject.setValue(MetaObject.java:119)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.applyPropertyMappings(DefaultResultSetHandler.java:512)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.getRowValue(DefaultResultSetHandler.java:418)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleRowValuesForSimpleResultMap(DefaultResultSetHandler.java:366)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleRowValues(DefaultResultSetHandler.java:337)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleResultSet(DefaultResultSetHandler.java:310)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleResultSets(DefaultResultSetHandler.java:202)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:66)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:80)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:65)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:336)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:158)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:110)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:90)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:154)
+	... 9 common frames omitted
+Caused by: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named 'position' in 'class kr.yjh.models.Professors'
+	at org.apache.ibatis.reflection.Reflector.getSetInvoker(Reflector.java:377)
+	at org.apache.ibatis.reflection.MetaClass.getSetInvoker(MetaClass.java:164)
+	at org.apache.ibatis.reflection.wrapper.BeanWrapper.setBeanProperty(BeanWrapper.java:172)
+	... 25 common frames omitted
+[ERROR] 25-04-24 13:01:31 [App_Select01:35] - 데이터 처리 실패 >> SQL문을 확인하세요
+org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.apache.ibatis.reflection.ReflectionException: Could not set property 'position' of 'class kr.yjh.models.Professors' with value '전임강사' Cause: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named 'position' in 'class kr.yjh.models.Professors'
+### The error may exist in kr/yjh/mappers/ProfessorsMapper.java (best guess)
+### The error may involve kr.yjh.mappers.ProfessorsMapper.selectOne
+### The error occurred while handling results
+### SQL: SELECT id, name, user_id, position, sal, hiredate, comm, email, phone, photo_url, status, department_id FROM professors WHERE id=?
+### Cause: org.apache.ibatis.reflection.ReflectionException: Could not set property 'position' of 'class kr.yjh.models.Professors' with value '전임강사' Cause: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named 'position' in 'class kr.yjh.models.Professors'
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:156)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:142)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:75)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:87)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at jdk.proxy2/jdk.proxy2.$Proxy17.selectOne(Unknown Source)
+	at kr.yjh.services.impl.ProfessorsServiceImpl.getItem(ProfessorsServiceImpl.java:57)
+	at kr.yjh.mybatis.App_Select01.main(App_Select01.java:30)
+Caused by: org.apache.ibatis.reflection.ReflectionException: Could not set property 'position' of 'class kr.yjh.models.Professors' with value '전임강사' Cause: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named 'position' in 'class kr.yjh.models.Professors'
+	at org.apache.ibatis.reflection.wrapper.BeanWrapper.setBeanProperty(BeanWrapper.java:181)
+	at org.apache.ibatis.reflection.wrapper.BeanWrapper.set(BeanWrapper.java:61)
+	at org.apache.ibatis.reflection.MetaObject.setValue(MetaObject.java:119)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.applyPropertyMappings(DefaultResultSetHandler.java:512)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.getRowValue(DefaultResultSetHandler.java:418)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleRowValuesForSimpleResultMap(DefaultResultSetHandler.java:366)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleRowValues(DefaultResultSetHandler.java:337)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleResultSet(DefaultResultSetHandler.java:310)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleResultSets(DefaultResultSetHandler.java:202)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:66)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:80)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:65)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:336)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:158)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:110)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:90)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:154)
+	... 9 common frames omitted
+Caused by: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named 'position' in 'class kr.yjh.models.Professors'
+	at org.apache.ibatis.reflection.Reflector.getSetInvoker(Reflector.java:377)
+	at org.apache.ibatis.reflection.MetaClass.getSetInvoker(MetaClass.java:164)
+	at org.apache.ibatis.reflection.wrapper.BeanWrapper.setBeanProperty(BeanWrapper.java:172)
+	... 25 common frames omitted
+[ERROR] 25-04-24 13:03:43 [App_Select01:39] - 조회결과 --->> 
+[ERROR] 25-04-24 13:03:54 [App_Select01:35] - 데이터 처리 실패 >> SQL문을 확인하세요
+java.lang.Exception: Professors 조회된 데이터가 없습니다.
+	at kr.yjh.services.impl.ProfessorsServiceImpl.getItem(ProfessorsServiceImpl.java:60)
+	at kr.yjh.mybatis.App_Select01.main(App_Select01.java:30)
+[ERROR] 25-04-24 13:04:05 [App_Select01:39] - 조회결과 --->> 
+[ERROR] 25-04-24 13:06:58 [App_Select01:39] - 조회결과 --->> 
+[ERROR] 25-04-24 13:07:08 [App_Select01:35] - 데이터 처리 실패 >> SQL문을 확인하세요
+java.lang.Exception: Professors 조회된 데이터가 없습니다.
+	at kr.yjh.services.impl.ProfessorsServiceImpl.getItem(ProfessorsServiceImpl.java:60)
+	at kr.yjh.mybatis.App_Select01.main(App_Select01.java:30)
+[ERROR] 25-04-24 13:07:19 [App_Select01:35] - 데이터 처리 실패 >> SQL문을 확인하세요
+java.lang.Exception: Professors 조회된 데이터가 없습니다.
+	at kr.yjh.services.impl.ProfessorsServiceImpl.getItem(ProfessorsServiceImpl.java:60)
+	at kr.yjh.mybatis.App_Select01.main(App_Select01.java:30)
+[ERROR] 25-04-24 13:08:57 [App_Select01:35] - 데이터 처리 실패 >> SQL문을 확인하세요
+java.lang.Exception: Professors 조회된 데이터가 없습니다.
+	at kr.yjh.services.impl.ProfessorsServiceImpl.getItem(ProfessorsServiceImpl.java:60)
+	at kr.yjh.mybatis.App_Select01.main(App_Select01.java:30)
+[ERROR] 25-04-24 13:11:44 [App_Select01:45] - 조회결과 --->> 
+[ERROR] 25-04-24 13:12:53 [App_Select02:40] - 조회결과 --->> 
+[ERROR] 25-04-24 13:13:42 [App_Select01:41] - 조회결과 --->> 
+[ERROR] 25-04-24 13:16:35 [App_Select03:41] - 조회결과 --->> 
+[ERROR] 25-04-24 13:16:35 [App_Select03:42] - 조회된 데이터 수 --->> 
+[ERROR] 25-04-24 13:17:08 [App_Select03:41] - 조회결과 --->> 
+[ERROR] 25-04-24 13:17:08 [App_Select03:42] - 조회된 데이터 수 --->> 
+[ERROR] 25-04-24 13:17:15 [App_Select03:41] - 조회결과 --->> 
+[ERROR] 25-04-24 13:17:15 [App_Select03:42] - 조회된 데이터 수 --->> 
+[ERROR] 25-04-24 15:20:25 [sqlonly:144] - 1. PreparedStatement.execute() INSERT INTO professors (id, name, user_id, position, sal, hiredate, comm, email, phone, photo_url, status, department_id ) VALUES ( 9832, '곽춘배', '435', '교수', 999, '2000-02-02', 20000, 'eeee@mmmm.ail', 'http://myschoolbomb.ac.kr', '재직', 101)
+
+java.sql.SQLIntegrityConstraintViolationException: (conn=157) Column count doesn't match value count at row 1
+	at org.mariadb.jdbc.export.ExceptionFactory.createException(ExceptionFactory.java:297)
+	at org.mariadb.jdbc.export.ExceptionFactory.create(ExceptionFactory.java:378)
+	at org.mariadb.jdbc.message.ClientMessage.readPacket(ClientMessage.java:187)
+	at org.mariadb.jdbc.client.impl.StandardClient.readPacket(StandardClient.java:1364)
+	at org.mariadb.jdbc.client.impl.StandardClient.readResults(StandardClient.java:1303)
+	at org.mariadb.jdbc.client.impl.StandardClient.readResponse(StandardClient.java:1222)
+	at org.mariadb.jdbc.client.impl.StandardClient.execute(StandardClient.java:1146)
+	at org.mariadb.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:87)
+	at org.mariadb.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:232)
+	at net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy.execute(PreparedStatementSpy.java:443)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:58)
+	at jdk.proxy3/jdk.proxy3.$Proxy19.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:48)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:75)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:184)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:62)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at jdk.proxy2/jdk.proxy2.$Proxy17.insert(Unknown Source)
+	at kr.yjh.services.impl.ProfessorsServiceImpl.addItem(ProfessorsServiceImpl.java:24)
+	at kr.yjh.mybatis.App_Insert01.main(App_Insert01.java:39)
+[ERROR] 25-04-24 15:20:25 [App_Insert01:44] - 데이터 처리 실패 >> SQL문을 확인하세요
+org.apache.ibatis.exceptions.PersistenceException: 
+### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: (conn=157) Column count doesn't match value count at row 1
+### The error may exist in kr/yjh/mappers/ProfessorsMapper.java (best guess)
+### The error may involve kr.yjh.mappers.ProfessorsMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO professors (id, name, user_id, position, sal, hiredate, comm, email, phone, photo_url, status, department_id ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+### Cause: java.sql.SQLIntegrityConstraintViolationException: (conn=157) Column count doesn't match value count at row 1
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:199)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:184)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:62)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at jdk.proxy2/jdk.proxy2.$Proxy17.insert(Unknown Source)
+	at kr.yjh.services.impl.ProfessorsServiceImpl.addItem(ProfessorsServiceImpl.java:24)
+	at kr.yjh.mybatis.App_Insert01.main(App_Insert01.java:39)
+Caused by: java.sql.SQLIntegrityConstraintViolationException: (conn=157) Column count doesn't match value count at row 1
+	at org.mariadb.jdbc.export.ExceptionFactory.createException(ExceptionFactory.java:297)
+	at org.mariadb.jdbc.export.ExceptionFactory.create(ExceptionFactory.java:378)
+	at org.mariadb.jdbc.message.ClientMessage.readPacket(ClientMessage.java:187)
+	at org.mariadb.jdbc.client.impl.StandardClient.readPacket(StandardClient.java:1364)
+	at org.mariadb.jdbc.client.impl.StandardClient.readResults(StandardClient.java:1303)
+	at org.mariadb.jdbc.client.impl.StandardClient.readResponse(StandardClient.java:1222)
+	at org.mariadb.jdbc.client.impl.StandardClient.execute(StandardClient.java:1146)
+	at org.mariadb.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:87)
+	at org.mariadb.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:232)
+	at net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy.execute(PreparedStatementSpy.java:443)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:58)
+	at jdk.proxy3/jdk.proxy3.$Proxy19.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:48)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:75)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	... 7 common frames omitted
+[ERROR] 25-04-24 15:24:03 [App_Insert01:49] - 조회결과 --->> 
+[ERROR] 25-04-24 15:28:16 [App_Select01:41] - 조회결과 --->> 
+[ERROR] 25-04-24 15:29:23 [App_Select02:38] - 조회결과 --->> 
+[ERROR] 25-04-24 15:30:04 [App_Select03:41] - 조회결과 --->> 
+[ERROR] 25-04-24 15:30:04 [App_Select03:42] - 조회된 데이터 수 --->> 
+[ERROR] 25-04-24 15:34:12 [App_Update01:50] - 조회결과 --->> 

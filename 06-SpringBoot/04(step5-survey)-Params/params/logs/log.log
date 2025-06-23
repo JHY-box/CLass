@@ -1,0 +1,38 @@
+[INFO ] 25-06-02 09:33:32 [ParamsApplication:53] - Starting ParamsApplication using Java 17.0.2 with PID 27720 (D:\#web3\06-SpringBoot\04(step5-survey)-Params\params\build\classes\java\main started by helloworld in D:\#web3\06-SpringBoot\04(step5-survey)-Params\params)
+[DEBUG] 25-06-02 09:33:32 [ParamsApplication:54] - Running with Spring Boot v3.5.0, Spring v6.2.7
+[INFO ] 25-06-02 09:33:32 [ParamsApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 25-06-02 09:33:34 [ParamsApplication:59] - Started ParamsApplication in 2.361 seconds (process running for 2.804)
+[INFO ] 25-06-02 09:33:37 [MyInterceptor:41] - ----------- New Client Connect -----------
+[INFO ] 25-06-02 09:33:38 [MyInterceptor:60] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-02 09:33:38 [MyInterceptor:78] - [GET] http://localhost:8080/
+[INFO ] 25-06-02 09:33:38 [MyInterceptor:116] - running time: 190(ms)
+[INFO ] 25-06-02 09:33:40 [MyInterceptor:41] - ----------- New Client Connect -----------
+[INFO ] 25-06-02 09:33:40 [MyInterceptor:60] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-02 09:33:40 [MyInterceptor:78] - [POST] http://localhost:8080/survey/step1
+[INFO ] 25-06-02 09:33:40 [MyInterceptor:85] - (param) <-- name = h
+[INFO ] 25-06-02 09:33:40 [MyInterceptor:94] - - REFERER : time=2484, url=http://localhost:8080/
+[INFO ] 25-06-02 09:33:40 [MyInterceptor:116] - running time: 81(ms)
+[INFO ] 25-06-02 09:33:42 [MyInterceptor:41] - ----------- New Client Connect -----------
+[INFO ] 25-06-02 09:33:42 [MyInterceptor:60] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-02 09:33:42 [MyInterceptor:78] - [POST] http://localhost:8080/survey/step2
+[INFO ] 25-06-02 09:33:42 [MyInterceptor:85] - (param) <-- name = h
+[INFO ] 25-06-02 09:33:42 [MyInterceptor:85] - (param) <-- age = 6
+[INFO ] 25-06-02 09:33:42 [MyInterceptor:94] - - REFERER : time=1774, url=http://localhost:8080/survey/step1
+[INFO ] 25-06-02 09:33:42 [MyInterceptor:116] - running time: 35(ms)
+[INFO ] 25-06-02 09:33:43 [MyInterceptor:41] - ----------- New Client Connect -----------
+[INFO ] 25-06-02 09:33:43 [MyInterceptor:60] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-02 09:33:43 [MyInterceptor:78] - [GET] http://localhost:8080/survey/step3?name=h&age=6&group=student
+[INFO ] 25-06-02 09:33:43 [MyInterceptor:85] - (param) <-- name = h
+[INFO ] 25-06-02 09:33:43 [MyInterceptor:85] - (param) <-- age = 6
+[INFO ] 25-06-02 09:33:43 [MyInterceptor:85] - (param) <-- group = student
+[INFO ] 25-06-02 09:33:43 [MyInterceptor:94] - - REFERER : time=869, url=http://localhost:8080/survey/step2
+[INFO ] 25-06-02 09:33:43 [MyInterceptor:116] - running time: 26(ms)
+[INFO ] 25-06-02 09:33:43 [MyInterceptor:41] - ----------- New Client Connect -----------
+[INFO ] 25-06-02 09:33:43 [MyInterceptor:60] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-02 09:33:43 [MyInterceptor:78] - [GET] http://localhost:8080/survey/step4?name=h&age=6&group=student&glasses=yes
+[INFO ] 25-06-02 09:33:43 [MyInterceptor:85] - (param) <-- name = h
+[INFO ] 25-06-02 09:33:43 [MyInterceptor:85] - (param) <-- age = 6
+[INFO ] 25-06-02 09:33:43 [MyInterceptor:85] - (param) <-- group = student
+[INFO ] 25-06-02 09:33:43 [MyInterceptor:85] - (param) <-- glasses = yes
+[INFO ] 25-06-02 09:33:43 [MyInterceptor:94] - - REFERER : time=535, url=http://localhost:8080/survey/step3?name=h&age=6&group=student
+[INFO ] 25-06-02 09:33:43 [MyInterceptor:116] - running time: 23(ms)

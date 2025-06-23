@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charest="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,
+        minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+        <title>Document</title>
+        <link rel='stylesheet' type='text/css' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css' />
+        <style>
+            /* 기본 초기화 작업 */
+            * {
+                box-sizing: border-box;
+                padding: 0;
+                margin: 0;
+            }
+
+            ul{
+                list-style: none;
+            }
+
+            a {
+                text-decoration: none;
+                color: #000;
+            }
+
+            .tablist {
+                border: 1px soid rgva(0, 0, 0, 0.12);
+                background-color: #fff;
+
+                display: flex;
+                justify-content: space-between;
+
+                .tab {
+                    height: 50px;
+                    font-weight: bold;
+                    padding: 0 15px;
+
+                    /* 아래 두 줄을 가장 마지막에 실습하세요*/
+                    display: flex;
+                    align-items: center;
+
+                    &.icon {
+                        font-size: 22px;
+                        padding: 0 25px;
+
+                        &:hover {
+                            color: #00c73c;
+                        }
+                    }
+                }
+            }
+        
+
+        </style>
+        </head>
+
+        <body>
+            <header>
+                <ul class="tablist">
+                    <li>
+                        <a href="#" class="tab icon">
+                            <i class="fa fa-user"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="tab">정렬이 다른 메뉴</a>
+                    </li>
+                    <li>
+                        <a href="#" class="tab icon">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                    </li>
+                </ul>
+            </header>
+        </body>
+        </html>

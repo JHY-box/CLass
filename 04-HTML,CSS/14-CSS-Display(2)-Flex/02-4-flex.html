@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charest="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,
+        minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+        <title>Document</title>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+
+            .container {
+                border: 2px dotted #06f;
+                padding: 10px;
+                width: auto;
+
+                display: flex;
+
+                .item {
+                    border: 2px solid #f0f;
+                    padding: 10px;
+                    margin: 5px;
+
+                    /* (1) */
+                    &.flex1 {
+                        flex: 1 0 0;
+                    }
+
+                    /* (2) */
+                    &.flex1 {
+                        flex: 2 0 0;
+                    }
+
+                    /* (4) */
+                    &.flex1 {
+                        flex: 1 1 40%;
+                    }
+                }
+
+                /* (3) */
+                &.container-wrap {
+                        flex-wrap: wrap;
+                        height: auto;
+                    }
+                }
+            
+
+        </style>
+        </head>
+
+        <body>
+            <h1>flex 1:2:1</h1>
+            <div class="container">
+                <div class="item flex1">Nomal contents.</div>
+                <div class="item flex2">Very~~~ Very~~~ Long contents.</div>
+                <div class="item flex1">shorts.</div>
+            </div>
+
+            <h1>flex 2단</h1>
+            <div class="container container-wrap">
+                <div class="item flex3">Nomal contents.</div>
+                <div class="item flex3">Very~~~ Very~~~ Long contents.</div>
+                <div class="item flex3">shorts.</div>
+
+                <div class="item flex3">Nomal contents.</div>
+                <div class="item flex3">Very~~~ Very~~~ Long contents.</div>
+                <div class="item flex3">shorts.</div>
+
+                <div class="item flex3">Nomal contents.</div>
+                <div class="item flex3">Very~~~ Very~~~ Long contents.</div>
+                <div class="item flex3">shorts.</div>
+
+                <div class="item flex3">Nomal contents.</div>
+                <div class="item flex3">Very~~~ Very~~~ Long contents.</div>
+                <div class="item flex3">shorts.</div>
+            </div>
+        </body>
+        </html>

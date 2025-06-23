@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko" translate="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="google" content="notranslate" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>07-BackgroundLayer</title>
+    <style type="text/css">
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      /** 백그라운드 관련 속성을 콤마(,)로 구분하면 배경이미지의 층이 형성된다. */
+      /** 가장 처음에 명시된 항목이 가장 위에 위치하고,
+            가장 마지막에 명시된 항목이 가장 아래 층에 위치하게 된다. */
+      .navi {
+        /* 전체 메뉴 높이 */
+        height: 184px;
+
+        /* 배경이미지 레이어 구성 */
+        /* 이 부분은 마지막에 코딩하세요. */
+        background: url(img/list_right.png) repeat-y right top,
+          url(img/menu.png) no-repeat left top, url(img/list_bg.png) repeat;
+
+        a {
+          display: block;
+          width: auto;
+
+          /* 메뉴 하나당 높이 */
+          height: 45px;
+          /* 메뉴 사이의 1px 구분선 크기만큼 다음 메뉴를 밀어낸다. */
+          margin-bottom: 1px;
+
+          /* 글씨는 밖으로 던진다. */
+          text-indent: -10000px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navi">
+      <a href="#">웹표준/웹디자인</a>
+      <a href="#">소셜미디어마케팅</a>
+      <a href="#">IT/모바일</a>
+      <a href="#">OA</a>
+    </nav>
+  </body>
+</html>

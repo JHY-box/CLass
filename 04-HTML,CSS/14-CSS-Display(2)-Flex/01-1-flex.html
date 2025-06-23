@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1.0,
+    minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"
+    />
+
+    <title>flex</title>
+    <style type="text/css">
+      * {
+        box-sizing: border-box;
+      }
+
+      .container {
+        border: 2px dotted #06f;
+        padding: 10px;
+
+        /*주석을 해제하고 결과를 확인해보세요. */
+        height: 300px;
+
+        .item {
+          border: 2px solid #f0f;
+          padding: 10px;
+          margin: 5px;
+
+          /* 주석을 해제하고 결과를 확인해 보세요. */
+          width: 300px;
+        }
+
+        &.container1 {
+          /* 스스로의 넚이는 부모를 가득 채우고 자식요소를 가로배치 */
+          /* 넚이값이 고정되어 있는 경우는 가로배치만 수행 */
+          /* 자식요소의 넚이 총 합이 컨테이너보다 크더라도 자식요소의 넓이를 강제로 제한한다. */
+          display: flex;
+        }
+
+        &.container2 {
+          display: inline-flex;
+      }
+    }
+    </style>
+  </head>
+
+  <body>
+    <h1>flex</h1>
+    <div class="container container1">
+      <div class="item">A</div>
+      <div class="item">B</div>
+      <div class="item">C</div>
+    </div>
+
+    <h1>inline-flex</h1>
+    <div class="container container2">
+      <div class="item">A</div>
+      <div class="item">B</div>
+      <div class="item">C</div>
+    </div>
+  </body>
+</html>

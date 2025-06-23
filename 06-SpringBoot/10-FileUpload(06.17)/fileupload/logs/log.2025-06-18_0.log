@@ -1,0 +1,855 @@
+[INFO ] 25-06-18 11:36:42 [FileuploadApplication:53] - Starting FileuploadApplication using Java 17.0.2 with PID 10164 (D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload\bin\main started by YJH in D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload)
+[DEBUG] 25-06-18 11:36:42 [FileuploadApplication:54] - Running with Spring Boot v3.4.6, Spring v6.2.7
+[INFO ] 25-06-18 11:36:42 [FileuploadApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 25-06-18 11:36:44 [LogFactory:112] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 25-06-18 11:36:44 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.yjh.fileupload]' package. Please check your configuration.
+[INFO ] 25-06-18 11:36:48 [FileuploadApplication:59] - Started FileuploadApplication in 6.539 seconds (process running for 7.548)
+[INFO ] 25-06-18 11:36:55 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-18 11:36:55 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-18 11:36:55 [MyInterceptor:85] - [GET] http://localhost:8080/simple/upload_single
+[INFO ] 25-06-18 11:36:55 [MyInterceptor:123] - running time: 238(ms)
+[INFO ] 25-06-18 11:36:55 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-18 11:36:55 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-18 11:36:55 [MyInterceptor:85] - [GET] http://localhost:8080/simple/@%7B/assets/css/header.css%7D
+[INFO ] 25-06-18 11:36:55 [MyInterceptor:101] - - REFERER : time=325, url=http://localhost:8080/simple/upload_single
+[INFO ] 25-06-18 11:37:10 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-18 11:37:10 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-18 11:37:10 [MyInterceptor:85] - [POST] http://localhost:8080/simple/upload_single_ok
+[INFO ] 25-06-18 11:37:10 [MyInterceptor:92] - (param) <-- subject = profile
+[INFO ] 25-06-18 11:37:10 [MyInterceptor:101] - - REFERER : time=14670, url=http://localhost:8080/simple/upload_single
+[DEBUG] 25-06-18 11:37:10 [SimpleUploadController:70] - =============================
+[DEBUG] 25-06-18 11:37:10 [SimpleUploadController:71] - 원본파일이름: Bose.jpg
+[DEBUG] 25-06-18 11:37:10 [SimpleUploadController:72] - <input type='file'>의 name속성값: photo
+[DEBUG] 25-06-18 11:37:10 [SimpleUploadController:73] - 파일형식: image/jpeg
+[DEBUG] 25-06-18 11:37:10 [SimpleUploadController:74] - 파일크기: 84974
+[DEBUG] 25-06-18 11:37:10 [SimpleUploadController:139] - 업로드 된 파일의 경로 : C:/Users/user/study-springboot/upload/2025/06/18/17502142305300.jpg
+[DEBUG] 25-06-18 11:37:10 [SimpleUploadController:154] - 업로드 폴더 내에서의 최종 경로 값 : /2025/06/18/17502142305300.jpg
+[DEBUG] 25-06-18 11:37:10 [SimpleUploadController:167] - 파일의 URL: /files/2025/06/18/17502142305300.jpg
+[DEBUG] 25-06-18 11:37:10 [SimpleUploadController:168] - ==============================
+[INFO ] 25-06-18 11:37:10 [MyInterceptor:123] - running time: 310(ms)
+[INFO ] 25-06-18 11:37:10 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-18 11:37:10 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-18 11:37:10 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-18 11:37:10 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-18 11:37:10 [MyInterceptor:85] - [GET] http://localhost:8080/simple/@%7B/assets/css/header.css%7D
+[INFO ] 25-06-18 11:37:10 [MyInterceptor:85] - [GET] http://localhost:8080/files/2025/06/18/17502142305300.jpg
+[INFO ] 25-06-18 11:37:10 [MyInterceptor:101] - - REFERER : time=111, url=http://localhost:8080/simple/upload_single_ok
+[INFO ] 25-06-18 11:37:10 [MyInterceptor:101] - - REFERER : time=111, url=http://localhost:8080/simple/upload_single_ok
+[INFO ] 25-06-18 11:37:10 [MyInterceptor:123] - running time: 64(ms)
+[INFO ] 25-06-18 11:47:26 [FileuploadApplication:53] - Starting FileuploadApplication using Java 17.0.2 with PID 12312 (D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload\bin\main started by YJH in D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload)
+[DEBUG] 25-06-18 11:47:26 [FileuploadApplication:54] - Running with Spring Boot v3.4.6, Spring v6.2.7
+[INFO ] 25-06-18 11:47:26 [FileuploadApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 25-06-18 11:47:28 [LogFactory:112] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 25-06-18 11:47:28 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.yjh.fileupload]' package. Please check your configuration.
+[INFO ] 25-06-18 11:47:32 [FileuploadApplication:59] - Started FileuploadApplication in 6.518 seconds (process running for 7.461)
+[INFO ] 25-06-18 11:47:45 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-18 11:47:45 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-18 11:47:45 [MyInterceptor:85] - [GET] http://localhost:8080/simple/upload_single
+[INFO ] 25-06-18 11:47:45 [MyInterceptor:123] - running time: 207(ms)
+[INFO ] 25-06-18 11:47:45 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-18 11:47:45 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-18 11:47:45 [MyInterceptor:85] - [GET] http://localhost:8080/simple/@%7B/assets/css/header.css%7D
+[INFO ] 25-06-18 11:47:45 [MyInterceptor:101] - - REFERER : time=374, url=http://localhost:8080/simple/upload_single
+[INFO ] 25-06-18 12:06:19 [FileuploadApplication:53] - Starting FileuploadApplication using Java 17.0.2 with PID 3016 (D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload\bin\main started by YJH in D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload)
+[DEBUG] 25-06-18 12:06:19 [FileuploadApplication:54] - Running with Spring Boot v3.4.6, Spring v6.2.7
+[INFO ] 25-06-18 12:06:19 [FileuploadApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 25-06-18 12:06:20 [LogFactory:112] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 25-06-18 12:06:20 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.yjh.fileupload]' package. Please check your configuration.
+[INFO ] 25-06-18 12:06:24 [FileuploadApplication:59] - Started FileuploadApplication in 6.319 seconds (process running for 7.36)
+[INFO ] 25-06-18 12:10:00 [FileuploadApplication:53] - Starting FileuploadApplication using Java 17.0.2 with PID 5400 (D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload\bin\main started by YJH in D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload)
+[DEBUG] 25-06-18 12:10:00 [FileuploadApplication:54] - Running with Spring Boot v3.4.6, Spring v6.2.7
+[INFO ] 25-06-18 12:10:00 [FileuploadApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 25-06-18 12:10:01 [LogFactory:112] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 25-06-18 12:10:01 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.yjh.fileupload]' package. Please check your configuration.
+[INFO ] 25-06-18 12:10:05 [FileuploadApplication:59] - Started FileuploadApplication in 6.588 seconds (process running for 7.478)
+[INFO ] 25-06-18 12:10:11 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-18 12:10:11 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-18 12:10:11 [MyInterceptor:85] - [GET] http://localhost:8080/simple/upload_single
+[INFO ] 25-06-18 12:10:11 [MyInterceptor:123] - running time: 245(ms)
+[INFO ] 25-06-18 12:10:13 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-18 12:10:13 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-18 12:10:13 [MyInterceptor:85] - [GET] http://localhost:8080/simple/upload
+[INFO ] 25-06-18 12:10:13 [MyInterceptor:101] - - REFERER : time=1996, url=http://localhost:8080/simple/upload_single
+[INFO ] 25-06-18 12:10:16 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-18 12:10:17 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-18 12:10:17 [MyInterceptor:85] - [GET] http://localhost:8080/simple/upload
+[INFO ] 25-06-18 12:10:17 [MyInterceptor:101] - - REFERER : time=5372, url=http://localhost:8080/simple/upload_single
+[INFO ] 25-06-18 12:10:25 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-18 12:10:25 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-18 12:10:25 [MyInterceptor:85] - [GET] http://localhost:8080/use_helper/upload
+[INFO ] 25-06-18 12:10:25 [MyInterceptor:101] - - REFERER : time=14193, url=http://localhost:8080/simple/upload_single
+[INFO ] 25-06-18 12:11:44 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-18 12:11:44 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Other, null, Other, null
+[INFO ] 25-06-18 12:11:44 [MyInterceptor:85] - [GET] http://localhost:8080/files/2025/06/18/17502142305300.jpg
+[INFO ] 25-06-18 12:11:44 [MyInterceptor:123] - running time: 38(ms)
+[INFO ] 25-06-18 12:21:40 [FileuploadApplication:53] - Starting FileuploadApplication using Java 17.0.2 with PID 5400 (D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload\bin\main started by YJH in D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload)
+[DEBUG] 25-06-18 12:21:40 [FileuploadApplication:54] - Running with Spring Boot v3.4.6, Spring v6.2.7
+[INFO ] 25-06-18 12:21:40 [FileuploadApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[WARN ] 25-06-18 12:21:40 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.yjh.fileupload]' package. Please check your configuration.
+[INFO ] 25-06-18 12:21:40 [FileuploadApplication:59] - Started FileuploadApplication in 0.864 seconds (process running for 702.295)
+[INFO ] 25-06-18 12:24:26 [FileuploadApplication:53] - Starting FileuploadApplication using Java 17.0.2 with PID 5400 (D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload\bin\main started by YJH in D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload)
+[DEBUG] 25-06-18 12:24:26 [FileuploadApplication:54] - Running with Spring Boot v3.4.6, Spring v6.2.7
+[INFO ] 25-06-18 12:24:26 [FileuploadApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[WARN ] 25-06-18 12:24:26 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.yjh.fileupload]' package. Please check your configuration.
+[INFO ] 25-06-18 12:24:27 [FileuploadApplication:59] - Started FileuploadApplication in 0.756 seconds (process running for 868.7)
+[INFO ] 25-06-18 12:24:35 [FileuploadApplication:53] - Starting FileuploadApplication using Java 17.0.2 with PID 5400 (D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload\bin\main started by YJH in D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload)
+[DEBUG] 25-06-18 12:24:35 [FileuploadApplication:54] - Running with Spring Boot v3.4.6, Spring v6.2.7
+[INFO ] 25-06-18 12:24:35 [FileuploadApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[WARN ] 25-06-18 12:24:35 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.yjh.fileupload]' package. Please check your configuration.
+[INFO ] 25-06-18 12:24:35 [FileuploadApplication:59] - Started FileuploadApplication in 0.546 seconds (process running for 877.004)
+[INFO ] 25-06-18 12:24:39 [FileuploadApplication:53] - Starting FileuploadApplication using Java 17.0.2 with PID 5400 (D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload\bin\main started by YJH in D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload)
+[DEBUG] 25-06-18 12:24:39 [FileuploadApplication:54] - Running with Spring Boot v3.4.6, Spring v6.2.7
+[INFO ] 25-06-18 12:24:39 [FileuploadApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[WARN ] 25-06-18 12:24:39 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.yjh.fileupload]' package. Please check your configuration.
+[INFO ] 25-06-18 12:24:39 [FileuploadApplication:59] - Started FileuploadApplication in 0.636 seconds (process running for 881.347)
+[INFO ] 25-06-18 12:24:46 [FileuploadApplication:53] - Starting FileuploadApplication using Java 17.0.2 with PID 5400 (D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload\bin\main started by YJH in D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload)
+[DEBUG] 25-06-18 12:24:46 [FileuploadApplication:54] - Running with Spring Boot v3.4.6, Spring v6.2.7
+[INFO ] 25-06-18 12:24:46 [FileuploadApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[WARN ] 25-06-18 12:24:46 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.yjh.fileupload]' package. Please check your configuration.
+[INFO ] 25-06-18 12:24:47 [FileuploadApplication:59] - Started FileuploadApplication in 0.539 seconds (process running for 888.647)
+[INFO ] 25-06-18 12:24:48 [FileuploadApplication:53] - Starting FileuploadApplication using Java 17.0.2 with PID 5400 (D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload\bin\main started by YJH in D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload)
+[DEBUG] 25-06-18 12:24:48 [FileuploadApplication:54] - Running with Spring Boot v3.4.6, Spring v6.2.7
+[INFO ] 25-06-18 12:24:48 [FileuploadApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[WARN ] 25-06-18 12:24:49 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.yjh.fileupload]' package. Please check your configuration.
+[INFO ] 25-06-18 12:24:49 [FileuploadApplication:59] - Started FileuploadApplication in 0.518 seconds (process running for 890.811)
+[INFO ] 25-06-18 12:24:51 [FileuploadApplication:53] - Starting FileuploadApplication using Java 17.0.2 with PID 5400 (D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload\bin\main started by YJH in D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload)
+[DEBUG] 25-06-18 12:24:51 [FileuploadApplication:54] - Running with Spring Boot v3.4.6, Spring v6.2.7
+[INFO ] 25-06-18 12:24:51 [FileuploadApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[WARN ] 25-06-18 12:24:51 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.yjh.fileupload]' package. Please check your configuration.
+[INFO ] 25-06-18 12:24:51 [FileuploadApplication:59] - Started FileuploadApplication in 0.562 seconds (process running for 892.999)
+[INFO ] 25-06-18 12:24:53 [FileuploadApplication:53] - Starting FileuploadApplication using Java 17.0.2 with PID 5400 (D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload\bin\main started by YJH in D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload)
+[DEBUG] 25-06-18 12:24:53 [FileuploadApplication:54] - Running with Spring Boot v3.4.6, Spring v6.2.7
+[INFO ] 25-06-18 12:24:53 [FileuploadApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[WARN ] 25-06-18 12:24:53 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.yjh.fileupload]' package. Please check your configuration.
+[INFO ] 25-06-18 12:24:53 [FileuploadApplication:59] - Started FileuploadApplication in 0.435 seconds (process running for 895.072)
+[INFO ] 25-06-18 12:24:55 [FileuploadApplication:53] - Starting FileuploadApplication using Java 17.0.2 with PID 5400 (D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload\bin\main started by YJH in D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload)
+[DEBUG] 25-06-18 12:24:55 [FileuploadApplication:54] - Running with Spring Boot v3.4.6, Spring v6.2.7
+[INFO ] 25-06-18 12:24:55 [FileuploadApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[WARN ] 25-06-18 12:24:55 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.yjh.fileupload]' package. Please check your configuration.
+[INFO ] 25-06-18 12:24:55 [FileuploadApplication:59] - Started FileuploadApplication in 0.507 seconds (process running for 897.195)
+[INFO ] 25-06-18 12:24:58 [FileuploadApplication:53] - Starting FileuploadApplication using Java 17.0.2 with PID 5400 (D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload\bin\main started by YJH in D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload)
+[DEBUG] 25-06-18 12:24:58 [FileuploadApplication:54] - Running with Spring Boot v3.4.6, Spring v6.2.7
+[INFO ] 25-06-18 12:24:58 [FileuploadApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[WARN ] 25-06-18 12:24:58 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.yjh.fileupload]' package. Please check your configuration.
+[INFO ] 25-06-18 12:24:58 [FileuploadApplication:59] - Started FileuploadApplication in 0.472 seconds (process running for 900.375)
+[INFO ] 25-06-18 12:25:02 [FileuploadApplication:53] - Starting FileuploadApplication using Java 17.0.2 with PID 5400 (D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload\bin\main started by YJH in D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload)
+[DEBUG] 25-06-18 12:25:02 [FileuploadApplication:54] - Running with Spring Boot v3.4.6, Spring v6.2.7
+[INFO ] 25-06-18 12:25:02 [FileuploadApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[WARN ] 25-06-18 12:25:02 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.yjh.fileupload]' package. Please check your configuration.
+[INFO ] 25-06-18 12:25:03 [FileuploadApplication:59] - Started FileuploadApplication in 0.517 seconds (process running for 904.604)
+[INFO ] 25-06-18 12:25:05 [FileuploadApplication:53] - Starting FileuploadApplication using Java 17.0.2 with PID 5400 (D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload\bin\main started by YJH in D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload)
+[DEBUG] 25-06-18 12:25:05 [FileuploadApplication:54] - Running with Spring Boot v3.4.6, Spring v6.2.7
+[INFO ] 25-06-18 12:25:05 [FileuploadApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[WARN ] 25-06-18 12:25:05 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.yjh.fileupload]' package. Please check your configuration.
+[INFO ] 25-06-18 12:25:05 [FileuploadApplication:59] - Started FileuploadApplication in 0.586 seconds (process running for 907.29)
+[INFO ] 25-06-18 12:25:13 [FileuploadApplication:53] - Starting FileuploadApplication using Java 17.0.2 with PID 5400 (D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload\bin\main started by YJH in D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload)
+[DEBUG] 25-06-18 12:25:13 [FileuploadApplication:54] - Running with Spring Boot v3.4.6, Spring v6.2.7
+[INFO ] 25-06-18 12:25:13 [FileuploadApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[WARN ] 25-06-18 12:25:13 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.yjh.fileupload]' package. Please check your configuration.
+[INFO ] 25-06-18 12:25:14 [FileuploadApplication:59] - Started FileuploadApplication in 0.528 seconds (process running for 915.597)
+[INFO ] 25-06-18 12:25:15 [FileuploadApplication:53] - Starting FileuploadApplication using Java 17.0.2 with PID 5400 (D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload\bin\main started by YJH in D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload)
+[DEBUG] 25-06-18 12:25:15 [FileuploadApplication:54] - Running with Spring Boot v3.4.6, Spring v6.2.7
+[INFO ] 25-06-18 12:25:15 [FileuploadApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[WARN ] 25-06-18 12:25:15 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.yjh.fileupload]' package. Please check your configuration.
+[INFO ] 25-06-18 12:25:16 [FileuploadApplication:59] - Started FileuploadApplication in 0.427 seconds (process running for 917.624)
+[INFO ] 25-06-18 12:25:23 [FileuploadApplication:53] - Starting FileuploadApplication using Java 17.0.2 with PID 5400 (D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload\bin\main started by YJH in D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload)
+[DEBUG] 25-06-18 12:25:23 [FileuploadApplication:54] - Running with Spring Boot v3.4.6, Spring v6.2.7
+[INFO ] 25-06-18 12:25:23 [FileuploadApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[WARN ] 25-06-18 12:25:24 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.yjh.fileupload]' package. Please check your configuration.
+[INFO ] 25-06-18 12:25:24 [FileuploadApplication:59] - Started FileuploadApplication in 0.55 seconds (process running for 925.864)
+[INFO ] 25-06-18 12:25:27 [FileuploadApplication:53] - Starting FileuploadApplication using Java 17.0.2 with PID 5400 (D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload\bin\main started by YJH in D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload)
+[DEBUG] 25-06-18 12:25:27 [FileuploadApplication:54] - Running with Spring Boot v3.4.6, Spring v6.2.7
+[INFO ] 25-06-18 12:25:27 [FileuploadApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[WARN ] 25-06-18 12:25:27 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.yjh.fileupload]' package. Please check your configuration.
+[INFO ] 25-06-18 12:25:27 [FileuploadApplication:59] - Started FileuploadApplication in 0.52 seconds (process running for 929.066)
+[INFO ] 25-06-18 12:25:29 [FileuploadApplication:53] - Starting FileuploadApplication using Java 17.0.2 with PID 5400 (D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload\bin\main started by YJH in D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload)
+[DEBUG] 25-06-18 12:25:29 [FileuploadApplication:54] - Running with Spring Boot v3.4.6, Spring v6.2.7
+[INFO ] 25-06-18 12:25:29 [FileuploadApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[WARN ] 25-06-18 12:25:29 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.yjh.fileupload]' package. Please check your configuration.
+[INFO ] 25-06-18 12:25:29 [FileuploadApplication:59] - Started FileuploadApplication in 0.546 seconds (process running for 931.236)
+[INFO ] 25-06-18 12:25:31 [FileuploadApplication:53] - Starting FileuploadApplication using Java 17.0.2 with PID 5400 (D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload\bin\main started by YJH in D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload)
+[DEBUG] 25-06-18 12:25:31 [FileuploadApplication:54] - Running with Spring Boot v3.4.6, Spring v6.2.7
+[INFO ] 25-06-18 12:25:31 [FileuploadApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[WARN ] 25-06-18 12:25:31 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.yjh.fileupload]' package. Please check your configuration.
+[INFO ] 25-06-18 12:25:31 [FileuploadApplication:59] - Started FileuploadApplication in 0.564 seconds (process running for 933.443)
+[INFO ] 25-06-18 12:25:33 [FileuploadApplication:53] - Starting FileuploadApplication using Java 17.0.2 with PID 5400 (D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload\bin\main started by YJH in D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload)
+[DEBUG] 25-06-18 12:25:33 [FileuploadApplication:54] - Running with Spring Boot v3.4.6, Spring v6.2.7
+[INFO ] 25-06-18 12:25:33 [FileuploadApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[WARN ] 25-06-18 12:25:33 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.yjh.fileupload]' package. Please check your configuration.
+[INFO ] 25-06-18 12:25:34 [FileuploadApplication:59] - Started FileuploadApplication in 0.503 seconds (process running for 935.652)
+[INFO ] 25-06-18 12:26:31 [FileuploadApplication:53] - Starting FileuploadApplication using Java 17.0.2 with PID 5400 (D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload\bin\main started by YJH in D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload)
+[DEBUG] 25-06-18 12:26:31 [FileuploadApplication:54] - Running with Spring Boot v3.4.6, Spring v6.2.7
+[INFO ] 25-06-18 12:26:31 [FileuploadApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[WARN ] 25-06-18 12:26:32 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.yjh.fileupload]' package. Please check your configuration.
+[INFO ] 25-06-18 12:26:32 [FileuploadApplication:59] - Started FileuploadApplication in 0.497 seconds (process running for 993.804)
+[INFO ] 25-06-18 12:26:34 [FileuploadApplication:53] - Starting FileuploadApplication using Java 17.0.2 with PID 5400 (D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload\bin\main started by YJH in D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload)
+[DEBUG] 25-06-18 12:26:34 [FileuploadApplication:54] - Running with Spring Boot v3.4.6, Spring v6.2.7
+[INFO ] 25-06-18 12:26:34 [FileuploadApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[WARN ] 25-06-18 12:26:34 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.yjh.fileupload]' package. Please check your configuration.
+[INFO ] 25-06-18 12:26:34 [FileuploadApplication:59] - Started FileuploadApplication in 0.443 seconds (process running for 995.966)
+[INFO ] 25-06-18 12:26:41 [FileuploadApplication:53] - Starting FileuploadApplication using Java 17.0.2 with PID 5400 (D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload\bin\main started by YJH in D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload)
+[DEBUG] 25-06-18 12:26:41 [FileuploadApplication:54] - Running with Spring Boot v3.4.6, Spring v6.2.7
+[INFO ] 25-06-18 12:26:41 [FileuploadApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[WARN ] 25-06-18 12:26:41 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.yjh.fileupload]' package. Please check your configuration.
+[INFO ] 25-06-18 12:26:41 [FileuploadApplication:59] - Started FileuploadApplication in 0.471 seconds (process running for 1003.185)
+[INFO ] 25-06-18 12:26:44 [FileuploadApplication:53] - Starting FileuploadApplication using Java 17.0.2 with PID 5400 (D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload\bin\main started by YJH in D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload)
+[DEBUG] 25-06-18 12:26:44 [FileuploadApplication:54] - Running with Spring Boot v3.4.6, Spring v6.2.7
+[INFO ] 25-06-18 12:26:44 [FileuploadApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[WARN ] 25-06-18 12:26:44 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.yjh.fileupload]' package. Please check your configuration.
+[INFO ] 25-06-18 12:26:44 [FileuploadApplication:59] - Started FileuploadApplication in 0.541 seconds (process running for 1006.43)
+[INFO ] 25-06-18 12:26:46 [FileuploadApplication:53] - Starting FileuploadApplication using Java 17.0.2 with PID 5400 (D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload\bin\main started by YJH in D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload)
+[DEBUG] 25-06-18 12:26:46 [FileuploadApplication:54] - Running with Spring Boot v3.4.6, Spring v6.2.7
+[INFO ] 25-06-18 12:26:46 [FileuploadApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[WARN ] 25-06-18 12:26:46 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.yjh.fileupload]' package. Please check your configuration.
+[INFO ] 25-06-18 12:26:47 [FileuploadApplication:59] - Started FileuploadApplication in 0.442 seconds (process running for 1008.51)
+[INFO ] 25-06-18 12:26:48 [FileuploadApplication:53] - Starting FileuploadApplication using Java 17.0.2 with PID 5400 (D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload\bin\main started by YJH in D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload)
+[DEBUG] 25-06-18 12:26:48 [FileuploadApplication:54] - Running with Spring Boot v3.4.6, Spring v6.2.7
+[INFO ] 25-06-18 12:26:48 [FileuploadApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[WARN ] 25-06-18 12:26:48 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.yjh.fileupload]' package. Please check your configuration.
+[INFO ] 25-06-18 12:26:49 [FileuploadApplication:59] - Started FileuploadApplication in 0.511 seconds (process running for 1010.659)
+[INFO ] 25-06-18 12:26:50 [FileuploadApplication:53] - Starting FileuploadApplication using Java 17.0.2 with PID 5400 (D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload\bin\main started by YJH in D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload)
+[DEBUG] 25-06-18 12:26:50 [FileuploadApplication:54] - Running with Spring Boot v3.4.6, Spring v6.2.7
+[INFO ] 25-06-18 12:26:50 [FileuploadApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[WARN ] 25-06-18 12:26:51 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.yjh.fileupload]' package. Please check your configuration.
+[INFO ] 25-06-18 12:26:51 [FileuploadApplication:59] - Started FileuploadApplication in 0.434 seconds (process running for 1012.71)
+[INFO ] 25-06-18 12:26:54 [FileuploadApplication:53] - Starting FileuploadApplication using Java 17.0.2 with PID 5400 (D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload\bin\main started by YJH in D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload)
+[DEBUG] 25-06-18 12:26:54 [FileuploadApplication:54] - Running with Spring Boot v3.4.6, Spring v6.2.7
+[INFO ] 25-06-18 12:26:54 [FileuploadApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[WARN ] 25-06-18 12:26:54 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.yjh.fileupload]' package. Please check your configuration.
+[INFO ] 25-06-18 12:26:54 [FileuploadApplication:59] - Started FileuploadApplication in 0.525 seconds (process running for 1016.007)
+[INFO ] 25-06-18 12:26:56 [FileuploadApplication:53] - Starting FileuploadApplication using Java 17.0.2 with PID 5400 (D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload\bin\main started by YJH in D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload)
+[DEBUG] 25-06-18 12:26:56 [FileuploadApplication:54] - Running with Spring Boot v3.4.6, Spring v6.2.7
+[INFO ] 25-06-18 12:26:56 [FileuploadApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[WARN ] 25-06-18 12:26:56 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.yjh.fileupload]' package. Please check your configuration.
+[INFO ] 25-06-18 12:26:56 [FileuploadApplication:59] - Started FileuploadApplication in 0.448 seconds (process running for 1018.14)
+[INFO ] 25-06-18 12:27:06 [FileuploadApplication:53] - Starting FileuploadApplication using Java 17.0.2 with PID 5400 (D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload\bin\main started by YJH in D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload)
+[DEBUG] 25-06-18 12:27:06 [FileuploadApplication:54] - Running with Spring Boot v3.4.6, Spring v6.2.7
+[INFO ] 25-06-18 12:27:06 [FileuploadApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[WARN ] 25-06-18 12:27:06 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.yjh.fileupload]' package. Please check your configuration.
+[INFO ] 25-06-18 12:27:06 [FileuploadApplication:59] - Started FileuploadApplication in 0.427 seconds (process running for 1028.389)
+[INFO ] 25-06-18 12:27:08 [FileuploadApplication:53] - Starting FileuploadApplication using Java 17.0.2 with PID 5400 (D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload\bin\main started by YJH in D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload)
+[DEBUG] 25-06-18 12:27:08 [FileuploadApplication:54] - Running with Spring Boot v3.4.6, Spring v6.2.7
+[INFO ] 25-06-18 12:27:08 [FileuploadApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[WARN ] 25-06-18 12:27:08 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.yjh.fileupload]' package. Please check your configuration.
+[INFO ] 25-06-18 12:27:08 [FileuploadApplication:59] - Started FileuploadApplication in 0.44 seconds (process running for 1030.484)
+[INFO ] 25-06-18 12:27:46 [FileuploadApplication:53] - Starting FileuploadApplication using Java 17.0.2 with PID 5400 (D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload\bin\main started by YJH in D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload)
+[DEBUG] 25-06-18 12:27:46 [FileuploadApplication:54] - Running with Spring Boot v3.4.6, Spring v6.2.7
+[INFO ] 25-06-18 12:27:46 [FileuploadApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[WARN ] 25-06-18 12:27:46 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.yjh.fileupload]' package. Please check your configuration.
+[INFO ] 25-06-18 12:27:46 [FileuploadApplication:59] - Started FileuploadApplication in 0.444 seconds (process running for 1068.188)
+[INFO ] 25-06-18 12:27:48 [FileuploadApplication:53] - Starting FileuploadApplication using Java 17.0.2 with PID 5400 (D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload\bin\main started by YJH in D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload)
+[DEBUG] 25-06-18 12:27:48 [FileuploadApplication:54] - Running with Spring Boot v3.4.6, Spring v6.2.7
+[INFO ] 25-06-18 12:27:48 [FileuploadApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[WARN ] 25-06-18 12:27:48 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.yjh.fileupload]' package. Please check your configuration.
+[INFO ] 25-06-18 12:27:48 [FileuploadApplication:59] - Started FileuploadApplication in 0.429 seconds (process running for 1070.27)
+[INFO ] 25-06-18 12:27:55 [FileuploadApplication:53] - Starting FileuploadApplication using Java 17.0.2 with PID 8992 (D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload\bin\main started by YJH in D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload)
+[DEBUG] 25-06-18 12:27:55 [FileuploadApplication:54] - Running with Spring Boot v3.4.6, Spring v6.2.7
+[INFO ] 25-06-18 12:27:55 [FileuploadApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 25-06-18 12:27:57 [LogFactory:112] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 25-06-18 12:27:57 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.yjh.fileupload]' package. Please check your configuration.
+[INFO ] 25-06-18 12:28:01 [FileuploadApplication:59] - Started FileuploadApplication in 6.588 seconds (process running for 7.512)
+[INFO ] 25-06-18 12:28:08 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-18 12:28:08 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-18 12:28:08 [MyInterceptor:85] - [GET] http://localhost:8080/simple/upload_single
+[INFO ] 25-06-18 12:28:09 [MyInterceptor:123] - running time: 257(ms)
+[INFO ] 25-06-18 12:28:10 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-18 12:28:10 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-18 12:28:10 [MyInterceptor:85] - [GET] http://localhost:8080/use_helper/upload
+[INFO ] 25-06-18 12:28:10 [MyInterceptor:101] - - REFERER : time=1786, url=http://localhost:8080/simple/upload_single
+[INFO ] 25-06-18 12:29:59 [FileuploadApplication:53] - Starting FileuploadApplication using Java 17.0.2 with PID 8992 (D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload\bin\main started by YJH in D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload)
+[DEBUG] 25-06-18 12:29:59 [FileuploadApplication:54] - Running with Spring Boot v3.4.6, Spring v6.2.7
+[INFO ] 25-06-18 12:29:59 [FileuploadApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[WARN ] 25-06-18 12:29:59 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.yjh.fileupload]' package. Please check your configuration.
+[INFO ] 25-06-18 12:30:00 [FileuploadApplication:59] - Started FileuploadApplication in 0.984 seconds (process running for 125.881)
+[INFO ] 25-06-18 12:47:18 [FileuploadApplication:53] - Starting FileuploadApplication using Java 17.0.2 with PID 13652 (D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload\bin\main started by YJH in D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload)
+[DEBUG] 25-06-18 12:47:18 [FileuploadApplication:54] - Running with Spring Boot v3.4.6, Spring v6.2.7
+[INFO ] 25-06-18 12:47:18 [FileuploadApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 25-06-18 12:47:20 [LogFactory:112] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 25-06-18 12:47:20 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.yjh.fileupload]' package. Please check your configuration.
+[INFO ] 25-06-18 12:47:24 [FileuploadApplication:59] - Started FileuploadApplication in 6.412 seconds (process running for 7.241)
+[INFO ] 25-06-18 12:47:31 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-18 12:47:31 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-18 12:47:31 [MyInterceptor:85] - [GET] http://localhost:8080/simple/upload_single
+[INFO ] 25-06-18 12:47:32 [MyInterceptor:123] - running time: 352(ms)
+[INFO ] 25-06-18 12:47:33 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-18 12:47:33 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-18 12:47:33 [MyInterceptor:85] - [GET] http://localhost:8080/use_helper/upload
+[INFO ] 25-06-18 12:47:33 [MyInterceptor:101] - - REFERER : time=1578, url=http://localhost:8080/simple/upload_single
+[INFO ] 25-06-18 12:47:43 [FileuploadApplication:53] - Starting FileuploadApplication using Java 17.0.2 with PID 13652 (D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload\bin\main started by YJH in D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload)
+[DEBUG] 25-06-18 12:47:43 [FileuploadApplication:54] - Running with Spring Boot v3.4.6, Spring v6.2.7
+[INFO ] 25-06-18 12:47:43 [FileuploadApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[WARN ] 25-06-18 12:47:43 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.yjh.fileupload]' package. Please check your configuration.
+[INFO ] 25-06-18 12:47:44 [FileuploadApplication:59] - Started FileuploadApplication in 0.83 seconds (process running for 26.904)
+[INFO ] 25-06-18 12:49:23 [FileuploadApplication:53] - Starting FileuploadApplication using Java 17.0.2 with PID 6252 (D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload\bin\main started by YJH in D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload)
+[DEBUG] 25-06-18 12:49:23 [FileuploadApplication:54] - Running with Spring Boot v3.4.6, Spring v6.2.7
+[INFO ] 25-06-18 12:49:23 [FileuploadApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 25-06-18 12:49:24 [LogFactory:112] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 25-06-18 12:49:24 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.yjh.fileupload]' package. Please check your configuration.
+[INFO ] 25-06-18 12:49:28 [FileuploadApplication:59] - Started FileuploadApplication in 6.702 seconds (process running for 7.546)
+[INFO ] 25-06-18 12:49:34 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-18 12:49:34 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-18 12:49:34 [MyInterceptor:85] - [GET] http://localhost:8080/simple/upload_single
+[INFO ] 25-06-18 12:49:34 [MyInterceptor:123] - running time: 238(ms)
+[INFO ] 25-06-18 12:49:36 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-18 12:49:36 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-18 12:49:36 [MyInterceptor:85] - [GET] http://localhost:8080/use_helper/upload
+[INFO ] 25-06-18 12:49:36 [MyInterceptor:101] - - REFERER : time=1694, url=http://localhost:8080/simple/upload_single
+[INFO ] 25-06-18 12:57:42 [FileuploadApplication:53] - Starting FileuploadApplication using Java 17.0.2 with PID 6252 (D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload\bin\main started by YJH in D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload)
+[DEBUG] 25-06-18 12:57:42 [FileuploadApplication:54] - Running with Spring Boot v3.4.6, Spring v6.2.7
+[INFO ] 25-06-18 12:57:42 [FileuploadApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[WARN ] 25-06-18 12:57:42 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.yjh.fileupload]' package. Please check your configuration.
+[INFO ] 25-06-18 12:57:42 [FileuploadApplication:59] - Started FileuploadApplication in 0.833 seconds (process running for 501.436)
+[INFO ] 25-06-18 12:57:44 [FileuploadApplication:53] - Starting FileuploadApplication using Java 17.0.2 with PID 6252 (D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload\bin\main started by YJH in D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload)
+[DEBUG] 25-06-18 12:57:44 [FileuploadApplication:54] - Running with Spring Boot v3.4.6, Spring v6.2.7
+[INFO ] 25-06-18 12:57:44 [FileuploadApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[WARN ] 25-06-18 12:57:44 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.yjh.fileupload]' package. Please check your configuration.
+[INFO ] 25-06-18 12:57:44 [FileuploadApplication:59] - Started FileuploadApplication in 0.506 seconds (process running for 503.542)
+[INFO ] 25-06-18 13:16:42 [FileuploadApplication:53] - Starting FileuploadApplication using Java 17.0.2 with PID 19528 (D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload\bin\main started by YJH in D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload)
+[DEBUG] 25-06-18 13:16:42 [FileuploadApplication:54] - Running with Spring Boot v3.4.6, Spring v6.2.7
+[INFO ] 25-06-18 13:16:42 [FileuploadApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 25-06-18 13:16:43 [LogFactory:112] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 25-06-18 13:16:43 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.yjh.fileupload]' package. Please check your configuration.
+[INFO ] 25-06-18 13:16:47 [FileuploadApplication:59] - Started FileuploadApplication in 5.545 seconds (process running for 6.484)
+[INFO ] 25-06-18 13:17:32 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-18 13:17:32 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-18 13:17:32 [MyInterceptor:85] - [GET] http://localhost:8080/use_helper/upload_single
+[INFO ] 25-06-18 13:17:32 [MyInterceptor:123] - running time: 359(ms)
+[INFO ] 25-06-18 13:17:36 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-18 13:17:36 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-18 13:17:36 [MyInterceptor:85] - [GET] http://localhost:8080/simple/upload_single
+[INFO ] 25-06-18 13:17:36 [MyInterceptor:101] - - REFERER : time=3779, url=http://localhost:8080/use_helper/upload_single
+[INFO ] 25-06-18 13:17:36 [MyInterceptor:123] - running time: 173(ms)
+[INFO ] 25-06-18 13:17:37 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-18 13:17:37 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-18 13:17:37 [MyInterceptor:85] - [GET] http://localhost:8080/use_helper/upload_single
+[INFO ] 25-06-18 13:17:37 [MyInterceptor:101] - - REFERER : time=975, url=http://localhost:8080/simple/upload_single
+[INFO ] 25-06-18 13:17:37 [MyInterceptor:123] - running time: 82(ms)
+[INFO ] 25-06-18 13:17:38 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-18 13:17:38 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-18 13:17:38 [MyInterceptor:85] - [GET] http://localhost:8080/simple/upload_single
+[INFO ] 25-06-18 13:17:38 [MyInterceptor:101] - - REFERER : time=628, url=http://localhost:8080/use_helper/upload_single
+[INFO ] 25-06-18 13:17:38 [MyInterceptor:123] - running time: 72(ms)
+[INFO ] 25-06-18 13:17:39 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-18 13:17:39 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-18 13:17:39 [MyInterceptor:85] - [GET] http://localhost:8080/use_helper/upload_single
+[INFO ] 25-06-18 13:17:39 [MyInterceptor:101] - - REFERER : time=862, url=http://localhost:8080/simple/upload_single
+[INFO ] 25-06-18 13:17:39 [MyInterceptor:123] - running time: 62(ms)
+[INFO ] 25-06-18 13:17:39 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-18 13:17:39 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-18 13:17:39 [MyInterceptor:85] - [GET] http://localhost:8080/simple/upload_single
+[INFO ] 25-06-18 13:17:39 [MyInterceptor:101] - - REFERER : time=658, url=http://localhost:8080/use_helper/upload_single
+[INFO ] 25-06-18 13:17:39 [MyInterceptor:123] - running time: 62(ms)
+[INFO ] 25-06-18 13:17:49 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-18 13:17:49 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-18 13:17:49 [MyInterceptor:85] - [POST] http://localhost:8080/simple/upload_single_ok
+[INFO ] 25-06-18 13:17:49 [MyInterceptor:92] - (param) <-- subject = ㅇㅀㄴ롤
+[INFO ] 25-06-18 13:17:49 [MyInterceptor:101] - - REFERER : time=9360, url=http://localhost:8080/simple/upload_single
+[DEBUG] 25-06-18 13:17:49 [SimpleUploadController:70] - =============================
+[DEBUG] 25-06-18 13:17:49 [SimpleUploadController:71] - 원본파일이름: strawberry_slice_preview.gif
+[DEBUG] 25-06-18 13:17:49 [SimpleUploadController:72] - <input type='file'>의 name속성값: photo
+[DEBUG] 25-06-18 13:17:49 [SimpleUploadController:73] - 파일형식: image/gif
+[DEBUG] 25-06-18 13:17:49 [SimpleUploadController:74] - 파일크기: 974337
+[DEBUG] 25-06-18 13:17:49 [SimpleUploadController:139] - 업로드 된 파일의 경로 : C:/Users/user/study-springboot/upload/2025/06/18/17502202693990.gif
+[DEBUG] 25-06-18 13:17:49 [SimpleUploadController:154] - 업로드 폴더 내에서의 최종 경로 값 : /2025/06/18/17502202693990.gif
+[DEBUG] 25-06-18 13:17:49 [SimpleUploadController:167] - 파일의 URL: /files/2025/06/18/17502202693990.gif
+[DEBUG] 25-06-18 13:17:49 [SimpleUploadController:168] - ==============================
+[INFO ] 25-06-18 13:17:49 [MyInterceptor:123] - running time: 122(ms)
+[INFO ] 25-06-18 13:17:49 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-18 13:17:49 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-18 13:17:49 [MyInterceptor:85] - [GET] http://localhost:8080/files/2025/06/18/17502202693990.gif
+[INFO ] 25-06-18 13:17:49 [MyInterceptor:101] - - REFERER : time=93, url=http://localhost:8080/simple/upload_single_ok
+[INFO ] 25-06-18 13:17:49 [MyInterceptor:123] - running time: 41(ms)
+[INFO ] 25-06-18 14:08:54 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-18 14:08:54 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-18 14:08:54 [MyInterceptor:85] - [GET] http://localhost:8080/use_helper/upload_single
+[INFO ] 25-06-18 14:08:54 [MyInterceptor:101] - - REFERER : time=3064561, url=http://localhost:8080/simple/upload_single
+[INFO ] 25-06-18 14:08:54 [MyInterceptor:123] - running time: 13(ms)
+[INFO ] 25-06-18 14:08:57 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-18 14:08:57 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-18 14:08:57 [MyInterceptor:85] - [GET] http://localhost:8080/simple/upload_single
+[INFO ] 25-06-18 14:08:57 [MyInterceptor:101] - - REFERER : time=3233, url=http://localhost:8080/use_helper/upload_single
+[INFO ] 25-06-18 14:08:57 [MyInterceptor:123] - running time: 27(ms)
+[INFO ] 25-06-18 14:08:57 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-18 14:08:57 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-18 14:08:57 [MyInterceptor:85] - [GET] http://localhost:8080/use_helper/upload_single
+[INFO ] 25-06-18 14:08:57 [MyInterceptor:101] - - REFERER : time=559, url=http://localhost:8080/simple/upload_single
+[INFO ] 25-06-18 14:08:57 [MyInterceptor:123] - running time: 25(ms)
+[INFO ] 25-06-18 14:09:01 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-18 14:09:01 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-18 14:09:01 [MyInterceptor:85] - [POST] http://localhost:8080/use_helper/upload_single_ok
+[INFO ] 25-06-18 14:09:01 [MyInterceptor:101] - - REFERER : time=3858, url=http://localhost:8080/use_helper/upload_single
+[ERROR] 25-06-18 14:09:01 [FileHelper:177] - 업로드 실패
+java.lang.NullPointerException: 업로드 된 파일이 없습니다.
+	at kr.yjh.fileupload.helpers.FileHelper.saveMultipartFile(FileHelper.java:176)
+	at kr.yjh.fileupload.controllers.UseHelperController.postMethodName(UseHelperController.java:38)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:114)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[ERROR] 25-06-18 14:09:01 [WebHelper:296] - [500] server Error ::: 업로드 된 파일이 없습니다.
+java.lang.NullPointerException: 업로드 된 파일이 없습니다.
+	at kr.yjh.fileupload.helpers.FileHelper.saveMultipartFile(FileHelper.java:176)
+	at kr.yjh.fileupload.controllers.UseHelperController.postMethodName(UseHelperController.java:38)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:114)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[INFO ] 25-06-18 14:09:01 [MyInterceptor:123] - running time: 38(ms)
+[ERROR] 25-06-18 14:09:01 [TemplateEngine:1141] - [THYMELEAF][http-nio-8080-exec-10] Exception processing template "use_helper/upload_single_ok": An error happened during template parsing (template: "class path resource [templates/use_helper/upload_single_ok.html]")
+org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/use_helper/upload_single_ok.html]")
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:241)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077)
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372)
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1437)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1168)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:114)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.attoparser.ParseException: Exception evaluating SpringEL expression: "item.fieldName" (template: "use_helper/upload_single_ok" - line 15, col 34)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:393)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	... 56 common frames omitted
+Caused by: org.thymeleaf.exceptions.TemplateProcessingException: Exception evaluating SpringEL expression: "item.fieldName" (template: "use_helper/upload_single_ok" - line 15, col 34)
+	at org.thymeleaf.spring6.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:292)
+	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:166)
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138)
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:144)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleOpenElementEnd(TemplateHandlerAdapterMarkupHandler.java:304)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:278)
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleOpenElementEnd(OutputExpressionInlinePreProcessorHandler.java:186)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:124)
+	at org.attoparser.HtmlElement.handleOpenElementEnd(HtmlElement.java:109)
+	at org.attoparser.HtmlMarkupHandler.handleOpenElementEnd(HtmlMarkupHandler.java:297)
+	at org.attoparser.MarkupEventProcessorHandler.handleOpenElementEnd(MarkupEventProcessorHandler.java:402)
+	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:159)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	... 58 common frames omitted
+Caused by: org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property or field 'fieldName' cannot be found on null
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:225)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:112)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference$AccessorValueRef.getValue(PropertyOrFieldReference.java:376)
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:97)
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:116)
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:338)
+	at org.thymeleaf.spring6.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:265)
+	... 77 common frames omitted
+[ERROR] 25-06-18 14:09:01 [[dispatcherServlet]:170] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/use_helper/upload_single_ok.html]")] with root cause
+org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property or field 'fieldName' cannot be found on null
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:225)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:112)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference$AccessorValueRef.getValue(PropertyOrFieldReference.java:376)
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:97)
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:116)
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:338)
+	at org.thymeleaf.spring6.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:265)
+	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:166)
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138)
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:144)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleOpenElementEnd(TemplateHandlerAdapterMarkupHandler.java:304)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:278)
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleOpenElementEnd(OutputExpressionInlinePreProcessorHandler.java:186)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:124)
+	at org.attoparser.HtmlElement.handleOpenElementEnd(HtmlElement.java:109)
+	at org.attoparser.HtmlMarkupHandler.handleOpenElementEnd(HtmlMarkupHandler.java:297)
+	at org.attoparser.MarkupEventProcessorHandler.handleOpenElementEnd(MarkupEventProcessorHandler.java:402)
+	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:159)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077)
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372)
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1437)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1168)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:114)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[ERROR] 25-06-18 14:09:01 [ErrorMvcAutoConfiguration$StaticView:202] - Cannot render error page for request [/use_helper/upload_single_ok] and exception [An error happened during template parsing (template: "class path resource [templates/use_helper/upload_single_ok.html]")] as the response has already been committed. As a result, the response may have the wrong status code.
+[INFO ] 25-06-18 14:09:16 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-18 14:09:16 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-18 14:09:16 [MyInterceptor:85] - [POST] http://localhost:8080/use_helper/upload_single_ok
+[INFO ] 25-06-18 14:09:16 [MyInterceptor:101] - - REFERER : time=14254, url=http://localhost:8080/use_helper/upload_single
+[DEBUG] 25-06-18 14:09:16 [FileHelper:258] - UploadItem(fieldName=profile-photo, originName=strawberry_slice_preview.gif, contentType=image/gif, fileSize=974337, filePath=/2025/06/18/17502233561250.gif, fileUrl=fileUrl)
+[INFO ] 25-06-18 14:09:16 [MyInterceptor:123] - running time: 21(ms)
+[INFO ] 25-06-18 14:09:16 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-18 14:09:16 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-18 14:09:16 [MyInterceptor:85] - [GET] http://localhost:8080/use_helper/fileUrl
+[INFO ] 25-06-18 14:09:16 [MyInterceptor:101] - - REFERER : time=15, url=http://localhost:8080/use_helper/upload_single_ok
+[INFO ] 25-06-18 14:09:36 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-18 14:09:36 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-18 14:09:36 [MyInterceptor:85] - [GET] http://localhost:8080/use_helper/upload_single
+[INFO ] 25-06-18 14:09:36 [MyInterceptor:101] - - REFERER : time=19880, url=http://localhost:8080/use_helper/upload_single
+[INFO ] 25-06-18 14:09:36 [MyInterceptor:123] - running time: 25(ms)
+[INFO ] 25-06-18 14:09:36 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-18 14:09:36 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-18 14:09:36 [MyInterceptor:85] - [GET] http://localhost:8080/use_helper/upload_single
+[INFO ] 25-06-18 14:09:36 [MyInterceptor:101] - - REFERER : time=893, url=http://localhost:8080/use_helper/upload_single
+[INFO ] 25-06-18 14:09:36 [MyInterceptor:123] - running time: 14(ms)
+[INFO ] 25-06-18 14:09:38 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-18 14:09:38 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-18 14:09:38 [MyInterceptor:85] - [GET] http://localhost:8080/simple/upload_single
+[INFO ] 25-06-18 14:09:38 [MyInterceptor:101] - - REFERER : time=1698, url=http://localhost:8080/use_helper/upload_single
+[INFO ] 25-06-18 14:09:38 [MyInterceptor:123] - running time: 18(ms)
+[INFO ] 25-06-18 14:09:39 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-18 14:09:39 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-18 14:09:39 [MyInterceptor:85] - [GET] http://localhost:8080/use_helper/upload_single
+[INFO ] 25-06-18 14:09:39 [MyInterceptor:101] - - REFERER : time=796, url=http://localhost:8080/simple/upload_single
+[INFO ] 25-06-18 14:09:39 [MyInterceptor:123] - running time: 15(ms)
+[INFO ] 25-06-18 14:09:40 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-18 14:09:40 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-18 14:09:40 [MyInterceptor:85] - [GET] http://localhost:8080/simple/upload_single
+[INFO ] 25-06-18 14:09:40 [MyInterceptor:101] - - REFERER : time=937, url=http://localhost:8080/use_helper/upload_single
+[INFO ] 25-06-18 14:09:40 [MyInterceptor:123] - running time: 20(ms)
+[INFO ] 25-06-18 14:09:40 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-18 14:09:40 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-18 14:09:40 [MyInterceptor:85] - [GET] http://localhost:8080/use_helper/upload_single
+[INFO ] 25-06-18 14:09:40 [MyInterceptor:101] - - REFERER : time=474, url=http://localhost:8080/simple/upload_single
+[INFO ] 25-06-18 14:09:40 [MyInterceptor:123] - running time: 20(ms)
+[INFO ] 25-06-18 14:14:37 [FileuploadApplication:53] - Starting FileuploadApplication using Java 17.0.2 with PID 19528 (D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload\bin\main started by YJH in D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload)
+[DEBUG] 25-06-18 14:14:37 [FileuploadApplication:54] - Running with Spring Boot v3.4.6, Spring v6.2.7
+[INFO ] 25-06-18 14:14:37 [FileuploadApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[WARN ] 25-06-18 14:14:38 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.yjh.fileupload]' package. Please check your configuration.
+[INFO ] 25-06-18 14:14:38 [FileuploadApplication:59] - Started FileuploadApplication in 0.698 seconds (process running for 3477.526)
+[INFO ] 25-06-18 14:15:08 [FileuploadApplication:53] - Starting FileuploadApplication using Java 17.0.2 with PID 19528 (D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload\bin\main started by YJH in D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload)
+[DEBUG] 25-06-18 14:15:08 [FileuploadApplication:54] - Running with Spring Boot v3.4.6, Spring v6.2.7
+[INFO ] 25-06-18 14:15:08 [FileuploadApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[WARN ] 25-06-18 14:15:08 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.yjh.fileupload]' package. Please check your configuration.
+[INFO ] 25-06-18 14:15:09 [FileuploadApplication:59] - Started FileuploadApplication in 0.502 seconds (process running for 3508.094)
+[INFO ] 25-06-18 14:15:16 [FileuploadApplication:53] - Starting FileuploadApplication using Java 17.0.2 with PID 19528 (D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload\bin\main started by YJH in D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload)
+[DEBUG] 25-06-18 14:15:16 [FileuploadApplication:54] - Running with Spring Boot v3.4.6, Spring v6.2.7
+[INFO ] 25-06-18 14:15:16 [FileuploadApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[WARN ] 25-06-18 14:15:16 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.yjh.fileupload]' package. Please check your configuration.
+[INFO ] 25-06-18 14:15:17 [FileuploadApplication:59] - Started FileuploadApplication in 0.422 seconds (process running for 3516.149)
+[INFO ] 25-06-18 14:15:18 [FileuploadApplication:53] - Starting FileuploadApplication using Java 17.0.2 with PID 19528 (D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload\bin\main started by YJH in D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload)
+[DEBUG] 25-06-18 14:15:18 [FileuploadApplication:54] - Running with Spring Boot v3.4.6, Spring v6.2.7
+[INFO ] 25-06-18 14:15:18 [FileuploadApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[WARN ] 25-06-18 14:15:18 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.yjh.fileupload]' package. Please check your configuration.
+[INFO ] 25-06-18 14:15:19 [FileuploadApplication:59] - Started FileuploadApplication in 0.361 seconds (process running for 3518.051)
+[INFO ] 25-06-18 14:15:21 [FileuploadApplication:53] - Starting FileuploadApplication using Java 17.0.2 with PID 19528 (D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload\bin\main started by YJH in D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload)
+[DEBUG] 25-06-18 14:15:21 [FileuploadApplication:54] - Running with Spring Boot v3.4.6, Spring v6.2.7
+[INFO ] 25-06-18 14:15:21 [FileuploadApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[WARN ] 25-06-18 14:15:21 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.yjh.fileupload]' package. Please check your configuration.
+[INFO ] 25-06-18 14:15:21 [FileuploadApplication:59] - Started FileuploadApplication in 0.372 seconds (process running for 3520.972)
+[INFO ] 25-06-18 14:15:25 [FileuploadApplication:53] - Starting FileuploadApplication using Java 17.0.2 with PID 19528 (D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload\bin\main started by YJH in D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload)
+[DEBUG] 25-06-18 14:15:25 [FileuploadApplication:54] - Running with Spring Boot v3.4.6, Spring v6.2.7
+[INFO ] 25-06-18 14:15:25 [FileuploadApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[WARN ] 25-06-18 14:15:25 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.yjh.fileupload]' package. Please check your configuration.
+[INFO ] 25-06-18 14:15:25 [FileuploadApplication:59] - Started FileuploadApplication in 0.354 seconds (process running for 3524.893)
+[INFO ] 25-06-18 14:15:28 [FileuploadApplication:53] - Starting FileuploadApplication using Java 17.0.2 with PID 19528 (D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload\bin\main started by YJH in D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload)
+[DEBUG] 25-06-18 14:15:28 [FileuploadApplication:54] - Running with Spring Boot v3.4.6, Spring v6.2.7
+[INFO ] 25-06-18 14:15:28 [FileuploadApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[WARN ] 25-06-18 14:15:28 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.yjh.fileupload]' package. Please check your configuration.
+[INFO ] 25-06-18 14:15:28 [FileuploadApplication:59] - Started FileuploadApplication in 0.304 seconds (process running for 3527.735)
+[INFO ] 25-06-18 14:15:37 [FileuploadApplication:53] - Starting FileuploadApplication using Java 17.0.2 with PID 19528 (D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload\bin\main started by YJH in D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload)
+[DEBUG] 25-06-18 14:15:37 [FileuploadApplication:54] - Running with Spring Boot v3.4.6, Spring v6.2.7
+[INFO ] 25-06-18 14:15:37 [FileuploadApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[WARN ] 25-06-18 14:15:37 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.yjh.fileupload]' package. Please check your configuration.
+[INFO ] 25-06-18 14:15:37 [FileuploadApplication:59] - Started FileuploadApplication in 0.336 seconds (process running for 3536.753)
+[INFO ] 25-06-18 14:15:45 [FileuploadApplication:53] - Starting FileuploadApplication using Java 17.0.2 with PID 19528 (D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload\bin\main started by YJH in D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload)
+[DEBUG] 25-06-18 14:15:45 [FileuploadApplication:54] - Running with Spring Boot v3.4.6, Spring v6.2.7
+[INFO ] 25-06-18 14:15:45 [FileuploadApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[WARN ] 25-06-18 14:15:45 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.yjh.fileupload]' package. Please check your configuration.
+[INFO ] 25-06-18 14:15:45 [FileuploadApplication:59] - Started FileuploadApplication in 0.3 seconds (process running for 3544.719)
+[INFO ] 25-06-18 14:15:47 [FileuploadApplication:53] - Starting FileuploadApplication using Java 17.0.2 with PID 19528 (D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload\bin\main started by YJH in D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload)
+[DEBUG] 25-06-18 14:15:47 [FileuploadApplication:54] - Running with Spring Boot v3.4.6, Spring v6.2.7
+[INFO ] 25-06-18 14:15:47 [FileuploadApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[WARN ] 25-06-18 14:15:47 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.yjh.fileupload]' package. Please check your configuration.
+[INFO ] 25-06-18 14:15:47 [FileuploadApplication:59] - Started FileuploadApplication in 0.265 seconds (process running for 3546.52)
+[INFO ] 25-06-18 14:15:49 [FileuploadApplication:53] - Starting FileuploadApplication using Java 17.0.2 with PID 19528 (D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload\bin\main started by YJH in D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload)
+[DEBUG] 25-06-18 14:15:49 [FileuploadApplication:54] - Running with Spring Boot v3.4.6, Spring v6.2.7
+[INFO ] 25-06-18 14:15:49 [FileuploadApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[WARN ] 25-06-18 14:15:49 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.yjh.fileupload]' package. Please check your configuration.
+[INFO ] 25-06-18 14:15:49 [FileuploadApplication:59] - Started FileuploadApplication in 0.275 seconds (process running for 3548.356)
+[INFO ] 25-06-18 14:15:50 [FileuploadApplication:53] - Starting FileuploadApplication using Java 17.0.2 with PID 19528 (D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload\bin\main started by YJH in D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload)
+[DEBUG] 25-06-18 14:15:50 [FileuploadApplication:54] - Running with Spring Boot v3.4.6, Spring v6.2.7
+[INFO ] 25-06-18 14:15:50 [FileuploadApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[WARN ] 25-06-18 14:15:51 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.yjh.fileupload]' package. Please check your configuration.
+[INFO ] 25-06-18 14:15:51 [FileuploadApplication:59] - Started FileuploadApplication in 0.28 seconds (process running for 3550.207)
+[INFO ] 25-06-18 14:15:52 [FileuploadApplication:53] - Starting FileuploadApplication using Java 17.0.2 with PID 19528 (D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload\bin\main started by YJH in D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload)
+[DEBUG] 25-06-18 14:15:52 [FileuploadApplication:54] - Running with Spring Boot v3.4.6, Spring v6.2.7
+[INFO ] 25-06-18 14:15:52 [FileuploadApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[WARN ] 25-06-18 14:15:52 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.yjh.fileupload]' package. Please check your configuration.
+[INFO ] 25-06-18 14:15:52 [FileuploadApplication:59] - Started FileuploadApplication in 0.27 seconds (process running for 3552.0)
+[INFO ] 25-06-18 14:15:55 [FileuploadApplication:53] - Starting FileuploadApplication using Java 17.0.2 with PID 19528 (D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload\bin\main started by YJH in D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload)
+[DEBUG] 25-06-18 14:15:55 [FileuploadApplication:54] - Running with Spring Boot v3.4.6, Spring v6.2.7
+[INFO ] 25-06-18 14:15:55 [FileuploadApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[WARN ] 25-06-18 14:15:55 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.yjh.fileupload]' package. Please check your configuration.
+[INFO ] 25-06-18 14:15:55 [FileuploadApplication:59] - Started FileuploadApplication in 0.286 seconds (process running for 3554.838)
+[INFO ] 25-06-18 14:15:57 [FileuploadApplication:53] - Starting FileuploadApplication using Java 17.0.2 with PID 19528 (D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload\bin\main started by YJH in D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload)
+[DEBUG] 25-06-18 14:15:57 [FileuploadApplication:54] - Running with Spring Boot v3.4.6, Spring v6.2.7
+[INFO ] 25-06-18 14:15:57 [FileuploadApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[WARN ] 25-06-18 14:15:57 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.yjh.fileupload]' package. Please check your configuration.
+[INFO ] 25-06-18 14:15:57 [FileuploadApplication:59] - Started FileuploadApplication in 0.368 seconds (process running for 3556.773)
+[INFO ] 25-06-18 14:16:06 [FileuploadApplication:53] - Starting FileuploadApplication using Java 17.0.2 with PID 19528 (D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload\bin\main started by YJH in D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload)
+[DEBUG] 25-06-18 14:16:06 [FileuploadApplication:54] - Running with Spring Boot v3.4.6, Spring v6.2.7
+[INFO ] 25-06-18 14:16:06 [FileuploadApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[WARN ] 25-06-18 14:16:06 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.yjh.fileupload]' package. Please check your configuration.
+[INFO ] 25-06-18 14:16:06 [FileuploadApplication:59] - Started FileuploadApplication in 0.289 seconds (process running for 3565.73)
+[INFO ] 25-06-18 14:16:08 [FileuploadApplication:53] - Starting FileuploadApplication using Java 17.0.2 with PID 19528 (D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload\bin\main started by YJH in D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload)
+[DEBUG] 25-06-18 14:16:08 [FileuploadApplication:54] - Running with Spring Boot v3.4.6, Spring v6.2.7
+[INFO ] 25-06-18 14:16:08 [FileuploadApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[WARN ] 25-06-18 14:16:08 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.yjh.fileupload]' package. Please check your configuration.
+[INFO ] 25-06-18 14:16:08 [FileuploadApplication:59] - Started FileuploadApplication in 0.246 seconds (process running for 3567.493)
+[INFO ] 25-06-18 16:00:32 [FileuploadApplication:53] - Starting FileuploadApplication using Java 17.0.2 with PID 12356 (D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload\bin\main started by YJH in D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload)
+[DEBUG] 25-06-18 16:00:32 [FileuploadApplication:54] - Running with Spring Boot v3.4.6, Spring v6.2.7
+[INFO ] 25-06-18 16:00:32 [FileuploadApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 25-06-18 16:00:33 [LogFactory:112] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 25-06-18 16:00:33 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.yjh.fileupload]' package. Please check your configuration.
+[INFO ] 25-06-18 16:00:36 [FileuploadApplication:59] - Started FileuploadApplication in 4.659 seconds (process running for 5.154)
+[INFO ] 25-06-18 16:00:40 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-18 16:00:40 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-18 16:00:40 [MyInterceptor:85] - [GET] http://localhost:8080/simple/upload_single
+[INFO ] 25-06-18 16:00:41 [MyInterceptor:123] - running time: 213(ms)
+[INFO ] 25-06-18 16:00:42 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-18 16:00:42 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-18 16:00:42 [MyInterceptor:85] - [GET] http://localhost:8080/use_helper/upload_single
+[INFO ] 25-06-18 16:00:42 [MyInterceptor:101] - - REFERER : time=1538, url=http://localhost:8080/simple/upload_single
+[INFO ] 25-06-18 16:00:42 [MyInterceptor:123] - running time: 56(ms)
+[INFO ] 25-06-18 16:00:43 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-18 16:00:43 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-18 16:00:43 [MyInterceptor:85] - [GET] http://localhost:8080/simple/upload_single
+[INFO ] 25-06-18 16:00:43 [MyInterceptor:101] - - REFERER : time=909, url=http://localhost:8080/use_helper/upload_single
+[INFO ] 25-06-18 16:00:43 [MyInterceptor:123] - running time: 53(ms)
+[INFO ] 25-06-18 16:00:44 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-18 16:00:44 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-18 16:00:44 [MyInterceptor:85] - [GET] http://localhost:8080/use_helper/upload_single
+[INFO ] 25-06-18 16:00:44 [MyInterceptor:101] - - REFERER : time=1095, url=http://localhost:8080/simple/upload_single
+[INFO ] 25-06-18 16:00:44 [MyInterceptor:123] - running time: 28(ms)
+[INFO ] 25-06-18 16:00:50 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-18 16:00:50 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-18 16:00:50 [MyInterceptor:85] - [POST] http://localhost:8080/use_helper/upload_single_ok
+[INFO ] 25-06-18 16:00:50 [MyInterceptor:101] - - REFERER : time=5444, url=http://localhost:8080/use_helper/upload_single
+[DEBUG] 25-06-18 16:00:50 [FileHelper:258] - UploadItem(fieldName=profile-photo, originName=strawberry_slice_preview.gif, contentType=image/gif, fileSize=974337, filePath=/2025/06/18/17502300501920.gif, fileUrl=fileUrl, thumbnailPath=null, thumbnailUrl=null)
+[DEBUG] 25-06-18 16:00:50 [UseHelperController:71] - [Thumbnail] path: /2025/06/18/17502300501920.gif, size: 640x640, crop: true
+[DEBUG] 25-06-18 16:00:50 [UseHelperController:90] - [Thumbnail]saveFile: C:\Users\user\study-springboot\upload\2025\06\18\17502300501920_640x640.gif
+[INFO ] 25-06-18 16:00:50 [MyInterceptor:123] - running time: 236(ms)
+[INFO ] 25-06-18 16:00:50 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-18 16:00:50 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-18 16:00:50 [MyInterceptor:85] - [GET] http://localhost:8080/files/2025/06/18/17502300501920_640x640.gif
+[INFO ] 25-06-18 16:00:50 [MyInterceptor:101] - - REFERER : time=37, url=http://localhost:8080/use_helper/upload_single_ok
+[INFO ] 25-06-18 16:00:50 [MyInterceptor:123] - running time: 26(ms)
+[INFO ] 25-06-18 16:00:59 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-18 16:00:59 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-18 16:00:59 [MyInterceptor:85] - [GET] http://localhost:8080/simple/upload_single
+[INFO ] 25-06-18 16:00:59 [MyInterceptor:101] - - REFERER : time=9161, url=http://localhost:8080/use_helper/upload_single_ok
+[INFO ] 25-06-18 16:00:59 [MyInterceptor:123] - running time: 19(ms)

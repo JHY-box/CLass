@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko" translate="no" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="google" content="notranslate">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+        <title>학사관리</title>
+        <link rel="stylesheet" th:href="@{/assets/css/style.css}">
+        <style>
+            .photo {
+                width: 40px;
+                height: 40px;
+                object-fit: cover;
+            }
+
+            .my-table {
+                tbody {
+                    td, th {
+                        padding: 5px;
+                    }
+
+                    td:frist-child {
+                        padding: 0;
+                    }
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header th:replace="~{fragments/header :: my-header}"></header>
+        <h1>학생목록</h1>
+        <div class="search-controller">
+            <!-- 검색폼 -->
+            <!-- 1) 검색어는 GET방식으로 전송 -->
+            <!-- 2) 검색 결과 페이지가 별도로 없는 경우 action은 자기 스스로(컨트롤러)를 지정 -->
+            <!-- 3) submit은 컨트롤러에게 검색어를 전송한다. -->
+            <form id="my-form" th:action="@{/student}" method="get">
+                <input type="search" name="keyword" id="my-search" placeholder="학생이름 or 아이디 검색" th:value="${keyword}"/>
+                <select name="department_id">
+                    <option value="" th:selected="${departmentId == 0}">전체학과</option>
+                    <option th:each="d:${departmentList}" th:value="${d.id}" th:text="${d.dname}" th:selected="${d.id == departmentId}"/>
+                </select>
+                <select name="grade">
+                    <option value="" th:selected="${grade == 0}">전체학년</option>
+                    <option value="1" th:selected="${grade == 1}">1</option>
+                    <option value="2" th:selected="${grade == 2}">2</option>
+                    <option value="3" th:selected="${grade == 3}">3</option>
+                    <option value="4" th:selected="${grade == 4}">4</option>
+                </select>
+                <label>
+                    <input type="checkbox" name="status" value="재학" th:checked="${#arrays.contains(status, '재학')}"/>재학
+                </label>
+                <label>
+                    <input type="checkbox" name="status" value="졸업" th:checked="${#arrays.contains(status, '졸업')}"/>졸업
+                </label>
+                <label>
+                    <input type="checkbox" name="status" value="휴학" th:checked="${#arrays.contains(status, '휴학')}"/>휴학
+                </label>
+                <button type="submit" class="mybutton green">검색</button>
+            </form>
+            <div class="buttons">
+                <a th:href="@{/student/add}" class="mybutton blue">신규 학생 등록</a>
+            </div>
+        </div>
+        <table class="my-table">
+            <thead>
+                <th>-</th>
+                <th>번호</th>
+                <th>이름</th>
+                <th>아이디</th>
+                <th>학년</th>
+                <th>생년월일</th>
+                <th>연락처</th>
+                <th>키</th>
+                <th>몸무게</th>
+                <th>이메일</th>
+                <th>성별</th>
+                <th>상태</th>
+                <th>입학일</th>
+                <th>졸업일</th>
+                <th>소속학과</th>
+                <th>담당교수번호</th>
+                <th>-</th>
+            </thead>
+            <tbody>
+                <tr th:each="student:${students}">
+                    <td>
+                        <img th:src="@{student.photoUrl}" alt="학생 이미지" class="photo"/>
+                    </td>
+                    <td th:text="${student.id}"></td>
+                    <td>
+                        <a th:href="@{/student/view/{id}(id=${student.id})}" th:text="${student.name}"></a>
+                    </td>
+                    <td th:text="${student.userId}"></td>
+                    <td th:text="${student.grade}"></td>
+                    <td th:text="${#strings.substring(student.birthdate, 0, 10)}"></td>
+                    <td>
+                        <a th:href="'tel:' + ${student.phone}" th:text="${student.phone}"></a>
+                    </td>
+                    <td th:text="${student.height}"></td>
+                    <td th:text="${student.weight}"></td>
+                    <td>
+                        <a th:href="'mailto:' + ${student.email}" th:text="${student.email}"></a>
+                    </td>
+                    <td th:text="${student.gender}"></td>
+                    <td th:text="${student.status}"></td>
+                    <td th:text="${student.admissionDate}"></td>
+                    <td th:text="${student.graduationDate}"></td>
+                    <td th:text="${student.dname}"></td>
+                    <td th:text="${student.professorName}"></td>
+                    <td>
+                        <a th:href="@{/student/edit/{id}(id=${student.id})}">수정</a>
+                        <a th:href="@{/student/delete/{id}(id=${student.id})}">삭제</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <ul class="pagination">
+            <!-- 이전 페이지 그룹 이동 버튼 -->
+            <li th:if="${pageHelper.prevPage > 0}">
+                <a th:href="@{/student(keyword=${keyword}, department_id=${departmentId}, grade=${grade}, status=${#strings.arrayJoin(status, ',')}, page=${pageHelper.prevPage})}">◀</a>
+            </li>
+            <li th:unless="${pageHelper.prevPage > 0}"><a>◀</a></li>
+            <!-- 페이지 번호 링크 -->
+            <li th:each="i:${#numbers.sequence(pageHelper.startPage, pageHelper.endPage)}">
+                <a th:if="${i == pageHelper.nowPage}" class="active" th:text="${i}"></a>
+                <a th:unless="${i == pageHelper.nowPage}" th:text="${i}" th:href="@{/student(keyword=${keyword}, department_id=${departmentId}, grade=${grade}, status=${#strings.arrayJoin(status, ',')}, page=${i})}"></a>
+            </li>
+            <!-- 다음 페이지 그룹 이동 버튼 -->
+            <li th:if="${pageHelper.nextPage > 0}">
+                <a th:href="@{/student(keyword=${keyword}, department_id=${departmentId}, grade=${grade}, status=${#strings.arrayJoin(status, ',')}, page=${pageHelper.nextPage})}">▶</a>
+            </li>
+            <li th:unless="${pageHelper.nextPage > 0}"><a>▶</a></li>
+        </ul>
+
+        <script>
+            document.querySelectorAll("img").forEach((v, i) => {
+                v.addEventListener("error", e => e.currentTarget.src="/assets/img/noimg.jpg");
+            });
+        </script>
+    </body>
+</html>

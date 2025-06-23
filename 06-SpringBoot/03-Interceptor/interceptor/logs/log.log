@@ -1,0 +1,23 @@
+[INFO ] 25-06-09 19:50:40 [InterceptorApplication:53] - Starting InterceptorApplication using Java 17.0.2 with PID 17812 (D:\#web3\06-SpringBoot\03-Interceptor\interceptor\build\classes\java\main started by YJH in D:\#web3\06-SpringBoot\03-Interceptor\interceptor)
+[DEBUG] 25-06-09 19:50:40 [InterceptorApplication:54] - Running with Spring Boot v3.5.0, Spring v6.2.7
+[INFO ] 25-06-09 19:50:40 [InterceptorApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 25-06-09 19:50:43 [InterceptorApplication:59] - Started InterceptorApplication in 4.24 seconds (process running for 9.006)
+[INFO ] 25-06-09 19:51:40 [MyInterceptor:41] - ----------- New Client Connect -----------
+[INFO ] 25-06-09 19:51:41 [MyInterceptor:60] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-09 19:51:42 [MyInterceptor:78] - [GET] http://localhost:8080/
+[INFO ] 25-06-09 19:51:42 [MyInterceptor:116] - running time: 1241(ms)
+[INFO ] 25-06-09 19:51:43 [MyInterceptor:41] - ----------- New Client Connect -----------
+[INFO ] 25-06-09 19:51:44 [MyInterceptor:60] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-09 19:51:44 [MyInterceptor:78] - [GET] http://localhost:8080/
+[INFO ] 25-06-09 19:51:44 [MyInterceptor:94] - - REFERER : time=1756, url=http://localhost:8080/
+[INFO ] 25-06-09 19:51:44 [MyInterceptor:116] - running time: 190(ms)
+[INFO ] 25-06-09 19:51:46 [MyInterceptor:41] - ----------- New Client Connect -----------
+[INFO ] 25-06-09 19:51:46 [MyInterceptor:60] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-09 19:51:46 [MyInterceptor:78] - [GET] http://localhost:8080/hi
+[INFO ] 25-06-09 19:51:46 [MyInterceptor:94] - - REFERER : time=2324, url=http://localhost:8080/hello
+[INFO ] 25-06-09 19:51:46 [MyInterceptor:116] - running time: 175(ms)
+[INFO ] 25-06-09 19:51:47 [MyInterceptor:41] - ----------- New Client Connect -----------
+[INFO ] 25-06-09 19:51:47 [MyInterceptor:60] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-09 19:51:47 [MyInterceptor:78] - [GET] http://localhost:8080/bye
+[INFO ] 25-06-09 19:51:47 [MyInterceptor:94] - - REFERER : time=898, url=http://localhost:8080/hi
+[INFO ] 25-06-09 19:51:47 [MyInterceptor:116] - running time: 132(ms)

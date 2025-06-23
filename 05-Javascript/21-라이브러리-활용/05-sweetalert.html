@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang = "ko" translate = "no">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "google" content = "notranslate" />
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <title>05-sweetalert</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert2/11.7.3/sweetalert2.min.css">
+    </head>
+    <body>
+        <button id="btn1" type="button">button1</button>
+        <button id="btn2" type="button">button2</button>
+        <button id="btn3" type="button">button3</button>
+        <button id="btn4" type="button">button4</button>
+        <button id="btn5" type="button">button5</button>
+        <button id="btn6" type="button">button6</button>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert2/11.7.3/sweetalert2.min.js"></script>
+        <script>
+            document.querySelector("#btn1").addEventListener("click", (e) => {
+                //메세지 내용만 적용하여 확인창 표시
+                new Swal("안녕하세요.");
+            });
+
+            document.querySelector("#btn2").addEventListener("click", (e) => {
+                // 메시지 제목, 내용, 종류
+                // 종류 -->'success', 'warning', 'info', 'question', 'error'
+                new Swal("탈퇴확인", "정말 탈퇴하시겠습니까?", "question");
+            });
+
+            document.querySelector("#btn3").addEventListener("click", (e) => {
+                // 옵션 지정하여 메시지 창 표시
+                new Swal({
+                    title: '<font color="red">에러</font>', // 제목
+                    html: "요청하신 처리에 실패했습니다.<br/>관리자에게 문의 바랍니다.", // 내용
+                    icon: "erroe", // 종류
+                    showCloseButton: true, //닫기 버튼 표시 여부
+                    confilmButtonText: "확인", // 확인버튼 색상
+                    confirmbuttonColor: "#a00", // 확인버튼 색상
+                    showCancelButton: true, // 취소버튼 표시 여부
+                    cancelButtonText: "취소", // 취소버튼 표시 문구
+                    cancelButtonColor: "#f60", // 취소버튼 색상
+                });
+            });
+
+            document.querySelector("#btn4").addEventListener("click", (e) => {
+                // 확인, 취소버튼에 따른 후속 처리 구현
+                new Swal({
+                    title: "확인", // 제목
+                    html: "삭제할거임?", // 내용
+                    icon: "warning", // 종류
+                    showCloseButton: true, //닫기 버튼 표시 여부
+                    confilmButtonText: "Yes", // 확인버튼 색상
+                    showCancelButton: true, // 취소버튼 표시 여부
+                    cancelButtonText: "No", // 취소버튼 표시 문구
+                }).then((result) => {
+                    console.log(result);
+                    // 버튼이 눌러졌을 경우의 콜백 연결
+                    if (result.value) {
+                        // 버튼이 눌러졌을 경우의 콜백 연결
+                        new Swal("삭제", "성공적으로 삭제되었습니다.", "Success");
+                    } else if (result.dismiss === "cancel") {
+                        // 취소버튼이 눌러진 경우
+                        new Swal("취소", "삭제가 취소되었습니다.", "Error");
+                    }
+                });
+            });
+
+            document.querySelector("#btn5").addEventListener("click", (e) => {
+                // 이미지 표시 --> 종류(icon)를 지정할 수 없음
+                new Swal({
+                    title:"thank you!", // 제목
+                    text: "성원에 감사드립니다.", // 내용
+                    imageUrl: "assets/img/img5.png", // 이미지 경로
+                    imageWidth: 480, // 이미지 가로 크기
+                    ImageHeight: 240, // 이미지 세로 크기
+                });
+            });
+
+            document.querySelector("#btn6").addEventListener("click", (e) => {
+                // 배경 지정
+                new Swal({
+                    title:'<span class=:"title">Thank You!!</span>', // 제목 (CSS클래스 지정)
+                    text: '<span class=:"content">성원에 감사드립니다</span>', // 내용 (CSS클래스 지정)
+                    width: 600, // 팝업 가로 크기 (세로는 내용에 맞게 지정됨)
+                    padding: "100px", // 팝업 여백 (CSS표현방법 모두 적용 가능)
+                    background: "#fff url(assets/img/img5.png) center center/cover no-repeat"  // 배경설정
+            });
+        });
+
+
+
+            
+        </script>
+    </body>
+    </html>

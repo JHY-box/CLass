@@ -1,0 +1,96 @@
+/**
+ * 메인 페이지 스타일
+ */
+.main {
+    /** 작업하는 동안의 임시 적용 스타일 */
+    /* background-color: #0000ff55; */
+
+    /* padding-top: 100px;  */
+
+
+    .title {
+        width: 100%;
+        height: 40vh;
+        display: flex;
+        background-size: cover;
+        background-position: center center;
+        background-attachment: fixed;
+
+        .hello {
+            margin:auto;
+
+            color: var(--my-color-white);
+            text-align: center;
+            text-transform: uppercase;
+            padding: 30px 50px;
+
+            @media only screen and (mix-width: 992px) {
+                padding: 20px 30px;
+            }
+
+            h1 {
+                font-size: 36px;
+                font-weight: 600;
+                white-space:nowrap;
+                margin-bottom: 10px;
+
+                @media only screen and (mix-width: 992px) {
+                    font-size: 26px; 
+                }
+            }
+
+            p {
+                font-size: 20px;
+                font-weight: 300;
+
+                @media only screen and (mix-width: 992px) {
+                    font-size: 16px;
+            }
+        }
+    }
+}
+
+
+
+
+.introduce {
+    /* background-color: #ff000022; */
+    /* height: 150px; */
+
+    .title {
+        height: 100vh;
+        background-image: url("../img/parallax1.jpg");
+
+        .hello {
+            background-color: var(--my-color-gray);
+        }
+    }
+}
+
+
+.portfolio {
+    /* background-color: #0066ff44; */
+    /* height: 150px; */
+
+    .title {
+        background-image: url("../img/parallax2.jpg");
+    }
+}
+
+.contact {
+    /* background-color: #ff00ff44; */
+    /* height: 150px; */
+
+    .title {
+        background-image: url("../img/parallax3.jpg");
+    }
+}
+}
+        
+
+
+
+
+    
+
+

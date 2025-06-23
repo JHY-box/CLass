@@ -1,0 +1,4 @@
+[INFO ] 25-06-04 09:44:13 [CookieSessionApplication:53] - Starting CookieSessionApplication using Java 17.0.2 with PID 15976 (D:\#web3\06-SpringBoot\05-CookieSession\cookie_session\build\classes\java\main started by helloworld in D:\#web3\06-SpringBoot\05-CookieSession\cookie_session)
+[DEBUG] 25-06-04 09:44:13 [CookieSessionApplication:54] - Running with Spring Boot v3.5.0, Spring v6.2.7
+[INFO ] 25-06-04 09:44:13 [CookieSessionApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 25-06-04 09:44:14 [CookieSessionApplication:59] - Started CookieSessionApplication in 2.149 seconds (process running for 2.566)

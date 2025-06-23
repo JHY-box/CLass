@@ -1,0 +1,198 @@
+[INFO ] 25-05-29 16:59:10 [InterceptorApplication:53] - Starting InterceptorApplication using Java 17.0.2 with PID 22348 (D:\#web3\06-SpringBoot\03-Interceptor\interceptor\build\classes\java\main started by helloworld in D:\#web3\06-SpringBoot\03-Interceptor\interceptor)
+[DEBUG] 25-05-29 16:59:10 [InterceptorApplication:54] - Running with Spring Boot v3.5.0, Spring v6.2.7
+[INFO ] 25-05-29 16:59:10 [InterceptorApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 25-05-29 16:59:12 [InterceptorApplication:59] - Started InterceptorApplication in 2.299 seconds (process running for 2.723)
+[INFO ] 25-05-29 17:03:16 [InterceptorApplication:53] - Starting InterceptorApplication using Java 17.0.2 with PID 14900 (D:\#web3\06-SpringBoot\03-Interceptor\interceptor\build\classes\java\main started by helloworld in D:\#web3\06-SpringBoot\03-Interceptor\interceptor)
+[DEBUG] 25-05-29 17:03:16 [InterceptorApplication:54] - Running with Spring Boot v3.5.0, Spring v6.2.7
+[INFO ] 25-05-29 17:03:16 [InterceptorApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 25-05-29 17:03:19 [InterceptorApplication:59] - Started InterceptorApplication in 3.152 seconds (process running for 3.719)
+[INFO ] 25-05-29 17:03:28 [MyInterceptor:41] - ----------- New Client Connect -----------
+[INFO ] 25-05-29 17:03:29 [MyInterceptor:60] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-05-29 17:03:29 [MyInterceptor:78] - [GET] http://localhost:8080/
+[INFO ] 25-05-29 17:03:29 [MyInterceptor:116] - running time: 171(ms)
+[INFO ] 25-05-29 17:03:32 [MyInterceptor:41] - ----------- New Client Connect -----------
+[INFO ] 25-05-29 17:03:32 [MyInterceptor:60] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-05-29 17:03:32 [MyInterceptor:78] - [GET] http://localhost:8080/
+[INFO ] 25-05-29 17:03:32 [MyInterceptor:94] - - REFERER : time=3117, url=http://localhost:8080/
+[INFO ] 25-05-29 17:03:32 [MyInterceptor:116] - running time: 54(ms)
+[INFO ] 25-05-29 17:03:36 [MyInterceptor:41] - ----------- New Client Connect -----------
+[INFO ] 25-05-29 17:03:36 [MyInterceptor:60] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-05-29 17:03:36 [MyInterceptor:78] - [GET] http://localhost:8080/hi
+[INFO ] 25-05-29 17:03:36 [MyInterceptor:94] - - REFERER : time=4180, url=http://localhost:8080/hello
+[INFO ] 25-05-29 17:03:36 [MyInterceptor:116] - running time: 38(ms)
+[INFO ] 25-05-29 17:03:37 [MyInterceptor:41] - ----------- New Client Connect -----------
+[INFO ] 25-05-29 17:03:37 [MyInterceptor:60] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-05-29 17:03:37 [MyInterceptor:78] - [GET] http://localhost:8080/bye
+[INFO ] 25-05-29 17:03:37 [MyInterceptor:94] - - REFERER : time=1138, url=http://localhost:8080/hi
+[INFO ] 25-05-29 17:03:37 [MyInterceptor:116] - running time: 24(ms)
+[INFO ] 25-05-29 17:03:47 [MyInterceptor:41] - ----------- New Client Connect -----------
+[INFO ] 25-05-29 17:03:48 [MyInterceptor:60] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-05-29 17:03:48 [MyInterceptor:78] - [GET] http://localhost:8080/
+[INFO ] 25-05-29 17:03:48 [MyInterceptor:94] - - REFERER : time=10355, url=http://localhost:8080/hello
+[INFO ] 25-05-29 17:03:48 [MyInterceptor:116] - running time: 27(ms)
+[INFO ] 25-05-29 17:03:49 [MyInterceptor:41] - ----------- New Client Connect -----------
+[INFO ] 25-05-29 17:03:49 [MyInterceptor:60] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-05-29 17:03:49 [MyInterceptor:78] - [GET] http://localhost:8080/hi
+[INFO ] 25-05-29 17:03:49 [MyInterceptor:94] - - REFERER : time=1969, url=http://localhost:8080/hello
+[INFO ] 25-05-29 17:03:49 [MyInterceptor:116] - running time: 20(ms)
+[INFO ] 25-05-29 17:03:50 [MyInterceptor:41] - ----------- New Client Connect -----------
+[INFO ] 25-05-29 17:03:50 [MyInterceptor:60] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-05-29 17:03:50 [MyInterceptor:78] - [GET] http://localhost:8080/bye
+[INFO ] 25-05-29 17:03:50 [MyInterceptor:94] - - REFERER : time=435, url=http://localhost:8080/hi
+[INFO ] 25-05-29 17:03:50 [MyInterceptor:116] - running time: 19(ms)
+[INFO ] 25-05-29 17:03:51 [MyInterceptor:41] - ----------- New Client Connect -----------
+[INFO ] 25-05-29 17:03:51 [MyInterceptor:60] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-05-29 17:03:51 [MyInterceptor:78] - [GET] http://localhost:8080/
+[INFO ] 25-05-29 17:03:51 [MyInterceptor:94] - - REFERER : time=717, url=http://localhost:8080/bye
+[INFO ] 25-05-29 17:03:51 [MyInterceptor:116] - running time: 19(ms)
+[INFO ] 25-05-29 17:03:52 [MyInterceptor:41] - ----------- New Client Connect -----------
+[INFO ] 25-05-29 17:03:52 [MyInterceptor:60] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-05-29 17:03:52 [MyInterceptor:78] - [GET] http://localhost:8080/
+[INFO ] 25-05-29 17:03:52 [MyInterceptor:94] - - REFERER : time=1309, url=http://localhost:8080/hello
+[INFO ] 25-05-29 17:03:52 [MyInterceptor:116] - running time: 18(ms)
+[INFO ] 25-05-29 17:03:53 [MyInterceptor:41] - ----------- New Client Connect -----------
+[INFO ] 25-05-29 17:03:53 [MyInterceptor:60] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-05-29 17:03:53 [MyInterceptor:78] - [GET] http://localhost:8080/
+[INFO ] 25-05-29 17:03:53 [MyInterceptor:94] - - REFERER : time=1359, url=http://localhost:8080/hello
+[INFO ] 25-05-29 17:03:53 [MyInterceptor:116] - running time: 19(ms)
+[INFO ] 25-05-29 17:03:55 [MyInterceptor:41] - ----------- New Client Connect -----------
+[INFO ] 25-05-29 17:03:55 [MyInterceptor:60] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-05-29 17:03:55 [MyInterceptor:78] - [GET] http://localhost:8080/bye
+[INFO ] 25-05-29 17:03:55 [MyInterceptor:94] - - REFERER : time=1365, url=http://localhost:8080/hello
+[INFO ] 25-05-29 17:03:55 [MyInterceptor:116] - running time: 20(ms)
+[INFO ] 25-05-29 17:03:55 [MyInterceptor:41] - ----------- New Client Connect -----------
+[INFO ] 25-05-29 17:03:55 [MyInterceptor:60] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-05-29 17:03:55 [MyInterceptor:78] - [GET] http://localhost:8080/hi
+[INFO ] 25-05-29 17:03:55 [MyInterceptor:94] - - REFERER : time=378, url=http://localhost:8080/bye
+[INFO ] 25-05-29 17:03:55 [MyInterceptor:116] - running time: 20(ms)
+[INFO ] 25-05-29 17:03:56 [MyInterceptor:41] - ----------- New Client Connect -----------
+[INFO ] 25-05-29 17:03:56 [MyInterceptor:60] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-05-29 17:03:56 [MyInterceptor:78] - [GET] http://localhost:8080/
+[INFO ] 25-05-29 17:03:56 [MyInterceptor:94] - - REFERER : time=1214, url=http://localhost:8080/hello
+[INFO ] 25-05-29 17:03:56 [MyInterceptor:116] - running time: 19(ms)
+[INFO ] 25-05-29 17:03:58 [MyInterceptor:41] - ----------- New Client Connect -----------
+[INFO ] 25-05-29 17:03:58 [MyInterceptor:60] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-05-29 17:03:58 [MyInterceptor:78] - [GET] http://localhost:8080/
+[INFO ] 25-05-29 17:03:58 [MyInterceptor:94] - - REFERER : time=1636, url=http://localhost:8080/hello
+[INFO ] 25-05-29 17:03:58 [MyInterceptor:116] - running time: 16(ms)
+[INFO ] 25-05-29 17:04:01 [MyInterceptor:41] - ----------- New Client Connect -----------
+[INFO ] 25-05-29 17:04:01 [MyInterceptor:60] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-05-29 17:04:01 [MyInterceptor:78] - [GET] http://localhost:8080/
+[INFO ] 25-05-29 17:04:01 [MyInterceptor:94] - - REFERER : time=3399, url=http://localhost:8080/
+[INFO ] 25-05-29 17:04:01 [MyInterceptor:116] - running time: 16(ms)
+[INFO ] 25-05-29 17:04:02 [MyInterceptor:41] - ----------- New Client Connect -----------
+[INFO ] 25-05-29 17:04:02 [MyInterceptor:60] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-05-29 17:04:02 [MyInterceptor:78] - [GET] http://localhost:8080/hi
+[INFO ] 25-05-29 17:04:02 [MyInterceptor:94] - - REFERER : time=793, url=http://localhost:8080/
+[INFO ] 25-05-29 17:04:02 [MyInterceptor:116] - running time: 16(ms)
+[INFO ] 25-05-29 17:04:03 [MyInterceptor:41] - ----------- New Client Connect -----------
+[INFO ] 25-05-29 17:04:03 [MyInterceptor:60] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-05-29 17:04:03 [MyInterceptor:78] - [GET] http://localhost:8080/
+[INFO ] 25-05-29 17:04:03 [MyInterceptor:94] - - REFERER : time=1105, url=http://localhost:8080/hi
+[INFO ] 25-05-29 17:04:03 [MyInterceptor:116] - running time: 16(ms)
+[INFO ] 25-05-29 17:04:04 [MyInterceptor:41] - ----------- New Client Connect -----------
+[INFO ] 25-05-29 17:04:04 [MyInterceptor:60] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-05-29 17:04:04 [MyInterceptor:78] - [GET] http://localhost:8080/hi
+[INFO ] 25-05-29 17:04:04 [MyInterceptor:94] - - REFERER : time=640, url=http://localhost:8080/
+[INFO ] 25-05-29 17:04:04 [MyInterceptor:116] - running time: 16(ms)
+[INFO ] 25-05-29 17:04:05 [MyInterceptor:41] - ----------- New Client Connect -----------
+[INFO ] 25-05-29 17:04:05 [MyInterceptor:60] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-05-29 17:04:05 [MyInterceptor:78] - [GET] http://localhost:8080/
+[INFO ] 25-05-29 17:04:05 [MyInterceptor:94] - - REFERER : time=935, url=http://localhost:8080/hi
+[INFO ] 25-05-29 17:04:05 [MyInterceptor:116] - running time: 17(ms)
+[INFO ] 25-05-29 17:04:06 [MyInterceptor:41] - ----------- New Client Connect -----------
+[INFO ] 25-05-29 17:04:06 [MyInterceptor:60] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-05-29 17:04:06 [MyInterceptor:78] - [GET] http://localhost:8080/bye
+[INFO ] 25-05-29 17:04:06 [MyInterceptor:94] - - REFERER : time=547, url=http://localhost:8080/
+[INFO ] 25-05-29 17:04:06 [MyInterceptor:116] - running time: 16(ms)
+[INFO ] 25-05-29 17:04:07 [MyInterceptor:41] - ----------- New Client Connect -----------
+[INFO ] 25-05-29 17:04:07 [MyInterceptor:60] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-05-29 17:04:07 [MyInterceptor:78] - [GET] http://localhost:8080/hi
+[INFO ] 25-05-29 17:04:07 [MyInterceptor:94] - - REFERER : time=1669, url=http://localhost:8080/bye
+[INFO ] 25-05-29 17:04:07 [MyInterceptor:116] - running time: 17(ms)
+[INFO ] 25-05-29 17:04:09 [MyInterceptor:41] - ----------- New Client Connect -----------
+[INFO ] 25-05-29 17:04:09 [MyInterceptor:60] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-05-29 17:04:09 [MyInterceptor:78] - [GET] http://localhost:8080/hi
+[INFO ] 25-05-29 17:04:09 [MyInterceptor:94] - - REFERER : time=1991, url=http://localhost:8080/hello
+[INFO ] 25-05-29 17:04:09 [MyInterceptor:116] - running time: 17(ms)
+[INFO ] 25-05-29 17:04:11 [MyInterceptor:41] - ----------- New Client Connect -----------
+[INFO ] 25-05-29 17:04:11 [MyInterceptor:60] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-05-29 17:04:11 [MyInterceptor:78] - [GET] http://localhost:8080/bye
+[INFO ] 25-05-29 17:04:11 [MyInterceptor:94] - - REFERER : time=1984, url=http://localhost:8080/hello
+[INFO ] 25-05-29 17:04:11 [MyInterceptor:116] - running time: 16(ms)
+[INFO ] 25-05-29 17:04:15 [MyInterceptor:41] - ----------- New Client Connect -----------
+[INFO ] 25-05-29 17:04:15 [MyInterceptor:60] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-05-29 17:04:15 [MyInterceptor:78] - [GET] http://localhost:8080/
+[INFO ] 25-05-29 17:04:15 [MyInterceptor:94] - - REFERER : time=4064, url=http://localhost:8080/hello
+[INFO ] 25-05-29 17:04:15 [MyInterceptor:116] - running time: 17(ms)
+[INFO ] 25-05-29 17:07:28 [MyInterceptor:41] - ----------- New Client Connect -----------
+[INFO ] 25-05-29 17:07:28 [MyInterceptor:60] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-05-29 17:07:28 [MyInterceptor:78] - [GET] http://localhost:8080/
+[INFO ] 25-05-29 17:07:28 [MyInterceptor:116] - running time: 18(ms)
+[INFO ] 25-05-29 17:07:33 [MyInterceptor:41] - ----------- New Client Connect -----------
+[INFO ] 25-05-29 17:07:33 [MyInterceptor:60] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-05-29 17:07:33 [MyInterceptor:78] - [GET] http://localhost:8080/
+[INFO ] 25-05-29 17:07:33 [MyInterceptor:116] - running time: 16(ms)
+[INFO ] 25-05-29 17:07:34 [MyInterceptor:41] - ----------- New Client Connect -----------
+[INFO ] 25-05-29 17:07:34 [MyInterceptor:60] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-05-29 17:07:34 [MyInterceptor:78] - [GET] http://localhost:8080/
+[INFO ] 25-05-29 17:07:34 [MyInterceptor:94] - - REFERER : time=897, url=http://localhost:8080/
+[INFO ] 25-05-29 17:07:34 [MyInterceptor:116] - running time: 16(ms)
+[INFO ] 25-05-29 17:07:37 [MyInterceptor:41] - ----------- New Client Connect -----------
+[INFO ] 25-05-29 17:07:37 [MyInterceptor:60] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-05-29 17:07:37 [MyInterceptor:78] - [GET] http://localhost:8080/
+[INFO ] 25-05-29 17:07:37 [MyInterceptor:94] - - REFERER : time=3224, url=http://localhost:8080/hello
+[INFO ] 25-05-29 17:07:37 [MyInterceptor:116] - running time: 17(ms)
+[INFO ] 25-05-29 17:08:03 [InterceptorApplication:53] - Starting InterceptorApplication using Java 17.0.2 with PID 14828 (D:\#web3\06-SpringBoot\03-Interceptor\interceptor\build\classes\java\main started by helloworld in D:\#web3\06-SpringBoot\03-Interceptor\interceptor)
+[DEBUG] 25-05-29 17:08:03 [InterceptorApplication:54] - Running with Spring Boot v3.5.0, Spring v6.2.7
+[INFO ] 25-05-29 17:08:03 [InterceptorApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 25-05-29 17:08:05 [InterceptorApplication:59] - Started InterceptorApplication in 2.328 seconds (process running for 2.836)
+[INFO ] 25-05-29 17:08:16 [MyInterceptor:41] - ----------- New Client Connect -----------
+[INFO ] 25-05-29 17:08:16 [MyInterceptor:60] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-05-29 17:08:16 [MyInterceptor:78] - [GET] http://localhost:8080/
+[INFO ] 25-05-29 17:08:16 [MyInterceptor:116] - running time: 164(ms)
+[INFO ] 25-05-29 17:08:21 [MyInterceptor:41] - ----------- New Client Connect -----------
+[INFO ] 25-05-29 17:08:21 [MyInterceptor:60] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-05-29 17:08:21 [MyInterceptor:78] - [GET] http://localhost:8080/
+[INFO ] 25-05-29 17:08:21 [MyInterceptor:94] - - REFERER : time=5104, url=http://localhost:8080/hello
+[INFO ] 25-05-29 17:08:21 [MyInterceptor:116] - running time: 52(ms)
+[INFO ] 25-05-29 17:08:22 [MyInterceptor:41] - ----------- New Client Connect -----------
+[INFO ] 25-05-29 17:08:22 [MyInterceptor:60] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-05-29 17:08:22 [MyInterceptor:78] - [GET] http://localhost:8080/hi
+[INFO ] 25-05-29 17:08:22 [MyInterceptor:94] - - REFERER : time=605, url=http://localhost:8080/
+[INFO ] 25-05-29 17:08:22 [MyInterceptor:116] - running time: 32(ms)
+[INFO ] 25-05-29 17:08:22 [MyInterceptor:41] - ----------- New Client Connect -----------
+[INFO ] 25-05-29 17:08:22 [MyInterceptor:60] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-05-29 17:08:22 [MyInterceptor:78] - [GET] http://localhost:8080/bye
+[INFO ] 25-05-29 17:08:22 [MyInterceptor:94] - - REFERER : time=343, url=http://localhost:8080/hi
+[INFO ] 25-05-29 17:08:22 [MyInterceptor:116] - running time: 22(ms)
+[INFO ] 25-05-29 17:08:23 [MyInterceptor:41] - ----------- New Client Connect -----------
+[INFO ] 25-05-29 17:08:23 [MyInterceptor:60] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-05-29 17:08:23 [MyInterceptor:78] - [GET] http://localhost:8080/hi
+[INFO ] 25-05-29 17:08:23 [MyInterceptor:94] - - REFERER : time=522, url=http://localhost:8080/bye
+[INFO ] 25-05-29 17:08:23 [MyInterceptor:116] - running time: 20(ms)
+[INFO ] 25-05-29 17:08:23 [MyInterceptor:41] - ----------- New Client Connect -----------
+[INFO ] 25-05-29 17:08:23 [MyInterceptor:60] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-05-29 17:08:23 [MyInterceptor:78] - [GET] http://localhost:8080/
+[INFO ] 25-05-29 17:08:23 [MyInterceptor:94] - - REFERER : time=579, url=http://localhost:8080/hello
+[INFO ] 25-05-29 17:08:23 [MyInterceptor:116] - running time: 20(ms)
+[INFO ] 25-05-29 17:15:23 [MyInterceptor:41] - ----------- New Client Connect -----------
+[INFO ] 25-05-29 17:15:23 [MyInterceptor:60] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-05-29 17:15:23 [MyInterceptor:78] - [GET] http://localhost:8080/hi
+[INFO ] 25-05-29 17:15:23 [MyInterceptor:94] - - REFERER : time=419638, url=http://localhost:8080/
+[INFO ] 25-05-29 17:15:23 [MyInterceptor:116] - running time: 19(ms)
+[INFO ] 25-05-29 17:41:51 [MyInterceptor:41] - ----------- New Client Connect -----------
+[INFO ] 25-05-29 17:41:51 [MyInterceptor:60] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-05-29 17:41:51 [MyInterceptor:78] - [GET] http://localhost:8080/.well-known/appspecific/com.chrome.devtools.json
+[INFO ] 25-05-29 17:41:59 [MyInterceptor:41] - ----------- New Client Connect -----------
+[INFO ] 25-05-29 17:41:59 [MyInterceptor:60] - [Client] 0:0:0:0:0:0:0:1, Nexus 5, Android, 6.0, Chrome Mobile, 137.0
+[INFO ] 25-05-29 17:41:59 [MyInterceptor:78] - [GET] http://localhost:8080/hi
+[INFO ] 25-05-29 17:41:59 [MyInterceptor:94] - - REFERER : time=1596160, url=http://localhost:8080/
+[INFO ] 25-05-29 17:41:59 [MyInterceptor:116] - running time: 17(ms)
+[INFO ] 25-05-29 17:41:59 [MyInterceptor:41] - ----------- New Client Connect -----------
+[INFO ] 25-05-29 17:41:59 [MyInterceptor:60] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-05-29 17:41:59 [MyInterceptor:78] - [GET] http://localhost:8080/.well-known/appspecific/com.chrome.devtools.json
+[INFO ] 25-05-29 17:42:01 [MyInterceptor:41] - ----------- New Client Connect -----------
+[INFO ] 25-05-29 17:42:01 [MyInterceptor:60] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-05-29 17:42:01 [MyInterceptor:78] - [GET] http://localhost:8080/hi
+[INFO ] 25-05-29 17:42:01 [MyInterceptor:116] - running time: 17(ms)

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charest="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1.0,
+    minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"
+    />
+    <title>flex</title>
+    <style type="text/css">
+      * {
+        box-sizing: border-box;
+      }
+
+      .container {
+        border: 2px dotted #06f;
+        padding: 10px;
+        width: 500px;
+
+        display: flex;
+        flex-wrap: wrap;
+
+        .item {
+          border: 2px solid #f0f;
+          padding: 10px;
+          margin: 5px;
+
+          &.item100px {
+            /* */
+            /* */
+            /* */
+            flex-basis: 100px;
+
+            /* */
+            /* */
+            /* */
+          }
+          
+          &.nowrap {
+            white-space: nowrap;
+          }
+        }
+      }
+      </style>
+      </head>
+
+      <body>
+        <h1>flex-basis: 100px</h1>
+        <div calss="container">
+            <div clss="item item100px first">nomal contents.</div>
+            <div clss="item item100px">Very~~~ Very~~~ Long Contents.</div>
+            <div clss="item item100px">short.</div>
+        </div>
+
+        <h1>nowrap</h1>
+        width가 고정되지 않은 없이는 100px 미만의 박스는 100px로 늘어나고 그렇지 않은 경우 100px이 된다.
+        <div calss="container">
+            <div clss="item item100px nowrap">nomal contents.</div>
+            <div clss="item item100px nowrap">Very~~~ Very~~~ Long Contents.</div>
+            <div clss="item item100px nowrap">short.</div>
+        </div>
+      </body>

@@ -1,0 +1,23 @@
+[INFO ] 25-06-04 14:44:32 [MailerApplication:53] - Starting MailerApplication using Java 17.0.2 with PID 14008 (D:\#web3\06-SpringBoot\07-Mailer\mailer\build\classes\java\main started by helloworld in D:\#web3\06-SpringBoot\07-Mailer\mailer)
+[DEBUG] 25-06-04 14:44:32 [MailerApplication:54] - Running with Spring Boot v3.5.0, Spring v6.2.7
+[INFO ] 25-06-04 14:44:32 [MailerApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 25-06-04 14:44:35 [MailerApplication:59] - Started MailerApplication in 2.739 seconds (process running for 3.199)
+[INFO ] 25-06-04 14:44:46 [MailerApplication:53] - Starting MailerApplication using Java 17.0.2 with PID 13740 (D:\#web3\06-SpringBoot\07-Mailer\mailer\build\classes\java\main started by helloworld in D:\#web3\06-SpringBoot\07-Mailer\mailer)
+[DEBUG] 25-06-04 14:44:46 [MailerApplication:54] - Running with Spring Boot v3.5.0, Spring v6.2.7
+[INFO ] 25-06-04 14:44:46 [MailerApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[WARN ] 25-06-04 14:44:48 [OptionalLiveReloadServer:62] - Unable to start LiveReload server
+[WARN ] 25-06-04 14:44:48 [AnnotationConfigServletWebServerApplicationContext:635] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+[ERROR] 25-06-04 14:44:48 [LoggingFailureAnalysisReporter:40] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+

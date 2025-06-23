@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1.0,
+    minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"
+    />
+
+    <title>flex</title>
+    <style type="text/css">
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
+
+      .container {
+        /* PC등 고해상도에서는 최대 1200px까지만, 그보다 작은 경우 제한없이 축소 가능 */
+        max-width: 1200px;
+        margin: auto;
+
+        /* 자식 박스들을 가로로 배치+ 줄바꿈 허용함 */
+        display: flex;
+        flex-basis: wrap;
+
+        .left {
+            background-color: #2196f3;
+            padding: 20px;
+            flex-basis: 20%;
+
+            /* 마지막에 작성하세요 (1) */
+            @media screen and (max-width: 800px) {
+                flex-basis: 100%;
+            }
+        }
+      
+
+
+      .main {
+        background-color: #f1f1f1;
+        padding: 20px;
+        flex-basis: 60%;
+
+        /* 마지막에 작성하세요 (2) */
+        @media screen and (max-width: 800px) {
+                flex-basis: 100%;
+            }
+
+      }
+
+      .right {
+        background-color: #04aa6d;
+        padding: 20px;
+        flex-basis:20%;
+
+        /* 마지막에 작성하세요 (3) */
+        @media screen and (max-width: 800px) {
+                flex-basis: 100%;
+            }
+        }
+    }
+
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+        <div class="left">
+            <p>Left Menu</p>
+            </div>
+            <div class="main">
+                <p>Main Content</p>
+            </div>
+            
+            <div class="right">
+                <p>Right content</p>
+            </div>
+        </div>
+    </body>
+</html>

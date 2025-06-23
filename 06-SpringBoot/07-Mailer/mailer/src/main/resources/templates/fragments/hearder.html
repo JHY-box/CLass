@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang = "ko" translate = "no">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "google" content = "notranslate" />
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <title>hearder</title>
+    </head>
+    <body>
+        <header th:fragment="my-header">
+            <link rel="stylesheet" th:href="@{/assets/css/header.css}" />
+            <h1>07-Mailer</h1>
+            <nav calss="gnb">
+                <a th:href="@{/}">메일 발송 테스트</a>
+                <a th:href="@order">주문 확인 메일</a>
+            </nav>
+    </body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charest="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,
+        minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+        <title>Document</title>
+
+        <style>
+            * {
+                box-sizing: border-box;
+                padding: 0;
+                margin: 0;
+            }
+
+            .header {
+                background-color: #06882d;
+
+                .header-container {
+                    background-color: #00c73c;
+                    display: flex;
+                    max-width: 1000px;
+                    margin: auto;
+
+                    .logo, .gnb {
+                        padding: 20px 30px;
+                        background-color: rgb(91, 91, 91)
+                    }
+
+                    .search {
+                        padding: 14px 0;
+                        margin: 0 10px;
+                    
+
+                        /* flex의 기본은 가로배치 + 세로가득체움이다*/
+                        display: flex;
+                    }
+
+                    .gnb {
+                        margin-left: auto;
+                    }
+                }
+            }
+
+        
+
+        </style>
+        </head>
+
+        <body>
+            <header class="header">
+                <div class="header-container">
+                    <div class="logo">logo</div>
+                    <div class="search">
+                        <input type="text" title="검색" class="search_input" />
+                        <button type="button" class="search_button"> 검색 </button>
+                    </div>
+                    <div class="gnb">gnb</div>
+                </div>
+            </header>
+        </body>
+        </html>

@@ -1,0 +1,25 @@
+[ERROR] 25-04-18 12:25:29 [App:52] - SQL문 준비 실패
+[ERROR] 25-04-18 12:35:12 [App:52] - SQL문 준비 실패
+[ERROR] 25-04-18 14:44:57 [App02:52] - SQL문 준비 실패
+[ERROR] 25-04-18 15:14:33 [App02:63] - SQL문 준비 실패
+[ERROR] 25-04-18 15:16:35 [App02:63] - SQL문 준비 실패
+[ERROR] 25-04-18 15:17:42 [App02:97] - SQL문 실행 실패
+java.sql.SQLException: 조회된 데이터가 없습니다.
+	at kr.yjh.jdbc.App02.main(App02.java:69)
+[ERROR] 25-04-18 15:17:59 [App02:97] - SQL문 실행 실패
+java.sql.SQLException: Unknown label 'estalished'. Possible value [established, loc, departments.id, departments.homepage, departments.established, departments.loc, departments.email, departments.dname, phone, departments.phone, id, dname, email, homepage]
+	at org.mariadb.jdbc.client.result.Result.findColumn(Result.java:1760)
+	at org.mariadb.jdbc.client.result.Result.getInt(Result.java:708)
+	at kr.yjh.jdbc.App02.main(App02.java:76)
+[ERROR] 25-04-18 15:18:30 [App02:97] - SQL문 실행 실패
+java.sql.SQLException: Unknown label 'estalished'. Possible value [established, loc, departments.id, departments.homepage, departments.established, departments.loc, departments.email, departments.dname, phone, departments.phone, id, dname, email, homepage]
+	at org.mariadb.jdbc.client.result.Result.findColumn(Result.java:1760)
+	at org.mariadb.jdbc.client.result.Result.getInt(Result.java:708)
+	at kr.yjh.jdbc.App02.main(App02.java:76)
+[ERROR] 25-04-18 15:21:06 [App02:96] - SQL문 실행 실패
+java.sql.SQLException: Unknown label 'estalished'. Possible value [established, loc, departments.id, departments.homepage, departments.established, departments.loc, departments.email, departments.dname, phone, departments.phone, id, dname, email, homepage]
+	at org.mariadb.jdbc.client.result.Result.findColumn(Result.java:1760)
+	at org.mariadb.jdbc.client.result.Result.getInt(Result.java:708)
+	at kr.yjh.jdbc.App02.main(App02.java:75)
+[ERROR] 25-04-18 15:31:52 [App:52] - SQL문 준비 실패
+[ERROR] 25-04-18 15:36:49 [App:52] - SQL문 준비 실패

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1.0,
+        minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"
+    />
+
+    <title>CSS Example</title>
+    <!-- 스타일 시트 -->
+
+    <style type="text/css">
+      body {
+        font-size: 24px;
+        line-height: 150%;
+        font-weight: bold;
+      }
+
+      .parent {
+        background-color: #ff0000;
+        width: 500px;
+        height: 250px;
+        /** 텍스트 관련 속성은 문장의 정렬에만 관여하며, 자식요소에게도 상속된다. */
+        text-align: center;
+      
+
+      .child {
+        background-color: #00ff00;
+        width: 300px;
+        height: 100px;
+        /**margin은 박스의 위치를 설정한다. */
+        margin-left: 100px;
+      }
+    }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+        <!-- 부모 박스 안에서 이 박스를 중앙에 배치하고자 하는 경우 -->
+         <div class="child">HTML &amp; CSS</div>
+         </div>
+  </body>
+</html>

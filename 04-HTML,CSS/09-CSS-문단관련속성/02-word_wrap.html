@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1.0,
+    minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <title>CSS Example</title>
+
+    <style type="text/css">
+      body {
+        font-size: 24px;
+        line-height: 150%;
+        font-weight: bold;
+      }
+      p {
+        background-color: rgb(172, 250, 228);
+
+        &:nth-child(1) {
+          /* 문단 끝에서 줄바꿈함(기본값이므로 명시하지 않아도 됨)*/
+          white-space: normal;
+        }
+
+        &:nth-child(2) {
+          /* 줄바꿈 하지 않음(문단 영역을 벗어남)*/
+          white-space: nowrap;
+        }
+
+        &:nth-child(3) {
+          /* 한 줄 단위 말줄임 처리*/
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+
+        &:nth-child(4) {
+          /* 여러 줄 단위 말줄임 처리*/
+          overflow: hidden;
+          text-overflow: ellipsis;
+          -webkit-line-clamp: 4;
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <p>한국 양궁이 사상 첫 올림픽 금메달 5개 싹슬이의 대업을 달성했다.</p>
+    <p>
+      김우징(청주시청)은 4일 프랑스 파리에서 열린 2024 파리 올림픽 양궁 잠자
+      개인전 결승에서 미국의 브레이디 엘리슨을 슛오프 접전 끝에 6-5(27-29 28-24
+      2729 2927 3030 <10+-10>)로 물리치고 금메달을 수확했다.
+    </p>
+    <p>
+      앞서 남녀 단체전과 혼성 단체전(혼성전), 여자 개인전에서 금메달을 따낸 한국
+      양궁은 이로써 사상 처음으로 올림픽 양궁에 걸린 금메달 5개를 모두 쓸어
+      담았다.
+    </p>
+    <p>
+      '최강' 한국 양궁이 올림픽 금메달을 독식한 건 금메달 4개가 걸려있던 2015년
+      리우데자네이루 대회 이후 8년 만이자 사상 두 번째다.
+    </p>
+  </body>
+</html>

@@ -1,0 +1,169 @@
+[DEBUG] 25-04-18 12:25:29 [App:28] - 접속 주소: jdbc:mariadb://127.0.0.1:9090/myschool?characterEncoding=utf8&serverTimezone=UTC
+[DEBUG] 25-04-18 12:25:29 [App:33] - MariaDB JDBC 드라이버 로드 성공
+[DEBUG] 25-04-18 12:25:29 [OkPacket:59] - Database change: is 'myschool'
+[DEBUG] 25-04-18 12:25:29 [StandardClient:59] - execute query: set sql_mode=CONCAT(@@sql_mode,',STRICT_TRANS_TABLES'),session_track_system_variables = CONCAT(@@global.session_track_system_variables,',transaction_isolation'),NAMES utf8mb4
+[DEBUG] 25-04-18 12:25:29 [OkPacket:59] - System variable change:  character_set_client = utf8mb4
+[DEBUG] 25-04-18 12:25:29 [OkPacket:59] - System variable change:  character_set_connection = utf8mb4
+[DEBUG] 25-04-18 12:25:29 [OkPacket:59] - System variable change:  character_set_results = utf8mb4
+[DEBUG] 25-04-18 12:25:29 [StandardClient:59] - execute query: SELECT id, dname, loc, phone, email, estalished, homepage FROM deparments WHERE id=102
+[WARN ] 25-04-18 12:25:29 [ErrorPacket:99] - Error: 1146-42S02: Table 'myschool.deparments' doesn't exist
+[ERROR] 25-04-18 12:25:29 [App:52] - SQL문 준비 실패
+[DEBUG] 25-04-18 12:35:12 [App:28] - 접속 주소: jdbc:mariadb://127.0.0.1:9090/myschool?characterEncoding=utf8&serverTimezone=UTC
+[DEBUG] 25-04-18 12:35:12 [App:33] - MariaDB JDBC 드라이버 로드 성공
+[DEBUG] 25-04-18 12:35:12 [OkPacket:59] - Database change: is 'myschool'
+[DEBUG] 25-04-18 12:35:12 [StandardClient:59] - execute query: set sql_mode=CONCAT(@@sql_mode,',STRICT_TRANS_TABLES'),session_track_system_variables = CONCAT(@@global.session_track_system_variables,',transaction_isolation'),NAMES utf8mb4
+[DEBUG] 25-04-18 12:35:12 [OkPacket:59] - System variable change:  character_set_client = utf8mb4
+[DEBUG] 25-04-18 12:35:12 [OkPacket:59] - System variable change:  character_set_connection = utf8mb4
+[DEBUG] 25-04-18 12:35:12 [OkPacket:59] - System variable change:  character_set_results = utf8mb4
+[DEBUG] 25-04-18 12:35:12 [StandardClient:59] - execute query: SELECT id, dname, loc, phone, email, estalished, homepage FROM deparments WHERE id=102
+[WARN ] 25-04-18 12:35:12 [ErrorPacket:99] - Error: 1146-42S02: Table 'myschool.deparments' doesn't exist
+[ERROR] 25-04-18 12:35:12 [App:52] - SQL문 준비 실패
+[DEBUG] 25-04-18 14:44:57 [App02:28] - 접속 주소: jdbc:mariadb://127.0.0.1:9090/myschool?characterEncoding=utf8&serverTimezone=UTC
+[DEBUG] 25-04-18 14:44:57 [App02:33] - MariaDB JDBC 드라이버 로드 성공
+[DEBUG] 25-04-18 14:44:57 [OkPacket:59] - Database change: is 'myschool'
+[DEBUG] 25-04-18 14:44:57 [StandardClient:59] - execute query: set sql_mode=CONCAT(@@sql_mode,',STRICT_TRANS_TABLES'),session_track_system_variables = CONCAT(@@global.session_track_system_variables,',transaction_isolation'),NAMES utf8mb4
+[DEBUG] 25-04-18 14:44:57 [OkPacket:59] - System variable change:  character_set_client = utf8mb4
+[DEBUG] 25-04-18 14:44:57 [OkPacket:59] - System variable change:  character_set_connection = utf8mb4
+[DEBUG] 25-04-18 14:44:57 [OkPacket:59] - System variable change:  character_set_results = utf8mb4
+[DEBUG] 25-04-18 14:44:57 [StandardClient:59] - execute query: SELECT id, dname, loc, phone, email, estalished, homepage FROM deparments WHERE id=102
+[WARN ] 25-04-18 14:44:57 [ErrorPacket:99] - Error: 1146-42S02: Table 'myschool.deparments' doesn't exist
+[ERROR] 25-04-18 14:44:57 [App02:52] - SQL문 준비 실패
+[DEBUG] 25-04-18 15:14:33 [App02:37] - 접속 주소: jdbc:mariadb://127.0.0.1:9090/myschool?characterEncoding=utf8&serverTimezone=UTC
+[DEBUG] 25-04-18 15:14:33 [App02:42] - MariaDB JDBC 드라이버 로드 성공
+[DEBUG] 25-04-18 15:14:33 [OkPacket:59] - Database change: is 'myschool'
+[DEBUG] 25-04-18 15:14:33 [StandardClient:59] - execute query: set sql_mode=CONCAT(@@sql_mode,',STRICT_TRANS_TABLES'),session_track_system_variables = CONCAT(@@global.session_track_system_variables,',transaction_isolation'),NAMES utf8mb4
+[DEBUG] 25-04-18 15:14:33 [OkPacket:59] - System variable change:  character_set_client = utf8mb4
+[DEBUG] 25-04-18 15:14:33 [OkPacket:59] - System variable change:  character_set_connection = utf8mb4
+[DEBUG] 25-04-18 15:14:33 [OkPacket:59] - System variable change:  character_set_results = utf8mb4
+[DEBUG] 25-04-18 15:14:33 [StandardClient:59] - execute query: SELECT id, dname, loc, phone, email, estalished, homepage FROM deparments WHERE id=?
+[WARN ] 25-04-18 15:14:33 [ErrorPacket:99] - Error: 1146-42S02: Table 'myschool.deparments' doesn't exist
+[ERROR] 25-04-18 15:14:33 [App02:63] - SQL문 준비 실패
+[DEBUG] 25-04-18 15:16:35 [App02:37] - 접속 주소: jdbc:mariadb://127.0.0.1:9090/myschool?characterEncoding=utf8&serverTimezone=UTC
+[DEBUG] 25-04-18 15:16:35 [App02:42] - MariaDB JDBC 드라이버 로드 성공
+[DEBUG] 25-04-18 15:16:35 [OkPacket:59] - Database change: is 'myschool'
+[DEBUG] 25-04-18 15:16:35 [StandardClient:59] - execute query: set sql_mode=CONCAT(@@sql_mode,',STRICT_TRANS_TABLES'),session_track_system_variables = CONCAT(@@global.session_track_system_variables,',transaction_isolation'),NAMES utf8mb4
+[DEBUG] 25-04-18 15:16:35 [OkPacket:59] - System variable change:  character_set_client = utf8mb4
+[DEBUG] 25-04-18 15:16:35 [OkPacket:59] - System variable change:  character_set_connection = utf8mb4
+[DEBUG] 25-04-18 15:16:35 [OkPacket:59] - System variable change:  character_set_results = utf8mb4
+[DEBUG] 25-04-18 15:16:35 [StandardClient:59] - execute query: SELECT id, dname, loc, phone, email, estalished, homepage FROM departments WHERE id=?
+[WARN ] 25-04-18 15:16:35 [ErrorPacket:99] - Error: 1054-42S22: Unknown column 'estalished' in 'SELECT'
+[ERROR] 25-04-18 15:16:35 [App02:63] - SQL문 준비 실패
+[DEBUG] 25-04-18 15:17:42 [App02:37] - 접속 주소: jdbc:mariadb://127.0.0.1:9090/myschool?characterEncoding=utf8&serverTimezone=UTC
+[DEBUG] 25-04-18 15:17:42 [App02:42] - MariaDB JDBC 드라이버 로드 성공
+[DEBUG] 25-04-18 15:17:42 [OkPacket:59] - Database change: is 'myschool'
+[DEBUG] 25-04-18 15:17:42 [StandardClient:59] - execute query: set sql_mode=CONCAT(@@sql_mode,',STRICT_TRANS_TABLES'),session_track_system_variables = CONCAT(@@global.session_track_system_variables,',transaction_isolation'),NAMES utf8mb4
+[DEBUG] 25-04-18 15:17:42 [OkPacket:59] - System variable change:  character_set_client = utf8mb4
+[DEBUG] 25-04-18 15:17:42 [OkPacket:59] - System variable change:  character_set_connection = utf8mb4
+[DEBUG] 25-04-18 15:17:42 [OkPacket:59] - System variable change:  character_set_results = utf8mb4
+[DEBUG] 25-04-18 15:17:42 [StandardClient:59] - execute query: SELECT id, dname, loc, phone, email, established, homepage FROM departments WHERE id=?
+[ERROR] 25-04-18 15:17:42 [App02:97] - SQL문 실행 실패
+java.sql.SQLException: 조회된 데이터가 없습니다.
+	at kr.yjh.jdbc.App02.main(App02.java:69)
+[DEBUG] 25-04-18 15:17:59 [App02:37] - 접속 주소: jdbc:mariadb://127.0.0.1:9090/myschool?characterEncoding=utf8&serverTimezone=UTC
+[DEBUG] 25-04-18 15:17:59 [App02:42] - MariaDB JDBC 드라이버 로드 성공
+[DEBUG] 25-04-18 15:17:59 [OkPacket:59] - Database change: is 'myschool'
+[DEBUG] 25-04-18 15:17:59 [StandardClient:59] - execute query: set sql_mode=CONCAT(@@sql_mode,',STRICT_TRANS_TABLES'),session_track_system_variables = CONCAT(@@global.session_track_system_variables,',transaction_isolation'),NAMES utf8mb4
+[DEBUG] 25-04-18 15:17:59 [OkPacket:59] - System variable change:  character_set_client = utf8mb4
+[DEBUG] 25-04-18 15:17:59 [OkPacket:59] - System variable change:  character_set_connection = utf8mb4
+[DEBUG] 25-04-18 15:17:59 [OkPacket:59] - System variable change:  character_set_results = utf8mb4
+[DEBUG] 25-04-18 15:17:59 [StandardClient:59] - execute query: SELECT id, dname, loc, phone, email, established, homepage FROM departments WHERE id=?
+[ERROR] 25-04-18 15:17:59 [App02:97] - SQL문 실행 실패
+java.sql.SQLException: Unknown label 'estalished'. Possible value [established, loc, departments.id, departments.homepage, departments.established, departments.loc, departments.email, departments.dname, phone, departments.phone, id, dname, email, homepage]
+	at org.mariadb.jdbc.client.result.Result.findColumn(Result.java:1760)
+	at org.mariadb.jdbc.client.result.Result.getInt(Result.java:708)
+	at kr.yjh.jdbc.App02.main(App02.java:76)
+[DEBUG] 25-04-18 15:18:30 [App02:37] - 접속 주소: jdbc:mariadb://127.0.0.1:9090/myschool?characterEncoding=utf8&serverTimezone=UTC
+[DEBUG] 25-04-18 15:18:30 [App02:42] - MariaDB JDBC 드라이버 로드 성공
+[DEBUG] 25-04-18 15:18:30 [OkPacket:59] - Database change: is 'myschool'
+[DEBUG] 25-04-18 15:18:30 [StandardClient:59] - execute query: set sql_mode=CONCAT(@@sql_mode,',STRICT_TRANS_TABLES'),session_track_system_variables = CONCAT(@@global.session_track_system_variables,',transaction_isolation'),NAMES utf8mb4
+[DEBUG] 25-04-18 15:18:30 [OkPacket:59] - System variable change:  character_set_client = utf8mb4
+[DEBUG] 25-04-18 15:18:30 [OkPacket:59] - System variable change:  character_set_connection = utf8mb4
+[DEBUG] 25-04-18 15:18:30 [OkPacket:59] - System variable change:  character_set_results = utf8mb4
+[DEBUG] 25-04-18 15:18:30 [StandardClient:59] - execute query: SELECT id, dname, loc, phone, email, established, homepage FROM departments WHERE id=?
+[ERROR] 25-04-18 15:18:30 [App02:97] - SQL문 실행 실패
+java.sql.SQLException: Unknown label 'estalished'. Possible value [established, loc, departments.id, departments.homepage, departments.established, departments.loc, departments.email, departments.dname, phone, departments.phone, id, dname, email, homepage]
+	at org.mariadb.jdbc.client.result.Result.findColumn(Result.java:1760)
+	at org.mariadb.jdbc.client.result.Result.getInt(Result.java:708)
+	at kr.yjh.jdbc.App02.main(App02.java:76)
+[DEBUG] 25-04-18 15:21:06 [App02:36] - 접속 주소: jdbc:mariadb://127.0.0.1:9090/myschool?characterEncoding=utf8&serverTimezone=UTC
+[DEBUG] 25-04-18 15:21:06 [App02:41] - MariaDB JDBC 드라이버 로드 성공
+[ERROR] 25-04-18 15:21:06 [App02:96] - SQL문 실행 실패
+java.sql.SQLException: Unknown label 'estalished'. Possible value [established, loc, departments.id, departments.homepage, departments.established, departments.loc, departments.email, departments.dname, phone, departments.phone, id, dname, email, homepage]
+	at org.mariadb.jdbc.client.result.Result.findColumn(Result.java:1760)
+	at org.mariadb.jdbc.client.result.Result.getInt(Result.java:708)
+	at kr.yjh.jdbc.App02.main(App02.java:75)
+[DEBUG] 25-04-18 15:23:01 [App02:36] - 접속 주소: jdbc:mariadb://127.0.0.1:9090/myschool?characterEncoding=utf8&serverTimezone=UTC
+[DEBUG] 25-04-18 15:23:01 [App02:41] - MariaDB JDBC 드라이버 로드 성공
+[DEBUG] 25-04-18 15:23:01 [App02:80] - 학과 ID: 101
+[DEBUG] 25-04-18 15:23:01 [App02:81] - 학과명: 컴퓨터공학과
+[DEBUG] 25-04-18 15:23:01 [App02:82] - 위치: 공학관
+[DEBUG] 25-04-18 15:23:01 [App02:83] - 전화번호: 051-123-4567
+[DEBUG] 25-04-18 15:23:01 [App02:84] - 이메일: cs@myschool.ac.kr
+[DEBUG] 25-04-18 15:23:01 [App02:85] - 설립연도: 1990
+[DEBUG] 25-04-18 15:23:01 [App02:86] - 홈페이지: http://cs.myschool.ac.kr
+[DEBUG] 25-04-18 15:31:38 [App02:36] - 접속 주소: jdbc:mariadb://127.0.0.1:9090/myschool?characterEncoding=utf8&serverTimezone=UTC
+[DEBUG] 25-04-18 15:31:38 [App02:41] - MariaDB JDBC 드라이버 로드 성공
+[DEBUG] 25-04-18 15:31:38 [App02:80] - 학과 ID: 101
+[DEBUG] 25-04-18 15:31:38 [App02:81] - 학과명: 컴퓨터공학과
+[DEBUG] 25-04-18 15:31:38 [App02:82] - 위치: 공학관
+[DEBUG] 25-04-18 15:31:38 [App02:83] - 전화번호: 051-123-4567
+[DEBUG] 25-04-18 15:31:38 [App02:84] - 이메일: cs@myschool.ac.kr
+[DEBUG] 25-04-18 15:31:38 [App02:85] - 설립연도: 1990
+[DEBUG] 25-04-18 15:31:38 [App02:86] - 홈페이지: http://cs.myschool.ac.kr
+[DEBUG] 25-04-18 15:31:52 [App:28] - 접속 주소: jdbc:mariadb://127.0.0.1:9090/myschool?characterEncoding=utf8&serverTimezone=UTC
+[DEBUG] 25-04-18 15:31:52 [App:33] - MariaDB JDBC 드라이버 로드 성공
+[WARN ] 25-04-18 15:31:52 [ErrorPacket:99] - Error: 1054-42S22: Unknown column 'estalished' in 'SELECT'
+[ERROR] 25-04-18 15:31:52 [App:52] - SQL문 준비 실패
+[DEBUG] 25-04-18 15:36:49 [App:28] - 접속 주소: jdbc:mariadb://127.0.0.1:9090/myschool?characterEncoding=utf8&serverTimezone=UTC
+[DEBUG] 25-04-18 15:36:49 [App:33] - MariaDB JDBC 드라이버 로드 성공
+[WARN ] 25-04-18 15:36:49 [ErrorPacket:99] - Error: 1054-42S22: Unknown column 'estalished' in 'SELECT'
+[ERROR] 25-04-18 15:36:49 [App:52] - SQL문 준비 실패
+[DEBUG] 25-04-18 15:37:13 [App:28] - 접속 주소: jdbc:mariadb://127.0.0.1:9090/myschool?characterEncoding=utf8&serverTimezone=UTC
+[DEBUG] 25-04-18 15:37:13 [App:33] - MariaDB JDBC 드라이버 로드 성공
+[DEBUG] 25-04-18 15:37:13 [App:68] - 학과 ID: 102
+[DEBUG] 25-04-18 15:37:13 [App:69] - 학과명: 멀티미디어학과
+[DEBUG] 25-04-18 15:37:13 [App:70] - 위치: 디자인관
+[DEBUG] 25-04-18 15:37:13 [App:71] - 전화번호: 051-124-4567
+[DEBUG] 25-04-18 15:37:13 [App:72] - 이메일: media@myschool.ac.kr
+[DEBUG] 25-04-18 15:37:13 [App:73] - 설립연도: 1995
+[DEBUG] 25-04-18 15:37:13 [App:74] - 홈페이지: http://media.myschool.ac.kr
+[DEBUG] 25-04-18 15:37:13 [App:84] - 학과 객체: Department(id=102, dname=멀티미디어학과, loc=디자인관, phone=051-124-4567, email=media@myschool.ac.kr, established=1995, homepage=http://media.myschool.ac.kr)
+[DEBUG] 25-04-18 16:33:28 [App03:33] - 접속 주소: jdbc:mariadb://127.0.0.1:9090/myschool?characterEncoding=utf8&serverTimezone=UTC
+[DEBUG] 25-04-18 16:33:28 [App03:38] - MariaDB JDBC 드라이버 로드 성공
+[DEBUG] 25-04-18 16:34:44 [App03:33] - 접속 주소: jdbc:mariadb://127.0.0.1:9090/myschool?characterEncoding=utf8&serverTimezone=UTC
+[DEBUG] 25-04-18 16:34:44 [App03:38] - MariaDB JDBC 드라이버 로드 성공
+[DEBUG] 25-04-18 16:34:44 [App03:87] - Department(id=101, dname=컴퓨터공학과, loc=공학관, phone=051-123-4567, email=cs@myschool.ac.kr, established=1990, homepage=http://cs.myschool.ac.kr)
+[DEBUG] 25-04-18 16:34:44 [App03:87] - Department(id=102, dname=멀티미디어학과, loc=디자인관, phone=051-124-4567, email=media@myschool.ac.kr, established=1995, homepage=http://media.myschool.ac.kr)
+[DEBUG] 25-04-18 16:34:44 [App03:87] - Department(id=201, dname=전자공학과, loc=공학관, phone=051-125-4567, email=ee@myschool.ac.kr, established=1985, homepage=http://ee.myschool.ac.kr)
+[DEBUG] 25-04-18 16:34:44 [App03:87] - Department(id=202, dname=기계공학과, loc=공학관, phone=051-126-4567, email=me@myschool.ac.kr, established=1988, homepage=http://machine.myschool.ac.kr)
+[DEBUG] 25-04-18 16:34:44 [App03:87] - Department(id=203, dname=건축학과, loc=건축관, phone=051-127-4567, email=arch@myschool.ac.kr, established=1992, homepage=null)
+[DEBUG] 25-04-18 16:34:44 [App03:87] - Department(id=204, dname=산업디자인학과, loc=디자인관, phone=051-128-4567, email=id@myschool.ac.kr, established=1996, homepage=http://id.myschool.ac.kr)
+[DEBUG] 25-04-18 16:34:44 [App03:87] - Department(id=301, dname=경영학과, loc=경영관, phone=051-129-4567, email=biz@myschool.ac.kr, established=1980, homepage=http://biz.myschool.ac.kr)
+[DEBUG] 25-04-18 16:34:44 [App03:87] - Department(id=302, dname=경제학과, loc=경영관, phone=051-130-4567, email=econ@myschool.ac.kr, established=1982, homepage=null)
+[DEBUG] 25-04-18 16:34:44 [App03:87] - Department(id=401, dname=영어영문학과, loc=인문사회관, phone=051-131-4567, email=eng@myschool.ac.kr, established=1975, homepage=null)
+[DEBUG] 25-04-18 16:34:44 [App03:87] - Department(id=402, dname=심리학과, loc=인문사회관, phone=051-132-4567, email=psy@myschool.ac.kr, established=1987, homepage=http://psy.myschool.ac.kr)
+[DEBUG] 25-04-18 16:34:44 [App03:87] - Department(id=500, dname=인공지능학과, loc=공학관, phone=051-123-4567, email=ai@myschool.ac.kr, established=2001, homepage=http://ai.myschool.ac.kr)
+[DEBUG] 25-04-18 16:34:44 [App03:87] - Department(id=501, dname=사회복지학과, loc=인문관, phone=051-432-2233, email=social@myschool.ac.kr, established=2002, homepage=http://social.myschool.ac.kr)
+[DEBUG] 25-04-18 16:34:44 [App03:87] - Department(id=502, dname=심리학과, loc=인문관, phone=051-336-7788, email=psyc@myschool.ac.kr, established=2000, homepage=http://psyc.myschool.ac.kr)
+[DEBUG] 25-04-18 16:34:44 [App03:87] - Department(id=503, dname=체육학과, loc=체육관, phone=051-434-3345, email=phy@myschool.ac.kr, established=2004, homepage=http://phy.myschool.ac.kr)
+[DEBUG] 25-04-18 16:38:13 [App04:38] - 접속 주소: jdbc:mariadb://127.0.0.1:9090/myschool?characterEncoding=utf8&serverTimezone=UTC
+[DEBUG] 25-04-18 16:38:13 [App04:43] - MariaDB JDBC 드라이버 로드 성공
+[DEBUG] 25-04-18 16:38:54 [App04:38] - 접속 주소: jdbc:mariadb://127.0.0.1:9090/myschool?characterEncoding=utf8&serverTimezone=UTC
+[DEBUG] 25-04-18 16:38:54 [App04:43] - MariaDB JDBC 드라이버 로드 성공
+[DEBUG] 25-04-18 16:38:54 [App04:94] - Department(id=101, dname=컴퓨터공학과, loc=공학관, phone=051-123-4567, email=cs@myschool.ac.kr, established=1990, homepage=http://cs.myschool.ac.kr)
+[DEBUG] 25-04-18 16:39:12 [App04:38] - 접속 주소: jdbc:mariadb://127.0.0.1:9090/myschool?characterEncoding=utf8&serverTimezone=UTC
+[DEBUG] 25-04-18 16:39:12 [App04:43] - MariaDB JDBC 드라이버 로드 성공
+[DEBUG] 25-04-18 16:39:13 [App04:94] - Department(id=101, dname=컴퓨터공학과, loc=공학관, phone=051-123-4567, email=cs@myschool.ac.kr, established=1990, homepage=http://cs.myschool.ac.kr)
+[DEBUG] 25-04-18 16:39:13 [App04:94] - Department(id=102, dname=멀티미디어학과, loc=디자인관, phone=051-124-4567, email=media@myschool.ac.kr, established=1995, homepage=http://media.myschool.ac.kr)
+[DEBUG] 25-04-18 16:39:13 [App04:94] - Department(id=201, dname=전자공학과, loc=공학관, phone=051-125-4567, email=ee@myschool.ac.kr, established=1985, homepage=http://ee.myschool.ac.kr)
+[DEBUG] 25-04-18 16:39:13 [App04:94] - Department(id=202, dname=기계공학과, loc=공학관, phone=051-126-4567, email=me@myschool.ac.kr, established=1988, homepage=http://machine.myschool.ac.kr)
+[DEBUG] 25-04-18 16:39:13 [App04:94] - Department(id=203, dname=건축학과, loc=건축관, phone=051-127-4567, email=arch@myschool.ac.kr, established=1992, homepage=null)
+[DEBUG] 25-04-18 16:39:13 [App04:94] - Department(id=204, dname=산업디자인학과, loc=디자인관, phone=051-128-4567, email=id@myschool.ac.kr, established=1996, homepage=http://id.myschool.ac.kr)
+[DEBUG] 25-04-18 16:39:13 [App04:94] - Department(id=301, dname=경영학과, loc=경영관, phone=051-129-4567, email=biz@myschool.ac.kr, established=1980, homepage=http://biz.myschool.ac.kr)
+[DEBUG] 25-04-18 16:39:13 [App04:94] - Department(id=302, dname=경제학과, loc=경영관, phone=051-130-4567, email=econ@myschool.ac.kr, established=1982, homepage=null)
+[DEBUG] 25-04-18 16:39:13 [App04:94] - Department(id=401, dname=영어영문학과, loc=인문사회관, phone=051-131-4567, email=eng@myschool.ac.kr, established=1975, homepage=null)
+[DEBUG] 25-04-18 16:39:13 [App04:94] - Department(id=402, dname=심리학과, loc=인문사회관, phone=051-132-4567, email=psy@myschool.ac.kr, established=1987, homepage=http://psy.myschool.ac.kr)
+[DEBUG] 25-04-18 16:39:13 [App04:94] - Department(id=500, dname=인공지능학과, loc=공학관, phone=051-123-4567, email=ai@myschool.ac.kr, established=2001, homepage=http://ai.myschool.ac.kr)
+[DEBUG] 25-04-18 16:39:13 [App04:94] - Department(id=501, dname=사회복지학과, loc=인문관, phone=051-432-2233, email=social@myschool.ac.kr, established=2002, homepage=http://social.myschool.ac.kr)
+[DEBUG] 25-04-18 16:39:13 [App04:94] - Department(id=502, dname=심리학과, loc=인문관, phone=051-336-7788, email=psyc@myschool.ac.kr, established=2000, homepage=http://psyc.myschool.ac.kr)
+[DEBUG] 25-04-18 16:39:13 [App04:94] - Department(id=503, dname=체육학과, loc=체육관, phone=051-434-3345, email=phy@myschool.ac.kr, established=2004, homepage=http://phy.myschool.ac.kr)

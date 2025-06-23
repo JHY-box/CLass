@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko" translate="no" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="google" content="notranslate" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>학사관리</title>
+    <link rel="stylesheet" th:href="@{/assets/css/style.css}" />
+    <style>
+        .photo {
+            width: 40px;
+            height: 40px;
+            object-fit: cover;
+        }
+
+        .my-table {
+            tbody {
+                td, th {
+                    padding: 5px;
+                }
+
+                td:first-child {
+                    padding: 0;
+                }
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header th:replace="fragments/header :: my-header"></header>
+
+    <h1>학생목록</h1>
+
+    <table class="my-table">
+        <thead>
+            <th>-</th>
+            <th>번호</th>
+            <th>이름</th>
+            <th>아이디</th>
+            <th>학년</th>
+            <th>생년월일</th>
+            <th>연락처</th>
+            <th>키</th>
+            <th>몸무게</th>
+            <th>이메일</th>
+            <th>성별</th>
+            <th>상태</th>
+            <th>입학일</th>
+            <th>졸업일</th>
+            <th>소속학과번호</th>
+            <th>담당교수번호</th>
+            <th>-</th>
+        </thead>
+        <tbody>
+            <tr th:each="student : ${students}">
+                <td>
+                    <img th:src="${student.photoUrl}" alt="학생 이미지" class="photo" />
+                </td>
+                <td th:text="${student.id}"></td>
+                <td>
+                    <a th:href="@{/student/view/{id}(id=${student.id})}" th:text="${student.name}" />
+                </td>
+                <td th:text="${student.userId}"></td>
+                <td th:text="${student.grade}"></td>
+                <td th:text="${#strings.substring(student.birthdate, 0, 10)}"></td>
+                <td th:text="${student.phone}"></td>
+                <td th:text="${student.height}"></td>
+                <td th:text="${student.weight}"></td>
+                <td>
+                    <a th:href="'mailto:' + ${student.email}" th:text="${student.email}"></a>
+                </td>
+                <td th:text="${student.gender}"></td>
+                <td th:text="${student.status}"></td>
+                <td th:text="${student.admissionDate}"></td>
+                <td th:text="${student.graduationDate}"></td>
+                <td th:text="${student.departmentId}"></td>
+                <td th:text="${student.professorId}"></td>
+                <td>
+                    <a th:href="@{/student/edit/{id}(id=${student.id})}">수정</a>
+                    <a th:href="@{/student/delete/{id}(id=${student.id})}">삭제</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script>
+        document.querySelectorAll("img").forEach((v, i) => {
+            v.addEventListener("error", e => e.currentTarget.src = "/assets/img/noimage.jpg");
+        });
+    </script>
+</body>
+
+</html>

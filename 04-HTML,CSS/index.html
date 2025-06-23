@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Swarovski - 크리스탈의 세계</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Roboto", sans-serif;
+        line-height: 1.6;
+        color: #333;
+      }
+
+      .header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.95);
+        z-index: 1000;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.5rem 2rem;
+        max-width: 1400px;
+        margin: 0 auto;
+      }
+
+      .logo {
+        font-family: "Playfair Display", serif;
+        font-size: 2rem;
+        font-weight: bold;
+        color: #000;
+        text-decoration: none;
+        letter-spacing: 2px;
+      }
+
+      .nav-links {
+        display: flex;
+        gap: 3rem;
+      }
+
+      .nav-links a {
+        text-decoration: none;
+        color: #000;
+        font-size: 1.1rem;
+        font-weight: 500;
+        transition: color 0.3s;
+      }
+
+      .nav-links a:hover {
+        color: #9c27b0;
+      }
+
+      .hero {
+        height: 100vh;
+        background: url("https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80")
+          center/cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: white;
+        position: relative;
+      }
+
+      .hero::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.4);
+      }
+
+      .hero-content {
+        position: relative;
+        z-index: 1;
+        max-width: 800px;
+        padding: 3rem;
+        background: rgba(0, 0, 0, 0.6);
+        border-radius: 15px;
+        backdrop-filter: blur(5px);
+      }
+
+      .hero h1 {
+        font-family: "Playfair Display", serif;
+        font-size: 4rem;
+        margin-bottom: 1.5rem;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+      }
+
+      .hero p {
+        font-size: 1.4rem;
+        margin-bottom: 2.5rem;
+        font-weight: 300;
+      }
+
+      .cta-button {
+        display: inline-block;
+        padding: 1.2rem 2.5rem;
+        background: #fff;
+        color: #000;
+        text-decoration: none;
+        border-radius: 30px;
+        font-weight: 500;
+        font-size: 1.1rem;
+        transition: all 0.3s;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+
+      .cta-button:hover {
+        background: #9c27b0;
+        color: white;
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      }
+
+      .featured-products {
+        padding: 6rem 2rem;
+        max-width: 1400px;
+        margin: 0 auto;
+      }
+
+      .featured-products h2 {
+        font-family: "Playfair Display", serif;
+        font-size: 2.5rem;
+        text-align: center;
+        margin-bottom: 3rem;
+      }
+
+      .product-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 3rem;
+        margin-top: 2rem;
+      }
+
+      .product-card {
+        text-align: center;
+        transition: transform 0.3s;
+      }
+
+      .product-card:hover {
+        transform: translateY(-10px);
+      }
+
+      .product-card img {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        margin-bottom: 1.5rem;
+        border-radius: 10px;
+      }
+
+      .product-card h3 {
+        font-family: "Playfair Display", serif;
+        font-size: 1.5rem;
+        margin-bottom: 0.8rem;
+      }
+
+      .product-card p {
+        font-size: 1.2rem;
+        color: #9c27b0;
+        font-weight: 500;
+      }
+
+      .footer {
+        background: #000;
+        color: white;
+        padding: 4rem 2rem;
+        text-align: center;
+      }
+
+      .social-links {
+        margin-top: 2rem;
+      }
+
+      .social-links a {
+        color: white;
+        margin: 0 1rem;
+        text-decoration: none;
+        font-size: 1.1rem;
+        transition: color 0.3s;
+      }
+
+      .social-links a:hover {
+        color: #9c27b0;
+      }
+
+      @media (max-width: 768px) {
+        .nav-links {
+          display: none;
+        }
+
+        .hero h1 {
+          font-size: 2.5rem;
+        }
+
+        .hero p {
+          font-size: 1.1rem;
+        }
+
+        .product-card img {
+          height: 300px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <a href="#" class="logo">SWAROVSKI</a>
+        <div class="nav-links">
+          <a href="#">주얼리</a>
+          <a href="#">액세서리</a>
+          <a href="#">홈 데코</a>
+          <a href="#">컬렉션</a>
+          <a href="#">기프트</a>
+        </div>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="hero-content">
+        <h1>스와로브스키의 세계에 오신 것을 환영합니다</h1>
+        <p>세계적인 크리스탈 브랜드의 새로운 컬렉션을 만나보세요</p>
+        <a href="#" class="cta-button">컬렉션 보기</a>
+      </div>
+    </section>
+
+    <section class="featured-products">
+      <h2>인기 제품</h2>
+      <div class="product-grid">
+        <div class="product-card">
+          <img
+            src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+            alt="크리스탈 네크리스"
+          />
+          <h3>크리스탈 네크리스</h3>
+          <p>₩890,000</p>
+        </div>
+        <div class="product-card">
+          <img
+            src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+            alt="스와로브스키 링"
+          />
+          <h3>스와로브스키 링</h3>
+          <p>₩450,000</p>
+        </div>
+        <div class="product-card">
+          <img
+            src="https://images.unsplash.com/photo-1630019852942-f89202989a59?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+            alt="크리스탈 이어링"
+          />
+          <h3>크리스탈 이어링</h3>
+          <p>₩350,000</p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>© 2024 Swarovski. All rights reserved.</p>
+      <div class="social-links">
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+        <a href="#">Twitter</a>
+      </div>
+    </footer>
+  </body>
+</html>

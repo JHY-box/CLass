@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang = "ko" translate = "no">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "google" content = "notranslate" />
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <title>08-disabled</title>
+        
+        <style>
+            /* disabled 속성을 갖는 요소의 배경색상 */
+            input[disabled] {
+                background-color: #d5d5d5;
+            }
+        </style>
+
+    </head>
+    <body>
+        <label for="username">입력하기<input type="checkbox" id="input_enable" /> </label>
+        <input type="text" name="input" id="input" disabled />
+
+        <script type="text/javascript">
+            /**
+             * xxxxxxxxxxxxxx
+             * xxxxxxxxxxxxxxx
+             * xxxxxxxxxxxxxx
+             * xxxxxxxxxxx
+             * xxxxxxxxxxx
+             * xxxxxxxxxxxxxxx
+             * xxxxxxxxxxxxxxxxxxxxxx
+             * xxxxxxxxxxxxxxxxxxxxxx
+             * xxxxxxxxxxxxxxxxxxxxxxxx
+             */
+
+             document.querySelector("#input_enable").addEventListener("change", e => {
+                document.querySelector("#input").disabled = !e.currentTarget.checked;
+
+             });
+        </script>
+    </body>
+    </html>

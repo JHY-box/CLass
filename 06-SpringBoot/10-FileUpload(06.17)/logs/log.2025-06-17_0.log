@@ -1,0 +1,80 @@
+[INFO ] 25-06-17 16:00:36 [FileuploadApplication:53] - Starting FileuploadApplication using Java 17.0.2 with PID 10320 (D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload\bin\main started by YJH in D:\#web3\06-SpringBoot\10-FileUpload(06.17))
+[DEBUG] 25-06-17 16:00:36 [FileuploadApplication:54] - Running with Spring Boot v3.4.6, Spring v6.2.7
+[INFO ] 25-06-17 16:00:36 [FileuploadApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 25-06-17 16:00:37 [LogFactory:112] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 25-06-17 16:00:37 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.yjh.fileupload]' package. Please check your configuration.
+[INFO ] 25-06-17 16:00:40 [FileuploadApplication:59] - Started FileuploadApplication in 4.278 seconds (process running for 4.723)
+[INFO ] 25-06-17 16:00:45 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-17 16:00:46 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-17 16:00:46 [MyInterceptor:85] - [GET] http://localhost:8080/simple/upload_single
+[INFO ] 25-06-17 16:00:46 [MyInterceptor:123] - running time: 199(ms)
+[INFO ] 25-06-17 16:00:46 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-17 16:00:46 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-17 16:00:46 [MyInterceptor:85] - [GET] http://localhost:8080/simple/@%7B/assets/css/header.css%7D
+[INFO ] 25-06-17 16:00:46 [MyInterceptor:101] - - REFERER : time=288, url=http://localhost:8080/simple/upload_single
+[INFO ] 25-06-17 16:00:47 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-17 16:00:48 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-17 16:00:48 [MyInterceptor:85] - [GET] http://localhost:8080/simple/upload_single
+[INFO ] 25-06-17 16:00:48 [MyInterceptor:101] - - REFERER : time=1807, url=http://localhost:8080/simple/upload_single
+[INFO ] 25-06-17 16:00:48 [MyInterceptor:123] - running time: 103(ms)
+[INFO ] 25-06-17 16:00:48 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-17 16:00:48 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-17 16:00:48 [MyInterceptor:85] - [GET] http://localhost:8080/simple/@%7B/assets/css/header.css%7D
+[INFO ] 25-06-17 16:00:48 [MyInterceptor:101] - - REFERER : time=18, url=http://localhost:8080/simple/upload_single
+[INFO ] 25-06-17 16:00:54 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-17 16:00:54 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-17 16:00:54 [MyInterceptor:85] - [POST] http://localhost:8080/simple/upload_single_ok
+[INFO ] 25-06-17 16:00:54 [MyInterceptor:92] - (param) <-- subject = profile
+[INFO ] 25-06-17 16:00:54 [MyInterceptor:101] - - REFERER : time=5969, url=http://localhost:8080/simple/upload_single
+[DEBUG] 25-06-17 16:00:54 [SimpleUploadController:69] - =============================
+[DEBUG] 25-06-17 16:00:54 [SimpleUploadController:70] - 원본파일이름: 7bfef8e4c6b7677ea847fa59970f2b42 - 복사본.jpg
+[DEBUG] 25-06-17 16:00:54 [SimpleUploadController:71] - <input type='file'>의 name속성값: photo
+[DEBUG] 25-06-17 16:00:54 [SimpleUploadController:72] - 파일형식: image/jpeg
+[DEBUG] 25-06-17 16:00:54 [SimpleUploadController:73] - 파일크기: 35788
+[DEBUG] 25-06-17 16:00:54 [SimpleUploadController:138] - 업로드 된 파일의 경로 : C:/Users/user/study-springboot/upload/2025/06/17/17501436540750.jpg
+[DEBUG] 25-06-17 16:00:54 [SimpleUploadController:153] - 업로드 폴더 내에서의 최종 경로 값 : /2025/06/17/17501436540750.jpg
+[DEBUG] 25-06-17 16:00:54 [SimpleUploadController:166] - 파일의 URL: /files/2025/06/17/17501436540750.jpg
+[DEBUG] 25-06-17 16:00:54 [SimpleUploadController:167] - ==============================
+[INFO ] 25-06-17 16:00:54 [MyInterceptor:123] - running time: 108(ms)
+[INFO ] 25-06-17 16:00:54 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-17 16:00:54 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-17 16:00:54 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-17 16:00:54 [MyInterceptor:85] - [GET] http://localhost:8080/simple/@%7B/assets/css/header.css%7D
+[INFO ] 25-06-17 16:00:54 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-17 16:00:54 [MyInterceptor:85] - [GET] http://localhost:8080/files/2025/06/17/17501436540750.jpg
+[INFO ] 25-06-17 16:00:54 [MyInterceptor:101] - - REFERER : time=107, url=http://localhost:8080/simple/upload_single_ok
+[INFO ] 25-06-17 16:00:54 [MyInterceptor:101] - - REFERER : time=107, url=http://localhost:8080/simple/upload_single_ok
+[INFO ] 25-06-17 16:00:54 [MyInterceptor:123] - running time: 37(ms)
+[INFO ] 25-06-17 16:01:57 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-17 16:01:57 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-17 16:01:57 [MyInterceptor:85] - [GET] http://localhost:8080/simple/upload_single
+[INFO ] 25-06-17 16:01:57 [MyInterceptor:101] - - REFERER : time=62957, url=http://localhost:8080/simple/upload_single_ok
+[INFO ] 25-06-17 16:01:57 [MyInterceptor:123] - running time: 15(ms)
+[INFO ] 25-06-17 16:01:57 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-17 16:01:57 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-17 16:01:57 [MyInterceptor:85] - [GET] http://localhost:8080/simple/@%7B/assets/css/header.css%7D
+[INFO ] 25-06-17 16:01:57 [MyInterceptor:101] - - REFERER : time=10, url=http://localhost:8080/simple/upload_single
+[INFO ] 25-06-17 16:02:12 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-17 16:02:12 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-17 16:02:12 [MyInterceptor:85] - [POST] http://localhost:8080/simple/upload_single_ok
+[INFO ] 25-06-17 16:02:12 [MyInterceptor:92] - (param) <-- subject = duck
+[INFO ] 25-06-17 16:02:12 [MyInterceptor:101] - - REFERER : time=15040, url=http://localhost:8080/simple/upload_single
+[DEBUG] 25-06-17 16:02:12 [SimpleUploadController:69] - =============================
+[DEBUG] 25-06-17 16:02:12 [SimpleUploadController:70] - 원본파일이름: bb77546f43eda814d789998b9a69630a.jpg
+[DEBUG] 25-06-17 16:02:12 [SimpleUploadController:71] - <input type='file'>의 name속성값: photo
+[DEBUG] 25-06-17 16:02:12 [SimpleUploadController:72] - 파일형식: image/jpeg
+[DEBUG] 25-06-17 16:02:12 [SimpleUploadController:73] - 파일크기: 56477
+[DEBUG] 25-06-17 16:02:12 [SimpleUploadController:138] - 업로드 된 파일의 경로 : C:/Users/user/study-springboot/upload/2025/06/17/17501437322910.jpg
+[DEBUG] 25-06-17 16:02:12 [SimpleUploadController:153] - 업로드 폴더 내에서의 최종 경로 값 : /2025/06/17/17501437322910.jpg
+[DEBUG] 25-06-17 16:02:12 [SimpleUploadController:166] - 파일의 URL: /files/2025/06/17/17501437322910.jpg
+[DEBUG] 25-06-17 16:02:12 [SimpleUploadController:167] - ==============================
+[INFO ] 25-06-17 16:02:12 [MyInterceptor:123] - running time: 19(ms)
+[INFO ] 25-06-17 16:02:12 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-17 16:02:12 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-17 16:02:12 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-17 16:02:12 [MyInterceptor:85] - [GET] http://localhost:8080/simple/@%7B/assets/css/header.css%7D
+[INFO ] 25-06-17 16:02:12 [MyInterceptor:101] - - REFERER : time=14, url=http://localhost:8080/simple/upload_single_ok
+[INFO ] 25-06-17 16:02:12 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-17 16:02:12 [MyInterceptor:85] - [GET] http://localhost:8080/files/2025/06/17/17501437322910.jpg
+[INFO ] 25-06-17 16:02:12 [MyInterceptor:101] - - REFERER : time=14, url=http://localhost:8080/simple/upload_single_ok
+[INFO ] 25-06-17 16:02:12 [MyInterceptor:123] - running time: 32(ms)

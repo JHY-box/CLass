@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko" translate="no" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="google" content="notranslate">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+        <title>add</title>        
+        <link rel="stylesheet" th:href="@{/assets/css/stylesheet.css}"/>
+    </head>
+    <body>
+        <header th:replace="~{fragments/header :: my-header}"></header>
+        <h1>교수등록</h1>
+        <form id="my-form" th:action="@{/professor/add_ok}" method="post" enctype="multipart/form-data">
+            <table class="my-table item-table">
+                <tbody>
+                    <tr>
+                        <th>교수 이름</th>
+                        <td><input type="text" name="name" id="name" placeholder="교수 이름을 입력하세요."/></td>
+                    </tr>
+                    <tr>
+                        <th>아이디</th>
+                        <td><input type="text" name="user_id" id="user_id" placeholder="아이디를 입력하세요."/></td>
+                    </tr>
+                    <tr>
+                        <th>직급</th>
+                        <td>
+                            <!-- DB에서 테이블 컬럼이 enum 타입인 경우 드롭다운이나 라디오로 범위 안에서 선택할 수 있도록 함 -->
+                            <select name="position" id="position">
+                                <option value="">---- 직급선택 ----</option>
+                                <option value="교수">교수</option>
+                                <option value="조교수">조교수</option>
+                                <option value="부교수">부교수</option>
+                                <option value="전임강사">전임강사</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>급여</th>
+                        <td><input type="num" name="sal" id="sal" placeholder="급여를 만원 단위로 입력하세요." min="0" max="1000" step="1"/></td>
+                    </tr>
+                    <tr>
+                        <th>입사일</th>
+                        <td><input type="date" name="hiredate" id="hiredate"/></td>
+                    </tr>
+                    <tr>
+                        <th>보직수당</th>
+                        <td><input type="num" name="comm" id="comm" placeholder="보직수당을 만원 단위로 입력하세요." min="0" max="1000" step="1"/></td>
+                    </tr>
+                    <tr>
+                        <th>이메일</th>
+                        <td><input type="email" name="email" id="email" placeholder="이메일을 입력하세요."/></td>
+                    </tr>
+                    <tr>
+                        <th>전화번호</th>
+                        <td><input type="text" name="phone" id="phone" placeholder="전화번호를 입력하세요."/></td>
+                    </tr>
+                    <tr>
+                        <th>프로필 사진</th>
+                        <td><input type="file" name="photo_url" id="photo_url"/></td>
+                    </tr>
+                    <tr>
+                        <th>상태</th>
+                        <td>
+                            <!-- DB에서 테이블 컬럼이 enum 타입인 경우 드롭다운이나 라디오로 범위 안에서 선택할 수 있도록 함 -->
+                            <!-- 라디오 버튼은 첫 번째 요소를 선택된 상태로 제시해 주는 것이 편의성에 좋음 -->
+                            <label>
+                                <input type="radio" name="status" value="재직" checked/> 재직
+                            </label>
+                            <label>
+                                <input type="radio" name="status" value="휴직" checked/> 휴직
+                            </label>
+                            <label>
+                                <input type="radio" name="status" value="퇴직" checked/> 퇴직
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>소속학과</th>
+                        <td>
+                            <!-- 테이블 컬럼이 참조키인 경우 부모 테이블의 데이터 중에서 선택할 수 있도록 select태그로 구현 -->
+                            <select name="department_id">
+                                <option value="" th:selected="${departmentId == 0}">---- 학과선택 ----</option>
+                                <option th:each="d:${departmentList}" th:value="${d.id}" th:text="${d.dname}" th:selected="${d.id == departmentId}"></option>
+                            </select>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="buttons">
+                <button type="submit" class="mybutton blue">등록</button>
+                <button type="reset" class="mybutton gray">초기화</button>
+            </div>
+        </form>
+
+        <script>
+            document.querySelector("#my-form").addEventListener("submit", function(e) {
+                e.preventDefault();
+
+                // 정규표현식을 사용한 입력값 형식 검사 수행(여기서는 생략)
+
+                e.currentTarget.submit();
+            });
+        </script>
+    </body>
+</html>

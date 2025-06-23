@@ -1,0 +1,127 @@
+[INFO ] 25-06-18 12:30:15 [FileuploadApplication:53] - Starting FileuploadApplication using Java 17.0.2 with PID 7584 (D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload\bin\main started by YJH in D:\#web3\06-SpringBoot\10-FileUpload(06.17))
+[DEBUG] 25-06-18 12:30:15 [FileuploadApplication:54] - Running with Spring Boot v3.4.6, Spring v6.2.7
+[INFO ] 25-06-18 12:30:15 [FileuploadApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 25-06-18 12:30:17 [LogFactory:112] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 25-06-18 12:30:17 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.yjh.fileupload]' package. Please check your configuration.
+[INFO ] 25-06-18 12:30:21 [FileuploadApplication:59] - Started FileuploadApplication in 6.961 seconds (process running for 7.841)
+[INFO ] 25-06-18 12:30:26 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-18 12:30:26 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-18 12:30:26 [MyInterceptor:85] - [GET] http://localhost:8080/simple/upload_single
+[INFO ] 25-06-18 12:30:26 [MyInterceptor:123] - running time: 352(ms)
+[INFO ] 25-06-18 12:30:28 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-18 12:30:28 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-18 12:30:28 [MyInterceptor:85] - [GET] http://localhost:8080/use_helper/upload
+[INFO ] 25-06-18 12:30:28 [MyInterceptor:101] - - REFERER : time=1458, url=http://localhost:8080/simple/upload_single
+[INFO ] 25-06-18 12:57:49 [FileuploadApplication:53] - Starting FileuploadApplication using Java 17.0.2 with PID 19352 (D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload\bin\main started by YJH in D:\#web3\06-SpringBoot\10-FileUpload(06.17))
+[DEBUG] 25-06-18 12:57:49 [FileuploadApplication:54] - Running with Spring Boot v3.4.6, Spring v6.2.7
+[INFO ] 25-06-18 12:57:49 [FileuploadApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 25-06-18 12:57:51 [LogFactory:112] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 25-06-18 12:57:51 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.yjh.fileupload]' package. Please check your configuration.
+[INFO ] 25-06-18 12:57:56 [FileuploadApplication:59] - Started FileuploadApplication in 7.076 seconds (process running for 7.89)
+[INFO ] 25-06-18 12:58:00 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-18 12:58:01 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-18 12:58:01 [MyInterceptor:85] - [GET] http://localhost:8080/simple/upload_single
+[INFO ] 25-06-18 12:58:01 [MyInterceptor:123] - running time: 313(ms)
+[INFO ] 25-06-18 12:58:02 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-18 12:58:02 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-18 12:58:02 [MyInterceptor:85] - [GET] http://localhost:8080/use_helper/upload
+[INFO ] 25-06-18 12:58:02 [MyInterceptor:101] - - REFERER : time=1408, url=http://localhost:8080/simple/upload_single
+[INFO ] 25-06-18 12:58:07 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-18 12:58:07 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-18 12:58:07 [MyInterceptor:85] - [GET] http://localhost:8080/simple/upload
+[INFO ] 25-06-18 12:58:07 [MyInterceptor:101] - - REFERER : time=6425, url=http://localhost:8080/simple/upload_single
+[INFO ] 25-06-18 12:58:24 [FileuploadApplication:53] - Starting FileuploadApplication using Java 17.0.2 with PID 19352 (D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload\bin\main started by YJH in D:\#web3\06-SpringBoot\10-FileUpload(06.17))
+[DEBUG] 25-06-18 12:58:24 [FileuploadApplication:54] - Running with Spring Boot v3.4.6, Spring v6.2.7
+[INFO ] 25-06-18 12:58:24 [FileuploadApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[WARN ] 25-06-18 12:58:24 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.yjh.fileupload]' package. Please check your configuration.
+[INFO ] 25-06-18 12:58:25 [FileuploadApplication:59] - Started FileuploadApplication in 1.065 seconds (process running for 36.887)
+[INFO ] 25-06-18 13:06:48 [FileuploadApplication:53] - Starting FileuploadApplication using Java 17.0.2 with PID 4204 (D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload\bin\main started by YJH in D:\#web3\06-SpringBoot\10-FileUpload(06.17))
+[DEBUG] 25-06-18 13:06:48 [FileuploadApplication:54] - Running with Spring Boot v3.4.6, Spring v6.2.7
+[INFO ] 25-06-18 13:06:48 [FileuploadApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 25-06-18 13:06:50 [LogFactory:112] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 25-06-18 13:06:50 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.yjh.fileupload]' package. Please check your configuration.
+[INFO ] 25-06-18 13:06:54 [FileuploadApplication:59] - Started FileuploadApplication in 6.614 seconds (process running for 7.391)
+[INFO ] 25-06-18 13:07:02 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-18 13:07:02 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-18 13:07:02 [MyInterceptor:85] - [GET] http://localhost:8080/simple/upload_single
+[INFO ] 25-06-18 13:07:02 [MyInterceptor:123] - running time: 236(ms)
+[INFO ] 25-06-18 13:07:03 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-18 13:07:04 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-18 13:07:04 [MyInterceptor:85] - [GET] http://localhost:8080/use_helper/upload_single
+[INFO ] 25-06-18 13:07:04 [MyInterceptor:101] - - REFERER : time=1526, url=http://localhost:8080/simple/upload_single
+[INFO ] 25-06-18 13:07:07 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-18 13:07:07 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-18 13:07:07 [MyInterceptor:85] - [GET] http://localhost:8080/simple/upload
+[INFO ] 25-06-18 13:07:07 [MyInterceptor:101] - - REFERER : time=4986, url=http://localhost:8080/simple/upload_single
+[INFO ] 25-06-18 13:07:39 [FileuploadApplication:53] - Starting FileuploadApplication using Java 17.0.2 with PID 18844 (D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload\bin\main started by YJH in D:\#web3\06-SpringBoot\10-FileUpload(06.17))
+[DEBUG] 25-06-18 13:07:39 [FileuploadApplication:54] - Running with Spring Boot v3.4.6, Spring v6.2.7
+[INFO ] 25-06-18 13:07:39 [FileuploadApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 25-06-18 13:07:41 [LogFactory:112] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 25-06-18 13:07:41 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.yjh.fileupload]' package. Please check your configuration.
+[INFO ] 25-06-18 13:07:46 [FileuploadApplication:59] - Started FileuploadApplication in 6.705 seconds (process running for 7.671)
+[INFO ] 25-06-18 13:08:12 [FileuploadApplication:53] - Starting FileuploadApplication using Java 17.0.2 with PID 13724 (D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload\bin\main started by YJH in D:\#web3\06-SpringBoot\10-FileUpload(06.17))
+[DEBUG] 25-06-18 13:08:12 [FileuploadApplication:54] - Running with Spring Boot v3.4.6, Spring v6.2.7
+[INFO ] 25-06-18 13:08:12 [FileuploadApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 25-06-18 13:08:14 [LogFactory:112] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 25-06-18 13:08:14 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.yjh.fileupload]' package. Please check your configuration.
+[INFO ] 25-06-18 13:08:18 [FileuploadApplication:59] - Started FileuploadApplication in 7.304 seconds (process running for 8.384)
+[INFO ] 25-06-18 13:08:23 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-18 13:08:23 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-18 13:08:23 [MyInterceptor:85] - [GET] http://localhost:8080/simple/upload_single
+[INFO ] 25-06-18 13:08:23 [MyInterceptor:123] - running time: 268(ms)
+[INFO ] 25-06-18 13:08:25 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-18 13:08:25 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-18 13:08:25 [MyInterceptor:85] - [GET] http://localhost:8080/use_helper/upload_single_ok
+[INFO ] 25-06-18 13:08:25 [MyInterceptor:101] - - REFERER : time=1528, url=http://localhost:8080/simple/upload_single
+[WARN ] 25-06-18 13:08:28 [DefaultHandlerExceptionResolver:254] - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+[INFO ] 25-06-18 13:10:20 [FileuploadApplication:53] - Starting FileuploadApplication using Java 17.0.2 with PID 1780 (D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload\bin\main started by YJH in D:\#web3\06-SpringBoot\10-FileUpload(06.17))
+[DEBUG] 25-06-18 13:10:20 [FileuploadApplication:54] - Running with Spring Boot v3.4.6, Spring v6.2.7
+[INFO ] 25-06-18 13:10:20 [FileuploadApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 25-06-18 13:10:21 [LogFactory:112] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 25-06-18 13:10:21 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.yjh.fileupload]' package. Please check your configuration.
+[INFO ] 25-06-18 13:10:26 [FileuploadApplication:59] - Started FileuploadApplication in 6.274 seconds (process running for 7.098)
+[INFO ] 25-06-18 13:10:33 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-18 13:10:33 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-18 13:10:33 [MyInterceptor:85] - [GET] http://localhost:8080/simple/upload_single
+[INFO ] 25-06-18 13:10:33 [MyInterceptor:123] - running time: 238(ms)
+[INFO ] 25-06-18 13:10:35 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-18 13:10:35 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-18 13:10:35 [MyInterceptor:85] - [GET] http://localhost:8080/use_helper/upload_single
+[INFO ] 25-06-18 13:10:35 [MyInterceptor:101] - - REFERER : time=1241, url=http://localhost:8080/simple/upload_single
+[INFO ] 25-06-18 13:12:09 [FileuploadApplication:53] - Starting FileuploadApplication using Java 17.0.2 with PID 20136 (D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload\bin\main started by YJH in D:\#web3\06-SpringBoot\10-FileUpload(06.17))
+[DEBUG] 25-06-18 13:12:09 [FileuploadApplication:54] - Running with Spring Boot v3.4.6, Spring v6.2.7
+[INFO ] 25-06-18 13:12:09 [FileuploadApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 25-06-18 13:12:11 [LogFactory:112] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 25-06-18 13:12:11 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.yjh.fileupload]' package. Please check your configuration.
+[INFO ] 25-06-18 13:12:15 [FileuploadApplication:59] - Started FileuploadApplication in 6.251 seconds (process running for 7.286)
+[INFO ] 25-06-18 13:12:23 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-18 13:12:24 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-18 13:12:24 [MyInterceptor:85] - [GET] http://localhost:8080/simple/upload_single
+[INFO ] 25-06-18 13:12:24 [MyInterceptor:123] - running time: 227(ms)
+[INFO ] 25-06-18 13:12:25 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-18 13:12:25 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-18 13:12:25 [MyInterceptor:85] - [GET] http://localhost:8080/simple/fileupload/src/main/resources/templates/simple/upload_single.html
+[INFO ] 25-06-18 13:12:25 [MyInterceptor:101] - - REFERER : time=1313, url=http://localhost:8080/simple/upload_single
+[INFO ] 25-06-18 13:15:09 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-18 13:15:09 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-18 13:15:09 [MyInterceptor:85] - [GET] http://localhost:8080/simple/upload_single
+[INFO ] 25-06-18 13:15:09 [MyInterceptor:123] - running time: 95(ms)
+[INFO ] 25-06-18 13:15:10 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-18 13:15:10 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-18 13:15:10 [MyInterceptor:85] - [GET] http://localhost:8080/use_helper/upload_single
+[INFO ] 25-06-18 13:15:10 [MyInterceptor:101] - - REFERER : time=862, url=http://localhost:8080/simple/upload_single
+[INFO ] 25-06-18 13:16:10 [FileuploadApplication:53] - Starting FileuploadApplication using Java 17.0.2 with PID 20136 (D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload\bin\main started by YJH in D:\#web3\06-SpringBoot\10-FileUpload(06.17))
+[DEBUG] 25-06-18 13:16:10 [FileuploadApplication:54] - Running with Spring Boot v3.4.6, Spring v6.2.7
+[INFO ] 25-06-18 13:16:10 [FileuploadApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[WARN ] 25-06-18 13:16:11 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.yjh.fileupload]' package. Please check your configuration.
+[INFO ] 25-06-18 13:16:11 [FileuploadApplication:59] - Started FileuploadApplication in 0.673 seconds (process running for 243.757)
+[INFO ] 25-06-18 13:16:16 [FileuploadApplication:53] - Starting FileuploadApplication using Java 17.0.2 with PID 20136 (D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload\bin\main started by YJH in D:\#web3\06-SpringBoot\10-FileUpload(06.17))
+[DEBUG] 25-06-18 13:16:16 [FileuploadApplication:54] - Running with Spring Boot v3.4.6, Spring v6.2.7
+[INFO ] 25-06-18 13:16:16 [FileuploadApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[WARN ] 25-06-18 13:16:16 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.yjh.fileupload]' package. Please check your configuration.
+[INFO ] 25-06-18 13:16:16 [FileuploadApplication:59] - Started FileuploadApplication in 0.811 seconds (process running for 249.246)
+[INFO ] 25-06-18 13:16:19 [FileuploadApplication:53] - Starting FileuploadApplication using Java 17.0.2 with PID 20136 (D:\#web3\06-SpringBoot\10-FileUpload(06.17)\fileupload\bin\main started by YJH in D:\#web3\06-SpringBoot\10-FileUpload(06.17))
+[DEBUG] 25-06-18 13:16:19 [FileuploadApplication:54] - Running with Spring Boot v3.4.6, Spring v6.2.7
+[INFO ] 25-06-18 13:16:19 [FileuploadApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[WARN ] 25-06-18 13:16:19 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.yjh.fileupload]' package. Please check your configuration.
+[INFO ] 25-06-18 13:16:19 [FileuploadApplication:59] - Started FileuploadApplication in 0.761 seconds (process running for 252.038)

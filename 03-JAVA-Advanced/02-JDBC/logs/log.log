@@ -1,0 +1,107 @@
+[DEBUG] 25-04-21 09:51:06 [App04:37] - 접속 주소: jdbc:mariadb://127.0.0.1:9090/myschool?characterEncoding=utf8&serverTimezone=UTC
+[DEBUG] 25-04-21 09:51:06 [App04:42] - MariaDB JDBC 드라이버 로드 성공
+[DEBUG] 25-04-21 09:51:06 [App04:93] - Department(id=101, dname=컴퓨터공학과, loc=공학관, phone=051-123-4567, email=cs@myschool.ac.kr, established=1990, homepage=http://cs.myschool.ac.kr)
+[DEBUG] 25-04-21 09:55:09 [App04:37] - 접속 주소: jdbc:mariadb://127.0.0.1:9090/myschool?characterEncoding=utf8&serverTimezone=UTC
+[DEBUG] 25-04-21 09:55:09 [App04:42] - MariaDB JDBC 드라이버 로드 성공
+[DEBUG] 25-04-21 09:55:09 [App04:93] - Department(id=101, dname=컴퓨터공학과, loc=공학관, phone=051-123-4567, email=cs@myschool.ac.kr, established=1990, homepage=http://cs.myschool.ac.kr)
+[DEBUG] 25-04-21 09:55:09 [App04:93] - Department(id=201, dname=전자공학과, loc=공학관, phone=051-125-4567, email=ee@myschool.ac.kr, established=1985, homepage=http://ee.myschool.ac.kr)
+[DEBUG] 25-04-21 09:55:09 [App04:93] - Department(id=202, dname=기계공학과, loc=공학관, phone=051-126-4567, email=me@myschool.ac.kr, established=1988, homepage=http://machine.myschool.ac.kr)
+[DEBUG] 25-04-21 09:55:09 [App04:93] - Department(id=500, dname=인공지능학과, loc=공학관, phone=051-123-4567, email=ai@myschool.ac.kr, established=2001, homepage=http://ai.myschool.ac.kr)
+[DEBUG] 25-04-21 10:00:03 [App04:37] - 접속 주소: jdbc:log4jdbc:mariadb://127.0.0.1:9090/myschool?characterEncoding=utf8&serverTimezone=UTC
+[DEBUG] 25-04-21 10:00:03 [App04:42] - MariaDB JDBC 드라이버 로드 성공
+[INFO ] 25-04-21 10:00:04 [sqlonly:228] - SELECT id, dname, loc, phone, email, established, homepage FROM departments WHERE dname LIKE concat('%', '컴', '%')
+
+[INFO ] 25-04-21 10:00:04 [resultsettable:610] - 
+|----|-------|----|-------------|------------------|------------|-------------------------|
+|id  |dname  |loc |phone        |email             |established |homepage                 |
+|----|-------|----|-------------|------------------|------------|-------------------------|
+|101 |컴퓨터공학과 |공학관 |051-123-4567 |cs@myschool.ac.kr |1990        |http://cs.myschool.ac.kr |
+|----|-------|----|-------------|------------------|------------|-------------------------|
+
+[DEBUG] 25-04-21 10:00:04 [App04:93] - Department(id=101, dname=컴퓨터공학과, loc=공학관, phone=051-123-4567, email=cs@myschool.ac.kr, established=1990, homepage=http://cs.myschool.ac.kr)
+[DEBUG] 25-04-21 10:01:10 [App04:37] - 접속 주소: jdbc:log4jdbc:mariadb://127.0.0.1:9090/myschool?characterEncoding=utf8&serverTimezone=UTC
+[DEBUG] 25-04-21 10:01:10 [App04:42] - MariaDB JDBC 드라이버 로드 성공
+[INFO ] 25-04-21 10:01:10 [sqlonly:228] - SELECT id, dname, loc, phone, email, established, homepage FROM departments WHERE dname LIKE concat('%', '101', '%')
+
+[INFO ] 25-04-21 10:01:10 [resultsettable:610] - 
+|---|------|----|------|------|------------|---------|
+|id |dname |loc |phone |email |established |homepage |
+|---|------|----|------|------|------------|---------|
+|---|------|----|------|------|------------|---------|
+
+[DEBUG] 25-04-21 10:01:39 [App04:37] - 접속 주소: jdbc:log4jdbc:mariadb://127.0.0.1:9090/myschool?characterEncoding=utf8&serverTimezone=UTC
+[DEBUG] 25-04-21 10:01:39 [App04:42] - MariaDB JDBC 드라이버 로드 성공
+[INFO ] 25-04-21 10:01:39 [sqlonly:228] - SELECT id, dname, loc, phone, email, established, homepage FROM departments WHERE dname LIKE concat('%', '051', '%')
+
+[INFO ] 25-04-21 10:01:39 [resultsettable:610] - 
+|---|------|----|------|------|------------|---------|
+|id |dname |loc |phone |email |established |homepage |
+|---|------|----|------|------|------------|---------|
+|---|------|----|------|------|------------|---------|
+
+[DEBUG] 25-04-21 10:01:57 [App04:37] - 접속 주소: jdbc:log4jdbc:mariadb://127.0.0.1:9090/myschool?characterEncoding=utf8&serverTimezone=UTC
+[DEBUG] 25-04-21 10:01:57 [App04:42] - MariaDB JDBC 드라이버 로드 성공
+[INFO ] 25-04-21 10:01:57 [sqlonly:228] - SELECT id, dname, loc, phone, email, established, homepage FROM departments WHERE dname LIKE concat('%', '공학', '%')
+
+[INFO ] 25-04-21 10:01:57 [resultsettable:610] - 
+|----|-------|----|-------------|------------------|------------|------------------------------|
+|id  |dname  |loc |phone        |email             |established |homepage                      |
+|----|-------|----|-------------|------------------|------------|------------------------------|
+|101 |컴퓨터공학과 |공학관 |051-123-4567 |cs@myschool.ac.kr |1990        |http://cs.myschool.ac.kr      |
+|201 |전자공학과  |공학관 |051-125-4567 |ee@myschool.ac.kr |1985        |http://ee.myschool.ac.kr      |
+|202 |기계공학과  |공학관 |051-126-4567 |me@myschool.ac.kr |1988        |http://machine.myschool.ac.kr |
+|----|-------|----|-------------|------------------|------------|------------------------------|
+
+[DEBUG] 25-04-21 10:01:57 [App04:93] - Department(id=101, dname=컴퓨터공학과, loc=공학관, phone=051-123-4567, email=cs@myschool.ac.kr, established=1990, homepage=http://cs.myschool.ac.kr)
+[DEBUG] 25-04-21 10:01:57 [App04:93] - Department(id=201, dname=전자공학과, loc=공학관, phone=051-125-4567, email=ee@myschool.ac.kr, established=1985, homepage=http://ee.myschool.ac.kr)
+[DEBUG] 25-04-21 10:01:57 [App04:93] - Department(id=202, dname=기계공학과, loc=공학관, phone=051-126-4567, email=me@myschool.ac.kr, established=1988, homepage=http://machine.myschool.ac.kr)
+[DEBUG] 25-04-21 10:06:08 [App04:37] - 접속 주소: jdbc:log4jdbc:mariadb://127.0.0.1:9090/myschool?characterEncoding=utf8&serverTimezone=UTC
+[DEBUG] 25-04-21 10:06:08 [App04:42] - MariaDB JDBC 드라이버 로드 성공
+[DEBUG] 25-04-21 10:06:08 [App04:55] - SELECT id, dname, loc, phone, email, established, homepage FROM departments WHERE dname LIKE concat('%', ?, '%')
+[INFO ] 25-04-21 10:06:08 [sqlonly:228] - SELECT id, dname, loc, phone, email, established, homepage FROM departments WHERE dname LIKE concat('%', '공학', '%')
+
+[INFO ] 25-04-21 10:06:08 [resultsettable:610] - 
+|----|-------|----|-------------|------------------|------------|------------------------------|
+|id  |dname  |loc |phone        |email             |established |homepage                      |
+|----|-------|----|-------------|------------------|------------|------------------------------|
+|101 |컴퓨터공학과 |공학관 |051-123-4567 |cs@myschool.ac.kr |1990        |http://cs.myschool.ac.kr      |
+|201 |전자공학과  |공학관 |051-125-4567 |ee@myschool.ac.kr |1985        |http://ee.myschool.ac.kr      |
+|202 |기계공학과  |공학관 |051-126-4567 |me@myschool.ac.kr |1988        |http://machine.myschool.ac.kr |
+|----|-------|----|-------------|------------------|------------|------------------------------|
+
+[DEBUG] 25-04-21 10:06:08 [App04:94] - Department(id=101, dname=컴퓨터공학과, loc=공학관, phone=051-123-4567, email=cs@myschool.ac.kr, established=1990, homepage=http://cs.myschool.ac.kr)
+[DEBUG] 25-04-21 10:06:08 [App04:94] - Department(id=201, dname=전자공학과, loc=공학관, phone=051-125-4567, email=ee@myschool.ac.kr, established=1985, homepage=http://ee.myschool.ac.kr)
+[DEBUG] 25-04-21 10:06:08 [App04:94] - Department(id=202, dname=기계공학과, loc=공학관, phone=051-126-4567, email=me@myschool.ac.kr, established=1988, homepage=http://machine.myschool.ac.kr)
+[DEBUG] 25-04-21 11:26:49 [App05:42] - 접속 주소: jdbc:log4jdbc:mariadb://127.0.0.1:9090/myschool?characterEncoding=utf8&serverTimezone=UTC
+[DEBUG] 25-04-21 11:26:49 [App05:47] - MariaDB JDBC 드라이버 로드 성공
+[INFO ] 25-04-21 11:26:49 [sqlonly:228] - INSERT INTO departments (dname, loc, phone, email, established, homepage) VALUES ('신규학과', '위치', '010-1234-1234', 'hell@gmail.com', 2025, NULL)
+
+[DEBUG] 25-04-21 11:26:49 [App05:96] - 저장된 데이터의 수: 1
+[DEBUG] 25-04-21 11:26:49 [App05:97] - 생성된 Promary Key: 504
+[DEBUG] 25-04-21 11:26:55 [App05:37] - 접속 주소: jdbc:log4jdbc:mariadb://127.0.0.1:9090/myschool?characterEncoding=utf8&serverTimezone=UTC
+[DEBUG] 25-04-21 11:26:55 [App05:42] - MariaDB JDBC 드라이버 로드 성공
+[INFO ] 25-04-21 11:26:55 [sqlonly:228] - INSERT INTO departments (dname, loc, phone, email, established, homepage) VALUES ('신규학과', '위치', '010-1234-1234', 'hell@gmail.com', 2025, NULL)
+
+[DEBUG] 25-04-21 11:26:55 [App05:91] - 저장된 데이터의 수: 1
+[DEBUG] 25-04-21 11:26:55 [App05:92] - 생성된 Promary Key: 505
+[DEBUG] 25-04-21 11:27:14 [App05:37] - 접속 주소: jdbc:log4jdbc:mariadb://127.0.0.1:9090/myschool?characterEncoding=utf8&serverTimezone=UTC
+[DEBUG] 25-04-21 11:27:14 [App05:42] - MariaDB JDBC 드라이버 로드 성공
+[INFO ] 25-04-21 11:27:14 [sqlonly:228] - INSERT INTO departments (dname, loc, phone, email, established, homepage) VALUES ('신규학과', '위치', '010-1234-1234', 'hell@gmail.com', 2025, NULL)
+
+[DEBUG] 25-04-21 11:27:14 [App05:91] - 저장된 데이터의 수: 1
+[DEBUG] 25-04-21 11:27:14 [App05:92] - 생성된 Promary Key: 506
+[DEBUG] 25-04-21 12:36:30 [App06:33] - 접속 주소: jdbc:log4jdbc:mariadb://127.0.0.1:9090/myschool?characterEncoding=utf8&serverTimezone=UTC
+[DEBUG] 25-04-21 12:36:30 [App06:38] - MariaDB JDBC 드라이버 로드 성공
+[INFO ] 25-04-21 12:36:30 [sqlonly:228] - INSERT INTO departments (dname, loc, phone, email, established, homepage) VALUES ('신규학과', '위치', '010-1234-1234', 'hell@gmail.com', 2025, NULL)
+
+[DEBUG] 25-04-21 12:36:30 [App06:93] - 수정된 데이터의 수: 1
+[DEBUG] 25-04-21 12:45:18 [App06:33] - 접속 주소: jdbc:log4jdbc:mariadb://127.0.0.1:9090/myschool?characterEncoding=utf8&serverTimezone=UTC
+[DEBUG] 25-04-21 12:45:18 [App06:38] - MariaDB JDBC 드라이버 로드 성공
+[INFO ] 25-04-21 12:45:18 [sqlonly:228] - UPDATE departments SET dname = '수정된학과', loc = '수정된위치', phone = '010-1234-1234', email = 'edit@gmail.com', established = 2025, homepage = 'https://www.megastudy.com' WHERE id = 501
+
+[DEBUG] 25-04-21 12:45:18 [App06:97] - 수정된 데이터의 수: 1
+[DEBUG] 25-04-21 12:49:35 [App07:33] - 접속 주소: jdbc:log4jdbc:mariadb://127.0.0.1:9090/myschool?characterEncoding=utf8&serverTimezone=UTC
+[DEBUG] 25-04-21 12:49:35 [App07:38] - MariaDB JDBC 드라이버 로드 성공
+[INFO ] 25-04-21 12:49:35 [sqlonly:228] - DELETE FROM enrollments WHERE student_id = 10175 AND subject_id = 1044
+
+[DEBUG] 25-04-21 12:49:35 [App07:84] - 삭제된 데이터의 수: 1

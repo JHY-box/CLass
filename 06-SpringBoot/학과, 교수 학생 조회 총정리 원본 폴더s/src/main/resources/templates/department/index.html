@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko" translate="no" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="google" content="notranslate" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>학사관리</title>
+    <link rel="stylesheet" th:href="@{/assets/css/style.css}" />
+</head>
+
+<body>
+    <header th:replace="fragments/header :: my-header"></header>
+
+    <h2>학과목록</h2>
+
+    <div class="search-controller">
+        <!-- 검색폼 -->
+        <!-- 1) 검색어는 GET방식으로 전송 -->
+        <!-- 2) 검색 결과 페이지가 별도로 없는 경우 action은 자기 스스로(컨트롤러)를 지정 -->
+        <!-- 3) submit은 컨트롤러에게 검색어를 전송한다. -->
+        <!-- 4) 컨트롤러는 전송받은 검색어를 다시 View에게 전달하여 자동완성 시켜야 한다. -->
+        <form id="my-form" th:action="@{/department}" method="get">
+            <input type="search" name="keyword" id="my-search" placeholder="학과이름 or 위치 검색" th:value="${keyword}" />
+            <button type="submit" class="mybutton green">검색</button>
+        </form>
+        <div class="buttons">
+            <a th:href="@{/department/add}" class="mybutton blue">신규 학과 등록</a>
+        </div>
+    </div>
+
+    <table class="my-table">
+        <thead>
+            <th>학과번호</th>
+            <th>학과명</th>
+            <th>위치</th>
+            <th>전화번호</th>
+            <th>이메일</th>
+            <th>설립년도</th>
+            <th>홈페이지</th>
+            <th></th>
+        </thead>
+        <tbody>
+            <!--
+                th:each 구문은 model에 저장된 리스트 객체를 순회하며
+                객체를 하나씩 꺼내서 객체명으로 사용할 수 있다.
+                th:each="객체명 : ${model에 저장된 리스트 객체}"
+            -->
+            <tr th:each="department : ${departments}">
+                <td th:text="${department.id}"></td>
+                <!--
+                    QueryString 파라미터 설정
+                    @{/hello/(param1=${변수1}, param2=${변수2})}
+                    => /hello/?param1=변수1&param2=변수2
+
+                    path 파라미터 설정
+                    @{/hello/{param1}/{param2}(param1=${변수1}, param2=${변수2})}
+                    => /hello/변수1/변수2
+
+                    path 파라미터 + 쿼리 파라미터가 포함된 URL
+                    @{/hello/{param1}(param1=${변수1}, param2=${변수2})}
+                    => /hello/변수1?param2=변수2
+                -->
+                <td>
+                    <a th:href="@{/department/view/{id}(id=${department.id})}" th:text="${department.dname}" />
+                </td>
+                <td th:text="${department.loc}"></td>
+                <td>
+                    <a th:href="'tel:' + ${department.phone}" th:text="${department.phone}"></a>
+                </td>
+                <td>
+                    <a th:href="'mailto:' + ${department.email}" th:text="${department.email}"></a>
+                </td>
+                <td th:text="${department.established}"></td>
+                <td>
+                    <a th:href="${department.homepage}" th:text="${department.homepage}" target="_blank"></a>
+                </td>
+                <td>
+                    <a th:href="@{/department/edit/{id}(id=${department.id})}">수정</a>
+                    <a th:href="@{/department/delete/{id}(id=${department.id})}">삭제</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- 페이지 번호 -->
+    <ul class="pagination">
+        <!-- 이전 페이지 그룹 이동 버튼 -->
+        <li th:if="${pageHelper.prevPage > 0}">
+            <a th:href="@{/department(keyword=${keyword}, page=${pageHelper.prevPage})}">◀</a>
+        </li>
+        <li th:unless= "${pageHelper.prevPage > 0}"><a>◀</a></li>
+
+        <!-- 페이지 번호 링크 -->
+        <li th:each="i : ${#numbers.sequence(pageHelper.startPage, pageHelper.endPage)}">
+            <a th:if="${i == pageHelper.nowPage}" class="active" th:text="${i}" />
+            <a th:unless="${i == pageHelper.nowPage}" th:text="${i}"
+                th:href="@{/department(keyword=${keyword}, page=${i})}"  />
+        </li>
+
+        <!-- 다음 페이지 그룹 이동 버튼 -->
+        <li th:if="${pageHelper.nextPage > 0}">
+            <a th:href="@{/department(keyword=${keyword}, page=${pageHelper.nextPage})}">▶</a>
+        </li>
+        <li th:unless= "${pageHelper.nextPage > 0}"><a>▶</a></li>
+    </ul>
+</body>
+
+</html>

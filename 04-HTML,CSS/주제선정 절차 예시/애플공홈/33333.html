@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>YJH</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+      background: #f5f5f7;
+      color: #1d1d1f;
+    }
+    .navbar {
+      background: #161617cc;
+      color: #fff;
+      padding: 12px 0;
+      text-align: center;
+      font-size: 10px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      
+      width: 100%;
+      height: 200px;
+      margin-top: -150px;
+      transition: all 0.2s;
+      
+      &:hover {
+          margin-top: 0px;
+          background-color: #ffff00;
+      }
+    }
+    .navbar a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 18px;
+      font-weight: 500;
+    }
+    .hero {
+      background: #000;
+      color: #fff;
+      text-align: center;
+      padding: 80px 20px 60px 20px;
+    }
+    .hero img {
+      width: 120px;
+      margin-bottom: 20px;
+    }
+    .hero h1 {
+      font-size: 48px;
+      margin: 0 0 20px 0;
+      font-weight: 700;
+    }
+    .hero p {
+      font-size: 24px;
+      margin: 0 0 30px 0;
+    }
+    .hero a {
+      color: #2997ff;
+      text-decoration: none;
+      font-size: 20px;
+      margin: 0 10px;
+    }
+    .section {
+      background: #fff;
+      margin: 30px auto;
+      max-width: 1100px;
+      border-radius: 18px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .section h2 {
+      font-size: 32px;
+      margin-bottom: 16px;
+    }
+    .section p {
+      font-size: 18px;
+      color: #555;
+    }
+    @media (max-width: 600px) {
+      .hero h1 { font-size: 32px; }
+      .section h2 { font-size: 24px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <a href="#">Apple</a>
+    <a href="#">스토어</a>
+    <a href="#">Mac</a>
+    <a href="#">iPad</a>
+    <a href="#">iPhone</a>
+    <a href="#">Watch</a>
+    <a href="#">AirPods</a>
+    <a href="#">고객지원</a>
+  </div>
+  <div class="hero">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple Logo">
+    <h1>iPhone 15 Pro</h1>
+    <p>티타늄. 초강력. 초경량. 초프로.</p>
+    <a href="#">더 알아보기</a>
+    <a href="#">구입하기</a>
+  </div>
+  <div class="section">
+    <h2>MacBook Air</h2>
+    <p>초경량, 초슬림. 어디서든 강력한 성능.</p>
+  </div>
+  <div class="section">
+    <h2>iPad Pro</h2>
+    <p>놀라운 성능과 아름다운 디스플레이.</p>
+  </div>
+</body>
+</html>

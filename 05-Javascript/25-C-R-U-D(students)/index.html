@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang = "ko" translate = "no">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "google" content = "notranslate" />
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <title>index</title>
+        <link rel="stylesheet" type="text/css" href="css\stylesheet.css">         
+    </head>
+
+    <body>
+        <img src="img/loading(2).gif" id="loader">
+
+        <h1>학생 목록</h1>
+
+        <form id="my-form">
+            <input type="search" id="my-search" placeholder="학생이름 검색">
+            <button type="submit">검색</button>
+        </form>
+
+        <table class="my-table">
+            <thead>
+                <th>아이디</th>         <!-- id -->
+                <th>이름</th>           <!-- name -->
+                <th>사용자 아이디</th>  <!-- user_id -->
+                <th>학년</th>           <!-- grade -->
+                <th>주민등록번호</th>   <!-- idnum -->
+                <th>생년월일</th>       <!-- birthdate -->
+                <th>전화번호</th>       <!-- phone -->
+                <th>키</th>             <!-- height -->
+                <th>몸무게</th>         <!-- weight -->
+                <th>이메일</th>         <!-- email -->
+                <th>성별</th>           <!-- gender -->
+                <th>상태</th>           <!-- status -->
+                <th>사진 URL</th>       <!-- photo_url -->
+                <th>입학일</th>         <!-- admission_date -->
+                <th>졸업일</th>         <!-- graduation_date -->
+                <th>학과 아이디</th>     <!-- department_id -->
+                <th>지도교수 아이디</th> <!-- professor_id -->
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+
+        <script>
+             //로딩바 객체
+             const loader = document.querySelector("#loader");
+
+             //검색어
+             let keyword = "";
+
+             document.querySelector("#my-form").addEventListener("submit", (e) =>{              // <--------------추가
+                e.preventDefault();
+                keyword = document.querySelector("#my-search").value;
+                getStudentsList();
+             });
+
+             // 데이터 요청 함수
+             async function getStudentsList() {
+                 // 로딩바를 화면에 표시함
+                 loader.style.display = 'none';
+
+                 const url = new URL("http://localhost:8080/students");        // <--------------추가
+
+                 if (keyword) {                                                   // <--------------추가
+                    url.searchParams.set("name_like", keyword);                  // <--------------추가
+                 }
+      
+                 console.log(url.href);                                           // <--------------추가
+             
+                
+                 let result = null;
+                 
+                 try {
+                     // 백엔드로부터의 응답 받기
+                     const response = await fetch(url);
+             
+                    // 백엔드가 에러를 보내왔다면?
+                    if (response.status !== 200) {
+                         // 에러 객체 생성후 에러 발생 --> catch로 이동함    
+                         const err = new Error(response.statusText);
+                         err.status = response.status;
+                         throw err;
+                         }
+                         
+                         // 응답으로부터 JSON 테이터 추출
+                         result = await response.json();
+                     } catch (error) {
+                         console.error(error);
+                         alert(error.message)
+                         return;
+                     } finally {
+                         // 로딩바를 숨김
+                         loader.style.display = "none";
+                     }
+
+                     // 결과 데이터 확인
+                     console.log(result);
+             
+                     //필요한 데이터만 구조분해
+                     const {item} =result;
+                     console.log(item);
+             
+                     // 결과를 출력할 <tbody>태그
+                     const tbody = document.querySelector(".my-table tbody");
+             
+                     item.forEach((v, i) => {
+                         // 한줄을 의마하는 <tr>태그를 생성
+                         const tr = document.createElement("tr");
+             
+                         // v가 가지고 있는 key에 대해 반복
+                         for (const key in v) {
+                             // <tr>태그를 추가하여 key에 연결된 값을 포함하는 형태로 생성
+                                 const td = document.createElement("td");
+                                 let value = v[key];
+             
+                                 if (value !== null) {
+                                     if (key === "phone") {
+                                         value = `<a href="tel:${value}">${value}</a>`;
+
+                                     } else if (key === 'email') {
+                                         value = `<a href="mailto:${value}">${value}</a>`;
+
+                                     } else if (key === 'name' && keyword !== "") {
+                                         value = value.replaceAll(keyword, `<mark>${keyword}</mark>`);
+                                         
+                                     } else if (key === 'birthdate') {
+                                        value = value.substring(0, 10);
+
+                                    } else if (key === 'photo_url') {
+                                        value = `<img src="${value}" alt="사진" style="max-width:50px; max-height:50px;">`;
+                                    }
+                                 }
+                 
+                                 td.innerHTML = value;
+             
+                                 // 생성한 td를 tr에 추가
+                                 tr.appendChild(td);
+                             }
+                             
+                             // 생성된 tr을 tbody에 추가
+                             tbody.appendChild(tr);
+                         });
+                     }
+                     
+                     getStudentsList();
+                     
+                     </script>
+                     
+                    </body>
+                    </html>
+                    
+    
+
+                    
+
+

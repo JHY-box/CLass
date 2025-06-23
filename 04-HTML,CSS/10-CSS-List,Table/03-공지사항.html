@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1.0,
+    minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"
+    />
+
+    <title>03-공지사항</title>
+    <style>
+      a {
+        &:link, &:visited {
+          color: #000;
+          text-decoration: none;
+        }
+
+        &:hover {
+          color: #00f;
+        }
+
+        &:active {
+          color: #f00;
+        }
+      }
+
+      .my-table {
+        border-collapse: collapse;
+        border-top: 3px solid #168;
+        font-size: 14px;
+        text-align: center;
+        margin: auto;
+        width: 100%;
+
+        th {
+            color: #168;
+            background-color: #f0f6f9;
+            padding: 10px;
+            border: 1px solid #ddd;
+
+            &:first-child {
+                border-left: 0;
+            }
+
+            &:last-child {
+                border-right: 0;
+            }
+        }
+        
+        td {
+            padding: 10px;
+            border: 1px;
+            
+            &:first-child {
+                border-left: 0;
+            }
+
+            &:last-child {
+                border-right: 0;
+        }
+      }
+    }
+
+    .page-navi {
+        margin:20px;
+        text-align:center;
+    }
+    </style>
+  </head>
+
+  <body>
+    <!-- 공지사항 게시판 영역 -->
+    <h2>공지사항</h2>
+
+    <!-- 상단 도구: 검색창 + 새 글쓰기 -->
+    <div>
+      <form action="#" method="get">
+        <label for="search">검색어:</label>
+        <input type="text" id="search" name="q" />
+        <input type="submit" value="검색" />
+      </form>
+    </div>
+    <div><a herf="#">[새 글쓰기]</a></div>
+
+    <!-- 게시판 테이블 -->
+    <table class="my-table">
+      <thead>
+        <tr>
+          <th>번호</th>
+          <th>제목</th>
+          <th>작성자</th>
+          <th>작성일</th>
+          <th>조회수</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>10</td>
+          <td><a herf="#">[안내] 5월 휴무일 공지</a></td>
+          <td>관리자</td>
+          <td>2025-04-30</td>
+          <td>124</td>
+        </tr>
+        <!-- 나머지 9개 생략 -->
+      </tbody>
+    </tabel>
+
+    <!-- 페이지 네비게이션 -->
+    <div class="page-navi">
+      <a href="#">◀ 이전</a>
+      <a href="#">1</a>
+      <a href="#">2</a>
+      <a href="#">3</a>
+      <a href="#">다음 ▶</a>
+    </div>
+  </body>
+</html>

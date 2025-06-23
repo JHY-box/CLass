@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charest="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,
+        minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+        <title>Document</title>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+
+            .container {
+                border: 2px dotted #06f;
+                padding: 10px;
+
+                display: flex;
+
+                &.w100per {
+                    width: 100%;
+                }
+
+                &.w250px {
+                    width: 250%
+                }
+
+                .item {
+                    border: 2px solid #f0f;
+                    padding: 10px;
+                    margin: 5px;
+
+                    &.left {
+                        flex-shrink: 0;
+
+                        /* width송석이나 flex-basis나 고정 넓이를 지정하는 경우 동일 효과 */
+                        /* width: 100px; */
+                        flex-basis: 100px;
+                    }
+
+                    &.right {
+                        flex-grow: 1;
+                    }
+                }
+            }
+
+        </style>
+        </head>
+
+        <body>
+            <h1>container width 100%</h1>
+            <div class="container" w100per>
+                <div class="item left">넓이가 고정된 영역</div>
+                <div class="item right">Very~~~ Very~~~ Long contents.</div>
+            </div>
+
+            <h1>container width 250%</h1>
+            <div class="container" w250px>
+                <div class="item left">넓이가 고정된 영역</div>
+                <div class="item right">Very~~~ Very~~~ Long contents.</div>
+            </div>
+        </body>
+        </html>

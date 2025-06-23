@@ -1,0 +1,34 @@
+@import './common.scss';
+
+.big_image {
+    max-width: 2000px;
+    background-color: #ff02;    //임시코드
+    margin: auto;
+    height: 1100px;     //임시코드
+}
+
+.md_pick {
+    max-width: 1400px;
+    background-color: #0f02;    //임시코드
+    margin: auto;
+    height: 500px;      //임시코드
+}
+
+.new {
+    max-width: 1400px;
+    background-color: #00f2;    //임시코드
+    margin: auto;
+    height: 500px;      //임시코드
+}
+
+.instagram {
+    width: 100%;
+    background-color: #f0f7;    //임시코드
+
+    .instagram_content {
+        max-width: 1400px;
+        background-color: #00f7;    //임시코드
+        margin: auto;
+        height: 500px;      //임시코드
+    }
+}

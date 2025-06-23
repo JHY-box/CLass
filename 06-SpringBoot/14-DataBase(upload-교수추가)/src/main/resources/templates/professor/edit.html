@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ko" translate="no" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="google" content="notranslate" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>교수수정</title>
+    <link rel="stylesheet" th:href="@{/assets/css/stylesheet.css}" />
+</head>
+
+<body>
+<header th:replace="fragments/header :: my-header"></header>
+
+<h2>교수수정</h2>
+
+<form id="my-form" th:action="@{/professor/edit_ok/{id}(id=${professor.id})}" method="post" enctype="multipart/form-data">
+    <input type="hidden" name="_method" value="put" />
+    <table class="my-table item-table">
+        <tbody>
+        <tr>
+            <th>교수이름</th>
+            <td><input type="text" name="name" id="name" placeholder="교수 이름을 입력하세요."
+                       th:value="${professor.name}" /></td>
+        </tr>
+        <tr>
+            <th>아이디</th>
+            <td><input type="text" name="user_id" id="user_id" placeholder="아이디를 입력하세요."
+                       th:value="${professor.userId}" /></td>
+        </tr>
+        <tr>
+            <th>직급</th>
+            <td>
+                <!-- DB에서 가져온 값과 일치하는 항목에 checked 속성 지정 -->
+                <select name="position" id="position">
+                    <option value="">-- 직급선택 --</option>
+                    <option value="교수" th:selected="${professor.position == '교수'}">교수</option>
+                    <option value="조교수" th:selected="${professor.position == '조교수'}">조교수</option>
+                    <option value="부교수" th:selected="${professor.position == '부교수'}">부교수</option>
+                    <option value="전임강사" th:selected="${professor.position == '전임강사'}">전임강사</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <th>급여</th>
+            <td><input type="num" name="sal" id="sal" placeholder="급여를 만원 단위로 입력하세요"
+                       min="0" max="1000" step="1"
+                       th:value="${professor.sal}" /></td>
+        </tr>
+        <tr>
+            <th>입사일</th>
+            <!-- input=date 태그 value 속성에 'YYYY-MM-DD' 형식으로 지정해야 함 -->
+            <td><input type="date" name="hiredate" id="hiredate"
+                       th:value="${#strings.substring(professor.hiredate, 0, 10)}" /></td>
+        </tr>
+        <tr>
+            <th>보직수당</th>
+            <td><input type="num" name="comm" id="comm" placeholder="보직수당을 만원 단위로 입력하세요"
+                       min="0" max="1000" step="1"
+                       th:value="${professor.comm}" /></td>
+        </tr>
+        <tr>
+            <th>이메일</th>
+            <td><input type="email" name="email" id="email" placeholder="이메일을 입력하세요."
+                       th:value="${professor.email}" /></td>
+        </tr>
+        <tr>
+            <th>전화번호</th>
+            <td><input type="text" name="phone" id="phone" placeholder="전화번호를 입력하세요."
+                       th:value="${professor.phone}" /></td>
+        </tr>
+        <tr>
+            <th>프로필 사진</th>
+            <td th:if="${professor.photoUrl == null or professor.photoUrl == ''}">
+                <!-- 등록된 프로필 사진이 없을 경우 - 파일 업로드만 가능 -->
+                <input type="file" name="photo_url" id="photo_url" />                      <!--  fsdgfshghhhhhhhhhhhbbb   동일해야함     bbbbbbbbbbhhhfdgdfgsdf-->
+            </td>
+            <td th:unless="${professor.photoUrl == null or professor.photoUrl == ''}">
+                <!-- 기존에 등록된 사진이 있을 경우 - 삭제 여부 선택시에만 업로드 가능 -->
+                <input type="file" name="photo_url" id="photo_url" disabled/>                    <!--  fsdgfshghhhhhhhhhhhbbb   동일해야함     bbbbbbbbbbhhhfdgdfgsdf-->
+                <div class="img-container">
+                    <img class="user-toc" th:src="${fileHelper.getFileUrl(professor.photoUrl)}"
+                         style="width:100px; height:100px; object-fit:cover; border-radius:50%; margin:5px 0;" />
+                    <div>
+                        <label>
+                            <span th:text="${professor.photoUrl + ' (이미 등록되어 있습니다.)'}"></span>
+                            <input type="checkbox" name="delete_photo" id="delete_photo" value="y"
+                                   data-disabled="#photo_url" />                             <!--  fsdgfshghhhhhhhhhhhbbb   동일해야함     bbbbbbbbbbhhhfdgdfgsdf-->
+                            삭제
+                        </label>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <th>상태</th>
+            <td>
+                <!-- DB에서 가져온 값과 일치하는 항목에 checked 속성 지정 -->
+                <label>
+                    <input type="radio" name="status" value="재직"
+                           th:checked="${professor.status == '재직'}" /> 재직
+                </label>
+                <input type="radio" name="status" value="휴직"
+                       th:checked="${professor.status == '휴직'}" /> 휴직
+                <input type="radio" name="status" value="퇴직"
+                       th:checked="${professor.status == '퇴직'}" /> 퇴직
+            </td>
+        </tr>
+        <tr>
+            <th>소속학과</th>
+            <td>
+                <!-- 데이터 컬럼이 참조키인 경우 부모 테이블의 데이터 중에서 선택할 수 있도록 select 태그로 구현 -->
+                <select name="department_id">
+                    <option value="">-- 학과선택 ----</option>
+                    <option th:each="d : ${departmentList}" th:value="${d.id}" th:text="${d.dname}"
+                            th:selected="${d.id == professor.departmentId}" />
+                </select>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <div class="buttons">
+        <button type="submit" class="mybutton blue">등록</button>
+        <button type="reset" class="mybutton gray">초기화</button>
+    </div>
+</form>
+
+<script th:src="@{/assets/js/script.js}"></script>
+<script>
+    document.querySelector("#my-form").addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        // 정규식검사를 사용할 연결된 공식 검사 수행 (여기서는 생략)
+        e.currentTarget.submit();
+    });
+</script>
+
+</body>
+</html>

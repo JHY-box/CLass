@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charest="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,
+        minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+        <title>Document</title>
+        <style>
+            /* 기본 초기화 작업 */
+            * {
+                box-sizing: border-box;
+                padding: 0;
+                margin: 0;
+            }
+
+            .box {
+                border: 2px dotted #06f;
+                padding: 10px;
+                height: 300px;
+
+                /* 자식 요소를 중앙에 배치하기 위한 처리 */
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .item {
+                    border: 5px solid #f0f;
+                    padding: 10px;
+                    width: 360px;
+                    text-align: center;
+                }
+            }
+    
+
+        </style>
+        </head>
+
+        <body>
+            <div class="box">
+                <div class="item">아이템</div>
+            </div>
+        </body>
+        </html>

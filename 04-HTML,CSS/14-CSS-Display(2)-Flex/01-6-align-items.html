@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charest="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1.0,
+    minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"
+    />
+
+    <title>flex</title>
+    <style type="text/css">
+      * {
+        box-sizing: border-box;
+      }
+
+      .container {
+        border: 2px dotted #06f;
+        padding: 10px;
+        width: 800px;
+    
+
+        .item {
+          border: 2px solid #f0f;
+          padding: 10px;
+          margin: 5px;
+          width: 200px;
+
+          &:nth-child(1) {font-size: 20px;}
+          &:nth-child(2) {font-size: 60px;}
+          &:nth-child(3) {font-size: 40px;}
+        }
+
+        display: flex;
+
+        &.container1 { align-content: stretch; }
+        &.container2 { align-content: flex-start }
+        &.container3 { align-content: flex-end; }
+        &.container4 { align-content: center; }
+        &.container5 { align-content: baseline; }
+
+    }
+
+    </style>
+  </head>
+
+  <body>
+    <h1>stretch</h1>
+    <div class="container container1">
+      <div class="item">A</div>
+      <div class="item">B</div>
+      <div class="item">C</div>
+    </div>
+
+    <h1>flex-start</h1>
+    <div class="container container2">
+      <div class="item">A</div>
+      <div class="item">B</div>
+      <div class="item">C</div>
+    </div>
+
+    <h1>flex-end</h1>
+    <div class="container container3">
+      <div class="item">A</div>
+      <div class="item">B</div>
+      <div class="item">C</div>
+    </div>
+
+    <h1>center</h1>
+    <div class="container container4">
+      <div class="item">A</div>
+      <div class="item">B</div>
+      <div class="item">C</div>
+    </div>
+
+    <h1>baseline</h1>
+    <div class="container container5">
+      <div class="item">A</div>
+      <div class="item">B</div>
+      <div class="item">C</div>
+    </div>
+  </body>
+</html>

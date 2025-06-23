@@ -1,0 +1,7 @@
+[ERROR] 25-04-23 17:39:40 [App01:40] - 조회결과 --->> 
+[ERROR] 25-04-23 17:39:40 [App01:41] - 조회된 데이터 수 --->> 
+[ERROR] 25-04-23 17:47:38 [App05:33] - 데이터 처리 실패 >> SQL문을 확인하세요
+java.lang.Exception: AnimalIns 삭제된 데이터가 없습니다.
+	at kr.yjh.services.impl.AnimalInsServiceImpl.deleteItem(AnimalInsServiceImpl.java:47)
+	at kr.yjh.mybatis.App05.main(App05.java:28)
+[ERROR] 25-04-23 17:47:38 [App05:37] - 삭제된 데이터 수 ---> 

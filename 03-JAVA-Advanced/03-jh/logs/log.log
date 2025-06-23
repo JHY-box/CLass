@@ -1,0 +1,118 @@
+[DEBUG] 25-04-18 14:15:37 [Eatfood:28] - 접속 주소: jdbc:mariadb://127.0.0.1:9090/myschool?characterEncoding=utf8&serverTimezone=UTC
+[DEBUG] 25-04-18 14:15:37 [Eatfood:32] - MariaDB JDBC 드라이버 로드 성공
+[DEBUG] 25-04-18 14:15:37 [OkPacket:59] - Database change: is 'myschool'
+[DEBUG] 25-04-18 14:15:37 [StandardClient:59] - execute query: set sql_mode=CONCAT(@@sql_mode,',STRICT_TRANS_TABLES'),session_track_system_variables = CONCAT(@@global.session_track_system_variables,',transaction_isolation'),NAMES utf8mb4
+[DEBUG] 25-04-18 14:15:37 [OkPacket:59] - System variable change:  character_set_client = utf8mb4
+[DEBUG] 25-04-18 14:15:37 [OkPacket:59] - System variable change:  character_set_connection = utf8mb4
+[DEBUG] 25-04-18 14:15:37 [OkPacket:59] - System variable change:  character_set_results = utf8mb4
+[DEBUG] 25-04-18 14:15:37 [StandardClient:59] - execute query: SELECT product_id, product_name, product_cd, category, price from food_product order by price desc limit 0, 1;
+[WARN ] 25-04-18 14:15:37 [ErrorPacket:99] - Error: 1146-42S02: Table 'myschool.food_product' doesn't exist
+[ERROR] 25-04-18 14:15:37 [Eatfood:51] - 11111111111
+[DEBUG] 25-04-18 14:16:14 [Eatfood:28] - 접속 주소: jdbc:mariadb://127.0.0.1:9090/myschool?characterEncoding=utf8&serverTimezone=UTC
+[DEBUG] 25-04-18 14:16:14 [Eatfood:32] - MariaDB JDBC 드라이버 로드 성공
+[DEBUG] 25-04-18 14:16:14 [OkPacket:59] - Database change: is 'myschool'
+[DEBUG] 25-04-18 14:16:14 [StandardClient:59] - execute query: set sql_mode=CONCAT(@@sql_mode,',STRICT_TRANS_TABLES'),session_track_system_variables = CONCAT(@@global.session_track_system_variables,',transaction_isolation'),NAMES utf8mb4
+[DEBUG] 25-04-18 14:16:14 [OkPacket:59] - System variable change:  character_set_client = utf8mb4
+[DEBUG] 25-04-18 14:16:14 [OkPacket:59] - System variable change:  character_set_connection = utf8mb4
+[DEBUG] 25-04-18 14:16:14 [OkPacket:59] - System variable change:  character_set_results = utf8mb4
+[DEBUG] 25-04-18 14:16:14 [StandardClient:59] - execute query: SELECT product_id, product_name, product_cd, category, price from food_product order by price desc limit 0, 1;
+[WARN ] 25-04-18 14:16:14 [ErrorPacket:99] - Error: 1146-42S02: Table 'myschool.food_product' doesn't exist
+[ERROR] 25-04-18 14:16:14 [Eatfood:51] - 11111111111
+[DEBUG] 25-04-18 14:19:14 [Eatfood:28] - 접속 주소: jdbc:mariadb://127.0.0.1:9090/myschool?characterEncoding=utf8&serverTimezone=UTC
+[DEBUG] 25-04-18 14:19:14 [Eatfood:32] - MariaDB JDBC 드라이버 로드 성공
+[DEBUG] 25-04-18 14:19:14 [OkPacket:59] - Database change: is 'myschool'
+[DEBUG] 25-04-18 14:19:14 [StandardClient:59] - execute query: set sql_mode=CONCAT(@@sql_mode,',STRICT_TRANS_TABLES'),session_track_system_variables = CONCAT(@@global.session_track_system_variables,',transaction_isolation'),NAMES utf8mb4
+[DEBUG] 25-04-18 14:19:14 [OkPacket:59] - System variable change:  character_set_client = utf8mb4
+[DEBUG] 25-04-18 14:19:14 [OkPacket:59] - System variable change:  character_set_connection = utf8mb4
+[DEBUG] 25-04-18 14:19:14 [OkPacket:59] - System variable change:  character_set_results = utf8mb4
+[DEBUG] 25-04-18 14:19:14 [StandardClient:59] - execute query: SELECT product_id, product_name, product_cd, category, price from food_product
+[WARN ] 25-04-18 14:19:14 [ErrorPacket:99] - Error: 1146-42S02: Table 'myschool.food_product' doesn't exist
+[ERROR] 25-04-18 14:19:14 [Eatfood:51] - SQL문 준비 실패
+[DEBUG] 25-04-18 14:20:57 [Eatfood:28] - 접속 주소: jdbc:mariadb://127.0.0.1:9090/myschool?characterEncoding=utf8&serverTimezone=UTC
+[DEBUG] 25-04-18 14:20:57 [Eatfood:32] - MariaDB JDBC 드라이버 로드 성공
+[DEBUG] 25-04-18 14:20:57 [OkPacket:59] - Database change: is 'myschool'
+[DEBUG] 25-04-18 14:20:57 [StandardClient:59] - execute query: set sql_mode=CONCAT(@@sql_mode,',STRICT_TRANS_TABLES'),session_track_system_variables = CONCAT(@@global.session_track_system_variables,',transaction_isolation'),NAMES utf8mb4
+[DEBUG] 25-04-18 14:20:57 [OkPacket:59] - System variable change:  character_set_client = utf8mb4
+[DEBUG] 25-04-18 14:20:57 [OkPacket:59] - System variable change:  character_set_connection = utf8mb4
+[DEBUG] 25-04-18 14:20:57 [OkPacket:59] - System variable change:  character_set_results = utf8mb4
+[DEBUG] 25-04-18 14:20:57 [StandardClient:59] - execute query: SELECT product_id, product_name, product_cd, category, price from food_product
+[WARN ] 25-04-18 14:20:57 [ErrorPacket:99] - Error: 1146-42S02: Table 'myschool.food_product' doesn't exist
+[ERROR] 25-04-18 14:20:57 [Eatfood:51] - SQL문 준비 실패
+[DEBUG] 25-04-18 14:22:27 [Eatfood:28] - 접속 주소: jdbc:mariadb://127.0.0.1:9090/myschool?characterEncoding=utf8&serverTimezone=UTC
+[DEBUG] 25-04-18 14:22:27 [Eatfood:32] - MariaDB JDBC 드라이버 로드 성공
+[DEBUG] 25-04-18 14:22:27 [OkPacket:59] - Database change: is 'myschool'
+[DEBUG] 25-04-18 14:22:27 [StandardClient:59] - execute query: set sql_mode=CONCAT(@@sql_mode,',STRICT_TRANS_TABLES'),session_track_system_variables = CONCAT(@@global.session_track_system_variables,',transaction_isolation'),NAMES utf8mb4
+[DEBUG] 25-04-18 14:22:27 [OkPacket:59] - System variable change:  character_set_client = utf8mb4
+[DEBUG] 25-04-18 14:22:27 [OkPacket:59] - System variable change:  character_set_connection = utf8mb4
+[DEBUG] 25-04-18 14:22:27 [OkPacket:59] - System variable change:  character_set_results = utf8mb4
+[DEBUG] 25-04-18 14:22:27 [StandardClient:59] - execute query: SELECT product_id, product_name, product_cd, category, price from food_product
+[WARN ] 25-04-18 14:22:27 [ErrorPacket:99] - Error: 1146-42S02: Table 'myschool.food_product' doesn't exist
+[ERROR] 25-04-18 14:22:27 [Eatfood:52] - SQL문 준비 실패
+[DEBUG] 25-04-18 14:26:42 [Eatfood:28] - 접속 주소: jdbc:mariadb://127.0.0.1:9090/myschool?characterEncoding=utf8&serverTimezone=UTC
+[DEBUG] 25-04-18 14:26:42 [Eatfood:32] - MariaDB JDBC 드라이버 로드 성공
+[DEBUG] 25-04-18 14:26:42 [OkPacket:59] - Database change: is 'myschool'
+[DEBUG] 25-04-18 14:26:42 [StandardClient:59] - execute query: set sql_mode=CONCAT(@@sql_mode,',STRICT_TRANS_TABLES'),session_track_system_variables = CONCAT(@@global.session_track_system_variables,',transaction_isolation'),NAMES utf8mb4
+[DEBUG] 25-04-18 14:26:42 [OkPacket:59] - System variable change:  character_set_client = utf8mb4
+[DEBUG] 25-04-18 14:26:42 [OkPacket:59] - System variable change:  character_set_connection = utf8mb4
+[DEBUG] 25-04-18 14:26:42 [OkPacket:59] - System variable change:  character_set_results = utf8mb4
+[DEBUG] 25-04-18 14:26:42 [StandardClient:59] - execute query: SELECT product_id, product_name, product_cd, category, price from food_product
+[WARN ] 25-04-18 14:26:42 [ErrorPacket:99] - Error: 1146-42S02: Table 'myschool.food_product' doesn't exist
+[ERROR] 25-04-18 14:26:42 [Eatfood:51] - SQL문 준비 실패
+[DEBUG] 25-04-18 14:30:11 [Eatfood:28] - 접속 주소: jdbc:mariadb://127.0.0.1:9090/myschool?characterEncoding=utf8&serverTimezone=UTC
+[DEBUG] 25-04-18 14:30:11 [Eatfood:32] - MariaDB JDBC 드라이버 로드 성공
+[DEBUG] 25-04-18 14:30:11 [OkPacket:59] - Database change: is 'myschool'
+[DEBUG] 25-04-18 14:30:11 [StandardClient:59] - execute query: set sql_mode=CONCAT(@@sql_mode,',STRICT_TRANS_TABLES'),session_track_system_variables = CONCAT(@@global.session_track_system_variables,',transaction_isolation'),NAMES utf8mb4
+[DEBUG] 25-04-18 14:30:11 [OkPacket:59] - System variable change:  character_set_client = utf8mb4
+[DEBUG] 25-04-18 14:30:11 [OkPacket:59] - System variable change:  character_set_connection = utf8mb4
+[DEBUG] 25-04-18 14:30:11 [OkPacket:59] - System variable change:  character_set_results = utf8mb4
+[DEBUG] 25-04-18 14:30:11 [StandardClient:59] - execute query: SELECT product_id, product_name, product_cd, category, price from food_product
+[WARN ] 25-04-18 14:30:11 [ErrorPacket:99] - Error: 1146-42S02: Table 'myschool.food_product' doesn't exist
+[ERROR] 25-04-18 14:30:11 [Eatfood:51] - SQL문 준비 실패
+[DEBUG] 25-04-18 14:33:30 [Eatfood:28] - 접속 주소: jdbc:mariadb://127.0.0.1:9090/myschool?characterEncoding=utf8&serverTimezone=UTC
+[DEBUG] 25-04-18 14:33:30 [Eatfood:32] - MariaDB JDBC 드라이버 로드 성공
+[DEBUG] 25-04-18 14:33:30 [OkPacket:59] - Database change: is 'myschool'
+[DEBUG] 25-04-18 14:33:30 [StandardClient:59] - execute query: set sql_mode=CONCAT(@@sql_mode,',STRICT_TRANS_TABLES'),session_track_system_variables = CONCAT(@@global.session_track_system_variables,',transaction_isolation'),NAMES utf8mb4
+[DEBUG] 25-04-18 14:33:30 [OkPacket:59] - System variable change:  character_set_client = utf8mb4
+[DEBUG] 25-04-18 14:33:30 [OkPacket:59] - System variable change:  character_set_connection = utf8mb4
+[DEBUG] 25-04-18 14:33:30 [OkPacket:59] - System variable change:  character_set_results = utf8mb4
+[DEBUG] 25-04-18 14:33:30 [StandardClient:59] - execute query: SELECT product_id, product_name, product_cd, category, price from food_product
+[WARN ] 25-04-18 14:33:30 [ErrorPacket:99] - Error: 1146-42S02: Table 'myschool.food_product' doesn't exist
+[ERROR] 25-04-18 14:33:30 [Eatfood:51] - SQL문 준비 실패
+[DEBUG] 25-04-18 14:33:44 [Eatfood:28] - 접속 주소: jdbc:mariadb://127.0.0.1:9090/myschool?characterEncoding=utf8&serverTimezone=UTC
+[DEBUG] 25-04-18 14:33:44 [Eatfood:32] - MariaDB JDBC 드라이버 로드 성공
+[DEBUG] 25-04-18 14:33:44 [OkPacket:59] - Database change: is 'myschool'
+[DEBUG] 25-04-18 14:33:44 [StandardClient:59] - execute query: set sql_mode=CONCAT(@@sql_mode,',STRICT_TRANS_TABLES'),session_track_system_variables = CONCAT(@@global.session_track_system_variables,',transaction_isolation'),NAMES utf8mb4
+[DEBUG] 25-04-18 14:33:44 [OkPacket:59] - System variable change:  character_set_client = utf8mb4
+[DEBUG] 25-04-18 14:33:44 [OkPacket:59] - System variable change:  character_set_connection = utf8mb4
+[DEBUG] 25-04-18 14:33:44 [OkPacket:59] - System variable change:  character_set_results = utf8mb4
+[DEBUG] 25-04-18 14:33:44 [StandardClient:59] - execute query: SELECT product_id, product_name, product_cd, category, price from food_product
+[WARN ] 25-04-18 14:33:44 [ErrorPacket:99] - Error: 1146-42S02: Table 'myschool.food_product' doesn't exist
+[ERROR] 25-04-18 14:33:44 [Eatfood:51] - SQL문 준비 실패
+[DEBUG] 25-04-18 14:39:01 [Eatfood:28] - 접속 주소: jdbc:mariadb://127.0.0.1:9090/programmers?characterEncoding=utf8&serverTimezone=UTC
+[DEBUG] 25-04-18 14:39:01 [Eatfood:33] - MariaDB JDBC 드라이버 로드 성공
+[DEBUG] 25-04-18 14:39:01 [OkPacket:59] - Database change: is 'programmers'
+[DEBUG] 25-04-18 14:39:01 [StandardClient:59] - execute query: set sql_mode=CONCAT(@@sql_mode,',STRICT_TRANS_TABLES'),session_track_system_variables = CONCAT(@@global.session_track_system_variables,',transaction_isolation'),NAMES utf8mb4
+[DEBUG] 25-04-18 14:39:01 [OkPacket:59] - System variable change:  character_set_client = utf8mb4
+[DEBUG] 25-04-18 14:39:01 [OkPacket:59] - System variable change:  character_set_connection = utf8mb4
+[DEBUG] 25-04-18 14:39:01 [OkPacket:59] - System variable change:  character_set_results = utf8mb4
+[DEBUG] 25-04-18 14:39:01 [StandardClient:59] - execute query: SELECT product_id, product_name, product_cd, category, price from food_product
+[DEBUG] 25-04-18 14:39:01 [Eatfood:68] - ID: P0001
+[DEBUG] 25-04-18 14:39:01 [Eatfood:69] - 이름: 맛있는라면
+[DEBUG] 25-04-18 14:39:01 [Eatfood:70] - 코드: CD_ND00001
+[DEBUG] 25-04-18 14:39:01 [Eatfood:71] - 분류: 면
+[DEBUG] 25-04-18 14:39:01 [Eatfood:72] - 가격: 3780
+[DEBUG] 25-04-18 14:39:01 [Eatfood:81] - 학과 객체: Food_product(product_id=P0001, product_name=맛있는라면, product_cd=CD_ND00001, category=면, price=3780)
+[DEBUG] 25-04-18 14:39:18 [Eatfood:28] - 접속 주소: jdbc:mariadb://127.0.0.1:9090/programmers?characterEncoding=utf8&serverTimezone=UTC
+[DEBUG] 25-04-18 14:39:18 [Eatfood:33] - MariaDB JDBC 드라이버 로드 성공
+[DEBUG] 25-04-18 14:39:18 [OkPacket:59] - Database change: is 'programmers'
+[DEBUG] 25-04-18 14:39:18 [StandardClient:59] - execute query: set sql_mode=CONCAT(@@sql_mode,',STRICT_TRANS_TABLES'),session_track_system_variables = CONCAT(@@global.session_track_system_variables,',transaction_isolation'),NAMES utf8mb4
+[DEBUG] 25-04-18 14:39:18 [OkPacket:59] - System variable change:  character_set_client = utf8mb4
+[DEBUG] 25-04-18 14:39:18 [OkPacket:59] - System variable change:  character_set_connection = utf8mb4
+[DEBUG] 25-04-18 14:39:18 [OkPacket:59] - System variable change:  character_set_results = utf8mb4
+[DEBUG] 25-04-18 14:39:18 [StandardClient:59] - execute query: SELECT product_id, product_name, product_cd, category, price from food_product
+[DEBUG] 25-04-18 14:39:18 [Eatfood:68] - ID: P0001
+[DEBUG] 25-04-18 14:39:18 [Eatfood:69] - 이름: 맛있는라면
+[DEBUG] 25-04-18 14:39:18 [Eatfood:70] - 코드: CD_ND00001
+[DEBUG] 25-04-18 14:39:18 [Eatfood:71] - 분류: 면
+[DEBUG] 25-04-18 14:39:18 [Eatfood:72] - 가격: 3780
+[DEBUG] 25-04-18 14:39:18 [Eatfood:81] - 학과 객체: Food_product(product_id=P0001, product_name=맛있는라면, product_cd=CD_ND00001, category=면, price=3780)

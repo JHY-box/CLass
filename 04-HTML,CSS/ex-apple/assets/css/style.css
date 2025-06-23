@@ -1,0 +1,82 @@
+/** 모든 페이지에서 사용될 공통적인 내용을 정의 */
+
+
+/*-------------------------------------------------------------------
+ * 공 통
+ *-------------------------------------------------------------------*/
+ 
+ * {
+  font-family: "Noto Sans KR";
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.content-container {
+  max-width: 1200px;
+  color: #000;
+}
+
+/*-------------------------------------------------------------------
+ * 상 단
+ *-------------------------------------------------------------------*/
+
+  .header {
+
+    position: fixed;
+    left:0;
+    top: 0;
+    width: 100%;
+    z-index: 9000;
+
+    background-color: #fff;;
+    
+    .content-container {
+      display:flex;
+      justify-content:right;
+      
+      .icon-button {
+        font-size: 24px;
+        font-weight: 900;
+        padding:16px;
+      }
+
+      .icon-button:hover {
+        background-color: #ddd;
+        color: #fff;
+      }
+    }
+  
+  
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    cursor: pointer;
+  }
+}
+  
+  main {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  footer {
+    background-color: #f2f2f2;
+    padding: 2rem;
+    font-size: 0.875rem;
+    color: #666;
+    text-align: center;
+  }
+  
+
+  

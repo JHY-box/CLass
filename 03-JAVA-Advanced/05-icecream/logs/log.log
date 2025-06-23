@@ -1,0 +1,37 @@
+[DEBUG] 25-04-23 17:39:40 [selectList:135] - ==>  Preparing: SELECT ANIMAL_ID,ANIMAL_TYPE, DATETIME, INTAKE_CONDITION, NAME, SEX_UPON_INTAKE FROM ANIMAL_INS WHERE name LIKE CONCAT('%', ?, '%')
+[DEBUG] 25-04-23 17:39:40 [selectList:135] - ==> Parameters: ppy(String)
+[INFO ] 25-04-23 17:39:40 [sqlonly:228] - SELECT ANIMAL_ID,ANIMAL_TYPE, DATETIME, INTAKE_CONDITION, NAME, SEX_UPON_INTAKE FROM ANIMAL_INS WHERE name LIKE CONCAT('%', 'ppy', '%')
+
+[INFO ] 25-04-23 17:39:40 [resultsettable:610] - 
+|----------|------------|--------------------|-----------------|------|----------------|
+|animal_id |animal_type |datetime            |intake_condition |name  |sex_upon_intake |
+|----------|------------|--------------------|-----------------|------|----------------|
+|A357444   |Dog         |2016-03-11 15:43:00 |Normal           |Puppy |Neutered Male   |
+|A357846   |Dog         |2016-03-17 14:09:00 |Normal           |Happy |Neutered Male   |
+|----------|------------|--------------------|-----------------|------|----------------|
+
+[DEBUG] 25-04-23 17:39:40 [selectList:135] - <==      Total: 2
+[DEBUG] 25-04-23 17:39:40 [selectCount:135] - ==>  Preparing: SELECT COUNT(*) FROM ANIMAL_INS WHERE name LIKE CONCAT('%', ?, '%')
+[DEBUG] 25-04-23 17:39:40 [selectCount:135] - ==> Parameters: ppy(String)
+[INFO ] 25-04-23 17:39:40 [sqlonly:228] - SELECT COUNT(*) FROM ANIMAL_INS WHERE name LIKE CONCAT('%', 'ppy', '%')
+
+[INFO ] 25-04-23 17:39:40 [resultsettable:610] - 
+|---------|
+|count(*) |
+|---------|
+|2        |
+|---------|
+
+[DEBUG] 25-04-23 17:39:40 [selectCount:135] - <==      Total: 1
+[ERROR] 25-04-23 17:39:40 [App01:40] - 조회결과 --->> 
+[ERROR] 25-04-23 17:39:40 [App01:41] - 조회된 데이터 수 --->> 
+[DEBUG] 25-04-23 17:47:38 [delete:135] - ==>  Preparing: DELETE FROM ANIMAL_INS WHERE ANIMAL_ID=?
+[DEBUG] 25-04-23 17:47:38 [delete:135] - ==> Parameters: A983298(String)
+[INFO ] 25-04-23 17:47:38 [sqlonly:228] - DELETE FROM ANIMAL_INS WHERE ANIMAL_ID='A983298'
+
+[DEBUG] 25-04-23 17:47:38 [delete:135] - <==    Updates: 0
+[ERROR] 25-04-23 17:47:38 [App05:33] - 데이터 처리 실패 >> SQL문을 확인하세요
+java.lang.Exception: AnimalIns 삭제된 데이터가 없습니다.
+	at kr.yjh.services.impl.AnimalInsServiceImpl.deleteItem(AnimalInsServiceImpl.java:47)
+	at kr.yjh.mybatis.App05.main(App05.java:28)
+[ERROR] 25-04-23 17:47:38 [App05:37] - 삭제된 데이터 수 ---> 

@@ -1,0 +1,1238 @@
+[DEBUG] 25-04-22 09:38:38 [selectList:135] - ==>  Preparing: SELECT id, dname, loc, phone, email, established, homepage FROM departments
+[DEBUG] 25-04-22 09:38:38 [selectList:135] - ==> Parameters: 
+[INFO ] 25-04-22 09:38:38 [sqlonly:228] - SELECT id, dname, loc, phone, email, established, homepage FROM departments
+
+[INFO ] 25-04-22 09:38:38 [resultsettable:610] - 
+|----|--------|------|--------------|---------------------|------------|------------------------------|
+|id  |dname   |loc   |phone         |email                |established |homepage                      |
+|----|--------|------|--------------|---------------------|------------|------------------------------|
+|101 |컴퓨터공학과  |공학관   |051-123-4567  |cs@myschool.ac.kr    |1990        |http://cs.myschool.ac.kr      |
+|102 |멀티미디어학과 |디자인관  |051-124-4567  |media@myschool.ac.kr |1995        |http://media.myschool.ac.kr   |
+|201 |전자공학과   |공학관   |051-125-4567  |ee@myschool.ac.kr    |1985        |http://ee.myschool.ac.kr      |
+|202 |기계공학과   |공학관   |051-126-4567  |me@myschool.ac.kr    |1988        |http://machine.myschool.ac.kr |
+|203 |건축학과    |건축관   |051-127-4567  |arch@myschool.ac.kr  |1992        |null                          |
+|204 |산업디자인학과 |디자인관  |051-128-4567  |id@myschool.ac.kr    |1996        |http://id.myschool.ac.kr      |
+|301 |경영학과    |경영관   |051-129-4567  |biz@myschool.ac.kr   |1980        |http://biz.myschool.ac.kr     |
+|302 |경제학과    |경영관   |051-130-4567  |econ@myschool.ac.kr  |1982        |null                          |
+|401 |영어영문학과  |인문사회관 |051-131-4567  |eng@myschool.ac.kr   |1975        |null                          |
+|402 |심리학과    |인문사회관 |051-132-4567  |psy@myschool.ac.kr   |1987        |http://psy.myschool.ac.kr     |
+|500 |인공지능학과  |공학관   |051-123-4567  |ai@myschool.ac.kr    |2001        |http://ai.myschool.ac.kr      |
+|501 |수정된학과   |수정된위치 |010-1234-1234 |edit@gmail.com       |2025        |https://www.megastudy.com     |
+|502 |심리학과    |인문관   |051-336-7788  |psyc@myschool.ac.kr  |2000        |http://psyc.myschool.ac.kr    |
+|503 |체육학과    |체육관   |051-434-3345  |phy@myschool.ac.kr   |2004        |http://phy.myschool.ac.kr     |
+|504 |신규학과    |위치    |010-1234-1234 |hell@gmail.com       |2025        |null                          |
+|505 |신규학과    |위치    |010-1234-1234 |hell@gmail.com       |2025        |null                          |
+|506 |신규학과    |위치    |010-1234-1234 |hell@gmail.com       |2025        |null                          |
+|507 |신규학과    |위치    |010-1234-1234 |hell@gmail.com       |2025        |null                          |
+|508 |새로운학과   |B-1   |010-1234-1234 |megastudy@hello.com  |2020        |https://megastudy.com         |
+|509 |새로운학과   |B-1   |010-1234-1234 |megastudy@hello.com  |2020        |https://megastudy.com         |
+|510 |새로운학과   |B-1   |010-1234-1234 |megastudy@hello.com  |2020        |https://megastudy.com         |
+|----|--------|------|--------------|---------------------|------------|------------------------------|
+
+[DEBUG] 25-04-22 09:38:38 [selectList:135] - <==      Total: 21
+[DEBUG] 25-04-22 09:38:38 [App05:26] - 조회결과: [Department(id=101, dname=컴퓨터공학과, loc=공학관, phone=051-123-4567, email=cs@myschool.ac.kr, established=1990, homepage=http://cs.myschool.ac.kr), Department(id=102, dname=멀티미디어학과, loc=디자인관, phone=051-124-4567, email=media@myschool.ac.kr, established=1995, homepage=http://media.myschool.ac.kr), Department(id=201, dname=전자공학과, loc=공학관, phone=051-125-4567, email=ee@myschool.ac.kr, established=1985, homepage=http://ee.myschool.ac.kr), Department(id=202, dname=기계공학과, loc=공학관, phone=051-126-4567, email=me@myschool.ac.kr, established=1988, homepage=http://machine.myschool.ac.kr), Department(id=203, dname=건축학과, loc=건축관, phone=051-127-4567, email=arch@myschool.ac.kr, established=1992, homepage=null), Department(id=204, dname=산업디자인학과, loc=디자인관, phone=051-128-4567, email=id@myschool.ac.kr, established=1996, homepage=http://id.myschool.ac.kr), Department(id=301, dname=경영학과, loc=경영관, phone=051-129-4567, email=biz@myschool.ac.kr, established=1980, homepage=http://biz.myschool.ac.kr), Department(id=302, dname=경제학과, loc=경영관, phone=051-130-4567, email=econ@myschool.ac.kr, established=1982, homepage=null), Department(id=401, dname=영어영문학과, loc=인문사회관, phone=051-131-4567, email=eng@myschool.ac.kr, established=1975, homepage=null), Department(id=402, dname=심리학과, loc=인문사회관, phone=051-132-4567, email=psy@myschool.ac.kr, established=1987, homepage=http://psy.myschool.ac.kr), Department(id=500, dname=인공지능학과, loc=공학관, phone=051-123-4567, email=ai@myschool.ac.kr, established=2001, homepage=http://ai.myschool.ac.kr), Department(id=501, dname=수정된학과, loc=수정된위치, phone=010-1234-1234, email=edit@gmail.com, established=2025, homepage=https://www.megastudy.com), Department(id=502, dname=심리학과, loc=인문관, phone=051-336-7788, email=psyc@myschool.ac.kr, established=2000, homepage=http://psyc.myschool.ac.kr), Department(id=503, dname=체육학과, loc=체육관, phone=051-434-3345, email=phy@myschool.ac.kr, established=2004, homepage=http://phy.myschool.ac.kr), Department(id=504, dname=신규학과, loc=위치, phone=010-1234-1234, email=hell@gmail.com, established=2025, homepage=null), Department(id=505, dname=신규학과, loc=위치, phone=010-1234-1234, email=hell@gmail.com, established=2025, homepage=null), Department(id=506, dname=신규학과, loc=위치, phone=010-1234-1234, email=hell@gmail.com, established=2025, homepage=null), Department(id=507, dname=신규학과, loc=위치, phone=010-1234-1234, email=hell@gmail.com, established=2025, homepage=null), Department(id=508, dname=새로운학과, loc=B-1, phone=010-1234-1234, email=megastudy@hello.com, established=2020, homepage=https://megastudy.com), Department(id=509, dname=새로운학과, loc=B-1, phone=010-1234-1234, email=megastudy@hello.com, established=2020, homepage=https://megastudy.com), Department(id=510, dname=새로운학과, loc=B-1, phone=010-1234-1234, email=megastudy@hello.com, established=2020, homepage=https://megastudy.com)]
+[DEBUG] 25-04-22 09:39:04 [selectOne:135] - ==>  Preparing: SELECT id, dname, loc, phone, email, established, homepage FROM departments WHERE id = ?
+[DEBUG] 25-04-22 09:39:05 [selectOne:135] - ==> Parameters: 504(Integer)
+[INFO ] 25-04-22 09:39:05 [sqlonly:228] - SELECT id, dname, loc, phone, email, established, homepage FROM departments WHERE id = 504
+
+[INFO ] 25-04-22 09:39:05 [resultsettable:610] - 
+|----|------|----|--------------|---------------|------------|---------|
+|id  |dname |loc |phone         |email          |established |homepage |
+|----|------|----|--------------|---------------|------------|---------|
+|504 |신규학과  |위치  |010-1234-1234 |hell@gmail.com |2025        |null     |
+|----|------|----|--------------|---------------|------------|---------|
+
+[DEBUG] 25-04-22 09:39:05 [selectOne:135] - <==      Total: 1
+[DEBUG] 25-04-22 09:39:05 [App04:24] - 조회결과: Department(id=504, dname=신규학과, loc=위치, phone=010-1234-1234, email=hell@gmail.com, established=2025, homepage=null)
+[DEBUG] 25-04-22 09:39:09 [delete:135] - ==>  Preparing: DELETE FROM departments WHERE id = ?
+[DEBUG] 25-04-22 09:39:09 [delete:135] - ==> Parameters: 511(Integer)
+[INFO ] 25-04-22 09:39:09 [sqlonly:228] - DELETE FROM departments WHERE id = 511
+
+[DEBUG] 25-04-22 09:39:09 [delete:135] - <==    Updates: 0
+[DEBUG] 25-04-22 09:39:09 [App03:30] - 삭제된 데이터의 수: 0
+[DEBUG] 25-04-22 12:22:10 [selectOne:135] - ==>  Preparing: SELECT id, dname, loc, phone, email, established, homepage FROM departments WHERE id = ?
+[DEBUG] 25-04-22 12:22:10 [selectOne:135] - ==> Parameters: null
+[INFO ] 25-04-22 12:22:10 [sqlonly:228] - SELECT id, dname, loc, phone, email, established, homepage FROM departments WHERE id = NULL
+
+[INFO ] 25-04-22 12:22:10 [resultsettable:610] - 
+|---|------|----|------|------|------------|---------|
+|id |dname |loc |phone |email |established |homepage |
+|---|------|----|------|------|------------|---------|
+|---|------|----|------|------|------------|---------|
+
+[DEBUG] 25-04-22 12:22:10 [selectOne:135] - <==      Total: 0
+[ERROR] 25-04-22 12:22:10 [App11:38] - 처리된 테이터없음 >> WHERE절을 확인하세요
+kr.yjh.exceptions.ServiceNoResultException: 조회결과가 없습니다. 
+	at kr.yjh.services.impl.DepartmentServiceimpl.getItem(DepartmentServiceimpl.java:51)
+	at kr.yjh.mybatis.App11.main(App11.java:36)
+[ERROR] 25-04-22 17:02:53 [App14:39] - 처리된 데이터 실패 >> SQL문을 확인하세요
+java.lang.NullPointerException: Cannot invoke "kr.yjh.models.Department.getId()" because "input" is null
+	at kr.yjh.services.impl.DepartmentServiceimpl.deleteItem(DepartmentServiceimpl.java:118)
+	at kr.yjh.mybatis.App14.main(App14.java:34)
+[DEBUG] 25-04-22 17:02:53 [App14:46] - 삭제된 데이터 수 --->  0
+[ERROR] 25-04-22 17:05:14 [App14:39] - 처리된 데이터 실패 >> SQL문을 확인하세요
+java.lang.NullPointerException: Cannot invoke "kr.yjh.models.Department.getId()" because "input" is null
+	at kr.yjh.services.impl.DepartmentServiceimpl.deleteItem(DepartmentServiceimpl.java:118)
+	at kr.yjh.mybatis.App14.main(App14.java:34)
+[DEBUG] 25-04-22 17:05:14 [App14:46] - 삭제된 데이터 수 --->  0
+[DEBUG] 25-04-22 17:10:01 [deleteByStudentId:135] - ==>  Preparing: SELECT id FROM student WHERE department_id = ? OR professor_id IN( SELECT id FROM professor WHERE department_id = ?) )
+[DEBUG] 25-04-22 17:10:01 [deleteByStudentId:135] - ==> Parameters: 102(Integer), 102(Integer)
+[INFO ] 25-04-22 17:10:01 [sqlonly:228] - SELECT id FROM student WHERE department_id = 102 OR professor_id IN( SELECT id FROM professor WHERE department_id = 102) )
+
+[WARN ] 25-04-22 17:10:01 [ErrorPacket:99] - Error: 1064-42000: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1
+[ERROR] 25-04-22 17:10:01 [sqlonly:144] - 1. PreparedStatement.execute() SELECT id FROM student WHERE department_id = 102 OR professor_id IN( SELECT id FROM professor WHERE department_id = 102) )
+
+java.sql.SQLSyntaxErrorException: (conn=93) You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1
+	at org.mariadb.jdbc.export.ExceptionFactory.createException(ExceptionFactory.java:289)
+	at org.mariadb.jdbc.export.ExceptionFactory.create(ExceptionFactory.java:378)
+	at org.mariadb.jdbc.message.ClientMessage.readPacket(ClientMessage.java:187)
+	at org.mariadb.jdbc.client.impl.StandardClient.readPacket(StandardClient.java:1364)
+	at org.mariadb.jdbc.client.impl.StandardClient.readResults(StandardClient.java:1303)
+	at org.mariadb.jdbc.client.impl.StandardClient.readResponse(StandardClient.java:1222)
+	at org.mariadb.jdbc.client.impl.StandardClient.execute(StandardClient.java:1146)
+	at org.mariadb.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:87)
+	at org.mariadb.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:232)
+	at net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy.execute(PreparedStatementSpy.java:443)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:58)
+	at jdk.proxy3/jdk.proxy3.$Proxy18.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:48)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:75)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.delete(DefaultSqlSession.java:212)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:72)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at jdk.proxy2/jdk.proxy2.$Proxy13.deleteByStudentId(Unknown Source)
+	at kr.yjh.services.impl.DepartmentServiceimpl.deleteItem(DepartmentServiceimpl.java:119)
+	at kr.yjh.mybatis.App14.main(App14.java:34)
+[ERROR] 25-04-22 17:10:01 [App14:39] - 처리된 데이터 실패 >> SQL문을 확인하세요
+org.apache.ibatis.exceptions.PersistenceException: 
+### Error updating database.  Cause: java.sql.SQLSyntaxErrorException: (conn=93) You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1
+### The error may exist in kr/yjh/mappers/EnrollmentMapper.java (best guess)
+### The error may involve kr.yjh.mappers.EnrollmentMapper.deleteByStudentId-Inline
+### The error occurred while setting parameters
+### SQL: SELECT id FROM student WHERE department_id = ? OR professor_id IN( SELECT id FROM professor WHERE department_id = ?) )
+### Cause: java.sql.SQLSyntaxErrorException: (conn=93) You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:199)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.delete(DefaultSqlSession.java:212)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:72)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at jdk.proxy2/jdk.proxy2.$Proxy13.deleteByStudentId(Unknown Source)
+	at kr.yjh.services.impl.DepartmentServiceimpl.deleteItem(DepartmentServiceimpl.java:119)
+	at kr.yjh.mybatis.App14.main(App14.java:34)
+Caused by: java.sql.SQLSyntaxErrorException: (conn=93) You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1
+	at org.mariadb.jdbc.export.ExceptionFactory.createException(ExceptionFactory.java:289)
+	at org.mariadb.jdbc.export.ExceptionFactory.create(ExceptionFactory.java:378)
+	at org.mariadb.jdbc.message.ClientMessage.readPacket(ClientMessage.java:187)
+	at org.mariadb.jdbc.client.impl.StandardClient.readPacket(StandardClient.java:1364)
+	at org.mariadb.jdbc.client.impl.StandardClient.readResults(StandardClient.java:1303)
+	at org.mariadb.jdbc.client.impl.StandardClient.readResponse(StandardClient.java:1222)
+	at org.mariadb.jdbc.client.impl.StandardClient.execute(StandardClient.java:1146)
+	at org.mariadb.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:87)
+	at org.mariadb.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:232)
+	at net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy.execute(PreparedStatementSpy.java:443)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:58)
+	at jdk.proxy3/jdk.proxy3.$Proxy18.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:48)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:75)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	... 7 common frames omitted
+[DEBUG] 25-04-22 17:10:01 [App14:46] - 삭제된 데이터 수 --->  0
+[DEBUG] 25-04-22 17:15:09 [deleteByStudentId:135] - ==>  Preparing: SELECT id FROM student WHERE department_id = ? OR professor_id IN(SELECT id FROM professor WHERE department_id = ?))
+[DEBUG] 25-04-22 17:15:09 [deleteByStudentId:135] - ==> Parameters: 102(Integer), 102(Integer)
+[INFO ] 25-04-22 17:15:09 [sqlonly:228] - SELECT id FROM student WHERE department_id = 102 OR professor_id IN(SELECT id FROM professor WHERE department_id = 102))
+
+[WARN ] 25-04-22 17:15:09 [ErrorPacket:99] - Error: 1064-42000: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1
+[ERROR] 25-04-22 17:15:09 [sqlonly:144] - 1. PreparedStatement.execute() SELECT id FROM student WHERE department_id = 102 OR professor_id IN(SELECT id FROM professor WHERE department_id = 102))
+
+java.sql.SQLSyntaxErrorException: (conn=94) You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1
+	at org.mariadb.jdbc.export.ExceptionFactory.createException(ExceptionFactory.java:289)
+	at org.mariadb.jdbc.export.ExceptionFactory.create(ExceptionFactory.java:378)
+	at org.mariadb.jdbc.message.ClientMessage.readPacket(ClientMessage.java:187)
+	at org.mariadb.jdbc.client.impl.StandardClient.readPacket(StandardClient.java:1364)
+	at org.mariadb.jdbc.client.impl.StandardClient.readResults(StandardClient.java:1303)
+	at org.mariadb.jdbc.client.impl.StandardClient.readResponse(StandardClient.java:1222)
+	at org.mariadb.jdbc.client.impl.StandardClient.execute(StandardClient.java:1146)
+	at org.mariadb.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:87)
+	at org.mariadb.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:232)
+	at net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy.execute(PreparedStatementSpy.java:443)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:58)
+	at jdk.proxy3/jdk.proxy3.$Proxy18.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:48)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:75)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.delete(DefaultSqlSession.java:212)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:72)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at jdk.proxy2/jdk.proxy2.$Proxy13.deleteByStudentId(Unknown Source)
+	at kr.yjh.services.impl.DepartmentServiceimpl.deleteItem(DepartmentServiceimpl.java:119)
+	at kr.yjh.mybatis.App14.main(App14.java:34)
+[ERROR] 25-04-22 17:15:09 [App14:39] - 처리된 데이터 실패 >> SQL문을 확인하세요
+org.apache.ibatis.exceptions.PersistenceException: 
+### Error updating database.  Cause: java.sql.SQLSyntaxErrorException: (conn=94) You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1
+### The error may exist in kr/yjh/mappers/EnrollmentMapper.java (best guess)
+### The error may involve kr.yjh.mappers.EnrollmentMapper.deleteByStudentId-Inline
+### The error occurred while setting parameters
+### SQL: SELECT id FROM student WHERE department_id = ? OR professor_id IN(SELECT id FROM professor WHERE department_id = ?))
+### Cause: java.sql.SQLSyntaxErrorException: (conn=94) You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:199)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.delete(DefaultSqlSession.java:212)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:72)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at jdk.proxy2/jdk.proxy2.$Proxy13.deleteByStudentId(Unknown Source)
+	at kr.yjh.services.impl.DepartmentServiceimpl.deleteItem(DepartmentServiceimpl.java:119)
+	at kr.yjh.mybatis.App14.main(App14.java:34)
+Caused by: java.sql.SQLSyntaxErrorException: (conn=94) You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1
+	at org.mariadb.jdbc.export.ExceptionFactory.createException(ExceptionFactory.java:289)
+	at org.mariadb.jdbc.export.ExceptionFactory.create(ExceptionFactory.java:378)
+	at org.mariadb.jdbc.message.ClientMessage.readPacket(ClientMessage.java:187)
+	at org.mariadb.jdbc.client.impl.StandardClient.readPacket(StandardClient.java:1364)
+	at org.mariadb.jdbc.client.impl.StandardClient.readResults(StandardClient.java:1303)
+	at org.mariadb.jdbc.client.impl.StandardClient.readResponse(StandardClient.java:1222)
+	at org.mariadb.jdbc.client.impl.StandardClient.execute(StandardClient.java:1146)
+	at org.mariadb.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:87)
+	at org.mariadb.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:232)
+	at net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy.execute(PreparedStatementSpy.java:443)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:58)
+	at jdk.proxy3/jdk.proxy3.$Proxy18.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:48)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:75)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	... 7 common frames omitted
+[DEBUG] 25-04-22 17:15:09 [App14:46] - 삭제된 데이터 수 --->  0
+[DEBUG] 25-04-22 17:15:16 [deleteByStudentId:135] - ==>  Preparing: SELECT id FROM student WHERE department_id = ? OR professor_id IN(SELECT id FROM professor WHERE department_id = ?))
+[DEBUG] 25-04-22 17:15:16 [deleteByStudentId:135] - ==> Parameters: 102(Integer), 102(Integer)
+[INFO ] 25-04-22 17:15:16 [sqlonly:228] - SELECT id FROM student WHERE department_id = 102 OR professor_id IN(SELECT id FROM professor WHERE department_id = 102))
+
+[WARN ] 25-04-22 17:15:16 [ErrorPacket:99] - Error: 1064-42000: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1
+[ERROR] 25-04-22 17:15:16 [sqlonly:144] - 1. PreparedStatement.execute() SELECT id FROM student WHERE department_id = 102 OR professor_id IN(SELECT id FROM professor WHERE department_id = 102))
+
+java.sql.SQLSyntaxErrorException: (conn=95) You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1
+	at org.mariadb.jdbc.export.ExceptionFactory.createException(ExceptionFactory.java:289)
+	at org.mariadb.jdbc.export.ExceptionFactory.create(ExceptionFactory.java:378)
+	at org.mariadb.jdbc.message.ClientMessage.readPacket(ClientMessage.java:187)
+	at org.mariadb.jdbc.client.impl.StandardClient.readPacket(StandardClient.java:1364)
+	at org.mariadb.jdbc.client.impl.StandardClient.readResults(StandardClient.java:1303)
+	at org.mariadb.jdbc.client.impl.StandardClient.readResponse(StandardClient.java:1222)
+	at org.mariadb.jdbc.client.impl.StandardClient.execute(StandardClient.java:1146)
+	at org.mariadb.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:87)
+	at org.mariadb.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:232)
+	at net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy.execute(PreparedStatementSpy.java:443)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:58)
+	at jdk.proxy3/jdk.proxy3.$Proxy18.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:48)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:75)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.delete(DefaultSqlSession.java:212)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:72)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at jdk.proxy2/jdk.proxy2.$Proxy13.deleteByStudentId(Unknown Source)
+	at kr.yjh.services.impl.DepartmentServiceimpl.deleteItem(DepartmentServiceimpl.java:119)
+	at kr.yjh.mybatis.App14.main(App14.java:34)
+[ERROR] 25-04-22 17:15:16 [App14:39] - 처리된 데이터 실패 >> SQL문을 확인하세요
+org.apache.ibatis.exceptions.PersistenceException: 
+### Error updating database.  Cause: java.sql.SQLSyntaxErrorException: (conn=95) You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1
+### The error may exist in kr/yjh/mappers/EnrollmentMapper.java (best guess)
+### The error may involve kr.yjh.mappers.EnrollmentMapper.deleteByStudentId-Inline
+### The error occurred while setting parameters
+### SQL: SELECT id FROM student WHERE department_id = ? OR professor_id IN(SELECT id FROM professor WHERE department_id = ?))
+### Cause: java.sql.SQLSyntaxErrorException: (conn=95) You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:199)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.delete(DefaultSqlSession.java:212)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:72)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at jdk.proxy2/jdk.proxy2.$Proxy13.deleteByStudentId(Unknown Source)
+	at kr.yjh.services.impl.DepartmentServiceimpl.deleteItem(DepartmentServiceimpl.java:119)
+	at kr.yjh.mybatis.App14.main(App14.java:34)
+Caused by: java.sql.SQLSyntaxErrorException: (conn=95) You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1
+	at org.mariadb.jdbc.export.ExceptionFactory.createException(ExceptionFactory.java:289)
+	at org.mariadb.jdbc.export.ExceptionFactory.create(ExceptionFactory.java:378)
+	at org.mariadb.jdbc.message.ClientMessage.readPacket(ClientMessage.java:187)
+	at org.mariadb.jdbc.client.impl.StandardClient.readPacket(StandardClient.java:1364)
+	at org.mariadb.jdbc.client.impl.StandardClient.readResults(StandardClient.java:1303)
+	at org.mariadb.jdbc.client.impl.StandardClient.readResponse(StandardClient.java:1222)
+	at org.mariadb.jdbc.client.impl.StandardClient.execute(StandardClient.java:1146)
+	at org.mariadb.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:87)
+	at org.mariadb.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:232)
+	at net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy.execute(PreparedStatementSpy.java:443)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:58)
+	at jdk.proxy3/jdk.proxy3.$Proxy18.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:48)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:75)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	... 7 common frames omitted
+[DEBUG] 25-04-22 17:15:16 [App14:46] - 삭제된 데이터 수 --->  0
+[DEBUG] 25-04-22 17:15:20 [deleteByStudentId:135] - ==>  Preparing: SELECT id FROM student WHERE department_id = ? OR professor_id IN(SELECT id FROM professor WHERE department_id = ?))
+[DEBUG] 25-04-22 17:15:20 [deleteByStudentId:135] - ==> Parameters: 102(Integer), 102(Integer)
+[INFO ] 25-04-22 17:15:20 [sqlonly:228] - SELECT id FROM student WHERE department_id = 102 OR professor_id IN(SELECT id FROM professor WHERE department_id = 102))
+
+[WARN ] 25-04-22 17:15:20 [ErrorPacket:99] - Error: 1064-42000: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1
+[ERROR] 25-04-22 17:15:20 [sqlonly:144] - 1. PreparedStatement.execute() SELECT id FROM student WHERE department_id = 102 OR professor_id IN(SELECT id FROM professor WHERE department_id = 102))
+
+java.sql.SQLSyntaxErrorException: (conn=96) You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1
+	at org.mariadb.jdbc.export.ExceptionFactory.createException(ExceptionFactory.java:289)
+	at org.mariadb.jdbc.export.ExceptionFactory.create(ExceptionFactory.java:378)
+	at org.mariadb.jdbc.message.ClientMessage.readPacket(ClientMessage.java:187)
+	at org.mariadb.jdbc.client.impl.StandardClient.readPacket(StandardClient.java:1364)
+	at org.mariadb.jdbc.client.impl.StandardClient.readResults(StandardClient.java:1303)
+	at org.mariadb.jdbc.client.impl.StandardClient.readResponse(StandardClient.java:1222)
+	at org.mariadb.jdbc.client.impl.StandardClient.execute(StandardClient.java:1146)
+	at org.mariadb.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:87)
+	at org.mariadb.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:232)
+	at net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy.execute(PreparedStatementSpy.java:443)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:58)
+	at jdk.proxy3/jdk.proxy3.$Proxy18.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:48)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:75)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.delete(DefaultSqlSession.java:212)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:72)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at jdk.proxy2/jdk.proxy2.$Proxy13.deleteByStudentId(Unknown Source)
+	at kr.yjh.services.impl.DepartmentServiceimpl.deleteItem(DepartmentServiceimpl.java:119)
+	at kr.yjh.mybatis.App14.main(App14.java:34)
+[ERROR] 25-04-22 17:15:20 [App14:39] - 처리된 데이터 실패 >> SQL문을 확인하세요
+org.apache.ibatis.exceptions.PersistenceException: 
+### Error updating database.  Cause: java.sql.SQLSyntaxErrorException: (conn=96) You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1
+### The error may exist in kr/yjh/mappers/EnrollmentMapper.java (best guess)
+### The error may involve kr.yjh.mappers.EnrollmentMapper.deleteByStudentId-Inline
+### The error occurred while setting parameters
+### SQL: SELECT id FROM student WHERE department_id = ? OR professor_id IN(SELECT id FROM professor WHERE department_id = ?))
+### Cause: java.sql.SQLSyntaxErrorException: (conn=96) You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:199)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.delete(DefaultSqlSession.java:212)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:72)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at jdk.proxy2/jdk.proxy2.$Proxy13.deleteByStudentId(Unknown Source)
+	at kr.yjh.services.impl.DepartmentServiceimpl.deleteItem(DepartmentServiceimpl.java:119)
+	at kr.yjh.mybatis.App14.main(App14.java:34)
+Caused by: java.sql.SQLSyntaxErrorException: (conn=96) You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1
+	at org.mariadb.jdbc.export.ExceptionFactory.createException(ExceptionFactory.java:289)
+	at org.mariadb.jdbc.export.ExceptionFactory.create(ExceptionFactory.java:378)
+	at org.mariadb.jdbc.message.ClientMessage.readPacket(ClientMessage.java:187)
+	at org.mariadb.jdbc.client.impl.StandardClient.readPacket(StandardClient.java:1364)
+	at org.mariadb.jdbc.client.impl.StandardClient.readResults(StandardClient.java:1303)
+	at org.mariadb.jdbc.client.impl.StandardClient.readResponse(StandardClient.java:1222)
+	at org.mariadb.jdbc.client.impl.StandardClient.execute(StandardClient.java:1146)
+	at org.mariadb.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:87)
+	at org.mariadb.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:232)
+	at net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy.execute(PreparedStatementSpy.java:443)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:58)
+	at jdk.proxy3/jdk.proxy3.$Proxy18.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:48)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:75)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	... 7 common frames omitted
+[DEBUG] 25-04-22 17:15:20 [App14:46] - 삭제된 데이터 수 --->  0
+[DEBUG] 25-04-22 17:16:26 [deleteByStudentId:135] - ==>  Preparing: SELECT id FROM student WHERE department_id = ? OR professor_id IN(SELECT id FROM professor WHERE department_id = ?)
+[DEBUG] 25-04-22 17:16:26 [deleteByStudentId:135] - ==> Parameters: 102(Integer), 102(Integer)
+[INFO ] 25-04-22 17:16:26 [sqlonly:228] - SELECT id FROM student WHERE department_id = 102 OR professor_id IN(SELECT id FROM professor WHERE department_id = 102)
+
+[WARN ] 25-04-22 17:16:26 [ErrorPacket:99] - Error: 1146-42S02: Table 'myschool.student' doesn't exist
+[ERROR] 25-04-22 17:16:26 [sqlonly:144] - 1. PreparedStatement.execute() SELECT id FROM student WHERE department_id = 102 OR professor_id IN(SELECT id FROM professor WHERE department_id = 102)
+
+java.sql.SQLSyntaxErrorException: (conn=97) Table 'myschool.student' doesn't exist
+	at org.mariadb.jdbc.export.ExceptionFactory.createException(ExceptionFactory.java:289)
+	at org.mariadb.jdbc.export.ExceptionFactory.create(ExceptionFactory.java:378)
+	at org.mariadb.jdbc.message.ClientMessage.readPacket(ClientMessage.java:187)
+	at org.mariadb.jdbc.client.impl.StandardClient.readPacket(StandardClient.java:1364)
+	at org.mariadb.jdbc.client.impl.StandardClient.readResults(StandardClient.java:1303)
+	at org.mariadb.jdbc.client.impl.StandardClient.readResponse(StandardClient.java:1222)
+	at org.mariadb.jdbc.client.impl.StandardClient.execute(StandardClient.java:1146)
+	at org.mariadb.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:87)
+	at org.mariadb.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:232)
+	at net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy.execute(PreparedStatementSpy.java:443)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:58)
+	at jdk.proxy3/jdk.proxy3.$Proxy18.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:48)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:75)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.delete(DefaultSqlSession.java:212)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:72)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at jdk.proxy2/jdk.proxy2.$Proxy13.deleteByStudentId(Unknown Source)
+	at kr.yjh.services.impl.DepartmentServiceimpl.deleteItem(DepartmentServiceimpl.java:119)
+	at kr.yjh.mybatis.App14.main(App14.java:34)
+[ERROR] 25-04-22 17:16:26 [App14:39] - 처리된 데이터 실패 >> SQL문을 확인하세요
+org.apache.ibatis.exceptions.PersistenceException: 
+### Error updating database.  Cause: java.sql.SQLSyntaxErrorException: (conn=97) Table 'myschool.student' doesn't exist
+### The error may exist in kr/yjh/mappers/EnrollmentMapper.java (best guess)
+### The error may involve kr.yjh.mappers.EnrollmentMapper.deleteByStudentId-Inline
+### The error occurred while setting parameters
+### SQL: SELECT id FROM student WHERE department_id = ? OR professor_id IN(SELECT id FROM professor WHERE department_id = ?)
+### Cause: java.sql.SQLSyntaxErrorException: (conn=97) Table 'myschool.student' doesn't exist
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:199)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.delete(DefaultSqlSession.java:212)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:72)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at jdk.proxy2/jdk.proxy2.$Proxy13.deleteByStudentId(Unknown Source)
+	at kr.yjh.services.impl.DepartmentServiceimpl.deleteItem(DepartmentServiceimpl.java:119)
+	at kr.yjh.mybatis.App14.main(App14.java:34)
+Caused by: java.sql.SQLSyntaxErrorException: (conn=97) Table 'myschool.student' doesn't exist
+	at org.mariadb.jdbc.export.ExceptionFactory.createException(ExceptionFactory.java:289)
+	at org.mariadb.jdbc.export.ExceptionFactory.create(ExceptionFactory.java:378)
+	at org.mariadb.jdbc.message.ClientMessage.readPacket(ClientMessage.java:187)
+	at org.mariadb.jdbc.client.impl.StandardClient.readPacket(StandardClient.java:1364)
+	at org.mariadb.jdbc.client.impl.StandardClient.readResults(StandardClient.java:1303)
+	at org.mariadb.jdbc.client.impl.StandardClient.readResponse(StandardClient.java:1222)
+	at org.mariadb.jdbc.client.impl.StandardClient.execute(StandardClient.java:1146)
+	at org.mariadb.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:87)
+	at org.mariadb.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:232)
+	at net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy.execute(PreparedStatementSpy.java:443)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:58)
+	at jdk.proxy3/jdk.proxy3.$Proxy18.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:48)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:75)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	... 7 common frames omitted
+[DEBUG] 25-04-22 17:16:26 [App14:46] - 삭제된 데이터 수 --->  0
+[DEBUG] 25-04-22 17:18:40 [deleteByStudentId:135] - ==>  Preparing: DELETE FROM enrollments WHERE student_id IN ( SELECT id FROM students WHERE department_id=? OR professor_id IN ( SELECT id FROM professors WHERE department_id=? )) OR subject_id IN ( SELECT id FROM subjects WHERE professor_id IN ( SELECT id FROM professors WHERE department_id=? ))
+[DEBUG] 25-04-22 17:18:40 [deleteByStudentId:135] - ==> Parameters: 102(Integer), 102(Integer), 102(Integer)
+[INFO ] 25-04-22 17:18:40 [sqlonly:228] - DELETE FROM enrollments WHERE student_id IN (   SELECT id FROM students    WHERE department_id=102 OR          professor_id IN (           SELECT id FROM professors WHERE department_id=102         )) OR subject_id IN (   SELECT id FROM subjects WHERE professor_id IN (       SELECT id FROM professors WHERE department_id=102   ))
+
+[DEBUG] 25-04-22 17:18:40 [deleteByStudentId:135] - <==    Updates: 35
+[DEBUG] 25-04-22 17:18:40 [deleteByStudentId:135] - ==>  Preparing: DELETE FROM students WHERE department_id=? OR professor_id IN (SELECT id FROM professors WHERE department_id = ?)
+[DEBUG] 25-04-22 17:18:40 [deleteByStudentId:135] - ==> Parameters: 102(Integer), 102(Integer)
+[INFO ] 25-04-22 17:18:40 [sqlonly:228] - DELETE FROM students WHERE department_id=102 OR professor_id IN (SELECT id FROM professors WHERE department_id = 102)
+
+[DEBUG] 25-04-22 17:18:40 [deleteByStudentId:135] - <==    Updates: 9
+[DEBUG] 25-04-22 17:18:40 [deleteByProfessorId:135] - ==>  Preparing: DELETE FROME subject WHERE department_id={departmentId} OR professor_id IN ( SELECT id FROM professors WHERE department_id={departmentId})
+[ERROR] 25-04-22 17:18:40 [sqlonly:144] - 1. Connection.prepareStatement(DELETE FROME subject  WHERE department_id={departmentId} OR professor_id IN ( SELECT id FROM professors WHERE department_id={departmentId})) DELETE FROME subject  WHERE department_id={departmentId} OR professor_id IN ( SELECT id FROM professors WHERE department_id={departmentId})
+
+java.sql.SQLException: unknown escape sequence {departmentId}
+	at org.mariadb.jdbc.util.NativeSql.resolveEscapes(NativeSql.java:192)
+	at org.mariadb.jdbc.util.NativeSql.parse(NativeSql.java:121)
+	at org.mariadb.jdbc.Connection.prepareInternal(Connection.java:179)
+	at org.mariadb.jdbc.Connection.prepareStatement(Connection.java:137)
+	at net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy.prepareStatement(ConnectionSpy.java:475)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.apache.ibatis.datasource.pooled.PooledConnection.invoke(PooledConnection.java:258)
+	at jdk.proxy3/jdk.proxy3.$Proxy17.prepareStatement(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.apache.ibatis.logging.jdbc.ConnectionLogger.invoke(ConnectionLogger.java:53)
+	at jdk.proxy3/jdk.proxy3.$Proxy17.prepareStatement(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.instantiateStatement(PreparedStatementHandler.java:88)
+	at org.apache.ibatis.executor.statement.BaseStatementHandler.prepare(BaseStatementHandler.java:90)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.prepare(RoutingStatementHandler.java:60)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:90)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:49)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.delete(DefaultSqlSession.java:212)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:72)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at jdk.proxy2/jdk.proxy2.$Proxy16.deleteByProfessorId(Unknown Source)
+	at kr.yjh.services.impl.DepartmentServiceimpl.deleteItem(DepartmentServiceimpl.java:127)
+	at kr.yjh.mybatis.App14.main(App14.java:34)
+[ERROR] 25-04-22 17:18:40 [App14:39] - 처리된 데이터 실패 >> SQL문을 확인하세요
+org.apache.ibatis.exceptions.PersistenceException: 
+### Error updating database.  Cause: java.sql.SQLException: unknown escape sequence {departmentId}
+### The error may exist in kr/yjh/mappers/SubjectMapper.java (best guess)
+### The error may involve kr.yjh.mappers.SubjectMapper.deleteByProfessorId
+### The error occurred while executing an update
+### SQL: DELETE FROME subject  WHERE department_id={departmentId} OR professor_id IN ( SELECT id FROM professors WHERE department_id={departmentId})
+### Cause: java.sql.SQLException: unknown escape sequence {departmentId}
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:199)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.delete(DefaultSqlSession.java:212)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:72)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at jdk.proxy2/jdk.proxy2.$Proxy16.deleteByProfessorId(Unknown Source)
+	at kr.yjh.services.impl.DepartmentServiceimpl.deleteItem(DepartmentServiceimpl.java:127)
+	at kr.yjh.mybatis.App14.main(App14.java:34)
+Caused by: java.sql.SQLException: unknown escape sequence {departmentId}
+	at org.mariadb.jdbc.util.NativeSql.resolveEscapes(NativeSql.java:192)
+	at org.mariadb.jdbc.util.NativeSql.parse(NativeSql.java:121)
+	at org.mariadb.jdbc.Connection.prepareInternal(Connection.java:179)
+	at org.mariadb.jdbc.Connection.prepareStatement(Connection.java:137)
+	at net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy.prepareStatement(ConnectionSpy.java:475)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.apache.ibatis.datasource.pooled.PooledConnection.invoke(PooledConnection.java:258)
+	at jdk.proxy3/jdk.proxy3.$Proxy17.prepareStatement(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.apache.ibatis.logging.jdbc.ConnectionLogger.invoke(ConnectionLogger.java:53)
+	at jdk.proxy3/jdk.proxy3.$Proxy17.prepareStatement(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.instantiateStatement(PreparedStatementHandler.java:88)
+	at org.apache.ibatis.executor.statement.BaseStatementHandler.prepare(BaseStatementHandler.java:90)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.prepare(RoutingStatementHandler.java:60)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:90)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:49)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	... 7 common frames omitted
+[DEBUG] 25-04-22 17:18:40 [App14:46] - 삭제된 데이터 수 --->  0
+[DEBUG] 25-04-22 17:22:38 [deleteByStudentId:135] - ==>  Preparing: DELETE FROM enrollments WHERE student_id IN (SELECT id FROM student WHERE department_id = ? OR professor_id IN ( SELECT id FROM professor WHERE department_id = ? ))
+[DEBUG] 25-04-22 17:22:38 [deleteByStudentId:135] - ==> Parameters: 102(Integer), 102(Integer)
+[INFO ] 25-04-22 17:22:38 [sqlonly:228] - DELETE FROM enrollments WHERE student_id IN  (SELECT id FROM student WHERE department_id = 102 OR professor_id IN ( SELECT id FROM professor WHERE department_id = 102 ))
+
+[WARN ] 25-04-22 17:22:38 [ErrorPacket:99] - Error: 1146-42S02: Table 'myschool.student' doesn't exist
+[ERROR] 25-04-22 17:22:38 [sqlonly:144] - 1. PreparedStatement.execute() DELETE FROM enrollments WHERE student_id IN  (SELECT id FROM student WHERE department_id = 102 OR professor_id IN ( SELECT id FROM professor WHERE department_id = 102 ))
+
+java.sql.SQLSyntaxErrorException: (conn=99) Table 'myschool.student' doesn't exist
+	at org.mariadb.jdbc.export.ExceptionFactory.createException(ExceptionFactory.java:289)
+	at org.mariadb.jdbc.export.ExceptionFactory.create(ExceptionFactory.java:378)
+	at org.mariadb.jdbc.message.ClientMessage.readPacket(ClientMessage.java:187)
+	at org.mariadb.jdbc.client.impl.StandardClient.readPacket(StandardClient.java:1364)
+	at org.mariadb.jdbc.client.impl.StandardClient.readResults(StandardClient.java:1303)
+	at org.mariadb.jdbc.client.impl.StandardClient.readResponse(StandardClient.java:1222)
+	at org.mariadb.jdbc.client.impl.StandardClient.execute(StandardClient.java:1146)
+	at org.mariadb.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:87)
+	at org.mariadb.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:232)
+	at net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy.execute(PreparedStatementSpy.java:443)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:58)
+	at jdk.proxy3/jdk.proxy3.$Proxy18.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:48)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:75)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.delete(DefaultSqlSession.java:212)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:72)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at jdk.proxy2/jdk.proxy2.$Proxy13.deleteByStudentId(Unknown Source)
+	at kr.yjh.services.impl.DepartmentServiceimpl.deleteItem(DepartmentServiceimpl.java:119)
+	at kr.yjh.mybatis.App14.main(App14.java:34)
+[ERROR] 25-04-22 17:22:38 [App14:39] - 처리된 데이터 실패 >> SQL문을 확인하세요
+org.apache.ibatis.exceptions.PersistenceException: 
+### Error updating database.  Cause: java.sql.SQLSyntaxErrorException: (conn=99) Table 'myschool.student' doesn't exist
+### The error may exist in kr/yjh/mappers/EnrollmentMapper.java (best guess)
+### The error may involve kr.yjh.mappers.EnrollmentMapper.deleteByStudentId-Inline
+### The error occurred while setting parameters
+### SQL: DELETE FROM enrollments WHERE student_id IN  (SELECT id FROM student WHERE department_id = ? OR professor_id IN ( SELECT id FROM professor WHERE department_id = ? ))
+### Cause: java.sql.SQLSyntaxErrorException: (conn=99) Table 'myschool.student' doesn't exist
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:199)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.delete(DefaultSqlSession.java:212)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:72)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at jdk.proxy2/jdk.proxy2.$Proxy13.deleteByStudentId(Unknown Source)
+	at kr.yjh.services.impl.DepartmentServiceimpl.deleteItem(DepartmentServiceimpl.java:119)
+	at kr.yjh.mybatis.App14.main(App14.java:34)
+Caused by: java.sql.SQLSyntaxErrorException: (conn=99) Table 'myschool.student' doesn't exist
+	at org.mariadb.jdbc.export.ExceptionFactory.createException(ExceptionFactory.java:289)
+	at org.mariadb.jdbc.export.ExceptionFactory.create(ExceptionFactory.java:378)
+	at org.mariadb.jdbc.message.ClientMessage.readPacket(ClientMessage.java:187)
+	at org.mariadb.jdbc.client.impl.StandardClient.readPacket(StandardClient.java:1364)
+	at org.mariadb.jdbc.client.impl.StandardClient.readResults(StandardClient.java:1303)
+	at org.mariadb.jdbc.client.impl.StandardClient.readResponse(StandardClient.java:1222)
+	at org.mariadb.jdbc.client.impl.StandardClient.execute(StandardClient.java:1146)
+	at org.mariadb.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:87)
+	at org.mariadb.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:232)
+	at net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy.execute(PreparedStatementSpy.java:443)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:58)
+	at jdk.proxy3/jdk.proxy3.$Proxy18.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:48)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:75)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	... 7 common frames omitted
+[DEBUG] 25-04-22 17:22:38 [App14:46] - 삭제된 데이터 수 --->  0
+[DEBUG] 25-04-22 17:26:05 [deleteByStudentId:135] - ==>  Preparing: DELETE FROM enrollments WHERE student_id IN ( SELECT id FROM students WHERE department_id = ? OR professor_id IN ( SELECT id FROM professors WHERE department_id = ? ))
+[DEBUG] 25-04-22 17:26:05 [deleteByStudentId:135] - ==> Parameters: 102(Integer), 102(Integer)
+[INFO ] 25-04-22 17:26:05 [sqlonly:228] - DELETE FROM enrollments WHERE student_id IN  ( SELECT id FROM students  WHERE department_id = 102 OR professor_id IN ( SELECT id FROM professors WHERE department_id = 102 ))
+
+[DEBUG] 25-04-22 17:26:05 [deleteByStudentId:135] - <==    Updates: 28
+[DEBUG] 25-04-22 17:26:05 [deleteByStudentId:135] - ==>  Preparing: DELETE FROM students WHERE department_id=? OR professor_id IN (SELECT id FROM professors WHERE department_id = ?)
+[DEBUG] 25-04-22 17:26:05 [deleteByStudentId:135] - ==> Parameters: 102(Integer), 102(Integer)
+[INFO ] 25-04-22 17:26:05 [sqlonly:228] - DELETE FROM students WHERE department_id=102 OR professor_id IN (SELECT id FROM professors WHERE department_id = 102)
+
+[DEBUG] 25-04-22 17:26:05 [deleteByStudentId:135] - <==    Updates: 9
+[DEBUG] 25-04-22 17:26:05 [deleteByProfessorId:135] - ==>  Preparing: DELETE FROME subject WHERE department_id={departmentId} OR professor_id IN ( SELECT id FROM professors WHERE department_id={departmentId})
+[ERROR] 25-04-22 17:26:05 [sqlonly:144] - 1. Connection.prepareStatement(DELETE FROME subject  WHERE department_id={departmentId} OR professor_id IN ( SELECT id FROM professors WHERE department_id={departmentId})) DELETE FROME subject  WHERE department_id={departmentId} OR professor_id IN ( SELECT id FROM professors WHERE department_id={departmentId})
+
+java.sql.SQLException: unknown escape sequence {departmentId}
+	at org.mariadb.jdbc.util.NativeSql.resolveEscapes(NativeSql.java:192)
+	at org.mariadb.jdbc.util.NativeSql.parse(NativeSql.java:121)
+	at org.mariadb.jdbc.Connection.prepareInternal(Connection.java:179)
+	at org.mariadb.jdbc.Connection.prepareStatement(Connection.java:137)
+	at net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy.prepareStatement(ConnectionSpy.java:475)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.apache.ibatis.datasource.pooled.PooledConnection.invoke(PooledConnection.java:258)
+	at jdk.proxy3/jdk.proxy3.$Proxy17.prepareStatement(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.apache.ibatis.logging.jdbc.ConnectionLogger.invoke(ConnectionLogger.java:53)
+	at jdk.proxy3/jdk.proxy3.$Proxy17.prepareStatement(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.instantiateStatement(PreparedStatementHandler.java:88)
+	at org.apache.ibatis.executor.statement.BaseStatementHandler.prepare(BaseStatementHandler.java:90)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.prepare(RoutingStatementHandler.java:60)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:90)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:49)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.delete(DefaultSqlSession.java:212)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:72)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at jdk.proxy2/jdk.proxy2.$Proxy16.deleteByProfessorId(Unknown Source)
+	at kr.yjh.services.impl.DepartmentServiceimpl.deleteItem(DepartmentServiceimpl.java:127)
+	at kr.yjh.mybatis.App14.main(App14.java:34)
+[ERROR] 25-04-22 17:26:05 [App14:39] - 처리된 데이터 실패 >> SQL문을 확인하세요
+org.apache.ibatis.exceptions.PersistenceException: 
+### Error updating database.  Cause: java.sql.SQLException: unknown escape sequence {departmentId}
+### The error may exist in kr/yjh/mappers/SubjectMapper.java (best guess)
+### The error may involve kr.yjh.mappers.SubjectMapper.deleteByProfessorId
+### The error occurred while executing an update
+### SQL: DELETE FROME subject  WHERE department_id={departmentId} OR professor_id IN ( SELECT id FROM professors WHERE department_id={departmentId})
+### Cause: java.sql.SQLException: unknown escape sequence {departmentId}
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:199)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.delete(DefaultSqlSession.java:212)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:72)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at jdk.proxy2/jdk.proxy2.$Proxy16.deleteByProfessorId(Unknown Source)
+	at kr.yjh.services.impl.DepartmentServiceimpl.deleteItem(DepartmentServiceimpl.java:127)
+	at kr.yjh.mybatis.App14.main(App14.java:34)
+Caused by: java.sql.SQLException: unknown escape sequence {departmentId}
+	at org.mariadb.jdbc.util.NativeSql.resolveEscapes(NativeSql.java:192)
+	at org.mariadb.jdbc.util.NativeSql.parse(NativeSql.java:121)
+	at org.mariadb.jdbc.Connection.prepareInternal(Connection.java:179)
+	at org.mariadb.jdbc.Connection.prepareStatement(Connection.java:137)
+	at net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy.prepareStatement(ConnectionSpy.java:475)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.apache.ibatis.datasource.pooled.PooledConnection.invoke(PooledConnection.java:258)
+	at jdk.proxy3/jdk.proxy3.$Proxy17.prepareStatement(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.apache.ibatis.logging.jdbc.ConnectionLogger.invoke(ConnectionLogger.java:53)
+	at jdk.proxy3/jdk.proxy3.$Proxy17.prepareStatement(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.instantiateStatement(PreparedStatementHandler.java:88)
+	at org.apache.ibatis.executor.statement.BaseStatementHandler.prepare(BaseStatementHandler.java:90)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.prepare(RoutingStatementHandler.java:60)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:90)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:49)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	... 7 common frames omitted
+[DEBUG] 25-04-22 17:26:05 [App14:46] - 삭제된 데이터 수 --->  0
+[DEBUG] 25-04-22 17:26:39 [deleteByStudentId:135] - ==>  Preparing: DELETE FROM enrollments WHERE student_id IN ( SELECT id FROM students WHERE department_id = ? OR professor_id IN ( SELECT id FROM professors WHERE department_id = ? ))
+[DEBUG] 25-04-22 17:26:39 [deleteByStudentId:135] - ==> Parameters: 102(Integer), 102(Integer)
+[INFO ] 25-04-22 17:26:39 [sqlonly:228] - DELETE FROM enrollments WHERE student_id IN  ( SELECT id FROM students  WHERE department_id = 102 OR professor_id IN ( SELECT id FROM professors WHERE department_id = 102 ))
+
+[DEBUG] 25-04-22 17:26:39 [deleteByStudentId:135] - <==    Updates: 28
+[DEBUG] 25-04-22 17:26:39 [deleteByStudentId:135] - ==>  Preparing: DELETE FROM students WHERE department_id=? OR professor_id IN (SELECT id FROM professors WHERE department_id = ?)
+[DEBUG] 25-04-22 17:26:39 [deleteByStudentId:135] - ==> Parameters: 102(Integer), 102(Integer)
+[INFO ] 25-04-22 17:26:39 [sqlonly:228] - DELETE FROM students WHERE department_id=102 OR professor_id IN (SELECT id FROM professors WHERE department_id = 102)
+
+[DEBUG] 25-04-22 17:26:39 [deleteByStudentId:135] - <==    Updates: 9
+[DEBUG] 25-04-22 17:26:39 [deleteByProfessorId:135] - ==>  Preparing: DELETE FROME subjects WHERE department_id={departmentId} OR professor_id IN ( SELECT id FROM professors WHERE department_id={departmentId})
+[ERROR] 25-04-22 17:26:39 [sqlonly:144] - 1. Connection.prepareStatement(DELETE FROME subjects  WHERE department_id={departmentId} OR professor_id IN ( SELECT id FROM professors WHERE department_id={departmentId})) DELETE FROME subjects  WHERE department_id={departmentId} OR professor_id IN ( SELECT id FROM professors WHERE department_id={departmentId})
+
+java.sql.SQLException: unknown escape sequence {departmentId}
+	at org.mariadb.jdbc.util.NativeSql.resolveEscapes(NativeSql.java:192)
+	at org.mariadb.jdbc.util.NativeSql.parse(NativeSql.java:121)
+	at org.mariadb.jdbc.Connection.prepareInternal(Connection.java:179)
+	at org.mariadb.jdbc.Connection.prepareStatement(Connection.java:137)
+	at net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy.prepareStatement(ConnectionSpy.java:475)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.apache.ibatis.datasource.pooled.PooledConnection.invoke(PooledConnection.java:258)
+	at jdk.proxy3/jdk.proxy3.$Proxy17.prepareStatement(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.apache.ibatis.logging.jdbc.ConnectionLogger.invoke(ConnectionLogger.java:53)
+	at jdk.proxy3/jdk.proxy3.$Proxy17.prepareStatement(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.instantiateStatement(PreparedStatementHandler.java:88)
+	at org.apache.ibatis.executor.statement.BaseStatementHandler.prepare(BaseStatementHandler.java:90)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.prepare(RoutingStatementHandler.java:60)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:90)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:49)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.delete(DefaultSqlSession.java:212)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:72)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at jdk.proxy2/jdk.proxy2.$Proxy16.deleteByProfessorId(Unknown Source)
+	at kr.yjh.services.impl.DepartmentServiceimpl.deleteItem(DepartmentServiceimpl.java:127)
+	at kr.yjh.mybatis.App14.main(App14.java:34)
+[ERROR] 25-04-22 17:26:39 [App14:39] - 처리된 데이터 실패 >> SQL문을 확인하세요
+org.apache.ibatis.exceptions.PersistenceException: 
+### Error updating database.  Cause: java.sql.SQLException: unknown escape sequence {departmentId}
+### The error may exist in kr/yjh/mappers/SubjectMapper.java (best guess)
+### The error may involve kr.yjh.mappers.SubjectMapper.deleteByProfessorId
+### The error occurred while executing an update
+### SQL: DELETE FROME subjects  WHERE department_id={departmentId} OR professor_id IN ( SELECT id FROM professors WHERE department_id={departmentId})
+### Cause: java.sql.SQLException: unknown escape sequence {departmentId}
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:199)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.delete(DefaultSqlSession.java:212)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:72)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at jdk.proxy2/jdk.proxy2.$Proxy16.deleteByProfessorId(Unknown Source)
+	at kr.yjh.services.impl.DepartmentServiceimpl.deleteItem(DepartmentServiceimpl.java:127)
+	at kr.yjh.mybatis.App14.main(App14.java:34)
+Caused by: java.sql.SQLException: unknown escape sequence {departmentId}
+	at org.mariadb.jdbc.util.NativeSql.resolveEscapes(NativeSql.java:192)
+	at org.mariadb.jdbc.util.NativeSql.parse(NativeSql.java:121)
+	at org.mariadb.jdbc.Connection.prepareInternal(Connection.java:179)
+	at org.mariadb.jdbc.Connection.prepareStatement(Connection.java:137)
+	at net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy.prepareStatement(ConnectionSpy.java:475)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.apache.ibatis.datasource.pooled.PooledConnection.invoke(PooledConnection.java:258)
+	at jdk.proxy3/jdk.proxy3.$Proxy17.prepareStatement(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.apache.ibatis.logging.jdbc.ConnectionLogger.invoke(ConnectionLogger.java:53)
+	at jdk.proxy3/jdk.proxy3.$Proxy17.prepareStatement(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.instantiateStatement(PreparedStatementHandler.java:88)
+	at org.apache.ibatis.executor.statement.BaseStatementHandler.prepare(BaseStatementHandler.java:90)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.prepare(RoutingStatementHandler.java:60)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:90)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:49)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	... 7 common frames omitted
+[DEBUG] 25-04-22 17:26:39 [App14:46] - 삭제된 데이터 수 --->  0
+[DEBUG] 25-04-22 17:27:56 [deleteByStudentId:135] - ==>  Preparing: DELETE FROM enrollments WHERE student_id IN ( SELECT id FROM students WHERE department_id = ? OR professor_id IN ( SELECT id FROM professors WHERE department_id = ? ))
+[DEBUG] 25-04-22 17:27:56 [deleteByStudentId:135] - ==> Parameters: 102(Integer), 102(Integer)
+[INFO ] 25-04-22 17:27:56 [sqlonly:228] - DELETE FROM enrollments WHERE student_id IN  ( SELECT id FROM students  WHERE department_id = 102 OR professor_id IN ( SELECT id FROM professors WHERE department_id = 102 ))
+
+[DEBUG] 25-04-22 17:27:56 [deleteByStudentId:135] - <==    Updates: 28
+[DEBUG] 25-04-22 17:27:56 [deleteByStudentId:135] - ==>  Preparing: DELETE FROM students WHERE department_id=? OR professor_id IN (SELECT id FROM professors WHERE department_id = ?)
+[DEBUG] 25-04-22 17:27:56 [deleteByStudentId:135] - ==> Parameters: 102(Integer), 102(Integer)
+[INFO ] 25-04-22 17:27:56 [sqlonly:228] - DELETE FROM students WHERE department_id=102 OR professor_id IN (SELECT id FROM professors WHERE department_id = 102)
+
+[DEBUG] 25-04-22 17:27:56 [deleteByStudentId:135] - <==    Updates: 9
+[DEBUG] 25-04-22 17:27:56 [deleteByProfessorId:135] - ==>  Preparing: DELETE FROM subjects WHERE department_id={departmentId} OR professor_id IN ( SELECT id FROM professors WHERE department_id={departmentId})
+[ERROR] 25-04-22 17:27:56 [sqlonly:144] - 1. Connection.prepareStatement(DELETE FROM subjects  WHERE department_id={departmentId} OR professor_id IN ( SELECT id FROM professors WHERE department_id={departmentId})) DELETE FROM subjects  WHERE department_id={departmentId} OR professor_id IN ( SELECT id FROM professors WHERE department_id={departmentId})
+
+java.sql.SQLException: unknown escape sequence {departmentId}
+	at org.mariadb.jdbc.util.NativeSql.resolveEscapes(NativeSql.java:192)
+	at org.mariadb.jdbc.util.NativeSql.parse(NativeSql.java:121)
+	at org.mariadb.jdbc.Connection.prepareInternal(Connection.java:179)
+	at org.mariadb.jdbc.Connection.prepareStatement(Connection.java:137)
+	at net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy.prepareStatement(ConnectionSpy.java:475)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.apache.ibatis.datasource.pooled.PooledConnection.invoke(PooledConnection.java:258)
+	at jdk.proxy3/jdk.proxy3.$Proxy17.prepareStatement(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.apache.ibatis.logging.jdbc.ConnectionLogger.invoke(ConnectionLogger.java:53)
+	at jdk.proxy3/jdk.proxy3.$Proxy17.prepareStatement(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.instantiateStatement(PreparedStatementHandler.java:88)
+	at org.apache.ibatis.executor.statement.BaseStatementHandler.prepare(BaseStatementHandler.java:90)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.prepare(RoutingStatementHandler.java:60)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:90)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:49)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.delete(DefaultSqlSession.java:212)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:72)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at jdk.proxy2/jdk.proxy2.$Proxy16.deleteByProfessorId(Unknown Source)
+	at kr.yjh.services.impl.DepartmentServiceimpl.deleteItem(DepartmentServiceimpl.java:127)
+	at kr.yjh.mybatis.App14.main(App14.java:34)
+[ERROR] 25-04-22 17:27:56 [App14:39] - 처리된 데이터 실패 >> SQL문을 확인하세요
+org.apache.ibatis.exceptions.PersistenceException: 
+### Error updating database.  Cause: java.sql.SQLException: unknown escape sequence {departmentId}
+### The error may exist in kr/yjh/mappers/SubjectMapper.java (best guess)
+### The error may involve kr.yjh.mappers.SubjectMapper.deleteByProfessorId
+### The error occurred while executing an update
+### SQL: DELETE FROM subjects  WHERE department_id={departmentId} OR professor_id IN ( SELECT id FROM professors WHERE department_id={departmentId})
+### Cause: java.sql.SQLException: unknown escape sequence {departmentId}
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:199)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.delete(DefaultSqlSession.java:212)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:72)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at jdk.proxy2/jdk.proxy2.$Proxy16.deleteByProfessorId(Unknown Source)
+	at kr.yjh.services.impl.DepartmentServiceimpl.deleteItem(DepartmentServiceimpl.java:127)
+	at kr.yjh.mybatis.App14.main(App14.java:34)
+Caused by: java.sql.SQLException: unknown escape sequence {departmentId}
+	at org.mariadb.jdbc.util.NativeSql.resolveEscapes(NativeSql.java:192)
+	at org.mariadb.jdbc.util.NativeSql.parse(NativeSql.java:121)
+	at org.mariadb.jdbc.Connection.prepareInternal(Connection.java:179)
+	at org.mariadb.jdbc.Connection.prepareStatement(Connection.java:137)
+	at net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy.prepareStatement(ConnectionSpy.java:475)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.apache.ibatis.datasource.pooled.PooledConnection.invoke(PooledConnection.java:258)
+	at jdk.proxy3/jdk.proxy3.$Proxy17.prepareStatement(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.apache.ibatis.logging.jdbc.ConnectionLogger.invoke(ConnectionLogger.java:53)
+	at jdk.proxy3/jdk.proxy3.$Proxy17.prepareStatement(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.instantiateStatement(PreparedStatementHandler.java:88)
+	at org.apache.ibatis.executor.statement.BaseStatementHandler.prepare(BaseStatementHandler.java:90)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.prepare(RoutingStatementHandler.java:60)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:90)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:49)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	... 7 common frames omitted
+[DEBUG] 25-04-22 17:27:56 [App14:46] - 삭제된 데이터 수 --->  0
+[DEBUG] 25-04-22 17:30:18 [deleteByStudentId:135] - ==>  Preparing: DELETE FROM enrollments WHERE student_id IN ( SELECT id FROM students WHERE department_id = ? OR professor_id IN ( SELECT id FROM professors WHERE department_id = ? ))
+[DEBUG] 25-04-22 17:30:18 [deleteByStudentId:135] - ==> Parameters: 102(Integer), 102(Integer)
+[INFO ] 25-04-22 17:30:18 [sqlonly:228] - DELETE FROM enrollments WHERE student_id IN  ( SELECT id FROM students  WHERE department_id = 102 OR professor_id IN ( SELECT id FROM professors WHERE department_id = 102 ))
+
+[DEBUG] 25-04-22 17:30:18 [deleteByStudentId:135] - <==    Updates: 28
+[DEBUG] 25-04-22 17:30:18 [deleteByStudentId:135] - ==>  Preparing: DELETE FROM students WHERE department_id=? OR professor_id IN (SELECT id FROM professors WHERE department_id = ?)
+[DEBUG] 25-04-22 17:30:18 [deleteByStudentId:135] - ==> Parameters: 102(Integer), 102(Integer)
+[INFO ] 25-04-22 17:30:18 [sqlonly:228] - DELETE FROM students WHERE department_id=102 OR professor_id IN (SELECT id FROM professors WHERE department_id = 102)
+
+[DEBUG] 25-04-22 17:30:18 [deleteByStudentId:135] - <==    Updates: 9
+[DEBUG] 25-04-22 17:30:18 [deleteByProfessorId:135] - ==>  Preparing: DELETE FROM subjects WHERE department_id=? OR professor_id IN ( SELECT id FROM professors WHERE department_id=?)
+[DEBUG] 25-04-22 17:30:18 [deleteByProfessorId:135] - ==> Parameters: 102(Integer), 102(Integer)
+[INFO ] 25-04-22 17:30:18 [sqlonly:228] - DELETE FROM subjects  WHERE department_id=102 OR professor_id IN ( SELECT id FROM professors WHERE department_id=102)
+
+[WARN ] 25-04-22 17:30:18 [ErrorPacket:99] - Error: 1451-23000: Cannot delete or update a parent row: a foreign key constraint fails (`myschool`.`enrollments`, CONSTRAINT `enrollments_ibfk_2` FOREIGN KEY (`subject_id`) REFERENCES `subjects` (`id`))
+[ERROR] 25-04-22 17:30:18 [sqlonly:144] - 1. PreparedStatement.execute() DELETE FROM subjects  WHERE department_id=102 OR professor_id IN ( SELECT id FROM professors WHERE department_id=102)
+
+java.sql.SQLIntegrityConstraintViolationException: (conn=103) Cannot delete or update a parent row: a foreign key constraint fails (`myschool`.`enrollments`, CONSTRAINT `enrollments_ibfk_2` FOREIGN KEY (`subject_id`) REFERENCES `subjects` (`id`))
+	at org.mariadb.jdbc.export.ExceptionFactory.createException(ExceptionFactory.java:297)
+	at org.mariadb.jdbc.export.ExceptionFactory.create(ExceptionFactory.java:378)
+	at org.mariadb.jdbc.message.ClientMessage.readPacket(ClientMessage.java:187)
+	at org.mariadb.jdbc.client.impl.StandardClient.readPacket(StandardClient.java:1364)
+	at org.mariadb.jdbc.client.impl.StandardClient.readResults(StandardClient.java:1303)
+	at org.mariadb.jdbc.client.impl.StandardClient.readResponse(StandardClient.java:1222)
+	at org.mariadb.jdbc.client.impl.StandardClient.execute(StandardClient.java:1146)
+	at org.mariadb.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:87)
+	at org.mariadb.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:232)
+	at net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy.execute(PreparedStatementSpy.java:443)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:58)
+	at jdk.proxy3/jdk.proxy3.$Proxy18.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:48)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:75)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.delete(DefaultSqlSession.java:212)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:72)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at jdk.proxy2/jdk.proxy2.$Proxy16.deleteByProfessorId(Unknown Source)
+	at kr.yjh.services.impl.DepartmentServiceimpl.deleteItem(DepartmentServiceimpl.java:127)
+	at kr.yjh.mybatis.App14.main(App14.java:34)
+[ERROR] 25-04-22 17:30:18 [App14:39] - 처리된 데이터 실패 >> SQL문을 확인하세요
+org.apache.ibatis.exceptions.PersistenceException: 
+### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: (conn=103) Cannot delete or update a parent row: a foreign key constraint fails (`myschool`.`enrollments`, CONSTRAINT `enrollments_ibfk_2` FOREIGN KEY (`subject_id`) REFERENCES `subjects` (`id`))
+### The error may exist in kr/yjh/mappers/SubjectMapper.java (best guess)
+### The error may involve kr.yjh.mappers.SubjectMapper.deleteByProfessorId-Inline
+### The error occurred while setting parameters
+### SQL: DELETE FROM subjects  WHERE department_id=? OR professor_id IN ( SELECT id FROM professors WHERE department_id=?)
+### Cause: java.sql.SQLIntegrityConstraintViolationException: (conn=103) Cannot delete or update a parent row: a foreign key constraint fails (`myschool`.`enrollments`, CONSTRAINT `enrollments_ibfk_2` FOREIGN KEY (`subject_id`) REFERENCES `subjects` (`id`))
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:199)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.delete(DefaultSqlSession.java:212)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:72)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at jdk.proxy2/jdk.proxy2.$Proxy16.deleteByProfessorId(Unknown Source)
+	at kr.yjh.services.impl.DepartmentServiceimpl.deleteItem(DepartmentServiceimpl.java:127)
+	at kr.yjh.mybatis.App14.main(App14.java:34)
+Caused by: java.sql.SQLIntegrityConstraintViolationException: (conn=103) Cannot delete or update a parent row: a foreign key constraint fails (`myschool`.`enrollments`, CONSTRAINT `enrollments_ibfk_2` FOREIGN KEY (`subject_id`) REFERENCES `subjects` (`id`))
+	at org.mariadb.jdbc.export.ExceptionFactory.createException(ExceptionFactory.java:297)
+	at org.mariadb.jdbc.export.ExceptionFactory.create(ExceptionFactory.java:378)
+	at org.mariadb.jdbc.message.ClientMessage.readPacket(ClientMessage.java:187)
+	at org.mariadb.jdbc.client.impl.StandardClient.readPacket(StandardClient.java:1364)
+	at org.mariadb.jdbc.client.impl.StandardClient.readResults(StandardClient.java:1303)
+	at org.mariadb.jdbc.client.impl.StandardClient.readResponse(StandardClient.java:1222)
+	at org.mariadb.jdbc.client.impl.StandardClient.execute(StandardClient.java:1146)
+	at org.mariadb.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:87)
+	at org.mariadb.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:232)
+	at net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy.execute(PreparedStatementSpy.java:443)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:58)
+	at jdk.proxy3/jdk.proxy3.$Proxy18.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:48)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:75)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	... 7 common frames omitted
+[DEBUG] 25-04-22 17:30:18 [App14:46] - 삭제된 데이터 수 --->  0
+[DEBUG] 25-04-22 17:32:03 [deleteByStudentId:135] - ==>  Preparing: DELETE FROM enrollments WHERE student_id IN ( SELECT id FROM students WHERE department_id = ? OR professor_id IN ( SELECT id FROM professors WHERE department_id = ? ))
+[DEBUG] 25-04-22 17:32:03 [deleteByStudentId:135] - ==> Parameters: 102(Integer), 102(Integer)
+[INFO ] 25-04-22 17:32:03 [sqlonly:228] - DELETE FROM enrollments WHERE student_id IN  ( SELECT id FROM students  WHERE department_id = 102 OR professor_id IN ( SELECT id FROM professors WHERE department_id = 102 ))
+
+[DEBUG] 25-04-22 17:32:03 [deleteByStudentId:135] - <==    Updates: 28
+[DEBUG] 25-04-22 17:32:03 [deleteByStudentId:135] - ==>  Preparing: DELETE FROM students WHERE department_id=? OR professor_id IN (SELECT id FROM professors WHERE department_id = ?)
+[DEBUG] 25-04-22 17:32:03 [deleteByStudentId:135] - ==> Parameters: 102(Integer), 102(Integer)
+[INFO ] 25-04-22 17:32:03 [sqlonly:228] - DELETE FROM students WHERE department_id=102 OR professor_id IN (SELECT id FROM professors WHERE department_id = 102)
+
+[DEBUG] 25-04-22 17:32:03 [deleteByStudentId:135] - <==    Updates: 9
+[DEBUG] 25-04-22 17:32:03 [deleteByProfessorId:135] - ==>  Preparing: DELETE FROM subjects WHERE department_id=? OR professor_id IN ( SELECT id FROM professors WHERE department_id=?)
+[DEBUG] 25-04-22 17:32:03 [deleteByProfessorId:135] - ==> Parameters: 102(Integer), 102(Integer)
+[INFO ] 25-04-22 17:32:03 [sqlonly:228] - DELETE FROM subjects  WHERE department_id=102 OR professor_id IN ( SELECT id FROM professors WHERE department_id=102)
+
+[WARN ] 25-04-22 17:32:03 [ErrorPacket:99] - Error: 1451-23000: Cannot delete or update a parent row: a foreign key constraint fails (`myschool`.`enrollments`, CONSTRAINT `enrollments_ibfk_2` FOREIGN KEY (`subject_id`) REFERENCES `subjects` (`id`))
+[ERROR] 25-04-22 17:32:03 [sqlonly:144] - 1. PreparedStatement.execute() DELETE FROM subjects  WHERE department_id=102 OR professor_id IN ( SELECT id FROM professors WHERE department_id=102)
+
+java.sql.SQLIntegrityConstraintViolationException: (conn=104) Cannot delete or update a parent row: a foreign key constraint fails (`myschool`.`enrollments`, CONSTRAINT `enrollments_ibfk_2` FOREIGN KEY (`subject_id`) REFERENCES `subjects` (`id`))
+	at org.mariadb.jdbc.export.ExceptionFactory.createException(ExceptionFactory.java:297)
+	at org.mariadb.jdbc.export.ExceptionFactory.create(ExceptionFactory.java:378)
+	at org.mariadb.jdbc.message.ClientMessage.readPacket(ClientMessage.java:187)
+	at org.mariadb.jdbc.client.impl.StandardClient.readPacket(StandardClient.java:1364)
+	at org.mariadb.jdbc.client.impl.StandardClient.readResults(StandardClient.java:1303)
+	at org.mariadb.jdbc.client.impl.StandardClient.readResponse(StandardClient.java:1222)
+	at org.mariadb.jdbc.client.impl.StandardClient.execute(StandardClient.java:1146)
+	at org.mariadb.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:87)
+	at org.mariadb.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:232)
+	at net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy.execute(PreparedStatementSpy.java:443)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:58)
+	at jdk.proxy3/jdk.proxy3.$Proxy18.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:48)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:75)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.delete(DefaultSqlSession.java:212)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:72)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at jdk.proxy2/jdk.proxy2.$Proxy16.deleteByProfessorId(Unknown Source)
+	at kr.yjh.services.impl.DepartmentServiceimpl.deleteItem(DepartmentServiceimpl.java:127)
+	at kr.yjh.mybatis.App14.main(App14.java:34)
+[ERROR] 25-04-22 17:32:03 [App14:39] - 처리된 데이터 실패 >> SQL문을 확인하세요
+org.apache.ibatis.exceptions.PersistenceException: 
+### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: (conn=104) Cannot delete or update a parent row: a foreign key constraint fails (`myschool`.`enrollments`, CONSTRAINT `enrollments_ibfk_2` FOREIGN KEY (`subject_id`) REFERENCES `subjects` (`id`))
+### The error may exist in kr/yjh/mappers/SubjectMapper.java (best guess)
+### The error may involve kr.yjh.mappers.SubjectMapper.deleteByProfessorId-Inline
+### The error occurred while setting parameters
+### SQL: DELETE FROM subjects  WHERE department_id=? OR professor_id IN ( SELECT id FROM professors WHERE department_id=?)
+### Cause: java.sql.SQLIntegrityConstraintViolationException: (conn=104) Cannot delete or update a parent row: a foreign key constraint fails (`myschool`.`enrollments`, CONSTRAINT `enrollments_ibfk_2` FOREIGN KEY (`subject_id`) REFERENCES `subjects` (`id`))
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:199)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.delete(DefaultSqlSession.java:212)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:72)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at jdk.proxy2/jdk.proxy2.$Proxy16.deleteByProfessorId(Unknown Source)
+	at kr.yjh.services.impl.DepartmentServiceimpl.deleteItem(DepartmentServiceimpl.java:127)
+	at kr.yjh.mybatis.App14.main(App14.java:34)
+Caused by: java.sql.SQLIntegrityConstraintViolationException: (conn=104) Cannot delete or update a parent row: a foreign key constraint fails (`myschool`.`enrollments`, CONSTRAINT `enrollments_ibfk_2` FOREIGN KEY (`subject_id`) REFERENCES `subjects` (`id`))
+	at org.mariadb.jdbc.export.ExceptionFactory.createException(ExceptionFactory.java:297)
+	at org.mariadb.jdbc.export.ExceptionFactory.create(ExceptionFactory.java:378)
+	at org.mariadb.jdbc.message.ClientMessage.readPacket(ClientMessage.java:187)
+	at org.mariadb.jdbc.client.impl.StandardClient.readPacket(StandardClient.java:1364)
+	at org.mariadb.jdbc.client.impl.StandardClient.readResults(StandardClient.java:1303)
+	at org.mariadb.jdbc.client.impl.StandardClient.readResponse(StandardClient.java:1222)
+	at org.mariadb.jdbc.client.impl.StandardClient.execute(StandardClient.java:1146)
+	at org.mariadb.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:87)
+	at org.mariadb.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:232)
+	at net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy.execute(PreparedStatementSpy.java:443)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:58)
+	at jdk.proxy3/jdk.proxy3.$Proxy18.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:48)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:75)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	... 7 common frames omitted
+[DEBUG] 25-04-22 17:32:03 [App14:46] - 삭제된 데이터 수 --->  0
+[DEBUG] 25-04-22 17:48:41 [deleteByStudentId:135] - ==>  Preparing: DELETE FROM enrollments WHERE student_id IN ( SELECT id FROM students WHERE department_id = ? OR professor_id IN ( SELECT id FROM professors WHERE department_id = ? ))
+[DEBUG] 25-04-22 17:48:41 [deleteByStudentId:135] - ==> Parameters: 102(Integer), 102(Integer)
+[INFO ] 25-04-22 17:48:41 [sqlonly:228] - DELETE FROM enrollments WHERE student_id IN  ( SELECT id FROM students  WHERE department_id = 102 OR professor_id IN ( SELECT id FROM professors WHERE department_id = 102 ))
+
+[DEBUG] 25-04-22 17:48:41 [deleteByStudentId:135] - <==    Updates: 28
+[DEBUG] 25-04-22 17:48:41 [deleteByStudentId:135] - ==>  Preparing: DELETE FROM students WHERE department_id=? OR professor_id IN (SELECT id FROM professors WHERE department_id = ?)
+[DEBUG] 25-04-22 17:48:41 [deleteByStudentId:135] - ==> Parameters: 102(Integer), 102(Integer)
+[INFO ] 25-04-22 17:48:41 [sqlonly:228] - DELETE FROM students WHERE department_id=102 OR professor_id IN (SELECT id FROM professors WHERE department_id = 102)
+
+[DEBUG] 25-04-22 17:48:41 [deleteByStudentId:135] - <==    Updates: 9
+[DEBUG] 25-04-22 17:48:41 [deleteByProfessorId:135] - ==>  Preparing: DELETE FROM subjects WHERE department_id=? OR professor_id IN ( SELECT id FROM professors WHERE department_id=?)
+[DEBUG] 25-04-22 17:48:41 [deleteByProfessorId:135] - ==> Parameters: 102(Integer), 102(Integer)
+[INFO ] 25-04-22 17:48:41 [sqlonly:228] - DELETE FROM subjects  WHERE department_id=102 OR professor_id IN ( SELECT id FROM professors WHERE department_id=102)
+
+[WARN ] 25-04-22 17:48:41 [ErrorPacket:99] - Error: 1451-23000: Cannot delete or update a parent row: a foreign key constraint fails (`myschool`.`enrollments`, CONSTRAINT `enrollments_ibfk_2` FOREIGN KEY (`subject_id`) REFERENCES `subjects` (`id`))
+[ERROR] 25-04-22 17:48:41 [sqlonly:144] - 1. PreparedStatement.execute() DELETE FROM subjects  WHERE department_id=102 OR professor_id IN ( SELECT id FROM professors WHERE department_id=102)
+
+java.sql.SQLIntegrityConstraintViolationException: (conn=105) Cannot delete or update a parent row: a foreign key constraint fails (`myschool`.`enrollments`, CONSTRAINT `enrollments_ibfk_2` FOREIGN KEY (`subject_id`) REFERENCES `subjects` (`id`))
+	at org.mariadb.jdbc.export.ExceptionFactory.createException(ExceptionFactory.java:297)
+	at org.mariadb.jdbc.export.ExceptionFactory.create(ExceptionFactory.java:378)
+	at org.mariadb.jdbc.message.ClientMessage.readPacket(ClientMessage.java:187)
+	at org.mariadb.jdbc.client.impl.StandardClient.readPacket(StandardClient.java:1364)
+	at org.mariadb.jdbc.client.impl.StandardClient.readResults(StandardClient.java:1303)
+	at org.mariadb.jdbc.client.impl.StandardClient.readResponse(StandardClient.java:1222)
+	at org.mariadb.jdbc.client.impl.StandardClient.execute(StandardClient.java:1146)
+	at org.mariadb.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:87)
+	at org.mariadb.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:232)
+	at net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy.execute(PreparedStatementSpy.java:443)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:58)
+	at jdk.proxy3/jdk.proxy3.$Proxy18.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:48)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:75)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.delete(DefaultSqlSession.java:212)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:72)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at jdk.proxy2/jdk.proxy2.$Proxy16.deleteByProfessorId(Unknown Source)
+	at kr.yjh.services.impl.DepartmentServiceimpl.deleteItem(DepartmentServiceimpl.java:127)
+	at kr.yjh.mybatis.App14.main(App14.java:34)
+[ERROR] 25-04-22 17:48:41 [App14:39] - 처리된 데이터 실패 >> SQL문을 확인하세요
+org.apache.ibatis.exceptions.PersistenceException: 
+### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: (conn=105) Cannot delete or update a parent row: a foreign key constraint fails (`myschool`.`enrollments`, CONSTRAINT `enrollments_ibfk_2` FOREIGN KEY (`subject_id`) REFERENCES `subjects` (`id`))
+### The error may exist in kr/yjh/mappers/SubjectMapper.java (best guess)
+### The error may involve kr.yjh.mappers.SubjectMapper.deleteByProfessorId-Inline
+### The error occurred while setting parameters
+### SQL: DELETE FROM subjects  WHERE department_id=? OR professor_id IN ( SELECT id FROM professors WHERE department_id=?)
+### Cause: java.sql.SQLIntegrityConstraintViolationException: (conn=105) Cannot delete or update a parent row: a foreign key constraint fails (`myschool`.`enrollments`, CONSTRAINT `enrollments_ibfk_2` FOREIGN KEY (`subject_id`) REFERENCES `subjects` (`id`))
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:199)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.delete(DefaultSqlSession.java:212)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:72)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at jdk.proxy2/jdk.proxy2.$Proxy16.deleteByProfessorId(Unknown Source)
+	at kr.yjh.services.impl.DepartmentServiceimpl.deleteItem(DepartmentServiceimpl.java:127)
+	at kr.yjh.mybatis.App14.main(App14.java:34)
+Caused by: java.sql.SQLIntegrityConstraintViolationException: (conn=105) Cannot delete or update a parent row: a foreign key constraint fails (`myschool`.`enrollments`, CONSTRAINT `enrollments_ibfk_2` FOREIGN KEY (`subject_id`) REFERENCES `subjects` (`id`))
+	at org.mariadb.jdbc.export.ExceptionFactory.createException(ExceptionFactory.java:297)
+	at org.mariadb.jdbc.export.ExceptionFactory.create(ExceptionFactory.java:378)
+	at org.mariadb.jdbc.message.ClientMessage.readPacket(ClientMessage.java:187)
+	at org.mariadb.jdbc.client.impl.StandardClient.readPacket(StandardClient.java:1364)
+	at org.mariadb.jdbc.client.impl.StandardClient.readResults(StandardClient.java:1303)
+	at org.mariadb.jdbc.client.impl.StandardClient.readResponse(StandardClient.java:1222)
+	at org.mariadb.jdbc.client.impl.StandardClient.execute(StandardClient.java:1146)
+	at org.mariadb.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:87)
+	at org.mariadb.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:232)
+	at net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy.execute(PreparedStatementSpy.java:443)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:58)
+	at jdk.proxy3/jdk.proxy3.$Proxy18.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:48)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:75)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	... 7 common frames omitted
+[DEBUG] 25-04-22 17:48:41 [App14:46] - 삭제된 데이터 수 --->  0
+[DEBUG] 25-04-22 17:49:36 [deleteByStudentId:135] - ==>  Preparing: DELETE FROM enrollments WHERE student_id IN ( SELECT id FROM students WHERE department_id=? OR professor_id IN ( SELECT id FROM professors WHERE department_id=? )) OR subject_id IN ( SELECT id FROM subjects WHERE professor_id IN ( SELECT id FROM professors WHERE department_id=? ))
+[DEBUG] 25-04-22 17:49:36 [deleteByStudentId:135] - ==> Parameters: 102(Integer), 102(Integer), 102(Integer)
+[INFO ] 25-04-22 17:49:36 [sqlonly:228] - DELETE FROM enrollments WHERE student_id IN (   SELECT id FROM students    WHERE department_id=102 OR          professor_id IN (           SELECT id FROM professors WHERE department_id=102         )) OR subject_id IN (   SELECT id FROM subjects WHERE professor_id IN (       SELECT id FROM professors WHERE department_id=102   ))
+
+[DEBUG] 25-04-22 17:49:36 [deleteByStudentId:135] - <==    Updates: 35
+[DEBUG] 25-04-22 17:49:36 [deleteByStudentId:135] - ==>  Preparing: DELETE FROM students WHERE department_id=? OR professor_id IN (SELECT id FROM professors WHERE department_id = ?)
+[DEBUG] 25-04-22 17:49:36 [deleteByStudentId:135] - ==> Parameters: 102(Integer), 102(Integer)
+[INFO ] 25-04-22 17:49:36 [sqlonly:228] - DELETE FROM students WHERE department_id=102 OR professor_id IN (SELECT id FROM professors WHERE department_id = 102)
+
+[DEBUG] 25-04-22 17:49:36 [deleteByStudentId:135] - <==    Updates: 9
+[DEBUG] 25-04-22 17:49:36 [deleteByProfessorId:135] - ==>  Preparing: DELETE FROM subjects WHERE department_id=? OR professor_id IN ( SELECT id FROM professors WHERE department_id=?)
+[DEBUG] 25-04-22 17:49:36 [deleteByProfessorId:135] - ==> Parameters: 102(Integer), 102(Integer)
+[INFO ] 25-04-22 17:49:36 [sqlonly:228] - DELETE FROM subjects  WHERE department_id=102 OR professor_id IN ( SELECT id FROM professors WHERE department_id=102)
+
+[DEBUG] 25-04-22 17:49:36 [deleteByProfessorId:135] - <==    Updates: 2
+[DEBUG] 25-04-22 17:49:36 [deleteByDepartmentId:135] - ==>  Preparing: DELETE FROM professors WHERE department_id=?
+[DEBUG] 25-04-22 17:49:36 [deleteByDepartmentId:135] - ==> Parameters: 102(Integer)
+[INFO ] 25-04-22 17:49:36 [sqlonly:228] - DELETE FROM professors WHERE department_id=102
+
+[DEBUG] 25-04-22 17:49:36 [deleteByDepartmentId:135] - <==    Updates: 5
+[DEBUG] 25-04-22 17:49:36 [delete:135] - ==>  Preparing: DELETE FROM departments WHERE id = ?
+[DEBUG] 25-04-22 17:49:36 [delete:135] - ==> Parameters: 102(Integer)
+[INFO ] 25-04-22 17:49:36 [sqlonly:228] - DELETE FROM departments WHERE id = 102
+
+[DEBUG] 25-04-22 17:49:36 [delete:135] - <==    Updates: 1
+[DEBUG] 25-04-22 17:49:36 [App14:46] - 삭제된 데이터 수 --->  1
+[DEBUG] 25-04-22 17:51:05 [deleteByStudentId:135] - ==>  Preparing: DELETE FROM enrollments WHERE student_id IN ( SELECT id FROM students WHERE department_id=? OR professor_id IN ( SELECT id FROM professors WHERE department_id=? )) OR subject_id IN ( SELECT id FROM subjects WHERE professor_id IN ( SELECT id FROM professors WHERE department_id=? ))
+[DEBUG] 25-04-22 17:51:05 [deleteByStudentId:135] - ==> Parameters: 102(Integer), 102(Integer), 102(Integer)
+[INFO ] 25-04-22 17:51:05 [sqlonly:228] - DELETE FROM enrollments WHERE student_id IN (   SELECT id FROM students    WHERE department_id=102 OR          professor_id IN (           SELECT id FROM professors WHERE department_id=102         )) OR subject_id IN (   SELECT id FROM subjects WHERE professor_id IN (       SELECT id FROM professors WHERE department_id=102   ))
+
+[DEBUG] 25-04-22 17:51:05 [deleteByStudentId:135] - <==    Updates: 0
+[DEBUG] 25-04-22 17:51:05 [deleteByStudentId:135] - ==>  Preparing: DELETE FROM students WHERE department_id=? OR professor_id IN (SELECT id FROM professors WHERE department_id = ?)
+[DEBUG] 25-04-22 17:51:05 [deleteByStudentId:135] - ==> Parameters: 102(Integer), 102(Integer)
+[INFO ] 25-04-22 17:51:06 [sqlonly:228] - DELETE FROM students WHERE department_id=102 OR professor_id IN (SELECT id FROM professors WHERE department_id = 102)
+
+[DEBUG] 25-04-22 17:51:06 [deleteByStudentId:135] - <==    Updates: 0
+[DEBUG] 25-04-22 17:51:06 [deleteByProfessorId:135] - ==>  Preparing: DELETE FROM subjects WHERE department_id=? OR professor_id IN ( SELECT id FROM professors WHERE department_id=?)
+[DEBUG] 25-04-22 17:51:06 [deleteByProfessorId:135] - ==> Parameters: 102(Integer), 102(Integer)
+[INFO ] 25-04-22 17:51:06 [sqlonly:228] - DELETE FROM subjects  WHERE department_id=102 OR professor_id IN ( SELECT id FROM professors WHERE department_id=102)
+
+[DEBUG] 25-04-22 17:51:06 [deleteByProfessorId:135] - <==    Updates: 0
+[DEBUG] 25-04-22 17:51:06 [deleteByDepartmentId:135] - ==>  Preparing: DELETE FROM professors WHERE department_id=?
+[DEBUG] 25-04-22 17:51:06 [deleteByDepartmentId:135] - ==> Parameters: 102(Integer)
+[INFO ] 25-04-22 17:51:06 [sqlonly:228] - DELETE FROM professors WHERE department_id=102
+
+[DEBUG] 25-04-22 17:51:06 [deleteByDepartmentId:135] - <==    Updates: 0
+[DEBUG] 25-04-22 17:51:06 [delete:135] - ==>  Preparing: DELETE FROM departments WHERE id = ?
+[DEBUG] 25-04-22 17:51:06 [delete:135] - ==> Parameters: 102(Integer)
+[INFO ] 25-04-22 17:51:06 [sqlonly:228] - DELETE FROM departments WHERE id = 102
+
+[DEBUG] 25-04-22 17:51:06 [delete:135] - <==    Updates: 0
+[ERROR] 25-04-22 17:51:06 [App14:36] - 처리된 데이터 없음 >> WHERE절을 확인하세요
+kr.yjh.exceptions.ServiceNoResultException: 삭제된 데이터가 없습니다. 
+	at kr.yjh.services.impl.DepartmentServiceimpl.deleteItem(DepartmentServiceimpl.java:138)
+	at kr.yjh.mybatis.App14.main(App14.java:34)
+[DEBUG] 25-04-22 17:51:06 [App14:46] - 삭제된 데이터 수 --->  0

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang = "ko" translate = "no">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "google" content = "notranslate" />
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <title>path</title>
+    </head>
+
+    <body>
+
+        <div th:replace="~{fragments/header :: my-header}"></div>
+        <h2>PATH 파라미터 전송 테스트</h2>
+        <div>
+            <a th:href="@{/path/result/hello/world/1234}">
+                hello/world/1234
+            </a>
+        </div>
+
+        <div>
+            <a href="@{/path/result/foo/bar/5678}">
+                foo/bar/5678
+            </a>
+        </div>
+    
+    </body>
+</html>

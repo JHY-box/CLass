@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-ParamsApplication<params>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "kr.yjh.params.ParamsApplication",
+            "projectName": "params",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

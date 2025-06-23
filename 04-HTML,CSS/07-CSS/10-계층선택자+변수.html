@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1.0,
+    minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>Doccument</title>
+    <!-- 스타일 시트 -->
+    <style type="text/CSS">
+
+        /* CSS전역 변수 설정 */
+        :root {
+            --my-color-red:#f00;
+            --my-color-green:#0f0;
+            --my-color-blue:#00f;
+            --my-color-orange:#f60;
+            --my-color-yellow:#ff0;
+            --my-color-repinkd:#f0f;
+        }
+    
+        body {
+            color: var(--my-color-red);
+        }
+
+        .container {
+            color: var(--my-color-green);
+
+            /** .container h1 */
+            h1 {
+                color:var(--my-color-blue);
+            }
+
+            /** .container .my-box */
+            .my-box {
+                /** 상위 클래스 (.my-box) 와 동시에 적용된 클래스를 의미 --> .my-box.red */
+                &.red {
+                    color: var(--my-color-red);
+                }
+
+                &.green {
+                    color: var(--my-color-green);
+                }
+
+                &.blue {
+                    color: var(--my-color-blue);
+                }
+
+                &.orange {
+                    color: var(--my-color-orange);
+                }
+
+                &.yellow {
+                    color: var(--my-color-yellow);
+                }
+
+                &.pink {
+                    color: var(--my-color-pink);
+                }
+            }
+        }
+
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+        <h1>계층 선택자 + CSS변수</h1>
+        <div class="my-box red">Hello World</div>
+        <div class="my-box green">Hello World</div>
+        <div class="my-box blue">Hello World</div>
+        <div class="my-box orange">Hello World</div>
+        <div class="my-box yellow">Hello World</div>
+        <div class="my-box pink">Hello World</div>
+    </div>
+  </body>
+</html>

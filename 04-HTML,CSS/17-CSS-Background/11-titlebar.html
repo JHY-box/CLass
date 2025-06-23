@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang = "ko" translate = "no">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "google" content = "notranslate" />
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <title>11-titlebar</title>
+        <style type="text/css">
+            /** 기본 초기화 처리 */
+            * {
+                padding: 0;
+                margin:0;
+            }
+
+            body {
+                background-color: #eee;
+            }
+
+            .titlebar {
+                width:100%;
+                height: 45px;
+                border-bottom: 1px solid #555;
+                background-image: -webkit-linear-gradient(top, rgb(89,189,212) 8%, rgb(40,142,168) 74%);
+                position: fixed;
+                top: 0;
+                left: 0;
+                z-index: 10000;
+
+                .titlebar-text{
+                    color : #fff;
+                    font: 20px "Helvetica";
+                    text-shadow: 0 1px 1px #000;
+                    text-align: center;
+                    position: relative;
+                    top: 10px;
+                }
+            }
+            .content {
+                padding-top: 46px;
+
+                .navi {
+                    background: url(img/list_right.png) repeat-y right top,
+                                url(img/menu.png) no-repeat left top,
+                                url(img/list_bg.png) repeat;
+
+                    a {
+                        display: block;
+                        width : auto;
+                        height: 45px;
+                        cursor: pointer;
+                        text-indent: -10000px;
+                    }
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <header class="titlebar">
+                <h1 class="titlebar-text">과목을 선택하세요.</h1>
+            </header>
+            <section class="content">
+                <!-- 8번 예제의 HTML코드 재사용 -->
+                <nav class="navi">
+                    <a href="#">웹표준/웹디자인</a>
+                    <a href="#">소셜미디어마케팅</a>
+                    <a href="#">IT/모바일</a>
+                    <a href="#">OA</a>
+                </nav>
+            </section>
+        </div>
+    </body>
+    </html>

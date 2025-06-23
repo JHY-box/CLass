@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang = "ko" translate = "no">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "google" content = "notranslate" />
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <title>02-페이지이동</title>
+    </head>
+    <body>
+        <h1>History 객체</h1>
+        <h2 id="datetime"></h2>
+        <a href="#" id='link1'>이전 페이지로 이동</a>
+        <a href="#" id='link2'>앞 페이지로 이동</a>
+
+        <hr/>
+
+        <a href="01-window.html">1번 예저로 이동</a>
+        <button type="button" id="move">1번 예제로 이동</button>
+        <button type="button" id="refresh">페이지 새로 고침</button>
+
+        <script>
+            document.querySelector("#datetime").innerHTML = new Date();
+
+            document.querySelector("#move").addEventListener("click", e => {
+                e.preventDefault();
+                // 두 기능이 동일함
+                // window.location.href = '01-window.html';
+                window.location = '01-window.html';
+            });
+
+            document.querySelector("#refresh").addEventListener("click", e => {
+                e.preventDefault();
+                window.location.reload();
+            });
+
+            document.querySelector("#link1").addEventListener("click", e => {
+                e.preventDefault();
+                history.back();
+            });
+
+            document.querySelector("#link2").addEventListener("click", e => {
+                e.preventDefault();
+                history.forward();
+            });
+        </script>
+    </body>
+    </html>

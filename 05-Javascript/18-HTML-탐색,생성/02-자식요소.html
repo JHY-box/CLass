@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang = "ko" translate = "no">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "google" content = "notranslate" />
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <title>02-자식요소</title>
+    </head>
+    <body>
+        <ul id="list">
+            <li id="one">one</li>
+            <li id="two" class="blue">
+                Two
+                <ul>
+                    <li id="a">A</li>
+                    <li id="b" class="blue">B</li>
+                    <li id="c" class="red">C</li>
+                    <li id="b">D</li>
+                </ul>
+            </li>
+            <li id="three">Three</li>
+            <li id="four" class="blue">Four</li>
+        </ul>
+
+        <button type="button" id="btn1">상위 ul의 자식들</button>
+        <button type="button" id="btn2">Two의 하위 ul의 자식들</button>
+
+        <script>
+            document.querySelector('#btn1').addEventListener('click', (e) => {
+                // 지정된 요소의 텍스트와 하위 Element를 모두 조회
+                // -> 심지어는 코드 줄맞춤을 위한 줄바꿈도 텍스트로 의식 (비추)
+                console.log(document.querySelector('list').childNodes);             //믿거 코드
+
+                // 불필요한 요소를 제거하고 하위 Element만 조회
+                console.log(document.querySelector('list').children);
+
+                //#list의 자식요소들 얻기
+                const children = document.querySelector('list').children;
+
+                //ㅌㅌㅌㅌㅌㅌㅌㅌㅌㅌㅌㅌㅌㅌㅌㅌㅌㅌㅌㅌㅌㅌㅌㅌㅌㅌㅌㅌㅌㅌㅌㅌㅌㅌㅌㅌㅌㅌㅌㅌㅌㅌㅌㅌㅌㅌㅌㅌㅌㅌㅌㅌㅌㅌㅌㅌㅌㅌㅌㅌㅌㅌㅌㅌㅌㅌㅌㅌㅌㅌ
+                const childrenArr = Array.from(children);
+                console.log(childrenArr);
+
+                childrenArr.forEach ((v, i) => {
+                    v.style.backgroundColor = '#0066ff';
+                });
+            });
+
+
+            sbhsbtfyhrthbsrtyhbs
+        </script>
+    </body>
+    </html>

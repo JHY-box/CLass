@@ -1,0 +1,246 @@
+[INFO ] 25-06-05 12:55:01 [DepartmentMapperTest:53] - Starting DepartmentMapperTest using Java 17.0.11 with PID 6684 (started by james in E:\05.web3\06.SpringBoot\08-Database\08-Database)
+[DEBUG] 25-06-05 12:55:01 [DepartmentMapperTest:54] - Running with Spring Boot v3.4.6, Spring v6.2.7
+[INFO ] 25-06-05 12:55:01 [DepartmentMapperTest:652] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 25-06-05 12:55:06 [DepartmentMapperTest:59] - Started DepartmentMapperTest in 5.075 seconds (process running for 6.562)
+[DEBUG] 25-06-05 12:55:07 [selectCount:135] - ==>  Preparing: SELECT COUNT(*) FROM departments
+[DEBUG] 25-06-05 12:55:07 [selectCount:135] - ==> Parameters: 
+[DEBUG] 25-06-05 12:55:07 [selectCount:135] - <==      Total: 1
+[DEBUG] 25-06-05 12:55:07 [DepartmentMapperTest:82] - 조회된 데이터 수: 14
+[DEBUG] 25-06-05 12:55:07 [delete:135] - ==>  Preparing: DELETE FROM departments WHERE id=?
+[DEBUG] 25-06-05 12:55:07 [delete:135] - ==> Parameters: 101(Integer)
+[WARN ] 25-06-05 12:55:07 [ErrorPacket:99] - Error: 1451-23000: Cannot delete or update a parent row: a foreign key constraint fails (`myschool`.`professors`, CONSTRAINT `fk_professors_departments` FOREIGN KEY (`department_id`) REFERENCES `departments` (`id`))
+[DEBUG] 25-06-05 12:55:08 [update:135] - ==>  Preparing: UPDATE departments SET dname=?, loc=?, phone=?, email=?, established=?, homepage=? WHERE id=?
+[DEBUG] 25-06-05 12:55:08 [update:135] - ==> Parameters: 수정된학과(String), B-2(String), 010-1234-1234(String), megastudy@hello.com(String), 2020(Integer), https://megastudy.com(String), 511(Integer)
+[DEBUG] 25-06-05 12:55:08 [update:135] - <==    Updates: 0
+[DEBUG] 25-06-05 12:55:08 [DepartmentMapperTest:48] - 수정된 데이터의 수: 0
+[DEBUG] 25-06-05 12:55:08 [insert:135] - ==>  Preparing: INSERT INTO departments (dname, loc, phone, email, established, homepage) VALUES (?, ?, ?, ?, ?, ?)
+[DEBUG] 25-06-05 12:55:08 [insert:135] - ==> Parameters: 새로운학과(String), B-1(String), 010-1234-1234(String), megastudy@hello.com(String), 2020(Integer), https://megastudy.com(String)
+[DEBUG] 25-06-05 12:55:08 [insert:135] - <==    Updates: 1
+[DEBUG] 25-06-05 12:55:08 [DepartmentMapperTest:31] - 저장된 데이터의 수: 1
+[DEBUG] 25-06-05 12:55:08 [DepartmentMapperTest:32] - 생성된 Primary Key: 504
+[DEBUG] 25-06-05 12:55:08 [selectList:135] - ==>  Preparing: SELECT id, dname, loc, phone, email, established, homepage FROM departments
+[DEBUG] 25-06-05 12:55:08 [selectList:135] - ==> Parameters: 
+[DEBUG] 25-06-05 12:55:08 [selectList:135] - <==      Total: 15
+[DEBUG] 25-06-05 12:55:08 [DepartmentMapperTest:74] - 조회결과: [Department(id=101, dname=컴퓨터공학과, loc=공학관, phone=051-123-4567, email=cs@myschool.ac.kr, established=1990, homepage=http://cs.myschool.ac.kr), Department(id=102, dname=소프트웨어학과, loc=디자인관, phone=051-124-4567, email=media@myschool.ac.kr, established=1995, homepage=http://media.myschool.ac.kr), Department(id=201, dname=전자공학과, loc=공학관, phone=051-125-4567, email=ee@myschool.ac.kr, established=1985, homepage=http://ee.myschool.ac.kr), Department(id=202, dname=기계공학과, loc=공학관, phone=051-126-4567, email=me@myschool.ac.kr, established=1988, homepage=http://machine.myschool.ac.kr), Department(id=203, dname=건축학과, loc=건축관, phone=051-127-4567, email=arch@myschool.ac.kr, established=1992, homepage=null), Department(id=204, dname=산업디자인학과, loc=디자인관, phone=051-128-4567, email=id@myschool.ac.kr, established=1996, homepage=http://id.myschool.ac.kr), Department(id=301, dname=경영학과, loc=경영관, phone=051-129-4567, email=biz@myschool.ac.kr, established=1980, homepage=http://biz.myschool.ac.kr), Department(id=302, dname=경제학과, loc=경영관, phone=051-130-4567, email=econ@myschool.ac.kr, established=1982, homepage=null), Department(id=401, dname=영어영문학과, loc=인문사회관, phone=051-131-4567, email=eng@myschool.ac.kr, established=1975, homepage=null), Department(id=402, dname=심리학과, loc=인문사회관, phone=051-132-4567, email=psy@myschool.ac.kr, established=1987, homepage=http://psy.myschool.ac.kr), Department(id=500, dname=인공지능학과, loc=공학관, phone=051-123-4567, email=ai@myschool.ac.kr, established=2001, homepage=http://ai.myschool.ac.kr), Department(id=501, dname=사회복지학과, loc=인문관, phone=051-432-2233, email=social@myschool.ac.kr, established=2002, homepage=http://social.myschool.ac.kr), Department(id=502, dname=심리학과, loc=인문관, phone=051-336-7788, email=psyc@myschool.ac.kr, established=2000, homepage=http://psyc.myschool.ac.kr), Department(id=503, dname=체육학과, loc=체육관, phone=051-434-3345, email=phy@myschool.ac.kr, established=2004, homepage=http://phy.myschool.ac.kr), Department(id=504, dname=새로운학과, loc=B-1, phone=010-1234-1234, email=megastudy@hello.com, established=2020, homepage=https://megastudy.com)]
+[DEBUG] 25-06-05 12:55:08 [selectOne:135] - ==>  Preparing: SELECT id, dname, loc, phone, email, established, homepage FROM departments WHERE id=?
+[DEBUG] 25-06-05 12:55:08 [selectOne:135] - ==> Parameters: 101(Integer)
+[DEBUG] 25-06-05 12:55:08 [selectOne:135] - <==      Total: 1
+[DEBUG] 25-06-05 12:55:08 [DepartmentMapperTest:66] - 조회결과: Department(id=101, dname=컴퓨터공학과, loc=공학관, phone=051-123-4567, email=cs@myschool.ac.kr, established=1990, homepage=http://cs.myschool.ac.kr)
+[INFO ] 25-06-05 12:57:03 [DepartmentMapperTest:53] - Starting DepartmentMapperTest using Java 17.0.11 with PID 440 (started by james in E:\05.web3\06.SpringBoot\08-Database\08-Database)
+[DEBUG] 25-06-05 12:57:03 [DepartmentMapperTest:54] - Running with Spring Boot v3.4.6, Spring v6.2.7
+[INFO ] 25-06-05 12:57:03 [DepartmentMapperTest:652] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 25-06-05 12:57:08 [DepartmentMapperTest:59] - Started DepartmentMapperTest in 4.833 seconds (process running for 6.128)
+[DEBUG] 25-06-05 12:57:10 [selectCount:135] - ==>  Preparing: SELECT COUNT(*) FROM departments
+[DEBUG] 25-06-05 12:57:10 [selectCount:135] - ==> Parameters: 
+[DEBUG] 25-06-05 12:57:10 [selectCount:135] - <==      Total: 1
+[DEBUG] 25-06-05 12:57:10 [DepartmentMapperTest:82] - 조회된 데이터 수: 15
+[DEBUG] 25-06-05 12:57:10 [delete:135] - ==>  Preparing: DELETE FROM departments WHERE id=?
+[DEBUG] 25-06-05 12:57:10 [delete:135] - ==> Parameters: 511(Integer)
+[DEBUG] 25-06-05 12:57:10 [delete:135] - <==    Updates: 0
+[DEBUG] 25-06-05 12:57:10 [DepartmentMapperTest:57] - 삭제된 데이터의 수: 0
+[DEBUG] 25-06-05 12:57:10 [update:135] - ==>  Preparing: UPDATE departments SET dname=?, loc=?, phone=?, email=?, established=?, homepage=? WHERE id=?
+[DEBUG] 25-06-05 12:57:10 [update:135] - ==> Parameters: 수정된학과(String), B-2(String), 010-1234-1234(String), megastudy@hello.com(String), 2020(Integer), https://megastudy.com(String), 511(Integer)
+[DEBUG] 25-06-05 12:57:10 [update:135] - <==    Updates: 0
+[DEBUG] 25-06-05 12:57:10 [DepartmentMapperTest:48] - 수정된 데이터의 수: 0
+[DEBUG] 25-06-05 12:57:10 [insert:135] - ==>  Preparing: INSERT INTO departments (dname, loc, phone, email, established, homepage) VALUES (?, ?, ?, ?, ?, ?)
+[DEBUG] 25-06-05 12:57:10 [insert:135] - ==> Parameters: 새로운학과(String), B-1(String), 010-1234-1234(String), megastudy@hello.com(String), 2020(Integer), https://megastudy.com(String)
+[DEBUG] 25-06-05 12:57:10 [insert:135] - <==    Updates: 1
+[DEBUG] 25-06-05 12:57:10 [DepartmentMapperTest:31] - 저장된 데이터의 수: 1
+[DEBUG] 25-06-05 12:57:10 [DepartmentMapperTest:32] - 생성된 Primary Key: 505
+[DEBUG] 25-06-05 12:57:10 [selectList:135] - ==>  Preparing: SELECT id, dname, loc, phone, email, established, homepage FROM departments
+[DEBUG] 25-06-05 12:57:10 [selectList:135] - ==> Parameters: 
+[DEBUG] 25-06-05 12:57:10 [selectList:135] - <==      Total: 16
+[DEBUG] 25-06-05 12:57:10 [DepartmentMapperTest:74] - 조회결과: [Department(id=101, dname=컴퓨터공학과, loc=공학관, phone=051-123-4567, email=cs@myschool.ac.kr, established=1990, homepage=http://cs.myschool.ac.kr), Department(id=102, dname=소프트웨어학과, loc=디자인관, phone=051-124-4567, email=media@myschool.ac.kr, established=1995, homepage=http://media.myschool.ac.kr), Department(id=201, dname=전자공학과, loc=공학관, phone=051-125-4567, email=ee@myschool.ac.kr, established=1985, homepage=http://ee.myschool.ac.kr), Department(id=202, dname=기계공학과, loc=공학관, phone=051-126-4567, email=me@myschool.ac.kr, established=1988, homepage=http://machine.myschool.ac.kr), Department(id=203, dname=건축학과, loc=건축관, phone=051-127-4567, email=arch@myschool.ac.kr, established=1992, homepage=null), Department(id=204, dname=산업디자인학과, loc=디자인관, phone=051-128-4567, email=id@myschool.ac.kr, established=1996, homepage=http://id.myschool.ac.kr), Department(id=301, dname=경영학과, loc=경영관, phone=051-129-4567, email=biz@myschool.ac.kr, established=1980, homepage=http://biz.myschool.ac.kr), Department(id=302, dname=경제학과, loc=경영관, phone=051-130-4567, email=econ@myschool.ac.kr, established=1982, homepage=null), Department(id=401, dname=영어영문학과, loc=인문사회관, phone=051-131-4567, email=eng@myschool.ac.kr, established=1975, homepage=null), Department(id=402, dname=심리학과, loc=인문사회관, phone=051-132-4567, email=psy@myschool.ac.kr, established=1987, homepage=http://psy.myschool.ac.kr), Department(id=500, dname=인공지능학과, loc=공학관, phone=051-123-4567, email=ai@myschool.ac.kr, established=2001, homepage=http://ai.myschool.ac.kr), Department(id=501, dname=사회복지학과, loc=인문관, phone=051-432-2233, email=social@myschool.ac.kr, established=2002, homepage=http://social.myschool.ac.kr), Department(id=502, dname=심리학과, loc=인문관, phone=051-336-7788, email=psyc@myschool.ac.kr, established=2000, homepage=http://psyc.myschool.ac.kr), Department(id=503, dname=체육학과, loc=체육관, phone=051-434-3345, email=phy@myschool.ac.kr, established=2004, homepage=http://phy.myschool.ac.kr), Department(id=504, dname=새로운학과, loc=B-1, phone=010-1234-1234, email=megastudy@hello.com, established=2020, homepage=https://megastudy.com), Department(id=505, dname=새로운학과, loc=B-1, phone=010-1234-1234, email=megastudy@hello.com, established=2020, homepage=https://megastudy.com)]
+[DEBUG] 25-06-05 12:57:10 [selectOne:135] - ==>  Preparing: SELECT id, dname, loc, phone, email, established, homepage FROM departments WHERE id=?
+[DEBUG] 25-06-05 12:57:10 [selectOne:135] - ==> Parameters: 101(Integer)
+[DEBUG] 25-06-05 12:57:10 [selectOne:135] - <==      Total: 1
+[DEBUG] 25-06-05 12:57:10 [DepartmentMapperTest:66] - 조회결과: Department(id=101, dname=컴퓨터공학과, loc=공학관, phone=051-123-4567, email=cs@myschool.ac.kr, established=1990, homepage=http://cs.myschool.ac.kr)
+[INFO ] 25-06-05 14:52:49 [DepartmentMapperTest:53] - Starting DepartmentMapperTest using Java 17.0.11 with PID 6724 (started by james in E:\05.web3\06.SpringBoot\08-Database\08-Database)
+[DEBUG] 25-06-05 14:52:49 [DepartmentMapperTest:54] - Running with Spring Boot v3.4.6, Spring v6.2.7
+[INFO ] 25-06-05 14:52:49 [DepartmentMapperTest:652] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 25-06-05 14:52:53 [DepartmentMapperTest:59] - Started DepartmentMapperTest in 4.553 seconds (process running for 5.726)
+[DEBUG] 25-06-05 14:52:54 [selectCount:135] - ==>  Preparing: SELECT COUNT(*) FROM departments
+[DEBUG] 25-06-05 14:52:54 [selectCount:135] - ==> Parameters: 
+[DEBUG] 25-06-05 14:52:54 [selectCount:135] - <==      Total: 1
+[DEBUG] 25-06-05 14:52:54 [DepartmentMapperTest:82] - 조회된 데이터 수: 16
+[DEBUG] 25-06-05 14:52:54 [delete:135] - ==>  Preparing: DELETE FROM departments WHERE id=?
+[DEBUG] 25-06-05 14:52:54 [delete:135] - ==> Parameters: 511(Integer)
+[DEBUG] 25-06-05 14:52:54 [delete:135] - <==    Updates: 0
+[DEBUG] 25-06-05 14:52:54 [DepartmentMapperTest:57] - 삭제된 데이터의 수: 0
+[DEBUG] 25-06-05 14:52:54 [update:135] - ==>  Preparing: UPDATE departments SET dname=?, loc=?, phone=?, email=?, established=?, homepage=? WHERE id=?
+[DEBUG] 25-06-05 14:52:54 [update:135] - ==> Parameters: 수정된학과(String), B-2(String), 010-1234-1234(String), megastudy@hello.com(String), 2020(Integer), https://megastudy.com(String), 511(Integer)
+[DEBUG] 25-06-05 14:52:54 [update:135] - <==    Updates: 0
+[DEBUG] 25-06-05 14:52:54 [DepartmentMapperTest:48] - 수정된 데이터의 수: 0
+[DEBUG] 25-06-05 14:52:54 [insert:135] - ==>  Preparing: INSERT INTO departments (dname, loc, phone, email, established, homepage) VALUES (?, ?, ?, ?, ?, ?)
+[DEBUG] 25-06-05 14:52:54 [insert:135] - ==> Parameters: 새로운학과(String), B-1(String), 010-1234-1234(String), megastudy@hello.com(String), 2020(Integer), https://megastudy.com(String)
+[DEBUG] 25-06-05 14:52:54 [insert:135] - <==    Updates: 1
+[DEBUG] 25-06-05 14:52:54 [DepartmentMapperTest:31] - 저장된 데이터의 수: 1
+[DEBUG] 25-06-05 14:52:54 [DepartmentMapperTest:32] - 생성된 Primary Key: 506
+[DEBUG] 25-06-05 14:52:54 [selectList:135] - ==>  Preparing: SELECT id, dname, loc, phone, email, established, homepage FROM departments
+[DEBUG] 25-06-05 14:52:54 [selectList:135] - ==> Parameters: 
+[DEBUG] 25-06-05 14:52:54 [selectList:135] - <==      Total: 17
+[DEBUG] 25-06-05 14:52:54 [DepartmentMapperTest:74] - 조회결과: [Department(id=101, dname=컴퓨터공학과, loc=공학관, phone=051-123-4567, email=cs@myschool.ac.kr, established=1990, homepage=http://cs.myschool.ac.kr), Department(id=102, dname=소프트웨어학과, loc=디자인관, phone=051-124-4567, email=media@myschool.ac.kr, established=1995, homepage=http://media.myschool.ac.kr), Department(id=201, dname=전자공학과, loc=공학관, phone=051-125-4567, email=ee@myschool.ac.kr, established=1985, homepage=http://ee.myschool.ac.kr), Department(id=202, dname=기계공학과, loc=공학관, phone=051-126-4567, email=me@myschool.ac.kr, established=1988, homepage=http://machine.myschool.ac.kr), Department(id=203, dname=건축학과, loc=건축관, phone=051-127-4567, email=arch@myschool.ac.kr, established=1992, homepage=null), Department(id=204, dname=산업디자인학과, loc=디자인관, phone=051-128-4567, email=id@myschool.ac.kr, established=1996, homepage=http://id.myschool.ac.kr), Department(id=301, dname=경영학과, loc=경영관, phone=051-129-4567, email=biz@myschool.ac.kr, established=1980, homepage=http://biz.myschool.ac.kr), Department(id=302, dname=경제학과, loc=경영관, phone=051-130-4567, email=econ@myschool.ac.kr, established=1982, homepage=null), Department(id=401, dname=영어영문학과, loc=인문사회관, phone=051-131-4567, email=eng@myschool.ac.kr, established=1975, homepage=null), Department(id=402, dname=심리학과, loc=인문사회관, phone=051-132-4567, email=psy@myschool.ac.kr, established=1987, homepage=http://psy.myschool.ac.kr), Department(id=500, dname=인공지능학과, loc=공학관, phone=051-123-4567, email=ai@myschool.ac.kr, established=2001, homepage=http://ai.myschool.ac.kr), Department(id=501, dname=사회복지학과, loc=인문관, phone=051-432-2233, email=social@myschool.ac.kr, established=2002, homepage=http://social.myschool.ac.kr), Department(id=502, dname=심리학과, loc=인문관, phone=051-336-7788, email=psyc@myschool.ac.kr, established=2000, homepage=http://psyc.myschool.ac.kr), Department(id=503, dname=체육학과, loc=체육관, phone=051-434-3345, email=phy@myschool.ac.kr, established=2004, homepage=http://phy.myschool.ac.kr), Department(id=504, dname=새로운학과, loc=B-1, phone=010-1234-1234, email=megastudy@hello.com, established=2020, homepage=https://megastudy.com), Department(id=505, dname=새로운학과, loc=B-1, phone=010-1234-1234, email=megastudy@hello.com, established=2020, homepage=https://megastudy.com), Department(id=506, dname=새로운학과, loc=B-1, phone=010-1234-1234, email=megastudy@hello.com, established=2020, homepage=https://megastudy.com)]
+[DEBUG] 25-06-05 14:52:54 [selectOne:135] - ==>  Preparing: SELECT id, dname, loc, phone, email, established, homepage FROM departments WHERE id=?
+[DEBUG] 25-06-05 14:52:54 [selectOne:135] - ==> Parameters: 101(Integer)
+[DEBUG] 25-06-05 14:52:54 [selectOne:135] - <==      Total: 1
+[DEBUG] 25-06-05 14:52:54 [DepartmentMapperTest:66] - 조회결과: Department(id=101, dname=컴퓨터공학과, loc=공학관, phone=051-123-4567, email=cs@myschool.ac.kr, established=1990, homepage=http://cs.myschool.ac.kr)
+[INFO ] 25-06-05 15:21:43 [DepartmentMapperTest:53] - Starting DepartmentMapperTest using Java 17.0.11 with PID 1204 (started by james in E:\05.web3\06.SpringBoot\08-Database\08-Database)
+[DEBUG] 25-06-05 15:21:43 [DepartmentMapperTest:54] - Running with Spring Boot v3.4.6, Spring v6.2.7
+[INFO ] 25-06-05 15:21:43 [DepartmentMapperTest:652] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 25-06-05 15:21:49 [DepartmentMapperTest:59] - Started DepartmentMapperTest in 7.216 seconds (process running for 8.838)
+[DEBUG] 25-06-05 15:21:51 [selectCount:135] - ==>  Preparing: SELECT COUNT(*) FROM departments
+[DEBUG] 25-06-05 15:21:51 [selectCount:135] - ==> Parameters: 
+[DEBUG] 25-06-05 15:21:51 [selectCount:135] - <==      Total: 1
+[DEBUG] 25-06-05 15:21:51 [DepartmentMapperTest:82] - 조회된 데이터 수: 17
+[DEBUG] 25-06-05 15:21:51 [delete:135] - ==>  Preparing: DELETE FROM departments WHERE id=?
+[DEBUG] 25-06-05 15:21:51 [delete:135] - ==> Parameters: 506(Integer)
+[DEBUG] 25-06-05 15:21:51 [delete:135] - <==    Updates: 1
+[DEBUG] 25-06-05 15:21:51 [DepartmentMapperTest:57] - 삭제된 데이터의 수: 1
+[DEBUG] 25-06-05 15:21:51 [update:135] - ==>  Preparing: UPDATE departments SET dname=?, loc=?, phone=?, email=?, established=?, homepage=? WHERE id=?
+[DEBUG] 25-06-05 15:21:51 [update:135] - ==> Parameters: 수정된학과(String), B-2(String), 010-1234-1234(String), megastudy@hello.com(String), 2020(Integer), https://megastudy.com(String), 511(Integer)
+[DEBUG] 25-06-05 15:21:51 [update:135] - <==    Updates: 0
+[DEBUG] 25-06-05 15:21:51 [DepartmentMapperTest:48] - 수정된 데이터의 수: 0
+[DEBUG] 25-06-05 15:21:51 [insert:135] - ==>  Preparing: INSERT INTO departments (dname, loc, phone, email, established, homepage) VALUES (?, ?, ?, ?, ?, ?)
+[DEBUG] 25-06-05 15:21:51 [insert:135] - ==> Parameters: 새로운학과(String), B-1(String), 010-1234-1234(String), megastudy@hello.com(String), 2020(Integer), https://megastudy.com(String)
+[DEBUG] 25-06-05 15:21:51 [insert:135] - <==    Updates: 1
+[DEBUG] 25-06-05 15:21:51 [DepartmentMapperTest:31] - 저장된 데이터의 수: 1
+[DEBUG] 25-06-05 15:21:51 [DepartmentMapperTest:32] - 생성된 Primary Key: 507
+[DEBUG] 25-06-05 15:21:51 [selectList:135] - ==>  Preparing: SELECT id, dname, loc, phone, email, established, homepage FROM departments
+[DEBUG] 25-06-05 15:21:51 [selectList:135] - ==> Parameters: 
+[DEBUG] 25-06-05 15:21:51 [selectList:135] - <==      Total: 17
+[DEBUG] 25-06-05 15:21:52 [DepartmentMapperTest:74] - 조회결과: [Department(id=101, dname=컴퓨터공학과, loc=공학관, phone=051-123-4567, email=cs@myschool.ac.kr, established=1990, homepage=http://cs.myschool.ac.kr), Department(id=102, dname=소프트웨어학과, loc=디자인관, phone=051-124-4567, email=media@myschool.ac.kr, established=1995, homepage=http://media.myschool.ac.kr), Department(id=201, dname=전자공학과, loc=공학관, phone=051-125-4567, email=ee@myschool.ac.kr, established=1985, homepage=http://ee.myschool.ac.kr), Department(id=202, dname=기계공학과, loc=공학관, phone=051-126-4567, email=me@myschool.ac.kr, established=1988, homepage=http://machine.myschool.ac.kr), Department(id=203, dname=건축학과, loc=건축관, phone=051-127-4567, email=arch@myschool.ac.kr, established=1992, homepage=null), Department(id=204, dname=산업디자인학과, loc=디자인관, phone=051-128-4567, email=id@myschool.ac.kr, established=1996, homepage=http://id.myschool.ac.kr), Department(id=301, dname=경영학과, loc=경영관, phone=051-129-4567, email=biz@myschool.ac.kr, established=1980, homepage=http://biz.myschool.ac.kr), Department(id=302, dname=경제학과, loc=경영관, phone=051-130-4567, email=econ@myschool.ac.kr, established=1982, homepage=null), Department(id=401, dname=영어영문학과, loc=인문사회관, phone=051-131-4567, email=eng@myschool.ac.kr, established=1975, homepage=null), Department(id=402, dname=심리학과, loc=인문사회관, phone=051-132-4567, email=psy@myschool.ac.kr, established=1987, homepage=http://psy.myschool.ac.kr), Department(id=500, dname=인공지능학과, loc=공학관, phone=051-123-4567, email=ai@myschool.ac.kr, established=2001, homepage=http://ai.myschool.ac.kr), Department(id=501, dname=사회복지학과, loc=인문관, phone=051-432-2233, email=social@myschool.ac.kr, established=2002, homepage=http://social.myschool.ac.kr), Department(id=502, dname=심리학과, loc=인문관, phone=051-336-7788, email=psyc@myschool.ac.kr, established=2000, homepage=http://psyc.myschool.ac.kr), Department(id=503, dname=체육학과, loc=체육관, phone=051-434-3345, email=phy@myschool.ac.kr, established=2004, homepage=http://phy.myschool.ac.kr), Department(id=504, dname=새로운학과, loc=B-1, phone=010-1234-1234, email=megastudy@hello.com, established=2020, homepage=https://megastudy.com), Department(id=505, dname=새로운학과, loc=B-1, phone=010-1234-1234, email=megastudy@hello.com, established=2020, homepage=https://megastudy.com), Department(id=507, dname=새로운학과, loc=B-1, phone=010-1234-1234, email=megastudy@hello.com, established=2020, homepage=https://megastudy.com)]
+[DEBUG] 25-06-05 15:21:52 [selectOne:135] - ==>  Preparing: SELECT id, dname, loc, phone, email, established, homepage FROM departments WHERE id=?
+[DEBUG] 25-06-05 15:21:52 [selectOne:135] - ==> Parameters: 101(Integer)
+[DEBUG] 25-06-05 15:21:52 [selectOne:135] - <==      Total: 1
+[DEBUG] 25-06-05 15:21:52 [DepartmentMapperTest:66] - 조회결과: Department(id=101, dname=컴퓨터공학과, loc=공학관, phone=051-123-4567, email=cs@myschool.ac.kr, established=1990, homepage=http://cs.myschool.ac.kr)
+[INFO ] 25-06-05 15:28:57 [DepartmentMapperTest:53] - Starting DepartmentMapperTest using Java 17.0.11 with PID 440 (started by james in E:\05.web3\06.SpringBoot\08-Database\08-Database)
+[DEBUG] 25-06-05 15:28:57 [DepartmentMapperTest:54] - Running with Spring Boot v3.4.6, Spring v6.2.7
+[INFO ] 25-06-05 15:28:57 [DepartmentMapperTest:652] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 25-06-05 15:29:00 [DepartmentMapperTest:59] - Started DepartmentMapperTest in 3.617 seconds (process running for 4.558)
+[DEBUG] 25-06-05 15:29:01 [selectCount:135] - ==>  Preparing: SELECT COUNT(*) FROM departments
+[DEBUG] 25-06-05 15:29:01 [selectCount:135] - ==> Parameters: 
+[INFO ] 25-06-05 15:29:01 [sqlonly:228] - SELECT COUNT(*) FROM departments
+
+[INFO ] 25-06-05 15:29:01 [resultsettable:610] - 
+|---------|
+|count(*) |
+|---------|
+|17       |
+|---------|
+
+[DEBUG] 25-06-05 15:29:01 [selectCount:135] - <==      Total: 1
+[DEBUG] 25-06-05 15:29:01 [DepartmentMapperTest:82] - 조회된 데이터 수: 17
+[DEBUG] 25-06-05 15:29:01 [delete:135] - ==>  Preparing: DELETE FROM departments WHERE id=?
+[DEBUG] 25-06-05 15:29:01 [delete:135] - ==> Parameters: 506(Integer)
+[INFO ] 25-06-05 15:29:01 [sqlonly:228] - DELETE FROM departments WHERE id=506
+
+[DEBUG] 25-06-05 15:29:01 [delete:135] - <==    Updates: 0
+[DEBUG] 25-06-05 15:29:01 [DepartmentMapperTest:57] - 삭제된 데이터의 수: 0
+[DEBUG] 25-06-05 15:29:01 [update:135] - ==>  Preparing: UPDATE departments SET dname=?, loc=?, phone=?, email=?, established=?, homepage=? WHERE id=?
+[DEBUG] 25-06-05 15:29:01 [update:135] - ==> Parameters: 수정된학과(String), B-2(String), 010-1234-1234(String), megastudy@hello.com(String), 2020(Integer), https://megastudy.com(String), 511(Integer)
+[INFO ] 25-06-05 15:29:01 [sqlonly:228] - UPDATE departments SET dname='수정된학과', loc='B-2', phone='010-1234-1234', email='megastudy@hello.com', established=2020, homepage='https://megastudy.com' WHERE id=511
+
+[DEBUG] 25-06-05 15:29:01 [update:135] - <==    Updates: 0
+[DEBUG] 25-06-05 15:29:01 [DepartmentMapperTest:48] - 수정된 데이터의 수: 0
+[DEBUG] 25-06-05 15:29:01 [insert:135] - ==>  Preparing: INSERT INTO departments (dname, loc, phone, email, established, homepage) VALUES (?, ?, ?, ?, ?, ?)
+[DEBUG] 25-06-05 15:29:01 [insert:135] - ==> Parameters: 새로운학과(String), B-1(String), 010-1234-1234(String), megastudy@hello.com(String), 2020(Integer), https://megastudy.com(String)
+[INFO ] 25-06-05 15:29:01 [sqlonly:228] - INSERT INTO departments (dname, loc, phone, email, established, homepage) VALUES ('새로운학과', 'B-1', '010-1234-1234', 'megastudy@hello.com', 2020, 'https://megastudy.com')
+
+[DEBUG] 25-06-05 15:29:01 [insert:135] - <==    Updates: 1
+[INFO ] 25-06-05 15:29:01 [resultsettable:610] - 
+|----------|
+|insert_id |
+|----------|
+|508       |
+|----------|
+
+[DEBUG] 25-06-05 15:29:01 [DepartmentMapperTest:31] - 저장된 데이터의 수: 1
+[DEBUG] 25-06-05 15:29:01 [DepartmentMapperTest:32] - 생성된 Primary Key: 508
+[DEBUG] 25-06-05 15:29:01 [selectList:135] - ==>  Preparing: SELECT id, dname, loc, phone, email, established, homepage FROM departments
+[DEBUG] 25-06-05 15:29:01 [selectList:135] - ==> Parameters: 
+[INFO ] 25-06-05 15:29:01 [sqlonly:228] - SELECT id, dname, loc, phone, email, established, homepage FROM departments
+
+[INFO ] 25-06-05 15:29:01 [resultsettable:610] - 
+|----|--------|------|--------------|----------------------|------------|------------------------------|
+|id  |dname   |loc   |phone         |email                 |established |homepage                      |
+|----|--------|------|--------------|----------------------|------------|------------------------------|
+|101 |컴퓨터공학과  |공학관   |051-123-4567  |cs@myschool.ac.kr     |1990        |http://cs.myschool.ac.kr      |
+|102 |소프트웨어학과 |디자인관  |051-124-4567  |media@myschool.ac.kr  |1995        |http://media.myschool.ac.kr   |
+|201 |전자공학과   |공학관   |051-125-4567  |ee@myschool.ac.kr     |1985        |http://ee.myschool.ac.kr      |
+|202 |기계공학과   |공학관   |051-126-4567  |me@myschool.ac.kr     |1988        |http://machine.myschool.ac.kr |
+|203 |건축학과    |건축관   |051-127-4567  |arch@myschool.ac.kr   |1992        |null                          |
+|204 |산업디자인학과 |디자인관  |051-128-4567  |id@myschool.ac.kr     |1996        |http://id.myschool.ac.kr      |
+|301 |경영학과    |경영관   |051-129-4567  |biz@myschool.ac.kr    |1980        |http://biz.myschool.ac.kr     |
+|302 |경제학과    |경영관   |051-130-4567  |econ@myschool.ac.kr   |1982        |null                          |
+|401 |영어영문학과  |인문사회관 |051-131-4567  |eng@myschool.ac.kr    |1975        |null                          |
+|402 |심리학과    |인문사회관 |051-132-4567  |psy@myschool.ac.kr    |1987        |http://psy.myschool.ac.kr     |
+|500 |인공지능학과  |공학관   |051-123-4567  |ai@myschool.ac.kr     |2001        |http://ai.myschool.ac.kr      |
+|501 |사회복지학과  |인문관   |051-432-2233  |social@myschool.ac.kr |2002        |http://social.myschool.ac.kr  |
+|502 |심리학과    |인문관   |051-336-7788  |psyc@myschool.ac.kr   |2000        |http://psyc.myschool.ac.kr    |
+|503 |체육학과    |체육관   |051-434-3345  |phy@myschool.ac.kr    |2004        |http://phy.myschool.ac.kr     |
+|504 |새로운학과   |B-1   |010-1234-1234 |megastudy@hello.com   |2020        |https://megastudy.com         |
+|505 |새로운학과   |B-1   |010-1234-1234 |megastudy@hello.com   |2020        |https://megastudy.com         |
+|507 |새로운학과   |B-1   |010-1234-1234 |megastudy@hello.com   |2020        |https://megastudy.com         |
+|508 |새로운학과   |B-1   |010-1234-1234 |megastudy@hello.com   |2020        |https://megastudy.com         |
+|----|--------|------|--------------|----------------------|------------|------------------------------|
+
+[DEBUG] 25-06-05 15:29:01 [selectList:135] - <==      Total: 18
+[DEBUG] 25-06-05 15:29:01 [DepartmentMapperTest:74] - 조회결과: [Department(id=101, dname=컴퓨터공학과, loc=공학관, phone=051-123-4567, email=cs@myschool.ac.kr, established=1990, homepage=http://cs.myschool.ac.kr), Department(id=102, dname=소프트웨어학과, loc=디자인관, phone=051-124-4567, email=media@myschool.ac.kr, established=1995, homepage=http://media.myschool.ac.kr), Department(id=201, dname=전자공학과, loc=공학관, phone=051-125-4567, email=ee@myschool.ac.kr, established=1985, homepage=http://ee.myschool.ac.kr), Department(id=202, dname=기계공학과, loc=공학관, phone=051-126-4567, email=me@myschool.ac.kr, established=1988, homepage=http://machine.myschool.ac.kr), Department(id=203, dname=건축학과, loc=건축관, phone=051-127-4567, email=arch@myschool.ac.kr, established=1992, homepage=null), Department(id=204, dname=산업디자인학과, loc=디자인관, phone=051-128-4567, email=id@myschool.ac.kr, established=1996, homepage=http://id.myschool.ac.kr), Department(id=301, dname=경영학과, loc=경영관, phone=051-129-4567, email=biz@myschool.ac.kr, established=1980, homepage=http://biz.myschool.ac.kr), Department(id=302, dname=경제학과, loc=경영관, phone=051-130-4567, email=econ@myschool.ac.kr, established=1982, homepage=null), Department(id=401, dname=영어영문학과, loc=인문사회관, phone=051-131-4567, email=eng@myschool.ac.kr, established=1975, homepage=null), Department(id=402, dname=심리학과, loc=인문사회관, phone=051-132-4567, email=psy@myschool.ac.kr, established=1987, homepage=http://psy.myschool.ac.kr), Department(id=500, dname=인공지능학과, loc=공학관, phone=051-123-4567, email=ai@myschool.ac.kr, established=2001, homepage=http://ai.myschool.ac.kr), Department(id=501, dname=사회복지학과, loc=인문관, phone=051-432-2233, email=social@myschool.ac.kr, established=2002, homepage=http://social.myschool.ac.kr), Department(id=502, dname=심리학과, loc=인문관, phone=051-336-7788, email=psyc@myschool.ac.kr, established=2000, homepage=http://psyc.myschool.ac.kr), Department(id=503, dname=체육학과, loc=체육관, phone=051-434-3345, email=phy@myschool.ac.kr, established=2004, homepage=http://phy.myschool.ac.kr), Department(id=504, dname=새로운학과, loc=B-1, phone=010-1234-1234, email=megastudy@hello.com, established=2020, homepage=https://megastudy.com), Department(id=505, dname=새로운학과, loc=B-1, phone=010-1234-1234, email=megastudy@hello.com, established=2020, homepage=https://megastudy.com), Department(id=507, dname=새로운학과, loc=B-1, phone=010-1234-1234, email=megastudy@hello.com, established=2020, homepage=https://megastudy.com), Department(id=508, dname=새로운학과, loc=B-1, phone=010-1234-1234, email=megastudy@hello.com, established=2020, homepage=https://megastudy.com)]
+[DEBUG] 25-06-05 15:29:01 [selectOne:135] - ==>  Preparing: SELECT id, dname, loc, phone, email, established, homepage FROM departments WHERE id=?
+[DEBUG] 25-06-05 15:29:01 [selectOne:135] - ==> Parameters: 101(Integer)
+[INFO ] 25-06-05 15:29:01 [sqlonly:228] - SELECT id, dname, loc, phone, email, established, homepage FROM departments WHERE id=101
+
+[INFO ] 25-06-05 15:29:01 [resultsettable:610] - 
+|----|-------|----|-------------|------------------|------------|-------------------------|
+|id  |dname  |loc |phone        |email             |established |homepage                 |
+|----|-------|----|-------------|------------------|------------|-------------------------|
+|101 |컴퓨터공학과 |공학관 |051-123-4567 |cs@myschool.ac.kr |1990        |http://cs.myschool.ac.kr |
+|----|-------|----|-------------|------------------|------------|-------------------------|
+
+[DEBUG] 25-06-05 15:29:01 [selectOne:135] - <==      Total: 1
+[DEBUG] 25-06-05 15:29:01 [DepartmentMapperTest:66] - 조회결과: Department(id=101, dname=컴퓨터공학과, loc=공학관, phone=051-123-4567, email=cs@myschool.ac.kr, established=1990, homepage=http://cs.myschool.ac.kr)
+[INFO ] 25-06-05 15:32:14 [DepartmentMapperTest:53] - Starting DepartmentMapperTest using Java 17.0.11 with PID 12236 (started by james in E:\05.web3\06.SpringBoot\08-Database\08-Database)
+[DEBUG] 25-06-05 15:32:14 [DepartmentMapperTest:54] - Running with Spring Boot v3.4.6, Spring v6.2.7
+[INFO ] 25-06-05 15:32:14 [DepartmentMapperTest:652] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 25-06-05 15:32:17 [DepartmentMapperTest:59] - Started DepartmentMapperTest in 3.46 seconds (process running for 4.312)
+[DEBUG] 25-06-05 15:32:18 [delete:135] - ==>  Preparing: DELETE FROM departments WHERE id=?
+[DEBUG] 25-06-05 15:32:18 [delete:135] - ==> Parameters: 506(Integer)
+[INFO ] 25-06-05 15:32:18 [sqlonly:228] - DELETE FROM departments WHERE id=506
+
+[DEBUG] 25-06-05 15:32:18 [delete:135] - <==    Updates: 0
+[DEBUG] 25-06-05 15:32:18 [DepartmentMapperTest:57] - 삭제된 데이터의 수: 0
+[INFO ] 25-06-05 15:33:14 [DepartmentMapperTest:53] - Starting DepartmentMapperTest using Java 17.0.11 with PID 21548 (started by james in E:\05.web3\06.SpringBoot\08-Database\08-Database)
+[DEBUG] 25-06-05 15:33:14 [DepartmentMapperTest:54] - Running with Spring Boot v3.4.6, Spring v6.2.7
+[INFO ] 25-06-05 15:33:14 [DepartmentMapperTest:652] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 25-06-05 15:33:17 [DepartmentMapperTest:59] - Started DepartmentMapperTest in 3.454 seconds (process running for 4.38)
+[DEBUG] 25-06-05 15:33:18 [insert:135] - ==>  Preparing: INSERT INTO departments (dname, loc, phone, email, established, homepage) VALUES (?, ?, ?, ?, ?, ?)
+[DEBUG] 25-06-05 15:33:18 [insert:135] - ==> Parameters: 새로운학과(String), B-1(String), 010-1234-1234(String), megastudy@hello.com(String), 2020(Integer), https://megastudy.com(String)
+[INFO ] 25-06-05 15:33:18 [sqlonly:228] - INSERT INTO departments (dname, loc, phone, email, established, homepage) VALUES ('새로운학과', 'B-1', '010-1234-1234', 'megastudy@hello.com', 2020, 'https://megastudy.com')
+
+[DEBUG] 25-06-05 15:33:18 [insert:135] - <==    Updates: 1
+[INFO ] 25-06-05 15:33:18 [resultsettable:610] - 
+|----------|
+|insert_id |
+|----------|
+|509       |
+|----------|
+
+[DEBUG] 25-06-05 15:33:18 [DepartmentMapperTest:31] - 저장된 데이터의 수: 1
+[DEBUG] 25-06-05 15:33:18 [DepartmentMapperTest:32] - 생성된 Primary Key: 509
+[INFO ] 25-06-05 15:33:34 [DepartmentMapperTest:53] - Starting DepartmentMapperTest using Java 17.0.11 with PID 22200 (started by james in E:\05.web3\06.SpringBoot\08-Database\08-Database)
+[DEBUG] 25-06-05 15:33:34 [DepartmentMapperTest:54] - Running with Spring Boot v3.4.6, Spring v6.2.7
+[INFO ] 25-06-05 15:33:34 [DepartmentMapperTest:652] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 25-06-05 15:33:38 [DepartmentMapperTest:59] - Started DepartmentMapperTest in 3.552 seconds (process running for 4.572)
+[DEBUG] 25-06-05 15:33:38 [selectOne:135] - ==>  Preparing: SELECT id, dname, loc, phone, email, established, homepage FROM departments WHERE id=?
+[DEBUG] 25-06-05 15:33:38 [selectOne:135] - ==> Parameters: 101(Integer)
+[INFO ] 25-06-05 15:33:38 [sqlonly:228] - SELECT id, dname, loc, phone, email, established, homepage FROM departments WHERE id=101
+
+[INFO ] 25-06-05 15:33:38 [resultsettable:610] - 
+|----|-------|----|-------------|------------------|------------|-------------------------|
+|id  |dname  |loc |phone        |email             |established |homepage                 |
+|----|-------|----|-------------|------------------|------------|-------------------------|
+|101 |컴퓨터공학과 |공학관 |051-123-4567 |cs@myschool.ac.kr |1990        |http://cs.myschool.ac.kr |
+|----|-------|----|-------------|------------------|------------|-------------------------|
+
+[DEBUG] 25-06-05 15:33:38 [selectOne:135] - <==      Total: 1
+[DEBUG] 25-06-05 15:33:38 [DepartmentMapperTest:66] - 조회결과: Department(id=101, dname=컴퓨터공학과, loc=공학관, phone=051-123-4567, email=cs@myschool.ac.kr, established=1990, homepage=http://cs.myschool.ac.kr)

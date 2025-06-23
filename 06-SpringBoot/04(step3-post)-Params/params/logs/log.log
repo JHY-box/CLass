@@ -1,0 +1,124 @@
+[INFO ] 25-05-30 11:36:07 [ParamsApplication:53] - Starting ParamsApplication using Java 17.0.2 with PID 6292 (D:\#web3\06-SpringBoot\04-Params\params\build\classes\java\main started by helloworld in D:\#web3\06-SpringBoot\04-Params\params)
+[DEBUG] 25-05-30 11:36:07 [ParamsApplication:54] - Running with Spring Boot v3.5.0, Spring v6.2.7
+[INFO ] 25-05-30 11:36:07 [ParamsApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 25-05-30 11:36:09 [ParamsApplication:59] - Started ParamsApplication in 2.223 seconds (process running for 2.632)
+[INFO ] 25-05-30 11:36:13 [MyInterceptor:41] - ----------- New Client Connect -----------
+[INFO ] 25-05-30 11:36:13 [MyInterceptor:60] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-05-30 11:36:13 [MyInterceptor:78] - [GET] http://localhost:8080/
+[INFO ] 25-05-30 11:36:13 [MyInterceptor:116] - running time: 163(ms)
+[INFO ] 25-05-30 11:36:15 [MyInterceptor:41] - ----------- New Client Connect -----------
+[INFO ] 25-05-30 11:36:15 [MyInterceptor:60] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-05-30 11:36:15 [MyInterceptor:78] - [GET] http://localhost:8080/get/home
+[INFO ] 25-05-30 11:36:15 [MyInterceptor:94] - - REFERER : time=1509, url=http://localhost:8080/
+[INFO ] 25-05-30 11:36:15 [MyInterceptor:116] - running time: 44(ms)
+[INFO ] 25-05-30 11:36:16 [MyInterceptor:41] - ----------- New Client Connect -----------
+[INFO ] 25-05-30 11:36:16 [MyInterceptor:60] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-05-30 11:36:16 [MyInterceptor:78] - [GET] http://localhost:8080/post/home
+[INFO ] 25-05-30 11:36:16 [MyInterceptor:94] - - REFERER : time=723, url=http://localhost:8080/get/home
+[INFO ] 25-05-30 11:36:16 [MyInterceptor:116] - running time: 32(ms)
+[INFO ] 25-05-30 11:36:16 [MyInterceptor:41] - ----------- New Client Connect -----------
+[INFO ] 25-05-30 11:36:16 [MyInterceptor:60] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-05-30 11:36:16 [MyInterceptor:78] - [GET] http://localhost:8080/path/home
+[INFO ] 25-05-30 11:36:16 [MyInterceptor:94] - - REFERER : time=488, url=http://localhost:8080/post/home
+[INFO ] 25-05-30 11:36:16 [MyInterceptor:116] - running time: 20(ms)
+[INFO ] 25-05-30 11:36:16 [MyInterceptor:41] - ----------- New Client Connect -----------
+[INFO ] 25-05-30 11:36:16 [MyInterceptor:60] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-05-30 11:36:16 [MyInterceptor:78] - [GET] http://localhost:8080/survey
+[INFO ] 25-05-30 11:36:16 [MyInterceptor:94] - - REFERER : time=439, url=http://localhost:8080/path/home
+[INFO ] 25-05-30 11:36:22 [MyInterceptor:41] - ----------- New Client Connect -----------
+[INFO ] 25-05-30 11:36:22 [MyInterceptor:60] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-05-30 11:36:22 [MyInterceptor:78] - [GET] http://localhost:8080/get/home
+[INFO ] 25-05-30 11:36:22 [MyInterceptor:94] - - REFERER : time=5733, url=http://localhost:8080/path/home
+[INFO ] 25-05-30 11:36:22 [MyInterceptor:116] - running time: 17(ms)
+[INFO ] 25-05-30 11:36:22 [MyInterceptor:41] - ----------- New Client Connect -----------
+[INFO ] 25-05-30 11:36:22 [MyInterceptor:60] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-05-30 11:36:22 [MyInterceptor:78] - [GET] http://localhost:8080/post/home
+[INFO ] 25-05-30 11:36:22 [MyInterceptor:94] - - REFERER : time=454, url=http://localhost:8080/get/home
+[INFO ] 25-05-30 11:36:22 [MyInterceptor:116] - running time: 17(ms)
+[INFO ] 25-05-30 11:36:23 [MyInterceptor:41] - ----------- New Client Connect -----------
+[INFO ] 25-05-30 11:36:23 [MyInterceptor:60] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-05-30 11:36:23 [MyInterceptor:78] - [GET] http://localhost:8080/path/home
+[INFO ] 25-05-30 11:36:23 [MyInterceptor:94] - - REFERER : time=753, url=http://localhost:8080/post/home
+[INFO ] 25-05-30 11:36:23 [MyInterceptor:116] - running time: 17(ms)
+[INFO ] 25-05-30 11:36:24 [MyInterceptor:41] - ----------- New Client Connect -----------
+[INFO ] 25-05-30 11:36:24 [MyInterceptor:60] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-05-30 11:36:24 [MyInterceptor:78] - [GET] http://localhost:8080/path/home
+[INFO ] 25-05-30 11:36:24 [MyInterceptor:94] - - REFERER : time=886, url=http://localhost:8080/path/home
+[INFO ] 25-05-30 11:36:24 [MyInterceptor:116] - running time: 17(ms)
+[INFO ] 25-05-30 11:36:25 [MyInterceptor:41] - ----------- New Client Connect -----------
+[INFO ] 25-05-30 11:36:25 [MyInterceptor:60] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-05-30 11:36:25 [MyInterceptor:78] - [GET] http://localhost:8080/get/home
+[INFO ] 25-05-30 11:36:25 [MyInterceptor:94] - - REFERER : time=640, url=http://localhost:8080/path/home
+[INFO ] 25-05-30 11:36:25 [MyInterceptor:116] - running time: 17(ms)
+[INFO ] 25-05-30 12:05:02 [ParamsApplication:53] - Starting ParamsApplication using Java 17.0.2 with PID 17756 (D:\#web3\06-SpringBoot\04-Params\params\build\classes\java\main started by helloworld in D:\#web3\06-SpringBoot\04-Params\params)
+[DEBUG] 25-05-30 12:05:02 [ParamsApplication:54] - Running with Spring Boot v3.5.0, Spring v6.2.7
+[INFO ] 25-05-30 12:05:02 [ParamsApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 25-05-30 12:05:04 [ParamsApplication:59] - Started ParamsApplication in 2.232 seconds (process running for 2.7)
+[INFO ] 25-05-30 12:05:13 [ParamsApplication:53] - Starting ParamsApplication using Java 17.0.2 with PID 19100 (D:\#web3\06-SpringBoot\04-Params\params\build\classes\java\main started by helloworld in D:\#web3\06-SpringBoot\04-Params\params)
+[DEBUG] 25-05-30 12:05:13 [ParamsApplication:54] - Running with Spring Boot v3.5.0, Spring v6.2.7
+[INFO ] 25-05-30 12:05:13 [ParamsApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 25-05-30 12:05:15 [ParamsApplication:59] - Started ParamsApplication in 2.481 seconds (process running for 3.001)
+[INFO ] 25-05-30 12:05:44 [MyInterceptor:41] - ----------- New Client Connect -----------
+[INFO ] 25-05-30 12:05:44 [MyInterceptor:60] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-05-30 12:05:44 [MyInterceptor:78] - [GET] http://localhost:8080/
+[INFO ] 25-05-30 12:05:44 [MyInterceptor:116] - running time: 174(ms)
+[INFO ] 25-05-30 12:06:01 [MyInterceptor:41] - ----------- New Client Connect -----------
+[INFO ] 25-05-30 12:06:01 [MyInterceptor:60] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-05-30 12:06:01 [MyInterceptor:78] - [GET] http://localhost:8080/get/home
+[INFO ] 25-05-30 12:06:01 [MyInterceptor:94] - - REFERER : time=16760, url=http://localhost:8080/
+[INFO ] 25-05-30 12:06:01 [MyInterceptor:116] - running time: 55(ms)
+[INFO ] 25-05-30 12:06:02 [MyInterceptor:41] - ----------- New Client Connect -----------
+[INFO ] 25-05-30 12:06:02 [MyInterceptor:60] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-05-30 12:06:02 [MyInterceptor:78] - [GET] http://localhost:8080/post/home
+[INFO ] 25-05-30 12:06:02 [MyInterceptor:94] - - REFERER : time=1040, url=http://localhost:8080/get/home
+[INFO ] 25-05-30 12:06:02 [MyInterceptor:116] - running time: 26(ms)
+[INFO ] 25-05-30 12:06:03 [MyInterceptor:41] - ----------- New Client Connect -----------
+[INFO ] 25-05-30 12:06:03 [MyInterceptor:60] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-05-30 12:06:03 [MyInterceptor:78] - [GET] http://localhost:8080/path/home
+[INFO ] 25-05-30 12:06:03 [MyInterceptor:94] - - REFERER : time=1148, url=http://localhost:8080/post/home
+[INFO ] 25-05-30 12:06:03 [MyInterceptor:116] - running time: 20(ms)
+[INFO ] 25-05-30 12:06:21 [MyInterceptor:41] - ----------- New Client Connect -----------
+[INFO ] 25-05-30 12:06:21 [MyInterceptor:60] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-05-30 12:06:21 [MyInterceptor:78] - [GET] http://localhost:8080/path/home
+[INFO ] 25-05-30 12:06:21 [MyInterceptor:94] - - REFERER : time=18555, url=http://localhost:8080/post/home
+[INFO ] 25-05-30 12:06:21 [MyInterceptor:116] - running time: 20(ms)
+[INFO ] 25-05-30 12:06:22 [MyInterceptor:41] - ----------- New Client Connect -----------
+[INFO ] 25-05-30 12:06:22 [MyInterceptor:60] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-05-30 12:06:22 [MyInterceptor:78] - [GET] http://localhost:8080/path/home
+[INFO ] 25-05-30 12:06:22 [MyInterceptor:94] - - REFERER : time=844, url=http://localhost:8080/post/home
+[INFO ] 25-05-30 12:06:22 [MyInterceptor:116] - running time: 25(ms)
+[INFO ] 25-05-30 12:06:23 [ParamsApplication:53] - Starting ParamsApplication using Java 17.0.2 with PID 19100 (D:\#web3\06-SpringBoot\04-Params\params\build\classes\java\main started by helloworld in D:\#web3\06-SpringBoot\04-Params\params)
+[DEBUG] 25-05-30 12:06:23 [ParamsApplication:54] - Running with Spring Boot v3.5.0, Spring v6.2.7
+[INFO ] 25-05-30 12:06:23 [ParamsApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 25-05-30 12:06:24 [ParamsApplication:59] - Started ParamsApplication in 0.851 seconds (process running for 71.326)
+[INFO ] 25-05-30 12:06:27 [ParamsApplication:53] - Starting ParamsApplication using Java 17.0.2 with PID 19100 (D:\#web3\06-SpringBoot\04-Params\params\build\classes\java\main started by helloworld in D:\#web3\06-SpringBoot\04-Params\params)
+[DEBUG] 25-05-30 12:06:27 [ParamsApplication:54] - Running with Spring Boot v3.5.0, Spring v6.2.7
+[INFO ] 25-05-30 12:06:27 [ParamsApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 25-05-30 12:06:28 [ParamsApplication:59] - Started ParamsApplication in 0.519 seconds (process running for 75.362)
+[INFO ] 25-05-30 12:06:28 [MyInterceptor:41] - ----------- New Client Connect -----------
+[INFO ] 25-05-30 12:06:28 [MyInterceptor:60] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-05-30 12:06:28 [MyInterceptor:78] - [GET] http://localhost:8080/path/home
+[INFO ] 25-05-30 12:06:28 [MyInterceptor:116] - running time: 23(ms)
+[INFO ] 25-05-30 12:06:29 [ParamsApplication:53] - Starting ParamsApplication using Java 17.0.2 with PID 19100 (D:\#web3\06-SpringBoot\04-Params\params\build\classes\java\main started by helloworld in D:\#web3\06-SpringBoot\04-Params\params)
+[DEBUG] 25-05-30 12:06:29 [ParamsApplication:54] - Running with Spring Boot v3.5.0, Spring v6.2.7
+[INFO ] 25-05-30 12:06:29 [ParamsApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 25-05-30 12:06:30 [ParamsApplication:59] - Started ParamsApplication in 0.615 seconds (process running for 77.492)
+[INFO ] 25-05-30 12:06:35 [MyInterceptor:41] - ----------- New Client Connect -----------
+[INFO ] 25-05-30 12:06:35 [MyInterceptor:60] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-05-30 12:06:35 [MyInterceptor:78] - [GET] http://localhost:8080/.well-known/appspecific/com.chrome.devtools.json
+[INFO ] 25-05-30 12:08:16 [ParamsApplication:53] - Starting ParamsApplication using Java 17.0.2 with PID 19100 (D:\#web3\06-SpringBoot\04-Params\params\build\classes\java\main started by helloworld in D:\#web3\06-SpringBoot\04-Params\params)
+[DEBUG] 25-05-30 12:08:16 [ParamsApplication:54] - Running with Spring Boot v3.5.0, Spring v6.2.7
+[INFO ] 25-05-30 12:08:16 [ParamsApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 25-05-30 12:08:18 [ParamsApplication:59] - Started ParamsApplication in 1.584 seconds (process running for 185.402)
+[INFO ] 25-05-30 12:08:20 [ParamsApplication:53] - Starting ParamsApplication using Java 17.0.2 with PID 19100 (D:\#web3\06-SpringBoot\04-Params\params\build\classes\java\main started by helloworld in D:\#web3\06-SpringBoot\04-Params\params)
+[DEBUG] 25-05-30 12:08:20 [ParamsApplication:54] - Running with Spring Boot v3.5.0, Spring v6.2.7
+[INFO ] 25-05-30 12:08:20 [ParamsApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 25-05-30 12:08:20 [ParamsApplication:59] - Started ParamsApplication in 0.622 seconds (process running for 187.776)
+[INFO ] 25-05-30 12:16:02 [MyInterceptor:41] - ----------- New Client Connect -----------
+[INFO ] 25-05-30 12:16:02 [MyInterceptor:60] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-05-30 12:16:02 [MyInterceptor:78] - [GET] http://localhost:8080/path/home
+[INFO ] 25-05-30 12:16:02 [MyInterceptor:116] - running time: 72(ms)
+[INFO ] 25-05-30 12:21:50 [ParamsApplication:53] - Starting ParamsApplication using Java 17.0.2 with PID 25436 (D:\#web3\06-SpringBoot\04-Params\params\build\classes\java\main started by helloworld in D:\#web3\06-SpringBoot\04-Params\params)
+[DEBUG] 25-05-30 12:21:50 [ParamsApplication:54] - Running with Spring Boot v3.5.0, Spring v6.2.7
+[INFO ] 25-05-30 12:21:50 [ParamsApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 25-05-30 12:21:52 [ParamsApplication:59] - Started ParamsApplication in 2.24 seconds (process running for 2.666)

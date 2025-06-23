@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-InterceptorApplication<interceptor>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "kr.yjh.interceptor.InterceptorApplication",
+            "projectName": "interceptor",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

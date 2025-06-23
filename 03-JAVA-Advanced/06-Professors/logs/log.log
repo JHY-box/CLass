@@ -1,0 +1,68 @@
+[DEBUG] 25-04-30 01:00:33 [insert:135] - ==>  Preparing: INSERT INTO professors (id, name, user_id, position, sal, hiredate, comm, email, phone, photo_url, status, department_id ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+[DEBUG] 25-04-30 01:00:33 [insert:135] - ==> Parameters: 9832(Integer), 곽춘배(String), 435(String), 교수(String), 999(Integer), 2000-02-02(String), 20000(Integer), eeee@mmmm.ail(String), 019-1919-1919(String), http://myschoolbomb.ac.kr(String), 재직(String), 101(Integer)
+[INFO ] 25-04-30 01:00:33 [sqlonly:228] - INSERT INTO professors (id, name, user_id, position, sal, hiredate, comm, email, phone, photo_url, status, department_id ) VALUES ( 9832, '곽춘배', '435', '교수', 999, '2000-02-02', 20000, 'eeee@mmmm.ail', '019-1919-1919', 'http://myschoolbomb.ac.kr', '재직', 101)
+
+[DEBUG] 25-04-30 01:00:33 [insert:135] - <==    Updates: 1
+[INFO ] 25-04-30 01:00:33 [resultsettable:610] - 
+|----------|
+|insert_id |
+|----------|
+|9832      |
+|----------|
+
+[DEBUG] 25-04-30 01:00:33 [selectOne:135] - ==>  Preparing: SELECT id, name, user_id, position, sal, hiredate, comm, email, phone, photo_url, status, department_id FROM professors WHERE id=?
+[DEBUG] 25-04-30 01:00:33 [selectOne:135] - ==> Parameters: 9832(Integer)
+[INFO ] 25-04-30 01:00:33 [sqlonly:228] - SELECT id, name, user_id, position, sal, hiredate, comm, email, phone, photo_url, status, department_id FROM professors WHERE id=9832
+
+[INFO ] 25-04-30 01:00:33 [resultsettable:610] - 
+|-----|-----|--------|---------|----|--------------------|------|--------------|--------------|--------------------------|-------|--------------|
+|id   |name |user_id |position |sal |hiredate            |comm  |email         |phone         |photo_url                 |status |department_id |
+|-----|-----|--------|---------|----|--------------------|------|--------------|--------------|--------------------------|-------|--------------|
+|9832 |곽춘배  |435     |교수       |999 |2000-02-02 00:00:00 |20000 |eeee@mmmm.ail |019-1919-1919 |http://myschoolbomb.ac.kr |재직     |101           |
+|-----|-----|--------|---------|----|--------------------|------|--------------|--------------|--------------------------|-------|--------------|
+
+[DEBUG] 25-04-30 01:00:33 [selectOne:135] - <==      Total: 1
+[ERROR] 25-04-30 01:00:33 [App_Insert01:49] - 조회결과 --->> 
+[DEBUG] 25-04-30 01:00:45 [selectList:135] - ==>  Preparing: SELECT id, name, user_id, position, sal, hiredate, comm, email, phone, photo_url, status, department_id FROM professors
+[DEBUG] 25-04-30 01:00:46 [selectList:135] - ==> Parameters: 
+[INFO ] 25-04-30 01:00:46 [sqlonly:228] - SELECT id, name, user_id, position, sal, hiredate, comm, email, phone, photo_url, status, department_id FROM professors
+
+[INFO ] 25-04-30 01:00:46 [resultsettable:610] - 
+|-----|-----|-------------|---------|----|--------------------|-------|----------------------------|--------------|----------------------------------------------|-------|--------------|
+|id   |name |user_id      |position |sal |hiredate            |comm   |email                       |phone         |photo_url                                     |status |department_id |
+|-----|-----|-------------|---------|----|--------------------|-------|----------------------------|--------------|----------------------------------------------|-------|--------------|
+|9832 |곽춘배  |435          |교수       |999 |2000-02-02 00:00:00 |20000  |eeee@mmmm.ail               |019-1919-1919 |http://myschoolbomb.ac.kr                     |재직     |101           |
+|9901 |차미경  |seoyunseong  |전임강사     |390 |2023-07-14 23:24:53 |[null] |gangjiyeon@yu.net           |053-902-0850  |http://myschool.ac.kr/photos/seoyunseong.jpg  |퇴직     |101           |
+|9902 |허경희  |ogsun31      |전임강사     |552 |1999-08-19 03:13:25 |[null] |gimgwangsu@gimryu.net       |064-774-8244  |http://myschool.ac.kr/photos/ogsun31.jpg      |재직     |102           |
+|9903 |전종수  |jiyeong46    |조교수      |508 |2011-02-18 18:44:22 |[null] |hwangsujin@gmail.com        |043-195-4424  |http://myschool.ac.kr/photos/jiyeong46.jpg    |재직     |102           |
+|9904 |이성훈  |icoe         |조교수      |479 |2015-08-08 21:22:48 |28     |iyeongsig@yu.org            |055-885-3837  |http://myschool.ac.kr/photos/icoe.jpg         |재직     |102           |
+|9905 |이정남  |gimseungmin  |부교수      |392 |1996-04-02 20:24:35 |[null] |yejinhan@gmail.com          |063-796-1594  |http://myschool.ac.kr/photos/gimseungmin.jpg  |재직     |102           |
+|9906 |김현주  |yo           |교수       |300 |2006-08-31 01:04:24 |21     |fbag@gmail.com              |053-285-8072  |http://myschool.ac.kr/photos/yo.jpg           |재직     |102           |
+|9907 |이은영  |yeongho81    |전임강사     |443 |1999-01-04 15:55:04 |12     |chan@dreamwiz.com           |018-443-4597  |http://myschool.ac.kr/photos/yeongho81.jpg    |퇴직     |201           |
+|9908 |박서영  |mijeong31    |전임강사     |273 |2011-07-22 02:10:41 |17     |jeonghungim@onam.org        |070-4379-4764 |http://myschool.ac.kr/photos/mijeong31.jpg    |재직     |201           |
+|9909 |김정훈  |doyun73      |교수       |392 |2001-09-09 07:36:05 |24     |yeongja93@naver.com         |041-625-8390  |http://myschool.ac.kr/photos/doyun73.jpg      |휴직     |201           |
+|9910 |강영호  |seonghyeon92 |조교수      |593 |2011-04-03 07:37:22 |[null] |uyun@jusighoesa.kr          |064-736-1077  |http://myschool.ac.kr/photos/seonghyeon92.jpg |퇴직     |201           |
+|9911 |박영미  |yeongsui     |조교수      |486 |2015-11-29 01:07:18 |22     |bagjeonghyi@baggweonseo.net |061-977-7396  |http://myschool.ac.kr/photos/yeongsui.jpg     |재직     |201           |
+|9912 |윤서현  |doyungu      |조교수      |266 |2011-07-22 09:22:36 |20     |ki@daum.net                 |055-602-0551  |http://myschool.ac.kr/photos/doyungu.jpg      |재직     |202           |
+|9913 |장정자  |jgim         |부교수      |358 |2020-06-29 11:14:45 |30     |seoyeoncoe@gweongim.kr      |041-587-2280  |http://myschool.ac.kr/photos/jgim.jpg         |퇴직     |203           |
+|9914 |김지아  |jcoe         |조교수      |385 |2002-08-06 23:35:57 |[null] |ngim@live.com               |051-018-9642  |http://myschool.ac.kr/photos/jcoe.jpg         |퇴직     |203           |
+|9915 |이옥순  |seonghoseo   |교수       |548 |2023-11-15 15:17:27 |22     |agim@gimgim.kr              |044-234-3359  |http://myschool.ac.kr/photos/seonghoseo.jpg   |재직     |203           |
+|9916 |이정식  |gimjia       |전임강사     |274 |2002-08-13 12:19:42 |[null] |doyun27@nate.com            |02-1070-2228  |http://myschool.ac.kr/photos/gimjia.jpg       |퇴직     |203           |
+|9917 |박경수  |igim         |전임강사     |447 |2020-11-09 06:32:30 |22     |isangceol@yu.com            |052-537-9720  |http://myschool.ac.kr/photos/igim.jpg         |휴직     |203           |
+|9918 |오미영  |jongsu93     |부교수      |578 |2010-06-17 07:32:06 |[null] |byeongceolcoe@gmail.com     |032-087-7731  |http://myschool.ac.kr/photos/jongsu93.jpg     |휴직     |204           |
+|9919 |이명숙  |minseog87    |전임강사     |384 |2002-12-03 07:22:12 |[null] |jiyeong54@ogim.com          |032-840-6857  |http://myschool.ac.kr/photos/minseog87.jpg    |재직     |301           |
+|9920 |장지후  |isujin       |조교수      |328 |2005-01-30 18:03:04 |[null] |handonghyeon@live.com       |042-757-1873  |http://myschool.ac.kr/photos/isujin.jpg       |퇴직     |301           |
+|9921 |박현숙  |dohyeongim   |부교수      |500 |2001-03-19 05:40:14 |[null] |ojongsu@namgim.org          |031-257-4301  |http://myschool.ac.kr/photos/dohyeongim.jpg   |휴직     |301           |
+|9922 |최정자  |jihungim     |전임강사     |373 |2007-07-05 05:28:22 |[null] |kcoe@dreamwiz.com           |033-713-4372  |http://myschool.ac.kr/photos/jihungim.jpg     |퇴직     |301           |
+|9923 |박경희  |sineunyeong  |조교수      |315 |2001-06-13 22:19:25 |[null] |yeongsunnam@igang.net       |051-199-9499  |http://myschool.ac.kr/photos/sineunyeong.jpg  |퇴직     |302           |
+|9924 |허예진  |ghong        |조교수      |409 |2016-08-11 02:49:21 |22     |boramsong@nate.com          |016-149-5850  |http://myschool.ac.kr/photos/ghong.jpg        |퇴직     |401           |
+|9925 |박영일  |subinsong    |전임강사     |376 |2019-06-10 05:26:28 |[null] |doyunbaeg@jusighoesa.com    |070-2273-7433 |http://myschool.ac.kr/photos/subinsong.jpg    |재직     |401           |
+|9926 |김정웅  |seoyeon95    |조교수      |253 |2012-07-24 21:27:58 |[null] |sanghun41@yuhanhoesa.net    |018-039-4876  |http://myschool.ac.kr/photos/seoyeon95.jpg    |재직     |402           |
+|9927 |진주원  |yeonghwan49  |부교수      |300 |2020-09-21 02:49:53 |[null] |jinminsu@yungweon.net       |054-082-9702  |http://myschool.ac.kr/photos/yeonghwan49.jpg  |퇴직     |402           |
+|9928 |이영길  |rgim         |조교수      |526 |2016-12-22 19:59:30 |14     |gimminjae@jusighoesa.kr     |052-314-9662  |http://myschool.ac.kr/photos/rgim.jpg         |휴직     |402           |
+|9929 |최영식  |gi           |조교수      |300 |2009-01-29 06:54:03 |13     |gimjihye@hanmail.net        |017-497-2511  |http://myschool.ac.kr/photos/gi.jpg           |휴직     |402           |
+|9930 |박유진  |jeongsu38    |교수       |277 |2011-05-25 13:10:56 |[null] |jihungim@gimim.net          |055-284-0371  |http://myschool.ac.kr/photos/jeongsu38.jpg    |휴직     |402           |
+|-----|-----|-------------|---------|----|--------------------|-------|----------------------------|--------------|----------------------------------------------|-------|--------------|
+
+[DEBUG] 25-04-30 01:00:46 [selectList:135] - <==      Total: 31
+[ERROR] 25-04-30 01:00:46 [App_Select01:41] - 조회결과 --->> 

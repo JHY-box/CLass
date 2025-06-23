@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko" translate="no" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="google" content="notranslate">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+        <title>view</title>
+        <link rel="stylesheet" th:href="@{/assets/css/style.css}"/>
+    </head>
+    <body>
+        <header th:replace="~{fragments/header :: my-header}"></header>
+        <h1>교수상세</h1>
+        <table class="my-table">
+            <tbody>
+                <tr>
+                    <th>교수이름</th>
+                    <td th:text="${professor.name}"></td>
+                </tr>
+                <tr>
+                    <th>아이디</th>
+                    <td th:text="${professor.userId}"></td>
+                </tr>
+                <tr>
+                    <th>직급</th>
+                    <td th:text="${professor.position}"></td>
+                </tr>
+                <tr>
+                    <th>입사일</th>
+                    <td th:text="${#strings.substring(professor.hiredate, 0, 10)}"></td>
+                </tr>
+                <tr>
+                    <th>급여(만원)</th>
+                    <td th:text="${professor.sal}"></td>
+                </tr>
+                <tr>
+                    <th>보직수당</th>
+                    <td th:text="${professor.comm}"></td>
+                </tr>
+                <tr>
+                    <th>연락처</th>
+                    <td>
+                        <a th:href="'tel:' + ${professor.phone}" th:text="${professor.phone}"/>
+                    </td>
+                </tr>
+                <tr>
+                    <th>이메일</th>
+                    <td>
+                        <a th:href="'mailto:' + ${professor.email}" th:text="${professor.email}"/>
+                    </td>
+                </tr>
+                <tr>
+                    <th>상태</th>
+                    <td th:text="${professor.status}"></td>
+                </tr>
+                <tr>
+                    <th>프로필 사진</th>
+                    <td>
+                        <img th:src="${@fileHelper.getFileUrl(professor.photoUrl)}" style="width: 100px; height: 100px; object-fit: cover; border-radius: 50%;"/>
+                    </td>
+                </tr>
+                <tr>
+                    <th>소속학과</th>
+                    <td>
+                        <a th:href="@{/department/view/{id}(id=${professor.departmentId})}" th:text="${professor.dname}"></a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="buttons">
+            <a th:href="@{/professor}" class="mybutton green">목록보기</a>
+            <a th:href="@{/professor/add}" class="mybutton blue">신규등록</a>
+            <a th:href="@{${'/professor/edit/' + professor.id}}" class="mybutton red">수정하기</a>
+            <a th:href="@{${'/professor/delete/' + professor.id}}" class="mybutton black" id="btn-delete"
+                th:attr="data-name=${professor.name}, data-id=${professor.id}">삭제하기</a>
+        </div>
+
+        <script th:src="@{/assets/js/script.js}"></script>
+        <script>
+            document.querySelector("#btn-delete").addEventListener("click", deleteProfessor);
+        </script>
+    </body>
+</html>

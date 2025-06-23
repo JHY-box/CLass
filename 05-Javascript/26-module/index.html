@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang = "ko" translate = "no">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "google" content = "notranslate" />
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <title>index</title>
+        <link rel="stylesheet" type="text/css" href="css\stylesheet.css">
+        <style>
+            .controller {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 10px;
+            }
+        </style>         
+    </head>
+
+    <body>
+        <img src="img/loading(2).gif" id="loader">
+
+        <h1>학과 목록</h1>
+
+        <div class="controller">
+            <form id="my-form">
+                <input type="search" id="my-search" placeholder="학과이름 검색">
+                <button type="submit">검색</button>
+            </form>
+            <div class="buttons">
+                <a href="add.html">신규 학생 등록</a>
+            </div>
+        </div>
+
+        <table class="my-table">
+            <thead>
+                <tr>
+                    <th>학과번호</th>
+                    <th>학과명</th>
+                    <th>위치</th>
+                    <th>전화번호</th>
+                    <th>이메일</th>
+                    <th>설립년도</th>
+                    <th>홈페이지</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+
+        <script src="js/FetchHelper.js"></script>
+        <script>
+    
+             //검색어
+             let keyword = "";
+
+             document.querySelector("#my-form").addEventListener("submit", (e) =>{              // <--------------추가
+                e.preventDefault();
+                keyword = document.querySelector("#my-search").value;
+                getDepartmentList();
+             });
+
+             // 데이터 요청 함수
+             async function getDepartmentList() {
+
+                let result = null;
+
+                try {
+                    // 백엔드로부터의 응답 받기
+                    result = await fetchHelper.get("http://localhost:8080/departments", {
+                        _sort: 'id',
+                        _order: 'desc',
+                        dname_like: keyword
+                    });
+                } catch (err) {
+                    alert(err.message);
+                    return;
+                }
+             
+                     //필요한 데이터만 구조분해
+                     const {item} =result;
+             
+                     // 결과를 출력할 <tbody>태그
+                     const tbody = document.querySelector(".my-table tbody");
+
+                     tbody.innerHTML= "";
+             
+                     item.forEach((v, i) => {
+                         // 한줄을 의마하는 <tr>태그를 생성
+                         
+                            const tr = document.createElement("tr");
+                            
+                            const td1 = document.createElement("td");
+                            td1.innerHTML = v.id;
+                            tr.appendChild(td1);
+
+                            const td2 = document.createElement("td");
+                            //td2.innerHTML = keyword ===''? v.dname : `<mark>${v.dname}</mark>`;
+                            const dname =keyword === '' ? v.dname : `<mark>${v.dname}</mark>`
+                            td2.innerHTML = `<a href="view.html?id=${v.id}">${dname}</a>`
+                            tr.appendChild(td2);
+
+                            const td3 = document.createElement("td");
+                            td3.innerHTML = v.loc;
+                            tr.appendChild(td3);
+
+                            const td4 = document.createElement("td");
+                            td4.innerHTML = v.phone && `<a href="tel:${v.phone}"> ${v.phone}</a>`;
+                            tr.appendChild(td4);
+
+
+                            const td5 = document.createElement("td");
+                            td5.innerHTML = v.email && `<a href="tel:${v.email}"> ${v.email}</a>`;
+                            tr.appendChild(td5);
+
+                            const td6 = document.createElement("td");
+                            td6.innerHTML = v.established;
+                            tr.appendChild(td6);
+
+                            const td7 = document.createElement("td");
+                            // td7.innerHTML = `<a href="tel:${v.hompage}"> ${v.hompage}</a>`; // null 이 출력
+                            td7.innerHTML = v.homepage
+                            tr.appendChild(td7);
+
+                             
+                             // 생성된 tr을 tbody에 추가
+                             tbody.appendChild(tr);
+                         }); 
+                     }
+
+                     getDepartmentList();
+                     
+                     </script>
+                     
+                    </body>
+                    </html>
+                    
+    

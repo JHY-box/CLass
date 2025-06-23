@@ -1,0 +1,24 @@
+/**
+ * 메인 페이지 스타일
+ */
+.main {
+    /** 작업하는 동안의 임시 적용 스타일 */
+    /* background-color: #0000ff55;*/
+
+    padding-top: 100px;
+
+    .introduce {
+        background-color: #ff000022;
+        height: 150px;
+    }
+
+    .portfolio {
+        background-color: #0066ff44;
+        height: 150px;
+    }
+
+    .contact {
+        background-color: #ff00ff44;
+        height: 150px;
+    }
+}

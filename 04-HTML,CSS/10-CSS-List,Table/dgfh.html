@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko" translate="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="google" content="nottranslate" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+</head>
+<title>03-공지사항</title>
+<style>
+    a {
+        &:link, &:visited {
+            color: #000;
+            text-decoration: none;
+        }
+
+        &:hover {
+            color: #00f;
+        }
+
+        &:active {
+            color: #f00;
+        }
+    }
+
+    .my_table {
+        border-collapse: collapse;
+        border: 1px solid #000;
+        width: 100%;
+        margin: auto;
+        text-align: center;
+
+        
+        th {
+            background-color: rgb(163, 163, 163);
+            border: 1px solid rgb(12, 12, 12);
+            padding: 10px;
+
+            &:first-child {
+                border-left: 0;
+            }
+
+            &:last-child {
+                border-right: 0;
+            }
+        }
+
+        td {
+            border: 1px solid rgb(12, 12, 12);
+            padding: 20px;
+
+            &:first-child {
+                border-left: 0;
+            }
+
+            &:last-child {
+                border-right: 0;
+            }
+        }
+    }
+
+    .page-navi {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+</style>
+<body>
+    <h2>공지사항</h2>
+
+    <div>
+        <form>
+            <label for="search">검색어:</label>
+            <input type="text" id="search" name="q" />
+            <input type="submit" value="검색" />
+        </form>
+        <div>
+            <a href="#">[새글쓰기]</a>
+        </div>
+    </div>
+
+    <table class="my_table">
+        <thead>
+            <tr>
+                <th>번호</th>
+                <th>제목</th>
+                <th>작성자</th>
+                <th>작성일</th>
+                <th>조회수</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>10</td>
+                <td><a href="#">[안내] 5월 휴무일 공지</a></td>
+                <td>관리자</td>
+                <td>2025-04-30</td>
+                <td>124</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="page-navi">
+        <a href="#">&#9664; 이전</a>
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">&#9654; 다음</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,259 @@
+@import "./common.scss";
+
+.line {
+    background-color: $purple;
+
+    .line-container {
+        max-width: 1200px;
+        margin: auto;
+        display: flex;
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+        @include xl {
+            padding-left: 20px;
+        }
+
+        a {
+            color: $white;
+            font-weight: 300;
+            font-size: 14px;
+        }
+
+        span {
+            color: $white;
+            font-size: 14px;
+        }
+    }
+}
+
+.select {
+
+    @include sm {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    select {
+        display: none;
+        color: $orange;
+        font-size: 16px;
+        background-color: $light-gray;
+        border-color: $gray;
+        padding: 5px;
+        margin-left: auto;
+        width: 30%;
+        margin-right: 20px;
+
+        @include sm {
+            width: 100%;
+        }
+
+        &:first-child {
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+    
+        @include xl {
+            display: block;
+        }
+    }
+}
+
+.content_container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+
+    .beverage {
+        width: 18%;
+
+        @include xl {
+            display: none;
+        }
+
+        .menu_item {
+            border-bottom: 1px solid $light-gray;
+            padding-top: 30px;
+            padding-bottom: 40px;
+
+            h3 {
+                color: $orange;
+                font-weight: 400;
+                font-size: 17px;
+                padding-top: 10px;
+                padding-bottom: 20px;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+
+            h4 {
+                padding-top: 10px;
+                font-weight: 400;
+                font-size: 14px;
+
+                &.active {
+                    color: $orange;
+                }
+
+                &:hover {
+                    color: $orange;
+                }
+            }
+        }
+    }
+
+    .main_content {
+        width: 75%;
+        margin-left: auto;
+
+        @include xl {
+            width: 100%;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+
+            @include xl {
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+
+            .gallery_item {
+                display: block;
+                width: 33.3%;
+                margin-top: 40px;
+                margin-bottom: 60px;
+                padding-right: 10px;
+                padding-left: 10px;
+
+                @include lg {
+                    width: 50%;
+                }
+
+                @include sm {
+                    width: 100%;
+                }
+
+                .image {
+
+                    img {
+                        width: 100%;
+                    }
+
+                }
+
+                .text {
+                    text-align: center;
+                    margin-top: 25px;
+                    margin-bottom: 40px;
+                    min-height: 100px;
+
+                    h3 {
+                        padding-bottom: 7px;
+                        font-weight: 500;
+                    }
+
+                    h4 {
+                        margin-top: 12px;
+                        margin-bottom: 10px;
+                        font-weight: 400;
+                        font-size: 14px;
+                    }
+                }
+
+                .info {
+                    display: flex;
+                    justify-content: center;
+
+                    .info_item {
+                        padding-left: 3px;
+                        padding-right: 3px;
+
+                        @include xl {
+                            padding-left: 7px;
+                            padding-right: 7px;
+                        }
+
+                        span {
+                            display: block;
+                            font-size: 12px;
+                            text-align: center;
+                            padding-bottom: 3px;
+                            color: $dark-gray;
+
+                            &.num {
+                                width: 40px;
+                                height: 40px;
+                                line-height: 40px;
+                                color: $white;
+                                border-radius: 50%;
+                                font-size: 13px;
+                                margin-bottom: 10px;
+
+                                @include sm {
+                                    width: 45px;
+                                    height: 45px;
+                                    line-height: 45px;
+                                }
+
+                                &.one {
+                                    background-color: $orange;
+                                }
+                                &.two {
+                                    background-color: $gold;
+                                }
+                                &.three {
+                                    background-color: $light-brown;
+                                }
+                                &.four {
+                                    background-color: $gray2;
+                                }
+                                &.five {
+                                    background-color: $orange;
+                                }
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .paging {
+            padding-top: 40px;
+            padding-bottom: 100px;
+
+            ul {
+                display: flex;
+                justify-content: center;
+
+                li {
+                    width: 30px;
+                    height: 30px;
+                    border: 1px solid $gray;
+                    text-align: center;
+                    line-height: 30px;
+                    margin-left: 5px;
+
+                    &.active {
+                        background-color: $light-gray;
+                    }
+
+                    &:hover {
+                        background-color: $light-gray;
+                    }
+
+                    a {
+                        font-weight: 300;
+                        font-size: 15px;
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}
