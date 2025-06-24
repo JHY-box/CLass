@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang = "ko" translate = "no" xmlns:th = "http://www.thymeleaf.org">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "google" content = "notranslate" />
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <title>calc</title>
+    </head>
+    <body>
+        <h1>계산기</h1>
+        <div>
+            <input type="text" name="x" placeholder="x" id="x" />
+            <input type="text" name="y" placeholder="y" id="y" />
+        </div>
+
+        <div>
+            <button id="add">+</button>
+            <button id="sub">-</button>
+            <button id="mul">*</button>
+            <button id="div">/</button>
+        </div>
+
+        <div>
+            <h2>결과: <span id="result"></span></h2>
+        </div>
+
+
+        <script th:src="@{/assets/js/FetchHelper.js}"></script>
+        <script>
+            document.querySelector('#add').addEventListener('click', async e => {
+                const x = document.querySelector('#x').value;
+                const y = document.querySelector('#y').value;
+                
+                let result = null;
+
+                try {
+                    result = await fetchHelper.get("[[@{/api/my_calc}]]", {      // <<--------- 각 부분에 get,post,put,delete 메서드 사용
+                        x: x,
+                        y: y
+                    });
+                } catch (error) {
+                    console.error("Error:", error);
+                    alert("오류가 발생했습니다: " + error.message);
+                    return;
+                }
+
+                const {item} = result;
+                document.querySelector("#result").innerHTML = `${item.x} + ${item.y} = ${item.z}`;
+            });
+
+            document.querySelector('#sub').addEventListener('click', async e => {
+                const x = document.querySelector('#x').value;
+                const y = document.querySelector('#y').value;
+
+                let result = null;
+
+                try {
+                    result = await fetchHelper.post("[[@{/api/my_calc}]]", {     // <<--------- 각 부분에 get,post,put,delete 메서드 사용
+                        x: x,
+                        y: y
+                    });
+                } catch (error) {
+                    console.error("Error:", error);
+                    alert("오류가 발생했습니다: " + error.message);
+                    return;
+                }
+
+                const {item} = result;
+                document.querySelector("#result").innerHTML = `${item.x} - ${item.y} = ${item.z}`;
+            });
+
+            document.querySelector('#mul').addEventListener('click', async e => {
+                const x = document.querySelector('#x').value;
+                const y = document.querySelector('#y').value;
+
+                let result = null;
+
+                try {
+                    result = await fetchHelper.put("[[@{/api/my_calc}]]", {     // <<--------- 각 부분에 get,post,put,delete 메서드 사용
+                        x: x,
+                        y: y
+                    });
+                } catch (error) {
+                    console.error("Error:", error);
+                    alert("오류가 발생했습니다: " + error.message);
+                    return;
+                }
+
+                const {item} = result;
+                document.querySelector("#result").innerHTML = `${item.x} * ${item.y} = ${item.z}`;
+            });
+
+            document.querySelector('#div').addEventListener('click', async e => {
+                const x = document.querySelector('#x').value;
+                const y = document.querySelector('#y').value;
+
+                let result = null;
+
+                try {
+                    result = await fetchHelper.delete("[[@{/api/my_calc}]]", {   // <<--------- 각 부분에 get,post,put,delete 메서드 사용
+                        x: x,
+                        y: y
+                    });
+                } catch (error) {
+                    console.error("Error:", error);
+                    alert("오류가 발생했습니다: " + error.message);
+                    return;
+                }
+
+                const {item} = result;
+                document.querySelector("#result").innerHTML = `${item.x} / ${item.y} = ${item.z}`;
+            });
+
+            
+        </script>
+    </body>
+</html>    

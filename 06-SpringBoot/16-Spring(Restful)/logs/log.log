@@ -1,0 +1,901 @@
+[INFO ] 25-06-24 13:03:26 [RestfulApplication:53] - Starting RestfulApplication using Java 17.0.2 with PID 20544 (D:\#web3\06-SpringBoot\16-Spring(Restful)\restful\bin\main started by YJH in D:\#web3\06-SpringBoot\16-Spring(Restful))
+[DEBUG] 25-06-24 13:03:26 [RestfulApplication:54] - Running with Spring Boot v3.4.7, Spring v6.2.8
+[INFO ] 25-06-24 13:03:26 [RestfulApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 25-06-24 13:03:27 [LogFactory:112] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 25-06-24 13:03:27 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.yjh.restful]' package. Please check your configuration.
+[INFO ] 25-06-24 13:03:30 [RestfulApplication:59] - Started RestfulApplication in 4.146 seconds (process running for 4.605)
+[INFO ] 25-06-24 13:03:34 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-24 13:03:34 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-24 13:03:34 [MyInterceptor:85] - [GET] http://localhost:8080/calc
+[INFO ] 25-06-24 13:03:34 [MyInterceptor:123] - running time: 219(ms)
+[ERROR] 25-06-24 13:03:35 [TemplateEngine:1141] - [THYMELEAF][http-nio-8080-exec-1] Exception processing template "calc": Error resolving template [calc], template might not exist or might not be accessible by any of the configured Template Resolvers
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [calc], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077)
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372)
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1437)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1168)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:114)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1769)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[ERROR] 25-06-24 13:03:35 [[dispatcherServlet]:170] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.thymeleaf.exceptions.TemplateInputException: Error resolving template [calc], template might not exist or might not be accessible by any of the configured Template Resolvers] with root cause
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [calc], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077)
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372)
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1437)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1168)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:114)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1769)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[INFO ] 25-06-24 13:05:30 [RestfulApplication:53] - Starting RestfulApplication using Java 17.0.2 with PID 15060 (D:\#web3\06-SpringBoot\16-Spring(Restful)\restful\bin\main started by YJH in D:\#web3\06-SpringBoot\16-Spring(Restful))
+[DEBUG] 25-06-24 13:05:30 [RestfulApplication:54] - Running with Spring Boot v3.4.7, Spring v6.2.8
+[INFO ] 25-06-24 13:05:30 [RestfulApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 25-06-24 13:05:31 [LogFactory:112] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 25-06-24 13:05:31 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.yjh.restful]' package. Please check your configuration.
+[INFO ] 25-06-24 13:05:33 [RestfulApplication:59] - Started RestfulApplication in 4.188 seconds (process running for 4.644)
+[INFO ] 25-06-24 13:05:38 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-24 13:05:38 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-24 13:05:38 [MyInterceptor:85] - [GET] http://localhost:8080/calc
+[INFO ] 25-06-24 13:05:38 [MyInterceptor:123] - running time: 182(ms)
+[ERROR] 25-06-24 13:05:38 [TemplateEngine:1141] - [THYMELEAF][http-nio-8080-exec-1] Exception processing template "calc": Error resolving template [calc], template might not exist or might not be accessible by any of the configured Template Resolvers
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [calc], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077)
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372)
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1437)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1168)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:114)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1769)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[ERROR] 25-06-24 13:05:38 [[dispatcherServlet]:170] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.thymeleaf.exceptions.TemplateInputException: Error resolving template [calc], template might not exist or might not be accessible by any of the configured Template Resolvers] with root cause
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [calc], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077)
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372)
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1437)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1168)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:114)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1769)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[INFO ] 25-06-24 14:27:27 [RestfulApplication:53] - Starting RestfulApplication using Java 17.0.2 with PID 15060 (D:\#web3\06-SpringBoot\16-Spring(Restful)\restful\bin\main started by YJH in D:\#web3\06-SpringBoot\16-Spring(Restful))
+[DEBUG] 25-06-24 14:27:27 [RestfulApplication:54] - Running with Spring Boot v3.4.7, Spring v6.2.8
+[INFO ] 25-06-24 14:27:27 [RestfulApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[WARN ] 25-06-24 14:27:27 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.yjh.restful]' package. Please check your configuration.
+[INFO ] 25-06-24 14:27:27 [RestfulApplication:59] - Started RestfulApplication in 0.497 seconds (process running for 4918.662)
+[INFO ] 25-06-24 14:27:31 [RestfulApplication:53] - Starting RestfulApplication using Java 17.0.2 with PID 15060 (D:\#web3\06-SpringBoot\16-Spring(Restful)\restful\bin\main started by YJH in D:\#web3\06-SpringBoot\16-Spring(Restful))
+[DEBUG] 25-06-24 14:27:31 [RestfulApplication:54] - Running with Spring Boot v3.4.7, Spring v6.2.8
+[INFO ] 25-06-24 14:27:31 [RestfulApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[WARN ] 25-06-24 14:27:31 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.yjh.restful]' package. Please check your configuration.
+[INFO ] 25-06-24 14:27:31 [RestfulApplication:59] - Started RestfulApplication in 0.469 seconds (process running for 4922.672)
+[INFO ] 25-06-24 14:28:18 [RestfulApplication:53] - Starting RestfulApplication using Java 17.0.2 with PID 5992 (D:\#web3\06-SpringBoot\16-Spring(Restful)\restful\bin\main started by YJH in D:\#web3\06-SpringBoot\16-Spring(Restful))
+[DEBUG] 25-06-24 14:28:18 [RestfulApplication:54] - Running with Spring Boot v3.4.7, Spring v6.2.8
+[INFO ] 25-06-24 14:28:18 [RestfulApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 25-06-24 14:28:19 [LogFactory:112] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 25-06-24 14:28:19 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.yjh.restful]' package. Please check your configuration.
+[INFO ] 25-06-24 14:28:22 [RestfulApplication:59] - Started RestfulApplication in 4.402 seconds (process running for 4.947)
+[INFO ] 25-06-24 14:28:33 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-24 14:28:33 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-24 14:28:33 [MyInterceptor:85] - [GET] http://localhost:8080/calc
+[INFO ] 25-06-24 14:28:33 [MyInterceptor:123] - running time: 239(ms)
+[ERROR] 25-06-24 14:28:33 [TemplateEngine:1141] - [THYMELEAF][http-nio-8080-exec-1] Exception processing template "calc": Error resolving template [calc], template might not exist or might not be accessible by any of the configured Template Resolvers
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [calc], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077)
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372)
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1437)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1168)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:114)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1769)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[ERROR] 25-06-24 14:28:33 [[dispatcherServlet]:170] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.thymeleaf.exceptions.TemplateInputException: Error resolving template [calc], template might not exist or might not be accessible by any of the configured Template Resolvers] with root cause
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [calc], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077)
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372)
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1437)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1168)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:114)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1769)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[INFO ] 25-06-24 14:30:23 [RestfulApplication:53] - Starting RestfulApplication using Java 17.0.2 with PID 5992 (D:\#web3\06-SpringBoot\16-Spring(Restful)\restful\bin\main started by YJH in D:\#web3\06-SpringBoot\16-Spring(Restful))
+[DEBUG] 25-06-24 14:30:23 [RestfulApplication:54] - Running with Spring Boot v3.4.7, Spring v6.2.8
+[INFO ] 25-06-24 14:30:23 [RestfulApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[WARN ] 25-06-24 14:30:24 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.yjh.restful]' package. Please check your configuration.
+[INFO ] 25-06-24 14:30:24 [RestfulApplication:59] - Started RestfulApplication in 0.571 seconds (process running for 126.8)
+[INFO ] 25-06-24 14:30:34 [RestfulApplication:53] - Starting RestfulApplication using Java 17.0.2 with PID 18044 (D:\#web3\06-SpringBoot\16-Spring(Restful)\restful\bin\main started by YJH in D:\#web3\06-SpringBoot\16-Spring(Restful))
+[DEBUG] 25-06-24 14:30:34 [RestfulApplication:54] - Running with Spring Boot v3.4.7, Spring v6.2.8
+[INFO ] 25-06-24 14:30:34 [RestfulApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 25-06-24 14:30:35 [LogFactory:112] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 25-06-24 14:30:35 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.yjh.restful]' package. Please check your configuration.
+[INFO ] 25-06-24 14:30:37 [RestfulApplication:59] - Started RestfulApplication in 3.931 seconds (process running for 4.343)
+[INFO ] 25-06-24 14:30:43 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-24 14:30:43 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-24 14:30:43 [MyInterceptor:85] - [GET] http://localhost:8080/calc
+[INFO ] 25-06-24 14:30:43 [MyInterceptor:123] - running time: 205(ms)
+[ERROR] 25-06-24 14:30:44 [TemplateEngine:1141] - [THYMELEAF][http-nio-8080-exec-1] Exception processing template "calc.html": Error resolving template [calc.html], template might not exist or might not be accessible by any of the configured Template Resolvers
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [calc.html], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077)
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372)
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1437)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1168)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:114)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1769)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[ERROR] 25-06-24 14:30:44 [[dispatcherServlet]:170] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.thymeleaf.exceptions.TemplateInputException: Error resolving template [calc.html], template might not exist or might not be accessible by any of the configured Template Resolvers] with root cause
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [calc.html], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077)
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372)
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1437)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1168)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:114)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1769)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[INFO ] 25-06-24 14:33:06 [RestfulApplication:53] - Starting RestfulApplication using Java 17.0.2 with PID 18044 (D:\#web3\06-SpringBoot\16-Spring(Restful)\restful\bin\main started by YJH in D:\#web3\06-SpringBoot\16-Spring(Restful))
+[DEBUG] 25-06-24 14:33:06 [RestfulApplication:54] - Running with Spring Boot v3.4.7, Spring v6.2.8
+[INFO ] 25-06-24 14:33:06 [RestfulApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[WARN ] 25-06-24 14:33:06 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.yjh.restful]' package. Please check your configuration.
+[INFO ] 25-06-24 14:33:06 [RestfulApplication:59] - Started RestfulApplication in 0.562 seconds (process running for 153.559)
+[INFO ] 25-06-24 14:33:08 [RestfulApplication:53] - Starting RestfulApplication using Java 17.0.2 with PID 18044 (D:\#web3\06-SpringBoot\16-Spring(Restful)\restful\bin\main started by YJH in D:\#web3\06-SpringBoot\16-Spring(Restful))
+[DEBUG] 25-06-24 14:33:08 [RestfulApplication:54] - Running with Spring Boot v3.4.7, Spring v6.2.8
+[INFO ] 25-06-24 14:33:08 [RestfulApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[WARN ] 25-06-24 14:33:08 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.yjh.restful]' package. Please check your configuration.
+[INFO ] 25-06-24 14:33:08 [RestfulApplication:59] - Started RestfulApplication in 0.431 seconds (process running for 155.497)
+[INFO ] 25-06-24 14:33:10 [RestfulApplication:53] - Starting RestfulApplication using Java 17.0.2 with PID 18044 (D:\#web3\06-SpringBoot\16-Spring(Restful)\restful\bin\main started by YJH in D:\#web3\06-SpringBoot\16-Spring(Restful))
+[DEBUG] 25-06-24 14:33:10 [RestfulApplication:54] - Running with Spring Boot v3.4.7, Spring v6.2.8
+[INFO ] 25-06-24 14:33:10 [RestfulApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[WARN ] 25-06-24 14:33:10 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.yjh.restful]' package. Please check your configuration.
+[INFO ] 25-06-24 14:33:10 [RestfulApplication:59] - Started RestfulApplication in 0.448 seconds (process running for 157.477)
+[INFO ] 25-06-24 14:33:15 [RestfulApplication:53] - Starting RestfulApplication using Java 17.0.2 with PID 18044 (D:\#web3\06-SpringBoot\16-Spring(Restful)\restful\bin\main started by YJH in D:\#web3\06-SpringBoot\16-Spring(Restful))
+[DEBUG] 25-06-24 14:33:15 [RestfulApplication:54] - Running with Spring Boot v3.4.7, Spring v6.2.8
+[INFO ] 25-06-24 14:33:15 [RestfulApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[WARN ] 25-06-24 14:33:15 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.yjh.restful]' package. Please check your configuration.
+[INFO ] 25-06-24 14:33:15 [RestfulApplication:59] - Started RestfulApplication in 0.389 seconds (process running for 162.442)
+[INFO ] 25-06-24 14:33:19 [RestfulApplication:53] - Starting RestfulApplication using Java 17.0.2 with PID 14780 (D:\#web3\06-SpringBoot\16-Spring(Restful)\restful\bin\main started by YJH in D:\#web3\06-SpringBoot\16-Spring(Restful))
+[DEBUG] 25-06-24 14:33:19 [RestfulApplication:54] - Running with Spring Boot v3.4.7, Spring v6.2.8
+[INFO ] 25-06-24 14:33:19 [RestfulApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 25-06-24 14:33:20 [LogFactory:112] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 25-06-24 14:33:20 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.yjh.restful]' package. Please check your configuration.
+[INFO ] 25-06-24 14:33:22 [RestfulApplication:59] - Started RestfulApplication in 4.221 seconds (process running for 4.75)
+[INFO ] 25-06-24 14:33:32 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-24 14:33:32 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-24 14:33:32 [MyInterceptor:85] - [GET] http://localhost:8080/calc
+[INFO ] 25-06-24 14:33:32 [MyInterceptor:123] - running time: 199(ms)
+[INFO ] 25-06-24 14:33:42 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-24 14:33:42 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-24 14:33:42 [MyInterceptor:85] - [GET] http://localhost:8080/api/my_calc?x=5&y=4
+[INFO ] 25-06-24 14:33:42 [MyInterceptor:92] - (param) <-- x = 5
+[INFO ] 25-06-24 14:33:42 [MyInterceptor:92] - (param) <-- y = 4
+[INFO ] 25-06-24 14:33:42 [MyInterceptor:101] - - REFERER : time=9537, url=http://localhost:8080/calc
+[INFO ] 25-06-24 14:33:42 [MyInterceptor:123] - running time: 137(ms)
+[INFO ] 25-06-24 14:33:44 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-24 14:33:44 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-24 14:33:44 [MyInterceptor:85] - [GET] http://localhost:8080/api/my_calc?x=5&y=4
+[INFO ] 25-06-24 14:33:44 [MyInterceptor:92] - (param) <-- x = 5
+[INFO ] 25-06-24 14:33:44 [MyInterceptor:92] - (param) <-- y = 4
+[INFO ] 25-06-24 14:33:44 [MyInterceptor:101] - - REFERER : time=2358, url=http://localhost:8080/calc
+[INFO ] 25-06-24 14:33:44 [MyInterceptor:123] - running time: 60(ms)
+[INFO ] 25-06-24 14:33:47 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-24 14:33:47 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-24 14:33:47 [MyInterceptor:85] - [GET] http://localhost:8080/api/my_calc?x=5&y=4
+[INFO ] 25-06-24 14:33:47 [MyInterceptor:92] - (param) <-- x = 5
+[INFO ] 25-06-24 14:33:47 [MyInterceptor:92] - (param) <-- y = 4
+[INFO ] 25-06-24 14:33:47 [MyInterceptor:101] - - REFERER : time=3058, url=http://localhost:8080/calc
+[INFO ] 25-06-24 14:33:47 [MyInterceptor:123] - running time: 40(ms)
+[INFO ] 25-06-24 14:33:49 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-24 14:33:49 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-24 14:33:49 [MyInterceptor:85] - [GET] http://localhost:8080/api/my_calc?x=5&y=4
+[INFO ] 25-06-24 14:33:49 [MyInterceptor:92] - (param) <-- x = 5
+[INFO ] 25-06-24 14:33:49 [MyInterceptor:92] - (param) <-- y = 4
+[INFO ] 25-06-24 14:33:49 [MyInterceptor:101] - - REFERER : time=1341, url=http://localhost:8080/calc
+[INFO ] 25-06-24 14:33:49 [MyInterceptor:123] - running time: 25(ms)
+[INFO ] 25-06-24 14:33:49 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-24 14:33:49 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-24 14:33:49 [MyInterceptor:85] - [GET] http://localhost:8080/api/my_calc?x=5&y=4
+[INFO ] 25-06-24 14:33:49 [MyInterceptor:92] - (param) <-- x = 5
+[INFO ] 25-06-24 14:33:49 [MyInterceptor:92] - (param) <-- y = 4
+[INFO ] 25-06-24 14:33:49 [MyInterceptor:101] - - REFERER : time=467, url=http://localhost:8080/calc
+[INFO ] 25-06-24 14:33:49 [MyInterceptor:123] - running time: 33(ms)
+[INFO ] 25-06-24 14:33:50 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-24 14:33:50 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-24 14:33:50 [MyInterceptor:85] - [GET] http://localhost:8080/api/my_calc?x=5&y=4
+[INFO ] 25-06-24 14:33:50 [MyInterceptor:92] - (param) <-- x = 5
+[INFO ] 25-06-24 14:33:50 [MyInterceptor:92] - (param) <-- y = 4
+[INFO ] 25-06-24 14:33:50 [MyInterceptor:101] - - REFERER : time=980, url=http://localhost:8080/calc
+[INFO ] 25-06-24 14:33:50 [MyInterceptor:123] - running time: 19(ms)
+[INFO ] 25-06-24 14:33:51 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-24 14:33:51 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-24 14:33:51 [MyInterceptor:85] - [GET] http://localhost:8080/api/my_calc?x=5&y=4
+[INFO ] 25-06-24 14:33:51 [MyInterceptor:92] - (param) <-- x = 5
+[INFO ] 25-06-24 14:33:51 [MyInterceptor:92] - (param) <-- y = 4
+[INFO ] 25-06-24 14:33:51 [MyInterceptor:101] - - REFERER : time=759, url=http://localhost:8080/calc
+[INFO ] 25-06-24 14:33:51 [MyInterceptor:123] - running time: 25(ms)
+[INFO ] 25-06-24 14:33:52 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-24 14:33:52 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-24 14:33:52 [MyInterceptor:85] - [GET] http://localhost:8080/api/my_calc?x=5&y=4
+[INFO ] 25-06-24 14:33:52 [MyInterceptor:92] - (param) <-- x = 5
+[INFO ] 25-06-24 14:33:52 [MyInterceptor:92] - (param) <-- y = 4
+[INFO ] 25-06-24 14:33:52 [MyInterceptor:101] - - REFERER : time=845, url=http://localhost:8080/calc
+[INFO ] 25-06-24 14:33:52 [MyInterceptor:123] - running time: 13(ms)
+[INFO ] 25-06-24 14:35:22 [RestfulApplication:53] - Starting RestfulApplication using Java 17.0.2 with PID 21928 (D:\#web3\06-SpringBoot\16-Spring(Restful)\restful\bin\main started by YJH in D:\#web3\06-SpringBoot\16-Spring(Restful))
+[DEBUG] 25-06-24 14:35:22 [RestfulApplication:54] - Running with Spring Boot v3.4.7, Spring v6.2.8
+[INFO ] 25-06-24 14:35:22 [RestfulApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 25-06-24 14:35:23 [LogFactory:112] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 25-06-24 14:35:23 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.yjh.restful]' package. Please check your configuration.
+[INFO ] 25-06-24 14:35:26 [RestfulApplication:59] - Started RestfulApplication in 4.25 seconds (process running for 4.769)
+[INFO ] 25-06-24 14:35:40 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-24 14:35:40 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-24 14:35:40 [MyInterceptor:85] - [GET] http://localhost:8080/calc
+[INFO ] 25-06-24 14:35:40 [MyInterceptor:123] - running time: 197(ms)
+[INFO ] 25-06-24 14:35:44 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-24 14:35:44 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-24 14:35:44 [MyInterceptor:85] - [GET] http://localhost:8080/api/my_calc?x=99&y=1
+[INFO ] 25-06-24 14:35:44 [MyInterceptor:92] - (param) <-- x = 99
+[INFO ] 25-06-24 14:35:44 [MyInterceptor:92] - (param) <-- y = 1
+[INFO ] 25-06-24 14:35:44 [MyInterceptor:101] - - REFERER : time=3874, url=http://localhost:8080/calc
+[INFO ] 25-06-24 14:35:44 [MyInterceptor:123] - running time: 145(ms)
+[INFO ] 25-06-24 14:35:45 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-24 14:35:45 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-24 14:35:45 [MyInterceptor:85] - [GET] http://localhost:8080/api/my_calc?x=99&y=1
+[INFO ] 25-06-24 14:35:45 [MyInterceptor:92] - (param) <-- x = 99
+[INFO ] 25-06-24 14:35:45 [MyInterceptor:92] - (param) <-- y = 1
+[INFO ] 25-06-24 14:35:45 [MyInterceptor:101] - - REFERER : time=1429, url=http://localhost:8080/calc
+[INFO ] 25-06-24 14:35:45 [MyInterceptor:123] - running time: 50(ms)
+[INFO ] 25-06-24 14:35:49 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-24 14:35:49 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-24 14:35:49 [MyInterceptor:85] - [GET] http://localhost:8080/api/my_calc?x=99&y=1
+[INFO ] 25-06-24 14:35:49 [MyInterceptor:92] - (param) <-- x = 99
+[INFO ] 25-06-24 14:35:49 [MyInterceptor:92] - (param) <-- y = 1
+[INFO ] 25-06-24 14:35:49 [MyInterceptor:101] - - REFERER : time=3371, url=http://localhost:8080/calc
+[INFO ] 25-06-24 14:35:49 [MyInterceptor:123] - running time: 38(ms)
+[INFO ] 25-06-24 14:35:50 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-24 14:35:50 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-24 14:35:50 [MyInterceptor:85] - [GET] http://localhost:8080/api/my_calc?x=99&y=1
+[INFO ] 25-06-24 14:35:50 [MyInterceptor:92] - (param) <-- x = 99
+[INFO ] 25-06-24 14:35:50 [MyInterceptor:92] - (param) <-- y = 1
+[INFO ] 25-06-24 14:35:50 [MyInterceptor:101] - - REFERER : time=1239, url=http://localhost:8080/calc
+[INFO ] 25-06-24 14:35:50 [MyInterceptor:123] - running time: 25(ms)
+[INFO ] 25-06-24 14:35:52 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-24 14:35:52 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-24 14:35:52 [MyInterceptor:85] - [GET] http://localhost:8080/api/my_calc?x=99&y=1
+[INFO ] 25-06-24 14:35:52 [MyInterceptor:92] - (param) <-- x = 99
+[INFO ] 25-06-24 14:35:52 [MyInterceptor:92] - (param) <-- y = 1
+[INFO ] 25-06-24 14:35:52 [MyInterceptor:101] - - REFERER : time=1799, url=http://localhost:8080/calc
+[INFO ] 25-06-24 14:35:52 [MyInterceptor:123] - running time: 22(ms)
+[INFO ] 25-06-24 14:35:52 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-24 14:35:52 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-24 14:35:52 [MyInterceptor:85] - [GET] http://localhost:8080/api/my_calc?x=99&y=1
+[INFO ] 25-06-24 14:35:52 [MyInterceptor:92] - (param) <-- x = 99
+[INFO ] 25-06-24 14:35:52 [MyInterceptor:92] - (param) <-- y = 1
+[INFO ] 25-06-24 14:35:52 [MyInterceptor:101] - - REFERER : time=425, url=http://localhost:8080/calc
+[INFO ] 25-06-24 14:35:52 [MyInterceptor:123] - running time: 24(ms)
+[INFO ] 25-06-24 14:35:53 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-24 14:35:53 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-24 14:35:53 [MyInterceptor:85] - [GET] http://localhost:8080/api/my_calc?x=99&y=1
+[INFO ] 25-06-24 14:35:53 [MyInterceptor:92] - (param) <-- x = 99
+[INFO ] 25-06-24 14:35:53 [MyInterceptor:92] - (param) <-- y = 1
+[INFO ] 25-06-24 14:35:53 [MyInterceptor:101] - - REFERER : time=505, url=http://localhost:8080/calc
+[INFO ] 25-06-24 14:35:53 [MyInterceptor:123] - running time: 17(ms)
+[INFO ] 25-06-24 14:35:53 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-24 14:35:53 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-24 14:35:53 [MyInterceptor:85] - [GET] http://localhost:8080/api/my_calc?x=99&y=1
+[INFO ] 25-06-24 14:35:53 [MyInterceptor:92] - (param) <-- x = 99
+[INFO ] 25-06-24 14:35:53 [MyInterceptor:92] - (param) <-- y = 1
+[INFO ] 25-06-24 14:35:53 [MyInterceptor:101] - - REFERER : time=381, url=http://localhost:8080/calc
+[INFO ] 25-06-24 14:35:53 [MyInterceptor:123] - running time: 26(ms)
+[INFO ] 25-06-24 14:35:54 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-24 14:35:54 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-24 14:35:54 [MyInterceptor:85] - [GET] http://localhost:8080/api/my_calc?x=99&y=1
+[INFO ] 25-06-24 14:35:54 [MyInterceptor:92] - (param) <-- x = 99
+[INFO ] 25-06-24 14:35:54 [MyInterceptor:92] - (param) <-- y = 1
+[INFO ] 25-06-24 14:35:54 [MyInterceptor:101] - - REFERER : time=814, url=http://localhost:8080/calc
+[INFO ] 25-06-24 14:35:54 [MyInterceptor:123] - running time: 21(ms)
+[INFO ] 25-06-24 14:35:55 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-24 14:35:55 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-24 14:35:55 [MyInterceptor:85] - [GET] http://localhost:8080/api/my_calc?x=99&y=1
+[INFO ] 25-06-24 14:35:55 [MyInterceptor:92] - (param) <-- x = 99
+[INFO ] 25-06-24 14:35:55 [MyInterceptor:92] - (param) <-- y = 1
+[INFO ] 25-06-24 14:35:55 [MyInterceptor:101] - - REFERER : time=692, url=http://localhost:8080/calc
+[INFO ] 25-06-24 14:35:55 [MyInterceptor:123] - running time: 25(ms)
+[INFO ] 25-06-24 14:35:55 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-24 14:35:55 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-24 14:35:55 [MyInterceptor:85] - [GET] http://localhost:8080/api/my_calc?x=99&y=1
+[INFO ] 25-06-24 14:35:55 [MyInterceptor:92] - (param) <-- x = 99
+[INFO ] 25-06-24 14:35:55 [MyInterceptor:92] - (param) <-- y = 1
+[INFO ] 25-06-24 14:35:55 [MyInterceptor:101] - - REFERER : time=506, url=http://localhost:8080/calc
+[INFO ] 25-06-24 14:35:55 [MyInterceptor:123] - running time: 29(ms)
+[INFO ] 25-06-24 15:09:11 [RestfulApplication:53] - Starting RestfulApplication using Java 17.0.2 with PID 18368 (D:\#web3\06-SpringBoot\16-Spring(Restful)\restful\bin\main started by YJH in D:\#web3\06-SpringBoot\16-Spring(Restful))
+[DEBUG] 25-06-24 15:09:11 [RestfulApplication:54] - Running with Spring Boot v3.4.7, Spring v6.2.8
+[INFO ] 25-06-24 15:09:11 [RestfulApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 25-06-24 15:09:12 [LogFactory:112] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 25-06-24 15:09:12 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.yjh.restful]' package. Please check your configuration.
+[INFO ] 25-06-24 15:09:15 [RestfulApplication:59] - Started RestfulApplication in 4.265 seconds (process running for 4.769)
+[INFO ] 25-06-24 15:09:29 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-24 15:09:30 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-24 15:09:30 [MyInterceptor:85] - [GET] http://localhost:8080/calc
+[INFO ] 25-06-24 15:09:30 [MyInterceptor:123] - running time: 210(ms)
+[INFO ] 25-06-24 15:09:34 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-24 15:09:34 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-24 15:09:34 [MyInterceptor:85] - [GET] http://localhost:8080/api/my_calc?x=99&y=1
+[INFO ] 25-06-24 15:09:34 [MyInterceptor:92] - (param) <-- x = 99
+[INFO ] 25-06-24 15:09:34 [MyInterceptor:92] - (param) <-- y = 1
+[INFO ] 25-06-24 15:09:34 [MyInterceptor:101] - - REFERER : time=3957, url=http://localhost:8080/calc
+[INFO ] 25-06-24 15:09:34 [MyInterceptor:123] - running time: 140(ms)
+[INFO ] 25-06-24 15:09:41 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-24 15:09:41 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-24 15:09:41 [MyInterceptor:85] - [GET] http://localhost:8080/api/my_calc?x=99&y=87
+[INFO ] 25-06-24 15:09:41 [MyInterceptor:92] - (param) <-- x = 99
+[INFO ] 25-06-24 15:09:41 [MyInterceptor:92] - (param) <-- y = 87
+[INFO ] 25-06-24 15:09:41 [MyInterceptor:101] - - REFERER : time=6938, url=http://localhost:8080/calc
+[INFO ] 25-06-24 15:09:41 [MyInterceptor:123] - running time: 56(ms)
+[INFO ] 25-06-24 15:09:47 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-24 15:09:47 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-24 15:09:47 [MyInterceptor:85] - [GET] http://localhost:8080/api/my_calc?x=100&y=87
+[INFO ] 25-06-24 15:09:47 [MyInterceptor:92] - (param) <-- x = 100
+[INFO ] 25-06-24 15:09:47 [MyInterceptor:92] - (param) <-- y = 87
+[INFO ] 25-06-24 15:09:47 [MyInterceptor:101] - - REFERER : time=6680, url=http://localhost:8080/calc
+[INFO ] 25-06-24 15:09:47 [MyInterceptor:123] - running time: 59(ms)
+[INFO ] 25-06-24 15:09:49 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-24 15:09:49 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-24 15:09:49 [MyInterceptor:85] - [GET] http://localhost:8080/api/my_calc?x=100&y=87
+[INFO ] 25-06-24 15:09:49 [MyInterceptor:92] - (param) <-- x = 100
+[INFO ] 25-06-24 15:09:49 [MyInterceptor:92] - (param) <-- y = 87
+[INFO ] 25-06-24 15:09:49 [MyInterceptor:101] - - REFERER : time=1696, url=http://localhost:8080/calc
+[INFO ] 25-06-24 15:09:49 [MyInterceptor:123] - running time: 30(ms)
+[INFO ] 25-06-24 15:09:50 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-24 15:09:50 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-24 15:09:50 [MyInterceptor:85] - [GET] http://localhost:8080/api/my_calc?x=100&y=87
+[INFO ] 25-06-24 15:09:50 [MyInterceptor:92] - (param) <-- x = 100
+[INFO ] 25-06-24 15:09:50 [MyInterceptor:92] - (param) <-- y = 87
+[INFO ] 25-06-24 15:09:50 [MyInterceptor:101] - - REFERER : time=1244, url=http://localhost:8080/calc
+[INFO ] 25-06-24 15:09:50 [MyInterceptor:123] - running time: 22(ms)
+[INFO ] 25-06-24 15:09:52 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-24 15:09:52 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-24 15:09:52 [MyInterceptor:85] - [GET] http://localhost:8080/api/my_calc?x=100&y=87
+[INFO ] 25-06-24 15:09:52 [MyInterceptor:92] - (param) <-- x = 100
+[INFO ] 25-06-24 15:09:52 [MyInterceptor:92] - (param) <-- y = 87
+[INFO ] 25-06-24 15:09:52 [MyInterceptor:101] - - REFERER : time=1158, url=http://localhost:8080/calc
+[INFO ] 25-06-24 15:09:52 [MyInterceptor:123] - running time: 17(ms)
+[INFO ] 25-06-24 15:09:52 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-24 15:09:52 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-24 15:09:52 [MyInterceptor:85] - [GET] http://localhost:8080/api/my_calc?x=100&y=87
+[INFO ] 25-06-24 15:09:52 [MyInterceptor:92] - (param) <-- x = 100
+[INFO ] 25-06-24 15:09:52 [MyInterceptor:92] - (param) <-- y = 87
+[INFO ] 25-06-24 15:09:52 [MyInterceptor:101] - - REFERER : time=424, url=http://localhost:8080/calc
+[INFO ] 25-06-24 15:09:52 [MyInterceptor:123] - running time: 17(ms)
+[INFO ] 25-06-24 15:09:53 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-24 15:09:53 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-24 15:09:53 [MyInterceptor:85] - [GET] http://localhost:8080/api/my_calc?x=100&y=87
+[INFO ] 25-06-24 15:09:53 [MyInterceptor:92] - (param) <-- x = 100
+[INFO ] 25-06-24 15:09:53 [MyInterceptor:92] - (param) <-- y = 87
+[INFO ] 25-06-24 15:09:53 [MyInterceptor:101] - - REFERER : time=1185, url=http://localhost:8080/calc
+[INFO ] 25-06-24 15:09:53 [MyInterceptor:123] - running time: 25(ms)
+[INFO ] 25-06-24 15:09:54 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-24 15:09:54 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-24 15:09:54 [MyInterceptor:85] - [GET] http://localhost:8080/api/my_calc?x=100&y=87
+[INFO ] 25-06-24 15:09:54 [MyInterceptor:92] - (param) <-- x = 100
+[INFO ] 25-06-24 15:09:54 [MyInterceptor:92] - (param) <-- y = 87
+[INFO ] 25-06-24 15:09:54 [MyInterceptor:101] - - REFERER : time=254, url=http://localhost:8080/calc
+[INFO ] 25-06-24 15:09:54 [MyInterceptor:123] - running time: 26(ms)
+[INFO ] 25-06-24 15:40:13 [RestfulApplication:53] - Starting RestfulApplication using Java 17.0.2 with PID 11348 (D:\#web3\06-SpringBoot\16-Spring(Restful)\restful\bin\main started by YJH in D:\#web3\06-SpringBoot\16-Spring(Restful))
+[DEBUG] 25-06-24 15:40:13 [RestfulApplication:54] - Running with Spring Boot v3.4.7, Spring v6.2.8
+[INFO ] 25-06-24 15:40:13 [RestfulApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 25-06-24 15:40:14 [LogFactory:112] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 25-06-24 15:40:14 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.yjh.restful]' package. Please check your configuration.
+[INFO ] 25-06-24 15:40:16 [RestfulApplication:59] - Started RestfulApplication in 4.167 seconds (process running for 4.628)
+[INFO ] 25-06-24 15:40:37 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-24 15:40:37 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-24 15:40:37 [MyInterceptor:85] - [GET] http://localhost:8080/api/my_calc
+[WARN ] 25-06-24 15:40:37 [DefaultHandlerExceptionResolver:254] - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'x' for method parameter type int is not present]
+[INFO ] 25-06-24 15:40:51 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-24 15:40:52 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-24 15:40:52 [MyInterceptor:85] - [GET] http://localhost:8080/api/my_calc
+[WARN ] 25-06-24 15:40:52 [DefaultHandlerExceptionResolver:254] - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'x' for method parameter type int is not present]
+[INFO ] 25-06-24 15:47:31 [RestfulApplication:53] - Starting RestfulApplication using Java 17.0.2 with PID 14776 (D:\#web3\06-SpringBoot\16-Spring(Restful)\restful\bin\main started by YJH in D:\#web3\06-SpringBoot\16-Spring(Restful))
+[DEBUG] 25-06-24 15:47:31 [RestfulApplication:54] - Running with Spring Boot v3.4.7, Spring v6.2.8
+[INFO ] 25-06-24 15:47:31 [RestfulApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 25-06-24 15:47:32 [LogFactory:112] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 25-06-24 15:47:32 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.yjh.restful]' package. Please check your configuration.
+[INFO ] 25-06-24 15:47:35 [RestfulApplication:59] - Started RestfulApplication in 3.876 seconds (process running for 4.279)
+[INFO ] 25-06-24 15:47:45 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-24 15:47:46 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-24 15:47:46 [MyInterceptor:85] - [GET] http://localhost:8080/api/my_calc
+[WARN ] 25-06-24 15:47:46 [DefaultHandlerExceptionResolver:254] - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'x' for method parameter type int is not present]
+[INFO ] 25-06-24 15:50:03 [RestfulApplication:53] - Starting RestfulApplication using Java 17.0.2 with PID 14776 (D:\#web3\06-SpringBoot\16-Spring(Restful)\restful\bin\main started by YJH in D:\#web3\06-SpringBoot\16-Spring(Restful))
+[DEBUG] 25-06-24 15:50:03 [RestfulApplication:54] - Running with Spring Boot v3.4.7, Spring v6.2.8
+[INFO ] 25-06-24 15:50:03 [RestfulApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[WARN ] 25-06-24 15:50:04 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.yjh.restful]' package. Please check your configuration.
+[INFO ] 25-06-24 15:50:04 [RestfulApplication:59] - Started RestfulApplication in 0.527 seconds (process running for 153.504)
+[INFO ] 25-06-24 15:50:05 [RestfulApplication:53] - Starting RestfulApplication using Java 17.0.2 with PID 14776 (D:\#web3\06-SpringBoot\16-Spring(Restful)\restful\bin\main started by YJH in D:\#web3\06-SpringBoot\16-Spring(Restful))
+[DEBUG] 25-06-24 15:50:05 [RestfulApplication:54] - Running with Spring Boot v3.4.7, Spring v6.2.8
+[INFO ] 25-06-24 15:50:05 [RestfulApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[WARN ] 25-06-24 15:50:06 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.yjh.restful]' package. Please check your configuration.
+[INFO ] 25-06-24 15:50:06 [RestfulApplication:59] - Started RestfulApplication in 0.433 seconds (process running for 155.445)
+[INFO ] 25-06-24 15:50:08 [RestfulApplication:53] - Starting RestfulApplication using Java 17.0.2 with PID 19060 (D:\#web3\06-SpringBoot\16-Spring(Restful)\restful\bin\main started by YJH in D:\#web3\06-SpringBoot\16-Spring(Restful))
+[DEBUG] 25-06-24 15:50:08 [RestfulApplication:54] - Running with Spring Boot v3.4.7, Spring v6.2.8
+[INFO ] 25-06-24 15:50:08 [RestfulApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 25-06-24 15:50:09 [LogFactory:112] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 25-06-24 15:50:09 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.yjh.restful]' package. Please check your configuration.
+[INFO ] 25-06-24 15:50:12 [RestfulApplication:59] - Started RestfulApplication in 4.237 seconds (process running for 4.689)
+[INFO ] 25-06-24 15:50:16 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-24 15:50:16 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-24 15:50:16 [MyInterceptor:85] - [GET] http://localhost:8080/calc
+[INFO ] 25-06-24 15:50:17 [MyInterceptor:123] - running time: 228(ms)
+[INFO ] 25-06-24 15:50:20 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-24 15:50:20 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-24 15:50:20 [MyInterceptor:85] - [GET] http://localhost:8080/api/my_calc?x=99&y=1
+[INFO ] 25-06-24 15:50:20 [MyInterceptor:92] - (param) <-- x = 99
+[INFO ] 25-06-24 15:50:20 [MyInterceptor:92] - (param) <-- y = 1
+[INFO ] 25-06-24 15:50:20 [MyInterceptor:101] - - REFERER : time=3747, url=http://localhost:8080/calc
+[INFO ] 25-06-24 15:50:20 [MyInterceptor:123] - running time: 172(ms)
+[INFO ] 25-06-24 15:50:21 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-24 15:50:21 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-24 15:50:21 [MyInterceptor:85] - [GET] http://localhost:8080/api/my_calc?x=99&y=1
+[INFO ] 25-06-24 15:50:21 [MyInterceptor:92] - (param) <-- x = 99
+[INFO ] 25-06-24 15:50:21 [MyInterceptor:92] - (param) <-- y = 1
+[INFO ] 25-06-24 15:50:21 [MyInterceptor:101] - - REFERER : time=1012, url=http://localhost:8080/calc
+[INFO ] 25-06-24 15:50:21 [MyInterceptor:123] - running time: 46(ms)
+[INFO ] 25-06-24 15:50:22 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-24 15:50:22 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-24 15:50:22 [MyInterceptor:85] - [GET] http://localhost:8080/api/my_calc?x=99&y=1
+[INFO ] 25-06-24 15:50:22 [MyInterceptor:92] - (param) <-- x = 99
+[INFO ] 25-06-24 15:50:22 [MyInterceptor:92] - (param) <-- y = 1
+[INFO ] 25-06-24 15:50:22 [MyInterceptor:101] - - REFERER : time=586, url=http://localhost:8080/calc
+[INFO ] 25-06-24 15:50:22 [MyInterceptor:123] - running time: 25(ms)
+[INFO ] 25-06-24 15:50:23 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-24 15:50:23 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-24 15:50:23 [MyInterceptor:85] - [GET] http://localhost:8080/api/my_calc?x=99&y=1
+[INFO ] 25-06-24 15:50:23 [MyInterceptor:92] - (param) <-- x = 99
+[INFO ] 25-06-24 15:50:23 [MyInterceptor:92] - (param) <-- y = 1
+[INFO ] 25-06-24 15:50:23 [MyInterceptor:101] - - REFERER : time=1077, url=http://localhost:8080/calc
+[INFO ] 25-06-24 15:50:23 [MyInterceptor:123] - running time: 21(ms)
+[INFO ] 25-06-24 15:50:28 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-24 15:50:28 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-24 15:50:28 [MyInterceptor:85] - [GET] http://localhost:8080/.well-known/appspecific/com.chrome.devtools.json
+[INFO ] 25-06-24 15:51:01 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-24 15:51:01 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-24 15:51:01 [MyInterceptor:85] - [GET] http://localhost:8080/api/my_calc?x=99&y=1
+[INFO ] 25-06-24 15:51:01 [MyInterceptor:92] - (param) <-- x = 99
+[INFO ] 25-06-24 15:51:01 [MyInterceptor:92] - (param) <-- y = 1
+[INFO ] 25-06-24 15:51:01 [MyInterceptor:123] - running time: 20(ms)
+[INFO ] 25-06-24 15:51:48 [RestfulApplication:53] - Starting RestfulApplication using Java 17.0.2 with PID 19060 (D:\#web3\06-SpringBoot\16-Spring(Restful)\restful\bin\main started by YJH in D:\#web3\06-SpringBoot\16-Spring(Restful))
+[DEBUG] 25-06-24 15:51:49 [RestfulApplication:54] - Running with Spring Boot v3.4.7, Spring v6.2.8
+[INFO ] 25-06-24 15:51:49 [RestfulApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[WARN ] 25-06-24 15:51:49 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.yjh.restful]' package. Please check your configuration.
+[INFO ] 25-06-24 15:51:49 [RestfulApplication:59] - Started RestfulApplication in 0.515 seconds (process running for 102.126)
+[INFO ] 25-06-24 15:54:40 [RestfulApplication:53] - Starting RestfulApplication using Java 17.0.2 with PID 11008 (D:\#web3\06-SpringBoot\16-Spring(Restful)\restful\bin\main started by YJH in D:\#web3\06-SpringBoot\16-Spring(Restful))
+[DEBUG] 25-06-24 15:54:40 [RestfulApplication:54] - Running with Spring Boot v3.4.7, Spring v6.2.8
+[INFO ] 25-06-24 15:54:40 [RestfulApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 25-06-24 15:54:41 [LogFactory:112] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 25-06-24 15:54:41 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.yjh.restful]' package. Please check your configuration.
+[INFO ] 25-06-24 15:54:44 [RestfulApplication:59] - Started RestfulApplication in 4.125 seconds (process running for 4.591)
+[INFO ] 25-06-24 15:54:50 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-24 15:54:50 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-24 15:54:50 [MyInterceptor:85] - [GET] http://localhost:8080/calc
+[INFO ] 25-06-24 15:54:50 [MyInterceptor:123] - running time: 195(ms)
+[INFO ] 25-06-24 15:54:53 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-24 15:54:53 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-24 15:54:53 [MyInterceptor:85] - [GET] http://localhost:8080/api/my_calc?x=99&y=1
+[INFO ] 25-06-24 15:54:53 [MyInterceptor:92] - (param) <-- x = 99
+[INFO ] 25-06-24 15:54:53 [MyInterceptor:92] - (param) <-- y = 1
+[INFO ] 25-06-24 15:54:53 [MyInterceptor:101] - - REFERER : time=3359, url=http://localhost:8080/calc
+[INFO ] 25-06-24 15:54:53 [MyInterceptor:123] - running time: 157(ms)
+[INFO ] 25-06-24 15:54:54 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-24 15:54:54 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-24 15:54:54 [MyInterceptor:85] - [GET] http://localhost:8080/api/my_calc?x=99&y=1
+[INFO ] 25-06-24 15:54:54 [MyInterceptor:92] - (param) <-- x = 99
+[INFO ] 25-06-24 15:54:54 [MyInterceptor:92] - (param) <-- y = 1
+[INFO ] 25-06-24 15:54:54 [MyInterceptor:101] - - REFERER : time=936, url=http://localhost:8080/calc
+[INFO ] 25-06-24 15:54:54 [MyInterceptor:123] - running time: 47(ms)
+[INFO ] 25-06-24 15:54:55 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-24 15:54:55 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-24 15:54:55 [MyInterceptor:85] - [GET] http://localhost:8080/api/my_calc?x=99&y=1
+[INFO ] 25-06-24 15:54:55 [MyInterceptor:92] - (param) <-- x = 99
+[INFO ] 25-06-24 15:54:55 [MyInterceptor:92] - (param) <-- y = 1
+[INFO ] 25-06-24 15:54:55 [MyInterceptor:101] - - REFERER : time=434, url=http://localhost:8080/calc
+[INFO ] 25-06-24 15:54:55 [MyInterceptor:123] - running time: 66(ms)
+[INFO ] 25-06-24 15:54:55 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-24 15:54:55 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-24 15:54:55 [MyInterceptor:85] - [GET] http://localhost:8080/api/my_calc?x=99&y=1
+[INFO ] 25-06-24 15:54:55 [MyInterceptor:92] - (param) <-- x = 99
+[INFO ] 25-06-24 15:54:55 [MyInterceptor:92] - (param) <-- y = 1
+[INFO ] 25-06-24 15:54:55 [MyInterceptor:101] - - REFERER : time=322, url=http://localhost:8080/calc
+[INFO ] 25-06-24 15:54:55 [MyInterceptor:123] - running time: 24(ms)
+[INFO ] 25-06-24 15:54:55 [MyInterceptor:46] - ----------- New Client Connect -----------
+[INFO ] 25-06-24 15:54:55 [MyInterceptor:67] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 137.0
+[INFO ] 25-06-24 15:54:55 [MyInterceptor:85] - [GET] http://localhost:8080/api/my_calc?x=99&y=1
+[INFO ] 25-06-24 15:54:55 [MyInterceptor:92] - (param) <-- x = 99
+[INFO ] 25-06-24 15:54:55 [MyInterceptor:92] - (param) <-- y = 1
+[INFO ] 25-06-24 15:54:55 [MyInterceptor:101] - - REFERER : time=229, url=http://localhost:8080/calc
+[INFO ] 25-06-24 15:54:55 [MyInterceptor:123] - running time: 17(ms)
+[INFO ] 25-06-24 15:55:18 [RestfulApplication:53] - Starting RestfulApplication using Java 17.0.2 with PID 11008 (D:\#web3\06-SpringBoot\16-Spring(Restful)\restful\bin\main started by YJH in D:\#web3\06-SpringBoot\16-Spring(Restful))
+[DEBUG] 25-06-24 15:55:18 [RestfulApplication:54] - Running with Spring Boot v3.4.7, Spring v6.2.8
+[INFO ] 25-06-24 15:55:18 [RestfulApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[WARN ] 25-06-24 15:55:18 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.yjh.restful]' package. Please check your configuration.
+[INFO ] 25-06-24 15:55:19 [RestfulApplication:59] - Started RestfulApplication in 0.584 seconds (process running for 39.506)
